@@ -9,8 +9,11 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  eval = FALSE
 )
+
+# devtools::load_all()
 ```
 # rtaxref – an R client to the French Taxonomical Reference
 
@@ -24,4 +27,20 @@ You can install the development version of rtaxref from GitHub with:
 
 ``` r
 remotes::install_github("Rekyt/rtaxref")
+```
+
+## Using `rtaxref`
+
+For the moment `rtaxref` only contains function to interact with TaxRef on taxon's name and id.
+
+`rt_taxa_search()` let's you search a taxon with different criteria:
+
+```{r rt_taxa_search}
+rt_taxa_search(sciname = "Helianthus annuus")
+```
+
+Other taxa functions `rt_taxa_children()`, `rt_taxa_id()`, `rt_taxa_parent()`, `rt_taxa_taxrefhistory()`, all use a single argument `id` to retrieve their data. The `id` is the unique identifier of the taxa in TaxRef and is also called `cdNom`.
+
+```{r rt_taxa_id}
+rt_taxa_id(id = 101027)
 ```
