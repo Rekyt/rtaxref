@@ -2,15 +2,88 @@
 % Please edit documentation in R/rt_taxa_search.R
 \name{rt_taxa_search}
 \alias{rt_taxa_search}
-\title{Title}
+\title{Search fo a taxon information}
 \usage{
 rt_taxa_search(sciname = NULL, fr_name = NULL, en_name = NULL,
   rank = NULL, territories = NULL, domain = NULL, habitats = NULL,
   vernacular = NULL)
 }
 \arguments{
-\item{vernacular}{}
+\item{sciname}{{\code{character(1)}}\cr{}
+Scientific name}
+
+\item{fr_name}{{\code{character(1)}}\cr{}
+Common name in French}
+
+\item{en_name}{{\code{character(1)}}\cr{}
+Common name in English}
+
+\item{rank}{{\code{character(1)}}\cr{}
+Rank of the taxon:
+\itemize{
+\item \code{Dumm}= Domain
+\item \code{KD}= Kingdom
+\item \code{PH}= Phylum
+\item \code{CL}= Class
+\item \code{OR}= Order
+\item \code{FM}= Family
+\item \code{SBFM}= Subfamily
+\item \code{TR}= Tribe
+\item \code{GN}= Genus
+\item \code{AGES}= Aggregate
+\item \code{ES}= Species
+\item \code{SSES}= Subspecies
+\item \code{NAT}= Natio
+\item \code{VAR}= Variety
+\item \code{SVAR}= Sub-variety
+\item \code{FO}= Form
+\item \code{SSFO}= Sub-form
+\item \code{RACE}= Race
+\item \code{CAR}= Cultivar
+\item \code{AB}= Abberatio
+}}
+
+\item{territories}{{\code{character(1+)}}\cr{}
+Territories where species is present:
+\itemize{
+\item \code{"fr"} = Mainland France
+\item \code{"gf"} = French Guiana
+\item \code{"gua"} = Guadeloupe
+\item \code{"mar"} = Martinique
+\item \code{"sm"} = Saint Martin
+\item \code{"sb"} = Saint Barthélemy
+\item \code{"spm"} = Saint Pierre and Miquelon
+\item \code{"epa"} = Scattered Islands in the Indian Ocean
+\item \code{"may"} = Mayotte
+\item \code{"reu"} = Réunion
+\item \code{"sa"} = French Southern and Antarctic Lands
+\item \code{"ta"} = Adélie Land
+\item \code{"nc"} = New Caledonia
+\item \code{"wf"} = Wallis and Futuna
+\item \code{"pf"} = French Polynesia
+\item \code{"cli"} = Clipperton Island
+}}
+
+\item{domain}{{\code{integer(1)}}\cr{}
+\itemize{
+\item \code{"marin"} = Marine
+\item \code{"continental"} = Continental
+}}
+
+\item{habitats}{{\code{integer(1)}}\cr{}
+\itemize{
+\item \code{1} = Marine
+\item \code{2} = Freshwater
+\item \code{3} = Terrestrial
+\item \code{4} = Marine and freshwater
+\item \code{5} = Marine and Terrestrial
+\item \code{6} = Brackish water
+\item \code{7} = Continental (terrestrial and/or freshwater)
+\item \code{8} = Continental (terrestrial and freshwater)
+}}
+
+\item{vernacular}{{\code{character(1)}}\cr{}}
 }
 \description{
-Title
+Search fo a taxon information
 }
