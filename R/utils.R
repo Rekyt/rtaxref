@@ -9,13 +9,19 @@ parse_taxa = function(api_query) {
                          encoding = "UTF-8")
 
   if (!("_embedded" %in% names(raw_response))) {
+
+    not_links = setdiff(names(raw_response), "_links")
+
     # If there is a single response
-    response = list(lapply(raw_response[1:45], function(x) {
+    response = list(lapply(raw_response[not_links], function(x) {
       ifelse(is.null(x), NA, x)
     }))
   } else {
-    response = lapply(raw_response[["_embedded"]][["taxa"]], function(x) {
-      lapply(x[1:45], function(y) ifelse(is.null(y), NA, y))
+    response = lapply(raw_response[["_embedded"]][[1]], function(x) {
+
+      not_links = setdiff(names(x), "_links")
+
+      lapply(x[not_links], function(y) ifelse(is.null(y), NA, y))
     })
   }
 
