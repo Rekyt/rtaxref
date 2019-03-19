@@ -2,8 +2,13 @@ rt_base_url = function() {
     "https://taxref.mnhn.fr/"
 }
 
-#' @importFrom httr content
+#' @importFrom httr content http_error
 parse_taxa = function(api_query) {
+
+  if (http_error(api_query)) {
+    stop("The query returned an error. Either TaxRef is down and try later ",
+         "or the query is invalid.")
+  }
 
   raw_response = content(api_query, type = "application/json",
                          encoding = "UTF-8")
