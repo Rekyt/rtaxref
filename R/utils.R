@@ -11,24 +11,45 @@ parse_taxa = function(api_query) {
   }
 
   raw_response = content(api_query, type = "application/json",
-                         encoding = "UTF-8")
+                         encoding = "UTF-8", simplifyDataFrame = TRUE,
+                         flatten = TRUE)
 
   if (!("_embedded" %in% names(raw_response))) {
+    # If there is a single answer
 
     not_links = setdiff(names(raw_response), "_links")
 
     # If there is a single response
-    response = list(lapply(raw_response[not_links], function(x) {
+    response = as.data.frame(lapply(raw_response[not_links], function(x) {
       ifelse(is.null(x), NA, x)
     }))
+
   } else {
-    response = lapply(raw_response[["_embedded"]][[1]], function(x) {
+    # If there are several answers
+    response = raw_response[["_embedded"]][[1]]
 
-      not_links = setdiff(names(x), "_links")
+    # Tidy names
+    all_names = colnames(response)
 
-      lapply(x[not_links], function(y) ifelse(is.null(y), NA, y))
-    })
+    name_categories = grepl(".", all_names, fixed = TRUE)
+
+    # if there is composed names
+    if (any(name_categories)) {
+      name_cat = unique(lapply(all_names[name_categories], function(x) {
+        strsplit(x, ".", fixed = TRUE)[[1]][1]
+      }))
+
+      # If taxon put it in front
+      if ("taxon" %in% name_cat) {
+        other_names = setdiff(seq_along(all_names), grep("taxon", all_names))
+
+        response = response[, c(grep("taxon", all_names), other_names)]
+      }
+
+      # Delete category from original column names
+      colnames(response) = gsub(paste(name_cat, "\\.", sep = "", collapse = "|"),
+                                "", colnames(response))
+    }
   }
-
-  do.call(rbind, lapply(response, as.data.frame))
+  return(response)
 }
