@@ -10,10 +10,11 @@
 #' @export
 #'
 #' @importFrom httr GET
-rt_status_opgroup = function(id, page = 1, size = 2000) {
+rt_status_opgroup = function(opgroup_id, page = 1, size = 2000) {
 
   api_query = GET(rt_base_url(), path = paste0("api/status/",
-                                               "findByOperationalGroup/", id),
+                                               "findByOperationalGroup/",
+                                               opgroup_id),
                   query = list(page = page,
                                size = size))
 

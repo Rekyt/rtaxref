@@ -1,0 +1,22 @@
+#' Search Interactions based on a list of criteria
+#'
+#' @inheritParams rt_taxa_status
+#' @inheritParams rt_interactions_type_id
+#' @inheritParams rt_operational_groups_id
+#' @inheritParams rt_taxa_search
+#'
+#' @export
+#'
+#' @importFrom httr GET
+rt_interactions_search = function(id = NULL, interaction_id = NULL,
+                                  opgroup_id = NULL, page = 1, size = 2000) {
+
+  api_query = GET(rt_base_url(), path = "api/interactions/search/",
+                  query = list(taxrefId           = id,
+                               interactionTypeId  = interaction_id,
+                               operationalGroupId = opgroup_id,
+                               page               = page,
+                               size               = size))
+
+  parse_taxa(api_query)
+}
