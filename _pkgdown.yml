@@ -1,0 +1,39 @@
+reference:
+- title: Taxa Functions
+  desc: >
+    Functions to retrieve TaxRef data by Taxa
+  contents:
+    - starts_with("rt_taxa")
+- title: Status Functions
+  desc: >
+    Functions to retrieve TaxRef data by Status
+  contents:
+    - starts_with("rt_status")
+- title: Interactions functions
+  desc: >
+    Functions to retrieve TaxRef interaction data
+  contents:
+    - starts_with("rt_interactions")
+- title: Thesaurus functions
+  desc: >
+    Functions that list categories used in TaxRef
+  contents:
+    - `rt_biogeo_status`
+    - `rt_biogeo_status_id`
+    - `rt_external_db`
+    - `rt_external_db_id`
+    - `rt_habitats`
+    - `rt_habitats_id`
+    - `rt_langages`
+    - `rt_langages_id`
+    - `rt_operational_groups`
+    - `rt_operational_groups_id`
+    - `rt_source_uses`
+    - `rt_source_uses_id`
+    - `rt_taxo_ranks`
+    - `rt_taxo_ranks_id`
+    - `rt_taxref_versions`
+    - `rt_taxref_versions_id`
+    - `rt_vernacular_groups`
+    - `rt_vernacular_groups_id`
+

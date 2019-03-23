@@ -3,3 +3,25 @@
 language: R
 sudo: false
 cache: packages
+
+before_script:
+  - Rscript -e 'remotes::install_cran(c("covr", "pkgdown", "spelling")'
+
+matrix:
+  include:
+    - os: linux
+      r: release
+    - os: osx
+      r: release
+
+after_success:
+  - Rscript -e 'covr::codecov()'
+  - Rscript -e 'spelling::spell_check_package(vignettes = TRUE)'
+
+deploy:
+  - provider: script
+    script: Rscript -e 'pkgdown::deploy_site_github()'
+    skip_cleanup: true
+    on:
+      branch: master
+      condition: $TRAVIS_OS_NAME = linux
