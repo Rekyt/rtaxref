@@ -1,0 +1,21 @@
+#' Retrieve the status of all Taxa in an Operational Group
+#'
+#' @param opgroup_id {`integer(1)`}\cr{}
+#'                   identifier of the operational group (see the list of
+#'                   operational groups [`rt_operational_groups()`])
+#' @inheritParams rt_taxa_search
+#'
+#'
+#' @seealso the list of operational groups [`rt_operational_groups()`]
+#' @export
+#'
+#' @importFrom httr GET
+rt_status_opgroup = function(id, page = 1, size = 2000) {
+
+  api_query = GET(rt_base_url(), path = paste0("api/status/",
+                                               "findByOperationalGroup/", id),
+                  query = list(page = page,
+                               size = size))
+
+  parse_taxa(api_query)
+}
