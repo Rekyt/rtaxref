@@ -53,5 +53,6 @@ parse_taxa = function(api_query, cut_names = TRUE) {
       }
     }
   }
-  return(response)
+
+  tibble::as_tibble(response)
 }

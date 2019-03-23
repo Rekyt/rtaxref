@@ -1,19 +1,28 @@
 Package: rtaxref
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com")
-Description: What the package does (one paragraph).
+Type: Package
+Title: An R client for TaxRef the French Taxonomical Database
+Version: 0.1.0
+Authors@R: c(
+  person("Matthias", "Grenié", email = "matthias.grenie@gmail.com",
+         role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4659-7522")),
+  person("Hugo", "Gruson",
+         role = "aut", comment = c(ORCID = "0000-0002-4094-1476"))
+  )
+Description: Provides an R client to the TaxRef API
+  <https://taxref.mnhn.fr/taxref-web/api/doc>, the French Taxonomical Reference
+  Database which indexes names of species with unique identifiers as well as
+  conservation statuses, biological interactions and taxonomic relationships.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports: 
     httr,
-    jsonlite
+    tibble
 Suggests: 
     testthat
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
+Language: en-US
+VignetteBuilder: knitr
+URL: https://github.com/Rekyt/rtaxref
+BugReports: https://github.com/Rekyt/rtaxref/issues
