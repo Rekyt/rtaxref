@@ -22,7 +22,7 @@ rt_interactions_type = function() {
 #'
 #' @seealso see [`rt_interactions_type()`] for a list of interactions types
 #' @examples
-#' rt_interactions_type_id("DH")
+#' rt_interactions_type_id("PREDATEUR")
 #' @export
 #'
 #' @importFrom httr GET

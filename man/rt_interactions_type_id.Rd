@@ -15,7 +15,7 @@ A character identifying the type of interactions (see
 Retrieve a interactions Types based on its id
 }
 \examples{
-rt_interactions_type_id("DH")
+rt_interactions_type_id("PREDATEUR")
 }
 \seealso{
 see \code{\link[=rt_interactions_type]{rt_interactions_type()}} for a list of interactions types
