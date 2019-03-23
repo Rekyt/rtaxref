@@ -3,7 +3,7 @@ rt_base_url = function() {
 }
 
 #' @importFrom httr content http_error
-parse_taxa = function(api_query) {
+parse_taxa = function(api_query, cut_names = TRUE) {
 
   if (http_error(api_query)) {
     stop("The query returned an error. Either TaxRef is down and try later ",
@@ -46,9 +46,11 @@ parse_taxa = function(api_query) {
         response = response[, c(grep("taxon", all_names), other_names)]
       }
 
-      # Delete category from original column names
-      colnames(response) = gsub(paste(name_cat, "\\.", sep = "", collapse = "|"),
-                                "", colnames(response))
+      if (cut_names) {
+        # Delete category from original column names
+        colnames(response) = gsub(paste(name_cat, "\\.", sep = "",
+                                        collapse = "|"), "", colnames(response))
+      }
     }
   }
   return(response)
