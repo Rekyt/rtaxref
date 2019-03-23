@@ -6,7 +6,7 @@
 #'                    Common name in French
 #' @param en_name     {`character(1)`}\cr{}
 #'                    Common name in English
-#' @param rank        {`character(1)`}\cr{}
+#' @param rank        {`character(1+)`}\cr{}
 #' Rank of the taxon:
 #' * `Dumm`= Domain
 #' * `KD`= Kingdom
@@ -46,10 +46,10 @@
 #' * `"wf"` = Wallis and Futuna
 #' * `"pf"` = French Polynesia
 #' * `"cli"` = Clipperton Island
-#' @param domain      {`integer(1)`}\cr{}
+#' @param domain      {`integer(1+)`}\cr{}
 #' * `"marin"` = Marine
 #' * `"continental"` = Continental
-#' @param habitats    {`integer(1)`}\cr{}
+#' @param habitats    {`integer(1+)`}\cr{}
 #' * `1` = Marine
 #' * `2` = Freshwater
 #' * `3` = Terrestrial
@@ -59,12 +59,16 @@
 #' * `7` = Continental (terrestrial and/or freshwater)
 #' * `8` = Continental (terrestrial and freshwater)
 #' @param vernacular  {`character(1)`}\cr{}
-#'
+#' @param page {`integer(1)`; default = `1`}\cr{}
+#'             The page number returned
+#' @param size {`integer(1)`; default = `50000`}\cr{}
+#'             The number of lines returned per page (maximum = 50000)
 #' @export
 #' @importFrom httr GET
 rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
                           rank = NULL, territories = NULL, domain = NULL,
-                          habitats = NULL, vernacular = NULL) {
+                          habitats = NULL, vernacular = NULL, page = 1,
+                          size = 50000) {
 
   api_query = GET(rt_base_url(), path = "api/taxa/search",
                   query = list(scientificNames = sciname,
@@ -74,7 +78,9 @@ rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
                                territories = territories,
                                domain = domain,
                                habitats = habitats,
-                               vernacularGroups = vernacular))
+                               vernacularGroups = vernacular,
+                               page = page,
+                               size = size))
 
   parse_taxa(api_query)
 }

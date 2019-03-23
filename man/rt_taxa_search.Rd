@@ -6,7 +6,7 @@
 \usage{
 rt_taxa_search(sciname = NULL, fr_name = NULL, en_name = NULL,
   rank = NULL, territories = NULL, domain = NULL, habitats = NULL,
-  vernacular = NULL)
+  vernacular = NULL, page = 1, size = 50000)
 }
 \arguments{
 \item{sciname}{{\code{character(1)}}\cr{}
@@ -18,7 +18,7 @@ Common name in French}
 \item{en_name}{{\code{character(1)}}\cr{}
 Common name in English}
 
-\item{rank}{{\code{character(1)}}\cr{}
+\item{rank}{{\code{character(1+)}}\cr{}
 Rank of the taxon:
 \itemize{
 \item \code{Dumm}= Domain
@@ -64,13 +64,13 @@ Territories where species is present:
 \item \code{"cli"} = Clipperton Island
 }}
 
-\item{domain}{{\code{integer(1)}}\cr{}
+\item{domain}{{\code{integer(1+)}}\cr{}
 \itemize{
 \item \code{"marin"} = Marine
 \item \code{"continental"} = Continental
 }}
 
-\item{habitats}{{\code{integer(1)}}\cr{}
+\item{habitats}{{\code{integer(1+)}}\cr{}
 \itemize{
 \item \code{1} = Marine
 \item \code{2} = Freshwater
@@ -83,6 +83,12 @@ Territories where species is present:
 }}
 
 \item{vernacular}{{\code{character(1)}}\cr{}}
+
+\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+The page number returned}
+
+\item{size}{{\code{integer(1)}; default = \code{50000}}\cr{}
+The number of lines returned per page (maximum = 50000)}
 }
 \description{
 Search fo a taxon information
