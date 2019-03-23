@@ -14,6 +14,12 @@ reference:
     Functions to retrieve TaxRef interaction data
   contents:
     - starts_with("rt_interactions")
+
+- title: Sources functions
+  desc: >
+    Functions to retrieve TaxRef sources data
+  contents:
+    - starts_with("rt_sources")
 - title: Thesaurus functions
   desc: >
     Functions that list categories used in TaxRef
@@ -35,5 +41,4 @@ reference:
     - '`rt_taxref_versions`'
     - '`rt_taxref_versions_id`'
     - '`rt_vernacular_groups`'
-    - '`rt_vernacular_groups_id`'
 
