@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rtaxref</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/Rekyt/rtaxref">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -95,7 +100,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Retrieve a taxon information using its id</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_sources_id.R'><code>R/rt_sources_id.R</code></a></small>
     <div class="hidden name"><code>rt_sources_id.Rd</code></div>
     </div>
 
@@ -124,14 +129,10 @@ should citation be returned in BibTeX?</p></td>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>rt_sources_id</span>(<span class='kw'>source_id</span> <span class='kw'>=</span> <span class='fl'>160688</span>, <span class='kw'>bibtex</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt;       id
-#&gt; 1 160688
-#&gt;                                                                                                                                                                                                                                fullCitation
-#&gt; 1 Linnaeus, C. 1766. &lt;em&gt;Systema naturæ per regna tria naturæ, secundum classes, ordines, genera, species, cum characteribus, differentiis, synonymis, locis&lt;/em&gt;. &lt;em&gt;Editio duodecima, reformata&lt;/em&gt;. Holmiæ. (Salvius). Tomus I: 1-532.
-#&gt;                                            url doi doiUri zooBankId zooBankUri
-#&gt; 1 http://biodiversitylibrary.org/page/42946197  NA     NA        NA         NA
-#&gt;   abstract
-#&gt; 1       NA</div><div class='input'><span class='fu'>rt_sources_id</span>(<span class='kw'>source_id</span> <span class='kw'>=</span> <span class='fl'>160688</span>, <span class='kw'>bibtex</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; [1] "@article{Linnaeus_1766,\n\tdoi = {},\n\turl = {http://biodiversitylibrary.org/page/42946197},\n\tyear = 1766,\n\tpublisher = {},\n\tvolume = {},\n\tnumber = {},\n\tpages = {},\n\tauthor = {},\n\ttitle = {},\n\tjournal = {},\n\teditor = {},\n\tbooktitle = {},\n\tabstract = {}\n}"</div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'>rt_sources_id</span>(<span class='kw'>source_id</span> <span class='kw'>=</span> <span class='fl'>160688</span>, <span class='kw'>bibtex</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 8
+#&gt;       id fullCitation        url      doi   doiUri zooBankId zooBankUri abstract
+#&gt;    &lt;int&gt; &lt;fct&gt;               &lt;fct&gt;    &lt;lgl&gt; &lt;lgl&gt;  &lt;lgl&gt;     &lt;lgl&gt;      &lt;lgl&gt;   
+#&gt; 1 160688 Linnaeus, C. 1766.… http://… NA    NA     NA        NA         NA      </div><div class='input'><span class='fu'>rt_sources_id</span>(<span class='kw'>source_id</span> <span class='kw'>=</span> <span class='fl'>160688</span>, <span class='kw'>bibtex</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</div><div class='output co'>#&gt; [1] "@article{Linnaeus_1766,\n\tdoi = {},\n\turl = {http://biodiversitylibrary.org/page/42946197},\n\tyear = 1766,\n\tpublisher = {},\n\tvolume = {},\n\tnumber = {},\n\tpages = {},\n\tauthor = {},\n\ttitle = {},\n\tjournal = {},\n\teditor = {},\n\tbooktitle = {},\n\tabstract = {}\n}"</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -147,7 +148,7 @@ should citation be returned in BibTeX?</p></td>
 
       <footer>
       <div class="copyright">
-  <p>Developed by First Last.</p>
+  <p>Developed by Matthias Grenié, Hugo Gruson.</p>
 </div>
 
 <div class="pkgdown">

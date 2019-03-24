@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rtaxref</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/Rekyt/rtaxref">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -95,7 +100,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Retrieve Taxon using the ids from external databases</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_taxa_from_externalids.R'><code>R/rt_taxa_from_externalids.R</code></a></small>
     <div class="hidden name"><code>rt_taxa_from_externalids.Rd</code></div>
     </div>
 
@@ -132,24 +137,21 @@ a taxon in TaxRef</p></div>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>rt_taxa_from_externalids</span>(<span class='st'>"TROPICOS"</span>, <span class='fl'>26600197</span>)</div><div class='output co'>#&gt;       id referenceId parentId      scientificName authority
-#&gt; 1 107003      107003   194337 Lycopodium clavatum  L., 1753
-#&gt;                       fullName                        fullNameHtml rankId
-#&gt; 1 Lycopodium clavatum L., 1753 &lt;i&gt;Lycopodium clavatum&lt;/i&gt; L., 1753     ES
-#&gt;   rankName                referenceName                   referenceNameHtml
-#&gt; 1       NA Lycopodium clavatum L., 1753 &lt;i&gt;Lycopodium clavatum&lt;/i&gt; L., 1753
-#&gt;          frenchVernacularName englishVernacularName  genusName    familyName
-#&gt; 1 Lycopode en massue, Éguaire  Stag's-horn Clubmoss Lycopodium Lycopodiaceae
-#&gt;      orderName     className phylumName kingdomName vernacularGenusName
-#&gt; 1 Lycopodiales Equisetopsida         NA     Plantae                  NA
-#&gt;   vernacularFamilyName vernacularOrderName
-#&gt; 1                   NA           Lycopodes
-#&gt;                             vernacularClassName vernacularPhylumName
-#&gt; 1 Plantes terrestres, Embryophytes, Cormophytes                   NA
-#&gt;   vernacularKingdomName vernacularGroup1 vernacularGroup2 habitat fr gf mar gua
-#&gt; 1               Plantes               NA               NA       3  P  A   P   P
-#&gt;   sm sb spm may epa reu sa ta nc wf pf cli taxrefVersion
-#&gt; 1  A  A   P  NA  NA   P NA NA  P NA NA  NA          12.0</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>rt_taxa_from_externalids</span>(<span class='st'>"TROPICOS"</span>, <span class='fl'>26600197</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 45
+#&gt;       id referenceId parentId scientificName authority fullName fullNameHtml
+#&gt;    &lt;int&gt;       &lt;int&gt;    &lt;int&gt; &lt;fct&gt;          &lt;fct&gt;     &lt;fct&gt;    &lt;fct&gt;       
+#&gt; 1 107003      107003   194337 Lycopodium cl… L., 1753  Lycopod… &lt;i&gt;Lycopodi…
+#&gt; # … with 38 more variables: rankId &lt;fct&gt;, rankName &lt;lgl&gt;, referenceName &lt;fct&gt;,
+#&gt; #   referenceNameHtml &lt;fct&gt;, frenchVernacularName &lt;fct&gt;,
+#&gt; #   englishVernacularName &lt;fct&gt;, genusName &lt;fct&gt;, familyName &lt;fct&gt;,
+#&gt; #   orderName &lt;fct&gt;, className &lt;fct&gt;, phylumName &lt;lgl&gt;, kingdomName &lt;fct&gt;,
+#&gt; #   vernacularGenusName &lt;lgl&gt;, vernacularFamilyName &lt;lgl&gt;,
+#&gt; #   vernacularOrderName &lt;fct&gt;, vernacularClassName &lt;fct&gt;,
+#&gt; #   vernacularPhylumName &lt;lgl&gt;, vernacularKingdomName &lt;fct&gt;,
+#&gt; #   vernacularGroup1 &lt;lgl&gt;, vernacularGroup2 &lt;lgl&gt;, habitat &lt;fct&gt;, fr &lt;fct&gt;,
+#&gt; #   gf &lt;fct&gt;, mar &lt;fct&gt;, gua &lt;fct&gt;, sm &lt;fct&gt;, sb &lt;fct&gt;, spm &lt;fct&gt;, may &lt;lgl&gt;,
+#&gt; #   epa &lt;lgl&gt;, reu &lt;fct&gt;, sa &lt;lgl&gt;, ta &lt;lgl&gt;, nc &lt;fct&gt;, wf &lt;lgl&gt;, pf &lt;lgl&gt;,
+#&gt; #   cli &lt;lgl&gt;, taxrefVersion &lt;fct&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -166,7 +168,7 @@ a taxon in TaxRef</p></div>
 
       <footer>
       <div class="copyright">
-  <p>Developed by First Last.</p>
+  <p>Developed by Matthias Grenié, Hugo Gruson.</p>
 </div>
 
 <div class="pkgdown">

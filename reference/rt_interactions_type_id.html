@@ -63,7 +63,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">rtaxref</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -81,7 +81,12 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/Rekyt/rtaxref">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -95,7 +100,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Retrieve a interactions Types based on its id</h1>
-    
+    <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_interactions_type.R'><code>R/rt_interactions_type.R</code></a></small>
     <div class="hidden name"><code>rt_interactions_type_id.Rd</code></div>
     </div>
 
@@ -124,16 +129,10 @@ A character identifying the type of interactions (see
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>rt_interactions_type_id</span>(<span class='st'>"PREDATEUR"</span>)</div><div class='output co'>#&gt;          id                name
-#&gt; 1 PREDATEUR est un prédateur de
-#&gt;                                                                                                                                                                            description
-#&gt; 1 interaction trophique dans laquelle un organisme vivant (le prédateur) tue sa cible (la proie) afin de la manger ou afin de nourrir sa fratrie, sa progéniture et/ou ses congénères.
-#&gt;                                                                                                       example
-#&gt; 1 Brochet mangeant un crapaud, plathelminthe mangeant un escargot, \nPlante carnivore mangeant des insectes\n
-#&gt;   reverseRelationName                                  oboRoUri
-#&gt; 1     est la proie de http://purl.obolibrary.org/obo/RO_0002439
-#&gt;                              dbPediaUri
-#&gt; 1 http://dbpedia.org/resource/Predation</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>rt_interactions_type_id</span>(<span class='st'>"PREDATEUR"</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 7
+#&gt;   id     name   description    example    reverseRelation… oboRoUri  dbPediaUri 
+#&gt;   &lt;fct&gt;  &lt;fct&gt;  &lt;fct&gt;          &lt;fct&gt;      &lt;fct&gt;            &lt;fct&gt;     &lt;fct&gt;      
+#&gt; 1 PREDA… est u… interaction t… "Brochet … est la proie de  http://p… http://dbp…</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -150,7 +149,7 @@ A character identifying the type of interactions (see
 
       <footer>
       <div class="copyright">
-  <p>Developed by First Last.</p>
+  <p>Developed by Matthias Grenié, Hugo Gruson.</p>
 </div>
 
 <div class="pkgdown">
