@@ -7,12 +7,13 @@ rt_GET = function(endpoint, ...) {
   GET(rt_base_url(), path = paste0("api/", endpoint), ...)
 }
 
-#' @importFrom httr content http_error
+#' @importFrom httr content http_error status_code
 parse_taxa = function(api_query, cut_names = TRUE) {
 
-  if (http_error(api_query)) {
-    stop("The query returned an error. Either TaxRef is down and try later ",
-         "or the query is invalid.")
+  if (status_code(api_query) == 404) {
+    stop("The query is invalid. Please try another query.")
+  } else if (http_error(api_query)) {
+    stop("TaxRef is down. Please try again later.")
   }
 
   raw_response = content(api_query, type = "application/json",

@@ -4,10 +4,7 @@
 #'           an integer giving the id of the taxon in TaxRef (also called
 #'           `cdNom`)
 #'
-#'
 #' @export
-#'
-#' @importFrom httr GET
 rt_taxa_id = function(id) {
 
   api_query = rt_GET(paste0("taxa/", id))
