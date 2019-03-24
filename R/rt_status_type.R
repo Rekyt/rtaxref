@@ -27,7 +27,7 @@ rt_status_type = function() {
 #' @importFrom httr GET
 rt_status_type_id = function(status_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/status/types/", status_id))
+  api_query = rt_GET(paste0("status/types/", status_id))
 
   parse_taxa(api_query)
 }

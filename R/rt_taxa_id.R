@@ -10,7 +10,7 @@
 #' @importFrom httr GET
 rt_taxa_id = function(id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/taxa/", id))
+  api_query = rt_GET(paste0("taxa/", id))
 
   parse_taxa(api_query)
 }

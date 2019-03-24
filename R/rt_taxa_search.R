@@ -70,17 +70,17 @@ rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
                           habitats = NULL, vernacular = NULL, page = 1,
                           size = 50000) {
 
-  api_query = GET(rt_base_url(), path = "api/taxa/search",
-                  query = list(scientificNames = sciname,
-                               frenchVernacularNames = fr_name,
-                               englishVernacularNames = en_name,
-                               taxonomicRanks = rank,
-                               territories = territories,
-                               domain = domain,
-                               habitats = habitats,
-                               vernacularGroups = vernacular,
-                               page = page,
-                               size = size))
+  api_query = rt_GET("taxa/search",
+                     query = list(scientificNames = sciname,
+                                  frenchVernacularNames = fr_name,
+                                  englishVernacularNames = en_name,
+                                  taxonomicRanks = rank,
+                                  territories = territories,
+                                  domain = domain,
+                                  habitats = habitats,
+                                  vernacularGroups = vernacular,
+                                  page = page,
+                                  size = size))
 
   parse_taxa(api_query)
 }

@@ -9,8 +9,8 @@
 #' @importFrom httr GET
 rt_taxa_fuzzymatch = function(sciname) {
 
-  api_query = GET(rt_base_url(), path = "api/taxa/fuzzymatch",
-                  query = list(term = sciname))
+  api_query = rt_GET("taxa/fuzzymatch",
+                     query = list(term = sciname))
 
   parse_taxa(api_query)
 }

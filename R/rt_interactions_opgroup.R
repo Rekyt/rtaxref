@@ -8,11 +8,9 @@
 #' @importFrom httr GET
 rt_interactions_opgroup = function(opgroup_id, page = 1, size = 2000) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/interactions/",
-                                               "findByOperationalGroup/",
-                                               opgroup_id),
-                  query = list(page = page,
-                               size = size))
+  api_query = rt_GET(paste0("interactions/findByOperationalGroup/", opgroup_id),
+                     query = list(page = page,
+                                  size = size))
 
   parse_taxa(api_query)
 }

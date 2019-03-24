@@ -5,7 +5,7 @@
 #' @importFrom httr GET
 rt_vernacular_groups = function() {
 
-  api_query = GET(rt_base_url(), path = "api/vernacularGroups")
+  api_query = rt_GET("vernacularGroups")
 
   parse_taxa(api_query)
 }

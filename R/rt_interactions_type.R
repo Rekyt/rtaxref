@@ -28,8 +28,7 @@ rt_interactions_type = function() {
 #' @importFrom httr GET
 rt_interactions_type_id = function(interaction_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/interactions/types/",
-                                               interaction_id))
+  api_query = rt_GET(paste0("interactions/types/", interaction_id))
 
   parse_taxa(api_query)
 }

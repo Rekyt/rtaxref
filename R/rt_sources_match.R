@@ -10,8 +10,8 @@ rt_sources_match = function(citation = NULL) {
 
   if (citation == "" | is.null(citation)) stop("citation needs to be not empty")
 
-  api_query = GET(rt_base_url(), path = "api/sources/matchByCitation",
-                  query = list(citation = citation))
+  api_query = rt_GET("sources/matchByCitation",
+                     query = list(citation = citation))
 
   parse_taxa(api_query)
 }

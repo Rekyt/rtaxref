@@ -9,7 +9,7 @@
 #' @importFrom httr GET
 rt_source_uses = function() {
 
-  api_query = GET(rt_base_url(), path = "api/sourceUses")
+  api_query = rt_GET("sourceUses")
 
   parse_taxa(api_query)
 }
@@ -25,7 +25,7 @@ rt_source_uses = function() {
 #' @importFrom httr GET
 rt_source_uses_id = function(usage_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/sourceUses/", usage_id))
+  api_query = rt_GET(paste0("sourceUses/", usage_id))
 
   parse_taxa(api_query)
 }

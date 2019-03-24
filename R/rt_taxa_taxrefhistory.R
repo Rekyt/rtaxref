@@ -5,8 +5,7 @@
 #' @export
 rt_taxa_taxrefhistory = function(id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/taxa/", id,
-                                               "/taxrefHistory"))
+  api_query = rt_GET(paste0("taxa/", id, "/taxrefHistory"))
 
   parse_taxa(api_query)
 }

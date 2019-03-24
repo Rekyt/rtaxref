@@ -5,7 +5,7 @@
 #' @importFrom httr GET
 rt_taxref_versions = function() {
 
-  api_query = GET(rt_base_url(), path = "api/taxrefVersions")
+  api_query = rt_GET("taxrefVersions")
 
   parse_taxa(api_query)
 }
@@ -21,8 +21,7 @@ rt_taxref_versions = function() {
 #' @importFrom httr GET
 rt_taxref_versions_id = function(version_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/taxrefVersions/",
-                                               version_id))
+  api_query = rt_GET(paste0("taxrefVersions/", version_id))
 
   parse_taxa(api_query)
 }

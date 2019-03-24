@@ -9,13 +9,13 @@ rt_taxa_autocomplete = function(term = NULL, territories = NULL, rank = NULL,
 
   if (term == "") stop("`term` is required to autocomplete taxon search")
 
-  api_query = GET(rt_base_url(), path = "api/taxa/autocomplete",
-                  query = list(term        = term,
-                               territories = territories,
-                               rank        = rank,
-                               domain      = domain,
-                               page        = page,
-                               size        = size))
+  api_query = rt_GET("taxa/autocomplete",
+                     query = list(term        = term,
+                                  territories = territories,
+                                  rank        = rank,
+                                  domain      = domain,
+                                  page        = page,
+                                  size        = size))
 
   parse_taxa(api_query)
 }

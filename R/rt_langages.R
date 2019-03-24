@@ -1,29 +1,27 @@
-#' Retrieve the list of langages used in TaxRef
-#'
+#' Retrieve the list of languages used in TaxRef
 #'
 #' @export
 #'
 #' @importFrom httr GET
-rt_langages = function() {
+rt_languages = function() {
 
-  api_query = GET(rt_base_url(), path = "api/langages")
+  api_query = rt_GET("langages")
 
   parse_taxa(api_query)
 }
 
-#' Retrieve a habitat used in TaxRef
+#' Retrieve a language used in TaxRef
 #'
-#' @param langages_id {`character(1)`}\cr{}
-#'                    three-letter lowercase code that is the id of a langage
-#'                    referenced in TaxRef see [`rt_langages()`]
+#' @param languages_id {`character(1)`}\cr{}
+#'                    three-letter lowercase code that is the id of a language
+#'                    referenced in TaxRef see [`rt_languages()`]
 #'
 #' @export
 #'
 #' @importFrom httr GET
-rt_langages_id = function(langages_id) {
+rt_languages_id = function(languages_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/langages/",
-                                               tolower(langages_id)))
+  api_query = rt_GET(paste0("langages/", tolower(languages_id)))
 
   parse_taxa(api_query)
 }

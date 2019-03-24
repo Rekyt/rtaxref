@@ -11,12 +11,12 @@
 rt_interactions_search = function(id = NULL, interaction_id = NULL,
                                   opgroup_id = NULL, page = 1, size = 2000) {
 
-  api_query = GET(rt_base_url(), path = "api/interactions/search/",
-                  query = list(taxrefId           = id,
-                               interactionTypeId  = interaction_id,
-                               operationalGroupId = opgroup_id,
-                               page               = page,
-                               size               = size))
+  api_query = rt_GET("interactions/search/",
+                     query = list(taxrefId           = id,
+                                  interactionTypeId  = interaction_id,
+                                  operationalGroupId = opgroup_id,
+                                  page               = page,
+                                  size               = size))
 
   parse_taxa(api_query)
 }

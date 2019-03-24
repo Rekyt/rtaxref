@@ -22,9 +22,9 @@ rt_taxa_from_externalids = function(external_db = NULL, external_id = NULL) {
          " external database are needed")
   }
 
-  api_query = GET(rt_base_url(), path = "api/taxa/findByExternalId",
-                  query = list(externalDbId = tolower(external_db),
-                               externalId   = external_id))
+  api_query = rt_GET("taxa/findByExternalId",
+                     query = list(externalDbId = tolower(external_db),
+                                  externalId   = external_id))
 
   parse_taxa(api_query)
 }

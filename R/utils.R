@@ -2,6 +2,11 @@ rt_base_url = function() {
     "https://taxref.mnhn.fr/"
 }
 
+#' @importFrom httr GET
+rt_GET = function(endpoint, ...) {
+  GET(rt_base_url(), path = paste0("api/", endpoint), ...)
+}
+
 #' @importFrom httr content http_error
 parse_taxa = function(api_query, cut_names = TRUE) {
 

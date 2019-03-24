@@ -19,7 +19,8 @@ Imports:
     httr,
     tibble
 Suggests: 
-    testthat
+    testthat,
+    knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Language: en-US

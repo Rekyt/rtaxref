@@ -16,7 +16,7 @@
 #' @importFrom httr GET
 rt_habitats = function() {
 
-  api_query = GET(rt_base_url(), path = "api/habitats")
+  api_query = rt_GET("habitats")
 
   parse_taxa(api_query)
 }
@@ -35,8 +35,7 @@ rt_habitats = function() {
 #' @importFrom httr GET
 rt_habitats_id = function(habitat_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/habitats/",
-                                               tolower(habitat_id)))
+  api_query = rt_GET(paste0("habitats/", tolower(habitat_id)))
 
   parse_taxa(api_query)
 }

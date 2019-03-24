@@ -5,7 +5,7 @@
 #' @importFrom httr GET
 rt_taxo_ranks = function() {
 
-  api_query = GET(rt_base_url(), path = "api/taxonomicRanks")
+  api_query = rt_GET("taxonomicRanks")
 
   parse_taxa(api_query)
 }
@@ -21,7 +21,7 @@ rt_taxo_ranks = function() {
 #' @importFrom httr GET
 rt_taxo_ranks_id = function(taxo_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/taxonomicRanks/", taxo_id))
+  api_query = rt_GET(paste0("taxonomicRanks/", taxo_id))
 
   parse_taxa(api_query)
 }

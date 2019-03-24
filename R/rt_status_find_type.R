@@ -12,10 +12,9 @@
 #' @importFrom httr GET
 rt_status_find_type = function(status_id = NULL, page = 1, size = 2000) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/status/findByType/",
-                                               status_id),
-                  query = list(page = page,
-                               size = size))
+  api_query = rt_GET(paste0("status/findByType/", status_id),
+                     query = list(page = page,
+                                  size = size))
 
   parse_taxa(api_query)
 }

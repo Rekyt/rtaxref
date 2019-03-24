@@ -10,8 +10,7 @@ rt_sources_find_term = function(term = NULL) {
 
   if (term == "" | is.null(term)) stop("term needs to be not empty")
 
-  api_query = GET(rt_base_url(), path = paste0("api/sources/findByTerm/",
-                                               term))
+  api_query = rt_GET(paste0("sources/findByTerm/", term))
 
   parse_taxa(api_query)
 }

@@ -8,7 +8,7 @@
 #' @importFrom httr GET
 rt_operational_groups = function() {
 
-  api_query = GET(rt_base_url(), path = "api/operationalGroups")
+  api_query = rt_GET("operationalGroups")
 
   parse_taxa(api_query)
 }
@@ -24,8 +24,7 @@ rt_operational_groups = function() {
 #' @importFrom httr GET
 rt_operational_groups_id = function(opgroup_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/operationalGroups/",
-                                               opgroup_id))
+  api_query = rt_GET(paste0("operationalGroups/", opgroup_id))
 
   parse_taxa(api_query)
 }

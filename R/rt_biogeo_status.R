@@ -5,7 +5,7 @@
 #' @importFrom httr GET
 rt_biogeo_status = function() {
 
-  api_query = GET(rt_base_url(), path = "api/biogeographicStatus")
+  api_query = rt_GET("biogeographicStatus")
 
   parse_taxa(api_query)
 }
@@ -21,8 +21,7 @@ rt_biogeo_status = function() {
 #' @importFrom httr GET
 rt_biogeo_status_id = function(biogeo_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/biogeographicStatus/",
-                                               biogeo_id))
+  api_query = rt_GET(paste0("biogeographicStatus/", biogeo_id))
 
   parse_taxa(api_query)
 }
