@@ -139,6 +139,29 @@ The number of lines returned per page (maximum = 50000)</p></td>
     <div class='dont-index'><p>the list of status types <code><a href='rt_interactions_type.html'>rt_interactions_type()</a></code></p></div>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_interactions_find_type</span>(<span class='kw'>interaction_id</span> <span class='kw'>=</span> <span class='st'>"GALLES"</span>)</div><div class='output co'>#&gt; # A tibble: 554 x 25
+#&gt;    taxon.id taxon.scientifi… taxon.fullNameH… taxon.reference… taxon.parentId
+#&gt;       &lt;int&gt; &lt;lgl&gt;            &lt;chr&gt;                       &lt;int&gt; &lt;lgl&gt;         
+#&gt;  1   221353 NA               &lt;i&gt;Acalitus bre…           221353 NA            
+#&gt;  2   221354 NA               &lt;i&gt;Acalitus cal…           221354 NA            
+#&gt;  3   848629 NA               &lt;i&gt;Acalitus rud…           221355 NA            
+#&gt;  4   221359 NA               &lt;i&gt;Acalitus ste…           221359 NA            
+#&gt;  5   848633 NA               &lt;i&gt;Aceria aceri…           848633 NA            
+#&gt;  6   848635 NA               &lt;i&gt;Aceria aceri…           848635 NA            
+#&gt;  7   221251 NA               &lt;i&gt;Aceria achil…           221251 NA            
+#&gt;  8   848637 NA               &lt;i&gt;Aceria alpes…           848637 NA            
+#&gt;  9   221254 NA               &lt;i&gt;Aceria ancep…           221254 NA            
+#&gt; 10   848639 NA               &lt;i&gt;Aceria aroni…           848639 NA            
+#&gt; # … with 544 more rows, and 20 more variables: taxon.referenceNameHtml &lt;chr&gt;,
+#&gt; #   relationId &lt;chr&gt;, relationName &lt;chr&gt;, specificity &lt;chr&gt;, inherited &lt;lgl&gt;,
+#&gt; #   target.id &lt;int&gt;, target.scientificName &lt;lgl&gt;, target.fullNameHtml &lt;chr&gt;,
+#&gt; #   target.referenceId &lt;int&gt;, target.parentId &lt;lgl&gt;,
+#&gt; #   target.referenceNameHtml &lt;chr&gt;, source.id &lt;int&gt;, source.fullCitation &lt;chr&gt;,
+#&gt; #   source.url &lt;chr&gt;, source.doi &lt;lgl&gt;, source.doiUri &lt;lgl&gt;,
+#&gt; #   source.zooBankId &lt;lgl&gt;, source.zooBankUri &lt;lgl&gt;, source.abstract &lt;lgl&gt;,
+#&gt; #   `_links.self.href` &lt;chr&gt;</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -146,7 +169,9 @@ The number of lines returned per page (maximum = 50000)</p></td>
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#see-also">See also</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

@@ -138,6 +138,28 @@ The number of lines returned per page (maximum = 50000)</p></td>
     <div class='dont-index'><p>the list of operational groups <code><a href='rt_operational_groups.html'>rt_operational_groups()</a></code></p></div>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_interactions_opgroup</span>(<span class='kw'>opgroup_id</span> <span class='kw'>=</span> <span class='fl'>706</span>)</div><div class='output co'>#&gt; # A tibble: 24 x 25
+#&gt;    taxon.id taxon.scientifi… taxon.fullNameH… taxon.reference… taxon.parentId
+#&gt;       &lt;int&gt; &lt;lgl&gt;            &lt;chr&gt;                       &lt;int&gt; &lt;lgl&gt;         
+#&gt;  1   159424 NA               &lt;i&gt;Bacidia egen…           660247 NA            
+#&gt;  2   660276 NA               &lt;i&gt;Bacidia frax…           660276 NA            
+#&gt;  3   660248 NA               &lt;i&gt;Bacidina del…           660248 NA            
+#&gt;  4   660073 NA               &lt;i&gt;Caloplaca ul…           660073 NA            
+#&gt;  5    57689 NA               &lt;i&gt;Cladonia flo…            57689 NA            
+#&gt;  6    57683 NA               &lt;i&gt;Cladonia mac…            57683 NA            
+#&gt;  7   659956 NA               &lt;i&gt;Coenogonium …           659956 NA            
+#&gt;  8    59593 NA               &lt;i&gt;Diploicia ca…            59593 NA            
+#&gt;  9   659819 NA               &lt;i&gt;Fuscopannari…           659819 NA            
+#&gt; 10    59213 NA               &lt;i&gt;Hyperphyscia…            59213 NA            
+#&gt; # … with 14 more rows, and 20 more variables: taxon.referenceNameHtml &lt;chr&gt;,
+#&gt; #   relationId &lt;chr&gt;, relationName &lt;chr&gt;, specificity &lt;lgl&gt;, inherited &lt;lgl&gt;,
+#&gt; #   target.id &lt;int&gt;, target.scientificName &lt;lgl&gt;, target.fullNameHtml &lt;chr&gt;,
+#&gt; #   target.referenceId &lt;int&gt;, target.parentId &lt;lgl&gt;,
+#&gt; #   target.referenceNameHtml &lt;chr&gt;, source.id &lt;int&gt;, source.fullCitation &lt;chr&gt;,
+#&gt; #   source.url &lt;chr&gt;, source.doi &lt;lgl&gt;, source.doiUri &lt;lgl&gt;,
+#&gt; #   source.zooBankId &lt;lgl&gt;, source.zooBankUri &lt;lgl&gt;, source.abstract &lt;lgl&gt;,
+#&gt; #   `_links.self.href` &lt;chr&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -145,7 +167,9 @@ The number of lines returned per page (maximum = 50000)</p></td>
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#see-also">See also</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

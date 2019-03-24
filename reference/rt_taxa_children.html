@@ -124,12 +124,37 @@ an integer giving the id of the taxon in TaxRef (also called
     </table>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_taxa_children</span>(<span class='kw'>id</span> <span class='kw'>=</span> <span class='fl'>442585</span>)</div><div class='output co'>#&gt; # A tibble: 2 x 61
+#&gt;       id referenceId parentId scientificName authority fullName fullNameHtml
+#&gt;    &lt;int&gt;       &lt;int&gt;    &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;       
+#&gt; 1 783433      783433   442585 Zosterops mad… (Linnaeu… Zostero… &lt;i&gt;Zosterop…
+#&gt; 2 432599      432599   442585 Zosterops mad… Reicheno… Zostero… &lt;i&gt;Zosterop…
+#&gt; # … with 54 more variables: rankId &lt;chr&gt;, rankName &lt;lgl&gt;, referenceName &lt;chr&gt;,
+#&gt; #   referenceNameHtml &lt;chr&gt;, frenchVernacularName &lt;chr&gt;,
+#&gt; #   englishVernacularName &lt;lgl&gt;, genusName &lt;chr&gt;, familyName &lt;chr&gt;,
+#&gt; #   orderName &lt;chr&gt;, className &lt;chr&gt;, phylumName &lt;chr&gt;, kingdomName &lt;chr&gt;,
+#&gt; #   vernacularGenusName &lt;lgl&gt;, vernacularFamilyName &lt;lgl&gt;,
+#&gt; #   vernacularOrderName &lt;chr&gt;, vernacularClassName &lt;chr&gt;,
+#&gt; #   vernacularPhylumName &lt;chr&gt;, vernacularKingdomName &lt;chr&gt;,
+#&gt; #   vernacularGroup1 &lt;lgl&gt;, vernacularGroup2 &lt;lgl&gt;, habitat &lt;chr&gt;, fr &lt;chr&gt;,
+#&gt; #   gf &lt;chr&gt;, mar &lt;chr&gt;, gua &lt;chr&gt;, sm &lt;chr&gt;, sb &lt;chr&gt;, spm &lt;chr&gt;, may &lt;chr&gt;,
+#&gt; #   epa &lt;chr&gt;, reu &lt;chr&gt;, sa &lt;chr&gt;, ta &lt;chr&gt;, nc &lt;chr&gt;, wf &lt;chr&gt;, pf &lt;chr&gt;,
+#&gt; #   cli &lt;chr&gt;, taxrefVersion &lt;chr&gt;, self.href &lt;chr&gt;, reference.href &lt;chr&gt;,
+#&gt; #   parent.href &lt;chr&gt;, classification.href &lt;chr&gt;, synonyms.href &lt;chr&gt;,
+#&gt; #   children.href &lt;chr&gt;, vernacularNames.href &lt;chr&gt;, media.href &lt;chr&gt;,
+#&gt; #   status.href &lt;chr&gt;, interactions.href &lt;chr&gt;, taxrefHistory.href &lt;chr&gt;,
+#&gt; #   externalIds.href &lt;chr&gt;, taxonomicRank.href &lt;chr&gt;, habitat.href &lt;chr&gt;,
+#&gt; #   taxrefUri.href &lt;chr&gt;, inpnWebpage.href &lt;chr&gt;</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

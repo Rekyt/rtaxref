@@ -124,12 +124,45 @@ an integer giving the id of the taxon in TaxRef (also called
     </table>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_taxa_parent</span>(<span class='kw'>id</span> <span class='kw'>=</span> <span class='fl'>443800</span>)</div><div class='output co'>#&gt; # A tibble: 21 x 61
+#&gt;        id referenceId parentId scientificName authority fullName fullNameHtml
+#&gt;     &lt;int&gt;       &lt;int&gt;    &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;       
+#&gt;  1 349525      349525       NA Biota          &lt;NA&gt;      "Biota " Biota       
+#&gt;  2 183716      183716   349525 Animalia       Linnaeus… Animali… Animalia Li…
+#&gt;  3 838319      838319   183716 Eumetazoa      Bütschli… Eumetaz… Eumetazoa B…
+#&gt;  4 838320      838320   838319 Bilateria      Haeckel,… Bilater… Bilateria H…
+#&gt;  5 838322      838322   838320 Deuterostomia  Karl Gro… Deutero… Deuterostom…
+#&gt;  6 185694      185694   838322 Chordata       Haeckel,… Chordat… Chordata Ha…
+#&gt;  7 838103      838103   185694 Craniata       Janvier,… Craniat… Craniata Ja…
+#&gt;  8 185695      185695   838103 Vertebrata     &lt;NA&gt;      "Verteb… Vertebrata  
+#&gt;  9 185703      185703   185695 Gnathostomata  &lt;NA&gt;      "Gnatho… Gnathostoma…
+#&gt; 10 838092      838092   185703 Euteleostomi   &lt;NA&gt;      "Eutele… Euteleostomi
+#&gt; # … with 11 more rows, and 54 more variables: rankId &lt;chr&gt;, rankName &lt;chr&gt;,
+#&gt; #   referenceName &lt;chr&gt;, referenceNameHtml &lt;chr&gt;, frenchVernacularName &lt;chr&gt;,
+#&gt; #   englishVernacularName &lt;chr&gt;, genusName &lt;chr&gt;, familyName &lt;chr&gt;,
+#&gt; #   orderName &lt;chr&gt;, className &lt;chr&gt;, phylumName &lt;chr&gt;, kingdomName &lt;chr&gt;,
+#&gt; #   vernacularGenusName &lt;lgl&gt;, vernacularFamilyName &lt;chr&gt;,
+#&gt; #   vernacularOrderName &lt;lgl&gt;, vernacularClassName &lt;chr&gt;,
+#&gt; #   vernacularPhylumName &lt;chr&gt;, vernacularKingdomName &lt;chr&gt;,
+#&gt; #   vernacularGroup1 &lt;chr&gt;, vernacularGroup2 &lt;chr&gt;, habitat &lt;chr&gt;, fr &lt;chr&gt;,
+#&gt; #   gf &lt;chr&gt;, mar &lt;chr&gt;, gua &lt;chr&gt;, sm &lt;chr&gt;, sb &lt;chr&gt;, spm &lt;chr&gt;, may &lt;chr&gt;,
+#&gt; #   epa &lt;chr&gt;, reu &lt;chr&gt;, sa &lt;chr&gt;, ta &lt;chr&gt;, nc &lt;chr&gt;, wf &lt;chr&gt;, pf &lt;chr&gt;,
+#&gt; #   cli &lt;chr&gt;, taxrefVersion &lt;lgl&gt;, self.href &lt;chr&gt;, reference.href &lt;chr&gt;,
+#&gt; #   classification.href &lt;chr&gt;, synonyms.href &lt;chr&gt;, children.href &lt;chr&gt;,
+#&gt; #   vernacularNames.href &lt;chr&gt;, media.href &lt;chr&gt;, status.href &lt;chr&gt;,
+#&gt; #   interactions.href &lt;chr&gt;, taxrefHistory.href &lt;chr&gt;, externalIds.href &lt;chr&gt;,
+#&gt; #   taxonomicRank.href &lt;chr&gt;, taxrefUri.href &lt;chr&gt;, inpnWebpage.href &lt;chr&gt;,
+#&gt; #   parent.href &lt;chr&gt;, habitat.href &lt;chr&gt;</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-                </ul>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

@@ -138,6 +138,28 @@ The number of lines returned per page (maximum = 50000)</p></td>
     <div class='dont-index'><p>the list of status types <code><a href='rt_status_type.html'>rt_status_type()</a></code></p></div>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='co'># Find all taxa concerned by Habitat Directive referenced in TaxRef</span>
+<span class='fu'>rt_status_find_type</span>(<span class='st'>"DH"</span>)</div><div class='output co'>#&gt; # A tibble: 837 x 20
+#&gt;        id scientificName fullNameHtml referenceId parentId referenceNameHt…
+#&gt;     &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;              &lt;int&gt;    &lt;int&gt; &lt;chr&gt;           
+#&gt;  1 717038 Abies nebrode… &lt;i&gt;Abies ne…      717038   188665 &lt;i&gt;Abies nebrod…
+#&gt;  2 717038 Abies nebrode… &lt;i&gt;Abies ne…      717038   188665 &lt;i&gt;Abies nebrod…
+#&gt;  3 347916 Acipenser oxy… &lt;i&gt;Acipense…      347916   188758 &lt;i&gt;Acipenser ox…
+#&gt;  4  66775 Acipenser stu… &lt;i&gt;Acipense…       66775   188758 &lt;i&gt;Acipenser st…
+#&gt;  5  66775 Acipenser stu… &lt;i&gt;Acipense…       66775   188758 &lt;i&gt;Acipenser st…
+#&gt;  6 610608 Acis nicaeens… &lt;i&gt;Acis nic…      610608   606844 &lt;i&gt;Acis nicaeen…
+#&gt;  7 610608 Acis nicaeens… &lt;i&gt;Acis nic…      610608   606844 &lt;i&gt;Acis nicaeen…
+#&gt;  8 130784 Aconitum nape… &lt;i&gt;Aconitum…      130784    80037 &lt;i&gt;Aconitum nap…
+#&gt;  9 130784 Aconitum nape… &lt;i&gt;Aconitum…      130784    80037 &lt;i&gt;Aconitum nap…
+#&gt; 10 159446 Actias isabel… &lt;i&gt;Actias i…      159446   188791 &lt;i&gt;Actias isabe…
+#&gt; # … with 827 more rows, and 14 more variables: href &lt;chr&gt;,
+#&gt; #   statusTypeName &lt;chr&gt;, statusTypeGroup &lt;chr&gt;, statusCode &lt;chr&gt;,
+#&gt; #   statusName &lt;chr&gt;, statusRemarks &lt;chr&gt;, locationName &lt;chr&gt;,
+#&gt; #   locationAdminLevel &lt;chr&gt;, source &lt;chr&gt;, requestedLocationId &lt;lgl&gt;,
+#&gt; #   listedName &lt;lgl&gt;, statusType.href &lt;chr&gt;, location.href &lt;chr&gt;,
+#&gt; #   bibliographicResource.href &lt;chr&gt;</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
@@ -145,7 +167,9 @@ The number of lines returned per page (maximum = 50000)</p></td>
       <li><a href="#arguments">Arguments</a></li>
       
       <li><a href="#see-also">See also</a></li>
-          </ul>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

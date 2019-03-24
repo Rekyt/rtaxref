@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrieve a source use in TaxRef — rt_source_uses_id • rtaxref</title>
+<title>Retrieve Synonyms associated with a Taxon — rt_taxa_synonyms • rtaxref</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Retrieve a source use in TaxRef — rt_source_uses_id" />
+<meta property="og:title" content="Retrieve Synonyms associated with a Taxon — rt_taxa_synonyms" />
 
-<meta property="og:description" content="Retrieve a source use in TaxRef" />
+<meta property="og:description" content="Retrieve Synonyms associated with a Taxon" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,36 +99,56 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrieve a source use in TaxRef</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_source_uses.R'><code>R/rt_source_uses.R</code></a></small>
-    <div class="hidden name"><code>rt_source_uses_id.Rd</code></div>
+    <h1>Retrieve Synonyms associated with a Taxon</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_taxa_synonyms.R'><code>R/rt_taxa_synonyms.R</code></a></small>
+    <div class="hidden name"><code>rt_taxa_synonyms.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Retrieve a source use in TaxRef</p>
+    <p>Retrieve Synonyms associated with a Taxon</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rt_source_uses_id</span>(<span class='no'>usage_id</span>)</pre>
+    <pre class="usage"><span class='fu'>rt_taxa_synonyms</span>(<span class='no'>id</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>usage_id</th>
-      <td><p><code><a href='https://www.rdocumentation.org/packages/base/topics/numeric'>numeric(1)</a></code><br />
-the id of a source use in TaxRef see
-<code><a href='rt_source_uses.html'>rt_source_uses()</a></code></p></td>
+      <th>id</th>
+      <td><p><code><a href='https://www.rdocumentation.org/packages/base/topics/integer'>integer(1)</a></code><br />
+an integer giving the id of the taxon in TaxRef (also called
+<code>cdNom</code>)</p></td>
     </tr>
     </table>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>rt_source_uses_id</span>(<span class='kw'>usage_id</span> <span class='kw'>=</span> <span class='fl'>11</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 2
-#&gt;      id name    
-#&gt;   &lt;int&gt; &lt;fct&gt;   
-#&gt; 1    11 Ecologie</div><div class='input'>
+    <pre class="examples"><div class='input'><span class='fu'>rt_taxa_synonyms</span>(<span class='kw'>id</span> <span class='kw'>=</span> <span class='fl'>107003</span>)</div><div class='output co'>#&gt; # A tibble: 8 x 53
+#&gt;       id referenceId parentId scientificName authority fullName fullNameHtml
+#&gt;    &lt;int&gt;       &lt;int&gt; &lt;lgl&gt;    &lt;chr&gt;          &lt;chr&gt;     &lt;chr&gt;    &lt;chr&gt;       
+#&gt; 1  92412      107003 NA       Copodium oxyn… Raf., 18… Copodiu… &lt;i&gt;Copodium…
+#&gt; 2 105694      107003 NA       Lepidotis cla… (L.) P.B… Lepidot… &lt;i&gt;Lepidoti…
+#&gt; 3 770669      107003 NA       Lycopodium ar… Willd.    Lycopod… &lt;i&gt;Lycopodi…
+#&gt; 4 772810      107003 NA       Lycopodium cl… L.        Lycopod… &lt;i&gt;Lycopodi…
+#&gt; 5 773347      107003 NA       Lycopodium cl… Vict., 1… Lycopod… &lt;i&gt;Lycopodi…
+#&gt; 6 773048      107003 NA       Lycopodium cl… Vict., 1… Lycopod… &lt;i&gt;Lycopodi…
+#&gt; 7 107017      107003 NA       Lycopodium of… Neck., 1… Lycopod… &lt;i&gt;Lycopodi…
+#&gt; 8 107025      107003 NA       Lycopodium vu… Dill.     Lycopod… &lt;i&gt;Lycopodi…
+#&gt; # … with 46 more variables: rankId &lt;chr&gt;, rankName &lt;lgl&gt;, referenceName &lt;chr&gt;,
+#&gt; #   referenceNameHtml &lt;chr&gt;, frenchVernacularName &lt;chr&gt;,
+#&gt; #   englishVernacularName &lt;chr&gt;, genusName &lt;chr&gt;, familyName &lt;chr&gt;,
+#&gt; #   orderName &lt;chr&gt;, className &lt;chr&gt;, phylumName &lt;lgl&gt;, kingdomName &lt;chr&gt;,
+#&gt; #   vernacularGenusName &lt;lgl&gt;, vernacularFamilyName &lt;lgl&gt;,
+#&gt; #   vernacularOrderName &lt;chr&gt;, vernacularClassName &lt;chr&gt;,
+#&gt; #   vernacularPhylumName &lt;lgl&gt;, vernacularKingdomName &lt;chr&gt;,
+#&gt; #   vernacularGroup1 &lt;lgl&gt;, vernacularGroup2 &lt;lgl&gt;, habitat &lt;chr&gt;, fr &lt;chr&gt;,
+#&gt; #   gf &lt;chr&gt;, mar &lt;chr&gt;, gua &lt;chr&gt;, sm &lt;chr&gt;, sb &lt;chr&gt;, spm &lt;chr&gt;, may &lt;lgl&gt;,
+#&gt; #   epa &lt;lgl&gt;, reu &lt;chr&gt;, sa &lt;lgl&gt;, ta &lt;lgl&gt;, nc &lt;chr&gt;, wf &lt;lgl&gt;, pf &lt;lgl&gt;,
+#&gt; #   cli &lt;lgl&gt;, taxrefVersion &lt;chr&gt;, self.href &lt;chr&gt;, reference.href &lt;chr&gt;,
+#&gt; #   taxrefHistory.href &lt;chr&gt;, externalIds.href &lt;chr&gt;, taxonomicRank.href &lt;chr&gt;,
+#&gt; #   habitat.href &lt;chr&gt;, taxrefUri.href &lt;chr&gt;, inpnWebpage.href &lt;chr&gt;</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
