@@ -3,8 +3,6 @@
 #' @seealso [`rt_status_find_type()`] to retrieve all information by status
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_status_type = function() {
 
   api_query = GET(rt_base_url(), path = "api/status/types/")
@@ -19,12 +17,12 @@ rt_status_type = function() {
 #'                  A character identifying the type of status (see
 #'                  [`rt_status_type()`] for a list of status types)
 #'
-#' @seealso see [`rt_status_type()`] for a list of status types
 #' @examples
 #' rt_status_type_id("DH")
-#' @export
 #'
-#' @importFrom httr GET
+#' @seealso see [`rt_status_type()`] for a list of status types
+#'
+#' @export
 rt_status_type_id = function(status_id) {
 
   api_query = rt_GET(paste0("status/types/", status_id))

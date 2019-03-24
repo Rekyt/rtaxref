@@ -14,3 +14,7 @@ the id of a source use in TaxRef see
 \description{
 Retrieve a source use in TaxRef
 }
+\examples{
+rt_source_uses_id(usage_id = 11)
+
+}

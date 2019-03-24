@@ -14,3 +14,7 @@ A biogeographic status used in TaxRef see
 \description{
 Retrieve a biogeographic status used in TaxRef
 }
+\examples{
+rt_biogeo_status_id("X")
+
+}

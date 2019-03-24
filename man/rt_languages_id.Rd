@@ -14,3 +14,8 @@ referenced in TaxRef see \code{\link[=rt_languages]{rt_languages()}}}
 \description{
 Retrieve a language used in TaxRef
 }
+\examples{
+# Retrieve the TaxRef definition in the Wayana Language
+rt_languages_id(languages_id = "way")
+
+}

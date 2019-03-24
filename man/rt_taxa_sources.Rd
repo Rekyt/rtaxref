@@ -14,6 +14,10 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve Sources Associated with a Taxon
 }
+\examples{
+rt_taxa_sources(id = 443800)
+
+}
 \seealso{
 \code{\link[=rt_source_uses]{rt_source_uses()}} for types of source use
 }

@@ -1,8 +1,6 @@
 #' Retrieve the list of external DBs referenced in TaxRef
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_external_db = function() {
 
   api_query = GET(rt_base_url(), path = "api/externalDb")
@@ -16,9 +14,10 @@ rt_external_db = function() {
 #'              The id of an external db referenced in TaxRef
 #'              [`rt_biogeo_status()`]
 #'
-#' @export
+#' @examples
+#' rt_external_db_id(db_id = "avibase")
 #'
-#' @importFrom httr GET
+#' @export
 rt_external_db_id = function(db_id) {
 
   api_query = GET(rt_base_url(), path = paste0("api/externalDb/",

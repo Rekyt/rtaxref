@@ -14,3 +14,7 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve Media (photos & others) Associated with a Taxon
 }
+\examples{
+rt_taxa_media(id = 443800)
+
+}

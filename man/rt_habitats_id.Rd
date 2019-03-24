@@ -9,7 +9,7 @@ rt_habitats_id(habitat_id)
 \arguments{
 \item{habitat_id}{{\code{character(1)}}\cr{}
 The id of a habitat referenced in TaxRef
-\code{\link[=rt_biogeo_status]{rt_biogeo_status()}} see section below}
+\code{\link[=rt_habitats]{rt_habitats()}} see section below}
 }
 \description{
 Retrieve a habitat used in TaxRef
@@ -28,3 +28,7 @@ Retrieve a habitat used in TaxRef
 }
 }
 
+\examples{
+rt_habitats_id(habitat_id = 8)
+
+}

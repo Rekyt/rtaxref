@@ -63,8 +63,11 @@
 #'             The page number returned
 #' @param size {`integer(1)`; default = `50000`}\cr{}
 #'             The number of lines returned per page (maximum = 50000)
+#'
+#' @examples
+#' rt_taxa_search(sciname = "Bradypus")
+#'
 #' @export
-#' @importFrom httr GET
 rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
                           rank = NULL, territories = NULL, domain = NULL,
                           habitats = NULL, vernacular = NULL, page = 1,

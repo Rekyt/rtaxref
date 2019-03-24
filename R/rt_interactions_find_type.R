@@ -5,11 +5,11 @@
 #'                  the list of status types)
 #' @inheritParams rt_taxa_search
 #'
+#' @examples
+#' rt_interactions_find_type(interaction_id = "GALLES")
 #'
 #' @seealso the list of status types [`rt_interactions_type()`]
 #' @export
-#'
-#' @importFrom httr GET
 rt_interactions_find_type = function(interaction_id = NULL, page = 1,
                                      size = 2000) {
 
@@ -17,5 +17,5 @@ rt_interactions_find_type = function(interaction_id = NULL, page = 1,
                      query = list(page = page,
                                   size = size))
 
-  parse_taxa(api_query)
+  parse_taxa(api_query, FALSE)
 }

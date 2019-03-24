@@ -13,3 +13,11 @@ A (partial) citation}
 \description{
 Search a source from a citation by fuzzy matchin
 }
+\examples{
+rt_sources_match(
+    paste0("Chapman, T. A. 1909. Callophrys avis a new butterfly on ",
+           "southern France. The Entomologist's record and journal of ",
+           "variation, 21: 130-131.")
+)
+
+}

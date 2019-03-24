@@ -14,3 +14,7 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve a taxon children
 }
+\examples{
+rt_taxa_children(id = 442585)
+
+}

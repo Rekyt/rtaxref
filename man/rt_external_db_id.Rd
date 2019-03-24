@@ -14,3 +14,7 @@ The id of an external db referenced in TaxRef
 \description{
 Retrieve an external database referenced in TaxRef
 }
+\examples{
+rt_external_db_id(db_id = "avibase")
+
+}

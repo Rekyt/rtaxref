@@ -29,3 +29,8 @@ The number of lines returned per page (maximum = 50000)}
 \description{
 Search Interactions based on a list of criteria
 }
+\examples{
+# Interactors with 'Ophrys apifera' (id = 110335)
+rt_interactions_search(id = 110335)
+
+}

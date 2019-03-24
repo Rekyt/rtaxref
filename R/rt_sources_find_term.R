@@ -3,9 +3,10 @@
 #' @param term {`character(1)`}\cr{}
 #'             A term contained in the source
 #'
-#' @export
+#' @examples
+#' rt_sources_find_term(term = "Ophrys")
 #'
-#' @importFrom httr GET
+#' @export
 rt_sources_find_term = function(term = NULL) {
 
   if (term == "" | is.null(term)) stop("term needs to be not empty")

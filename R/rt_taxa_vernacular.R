@@ -2,6 +2,10 @@
 #'
 #' @inheritParams rt_taxa_id
 #'
+#' @examples
+#' rt_taxa_vernacular(id = 443800)
+#'
+#' @seealso [`rt_languages()`] for a list of languages referenced in TaxRef
 #' @export
 rt_taxa_vernacular = function(id) {
   api_query = rt_GET(paste0("taxa/", id, "/vernacularNames"))

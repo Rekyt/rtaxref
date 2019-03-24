@@ -12,8 +12,6 @@
 #' * `8` = Continental (terrestrial and freshwater)
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_habitats = function() {
 
   api_query = rt_GET("habitats")
@@ -25,14 +23,15 @@ rt_habitats = function() {
 #'
 #' @param habitat_id {`character(1)`}\cr{}
 #'              The id of a habitat referenced in TaxRef
-#'              [`rt_biogeo_status()`] see section below
+#'              [`rt_habitats()`] see section below
 #'
 #'
 #' @inheritSection rt_habitats Habitats
 #'
-#' @export
+#' @examples
+#' rt_habitats_id(habitat_id = 8)
 #'
-#' @importFrom httr GET
+#' @export
 rt_habitats_id = function(habitat_id) {
 
   api_query = rt_GET(paste0("habitats/", tolower(habitat_id)))

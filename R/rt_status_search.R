@@ -10,9 +10,13 @@
 #'                    a longitude value
 #' @inheritParams rt_taxa_search
 #'
-#' @export
+#' @examples
+#' \dontrun{
+#' #' rt_status_search(id = 443800, detail = FALSE)
+#' rt_status_search(id = 443800, detail = TRUE)
+#' }
 #'
-#' @importFrom httr GET
+#' @export
 rt_status_search = function(id = NULL, opgroup_id = NULL, location_id = NULL,
                             latitude = NULL, longitude = NULL, page = 1,
                             size = 2000, detail = FALSE) {

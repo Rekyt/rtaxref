@@ -14,3 +14,10 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve VernacularNames associated with a Taxon
 }
+\examples{
+rt_taxa_vernacular(id = 443800)
+
+}
+\seealso{
+\code{\link[=rt_languages]{rt_languages()}} for a list of languages referenced in TaxRef
+}

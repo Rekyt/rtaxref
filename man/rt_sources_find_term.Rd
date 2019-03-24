@@ -13,3 +13,7 @@ A term contained in the source}
 \description{
 Search a source from a term
 }
+\examples{
+rt_sources_find_term(term = "Ophrys")
+
+}

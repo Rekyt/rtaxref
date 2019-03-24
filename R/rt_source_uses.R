@@ -5,8 +5,6 @@
 #' usages for a source.
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_source_uses = function() {
 
   api_query = rt_GET("sourceUses")
@@ -20,9 +18,10 @@ rt_source_uses = function() {
 #'                 the id of a source use in TaxRef see
 #'                 [`rt_source_uses()`]
 #'
-#' @export
+#' @examples
+#' rt_source_uses_id(usage_id = 11)
 #'
-#' @importFrom httr GET
+#' @export
 rt_source_uses_id = function(usage_id) {
 
   api_query = rt_GET(paste0("sourceUses/", usage_id))

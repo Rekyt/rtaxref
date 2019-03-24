@@ -18,3 +18,8 @@ a compact table?}
 \description{
 Retrieve Taxon Conservation Status
 }
+\examples{
+rt_taxa_status(id = 443800, detail = FALSE)
+rt_taxa_status(id = 443800, detail = TRUE)
+
+}

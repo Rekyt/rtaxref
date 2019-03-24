@@ -5,8 +5,6 @@
 #'                without the author name
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_taxa_fuzzymatch = function(sciname) {
 
   api_query = rt_GET("taxa/fuzzymatch",

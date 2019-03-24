@@ -1,8 +1,6 @@
 #' Retrieve the list of languages used in TaxRef
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_languages = function() {
 
   api_query = rt_GET("langages")
@@ -16,9 +14,11 @@ rt_languages = function() {
 #'                    three-letter lowercase code that is the id of a language
 #'                    referenced in TaxRef see [`rt_languages()`]
 #'
-#' @export
+#' @examples
+#' # Retrieve the TaxRef definition in the Wayana Language
+#' rt_languages_id(languages_id = "way")
 #'
-#' @importFrom httr GET
+#' @export
 rt_languages_id = function(languages_id) {
 
   api_query = rt_GET(paste0("langages/", tolower(languages_id)))

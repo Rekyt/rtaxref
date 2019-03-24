@@ -14,3 +14,7 @@ the id of a TaxRef version
 \description{
 Retrieve information about a TaxRef version
 }
+\examples{
+rt_taxref_versions_id(version_id = 12)
+
+}

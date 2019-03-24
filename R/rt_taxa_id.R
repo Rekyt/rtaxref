@@ -4,6 +4,9 @@
 #'           an integer giving the id of the taxon in TaxRef (also called
 #'           `cdNom`)
 #'
+#' @examples
+#' rt_taxa_id(id = 443800)
+#' rt_taxa_id(id = 110335)
 #' @export
 rt_taxa_id = function(id) {
 

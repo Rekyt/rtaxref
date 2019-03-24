@@ -71,3 +71,9 @@ The number of lines returned per page (maximum = 50000)}
 \description{
 Retrieve Synonyms associated with a Taxon
 }
+\examples{
+\dontrun{
+rt_taxa_autocomplete(term = "Bradypus")
+}
+
+}

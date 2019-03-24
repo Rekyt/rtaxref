@@ -3,6 +3,11 @@
 #' @param term the beginning of the scientific name of the taxon
 #' @inheritParams rt_taxa_search
 #'
+#' @examples
+#' \dontrun{
+#' rt_taxa_autocomplete(term = "Bradypus")
+#' }
+#'
 #' @export
 rt_taxa_autocomplete = function(term = NULL, territories = NULL, rank = NULL,
                                 domain = NULL, page = 1, size = 200) {

@@ -1,8 +1,6 @@
 #' Retrieve the list of existing TaxRef versions
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_taxref_versions = function() {
 
   api_query = rt_GET("taxrefVersions")
@@ -16,9 +14,10 @@ rt_taxref_versions = function() {
 #'                   the id of a TaxRef version
 #'                   [`rt_taxref_versions()`]
 #'
-#' @export
+#' @examples
+#' rt_taxref_versions_id(version_id = 12)
 #'
-#' @importFrom httr GET
+#' @export
 rt_taxref_versions_id = function(version_id) {
 
   api_query = rt_GET(paste0("taxrefVersions/", version_id))

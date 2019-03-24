@@ -14,3 +14,7 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve classification above the taxon
 }
+\examples{
+rt_taxa_parent(id = 443800)
+
+}

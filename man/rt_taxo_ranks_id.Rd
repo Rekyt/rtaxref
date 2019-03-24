@@ -14,3 +14,7 @@ the id of a taxonomic rank in TaxRef see
 \description{
 Retrieve a taxonomic rank used in TaxRef
 }
+\examples{
+rt_taxo_ranks_id(taxo_id = "VAR")
+
+}

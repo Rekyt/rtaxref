@@ -3,9 +3,14 @@
 #' @param citation {`character(1)`}\cr{}
 #'                 A (partial) citation
 #'
-#' @export
+#' @examples
+#' rt_sources_match(
+#'     paste0("Chapman, T. A. 1909. Callophrys avis a new butterfly on ",
+#'            "southern France. The Entomologist's record and journal of ",
+#'            "variation, 21: 130-131.")
+#' )
 #'
-#' @importFrom httr GET
+#' @export
 rt_sources_match = function(citation = NULL) {
 
   if (citation == "" | is.null(citation)) stop("citation needs to be not empty")

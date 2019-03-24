@@ -5,9 +5,11 @@
 #' @inheritParams rt_operational_groups_id
 #' @inheritParams rt_taxa_search
 #'
-#' @export
+#' @examples
+#' # Interactors with 'Ophrys apifera' (id = 110335)
+#' rt_interactions_search(id = 110335)
 #'
-#' @importFrom httr GET
+#' @export
 rt_interactions_search = function(id = NULL, interaction_id = NULL,
                                   opgroup_id = NULL, page = 1, size = 2000) {
 
@@ -18,5 +20,5 @@ rt_interactions_search = function(id = NULL, interaction_id = NULL,
                                   page               = page,
                                   size               = size))
 
-  parse_taxa(api_query)
+  parse_taxa(api_query, FALSE)
 }

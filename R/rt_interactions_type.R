@@ -4,8 +4,6 @@
 #'          interactions
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_interactions_type = function() {
 
   api_query = GET(rt_base_url(), path = "api/interactions/types/")
@@ -20,12 +18,12 @@ rt_interactions_type = function() {
 #'                  A character identifying the type of interactions (see
 #'                  [`rt_interactions_type()`] for a list of interactions types)
 #'
-#' @seealso see [`rt_interactions_type()`] for a list of interactions types
 #' @examples
 #' rt_interactions_type_id("PREDATEUR")
-#' @export
 #'
-#' @importFrom httr GET
+#' @seealso see [`rt_interactions_type()`] for a list of interactions types
+#'
+#' @export
 rt_interactions_type_id = function(interaction_id) {
 
   api_query = rt_GET(paste0("interactions/types/", interaction_id))

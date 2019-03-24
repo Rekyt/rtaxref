@@ -5,6 +5,10 @@
 #'               Should the table be a long table detailing all the statuses or
 #'               a compact table?
 #'
+#' @examples
+#' rt_taxa_status(id = 443800, detail = FALSE)
+#' rt_taxa_status(id = 443800, detail = TRUE)
+#'
 #' @export
 rt_taxa_status = function(id, detail = FALSE) {
 

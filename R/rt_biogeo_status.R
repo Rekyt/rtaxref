@@ -1,8 +1,6 @@
 #' Retrieve the list of biogeographic statuses used in TaxRef
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_biogeo_status = function() {
 
   api_query = rt_GET("biogeographicStatus")
@@ -16,9 +14,10 @@ rt_biogeo_status = function() {
 #'                  A biogeographic status used in TaxRef see
 #'                  [`rt_biogeo_status()`]
 #'
-#' @export
+#' @examples
+#' rt_biogeo_status_id("X")
 #'
-#' @importFrom httr GET
+#' @export
 rt_biogeo_status_id = function(biogeo_id) {
 
   api_query = rt_GET(paste0("biogeographicStatus/", biogeo_id))

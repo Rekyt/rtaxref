@@ -14,3 +14,7 @@ the id of an operational group referenced in TaxRef see
 \description{
 Retrieve an operational group used in TaxRef
 }
+\examples{
+rt_operational_groups_id(opgroup_id = 963)
+
+}

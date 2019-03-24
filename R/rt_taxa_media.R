@@ -2,6 +2,9 @@
 #'
 #' @inheritParams rt_taxa_id
 #'
+#' @examples
+#' rt_taxa_media(id = 443800)
+#'
 #' @export
 rt_taxa_media = function(id) {
   api_query = rt_GET(paste0("taxa/", id, "/media"))

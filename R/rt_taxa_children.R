@@ -2,6 +2,9 @@
 #'
 #' @inheritParams rt_taxa_id
 #'
+#' @examples
+#' rt_taxa_children(id = 442585)
+#'
 #' @export
 rt_taxa_children = function(id) {
 

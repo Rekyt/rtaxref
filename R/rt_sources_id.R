@@ -10,7 +10,7 @@
 #' rt_sources_id(source_id = 160688, bibtex = TRUE)
 #'
 #' @export
-#' @importFrom httr GET content
+#' @importFrom httr content
 rt_sources_id = function(source_id, bibtex = FALSE) {
 
   bib = ""

@@ -20,6 +20,9 @@ The number of lines returned per page (maximum = 50000)}
 \description{
 Retrieve the interactions of all Taxa in an Operational Group
 }
+\examples{
+rt_interactions_opgroup(opgroup_id = 706)
+}
 \seealso{
 the list of operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}}
 }

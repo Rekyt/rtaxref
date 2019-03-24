@@ -14,3 +14,7 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve history of a taxon through TaxRef versions
 }
+\examples{
+rt_taxa_taxrefhistory(id = 443800)
+
+}

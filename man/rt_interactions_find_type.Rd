@@ -21,6 +21,10 @@ The number of lines returned per page (maximum = 50000)}
 \description{
 Retrieve the status of all Taxa according to a Status Type
 }
+\examples{
+rt_interactions_find_type(interaction_id = "GALLES")
+
+}
 \seealso{
 the list of status types \code{\link[=rt_interactions_type]{rt_interactions_type()}}
 }

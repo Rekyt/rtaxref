@@ -93,3 +93,7 @@ The number of lines returned per page (maximum = 50000)}
 \description{
 Search fo a taxon information
 }
+\examples{
+rt_taxa_search(sciname = "Bradypus")
+
+}

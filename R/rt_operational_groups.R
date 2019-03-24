@@ -4,8 +4,6 @@
 #' used across TaxRef in French
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_operational_groups = function() {
 
   api_query = rt_GET("operationalGroups")
@@ -19,9 +17,10 @@ rt_operational_groups = function() {
 #'                    the id of an operational group referenced in TaxRef see
 #'                    [`rt_operational_groups()`]
 #'
-#' @export
+#' @examples
+#' rt_operational_groups_id(opgroup_id = 963)
 #'
-#' @importFrom httr GET
+#' @export
 rt_operational_groups_id = function(opgroup_id) {
 
   api_query = rt_GET(paste0("operationalGroups/", opgroup_id))

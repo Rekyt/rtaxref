@@ -16,6 +16,7 @@ Retrieve a Status Types based on its id
 }
 \examples{
 rt_status_type_id("DH")
+
 }
 \seealso{
 see \code{\link[=rt_status_type]{rt_status_type()}} for a list of status types

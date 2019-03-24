@@ -1,8 +1,6 @@
 #' Retrieve the list of taxonomic ranks in TaxRef
 #'
 #' @export
-#'
-#' @importFrom httr GET
 rt_taxo_ranks = function() {
 
   api_query = rt_GET("taxonomicRanks")
@@ -16,9 +14,10 @@ rt_taxo_ranks = function() {
 #'                the id of a taxonomic rank in TaxRef see
 #'                [`rt_taxo_ranks()`]
 #'
-#' @export
+#' @examples
+#' rt_taxo_ranks_id(taxo_id = "VAR")
 #'
-#' @importFrom httr GET
+#' @export
 rt_taxo_ranks_id = function(taxo_id) {
 
   api_query = rt_GET(paste0("taxonomicRanks/", taxo_id))

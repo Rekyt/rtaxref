@@ -14,3 +14,7 @@ an integer giving the id of the taxon in TaxRef (also called
 \description{
 Retrieve Interactions of taxon with other taxa
 }
+\examples{
+rt_taxa_interactions(id = 110335)
+
+}
