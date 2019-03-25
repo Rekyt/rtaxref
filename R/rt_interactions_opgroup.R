@@ -9,7 +9,7 @@
 #' @export
 rt_interactions_opgroup = function(opgroup_id, page = 1, size = 2000) {
 
-  api_query = rt_GET(paste0("interactions/findByOperationalGroup/", opgroup_id),
+  api_query = rt_GET("interactions/findByOperationalGroup/", opgroup_id,
                      query = list(page = page,
                                   size = size))
 

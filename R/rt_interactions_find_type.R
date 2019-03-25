@@ -13,7 +13,7 @@
 rt_interactions_find_type = function(interaction_id = NULL, page = 1,
                                      size = 2000) {
 
-  api_query = rt_GET(paste0("interactions/findByType/", interaction_id),
+  api_query = rt_GET("interactions/findByType/", interaction_id,
                      query = list(page = page,
                                   size = size))
 

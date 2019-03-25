@@ -25,7 +25,7 @@ rt_status_search = function(id = NULL, opgroup_id = NULL, location_id = NULL,
 
   if (detail) status_type = "lines"
 
-  api_query = rt_GET(paste0("/status/search/", status_type),
+  api_query = rt_GET("/status/search/", status_type,
                      query = list(taxrefId           = id,
                                   operationalGroupId = opgroup_id,
                                   locationId         = location_id,

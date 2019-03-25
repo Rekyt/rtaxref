@@ -21,7 +21,7 @@ rt_languages = function() {
 #' @export
 rt_languages_id = function(languages_id) {
 
-  api_query = rt_GET(paste0("langages/", tolower(languages_id)))
+  api_query = rt_GET("langages/", tolower(languages_id))
 
   parse_taxa(api_query)
 }

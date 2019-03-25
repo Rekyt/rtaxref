@@ -3,7 +3,7 @@
 #' @export
 rt_external_db = function() {
 
-  api_query = GET(rt_base_url(), path = "api/externalDb")
+  api_query = rt_GET("externalDb")
 
   parse_taxa(api_query)
 }
@@ -20,8 +20,7 @@ rt_external_db = function() {
 #' @export
 rt_external_db_id = function(db_id) {
 
-  api_query = GET(rt_base_url(), path = paste0("api/externalDb/",
-                                               tolower(db_id)))
+  api_query = rt_GET("externalDb/", tolower(db_id))
 
   parse_taxa(api_query)
 }

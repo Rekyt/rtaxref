@@ -24,7 +24,7 @@ rt_source_uses = function() {
 #' @export
 rt_source_uses_id = function(usage_id) {
 
-  api_query = rt_GET(paste0("sourceUses/", usage_id))
+  api_query = rt_GET("sourceUses/", usage_id)
 
   parse_taxa(api_query)
 }

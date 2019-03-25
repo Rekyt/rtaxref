@@ -8,7 +8,7 @@
 #' @seealso [`rt_languages()`] for a list of languages referenced in TaxRef
 #' @export
 rt_taxa_vernacular = function(id) {
-  api_query = rt_GET(paste0("taxa/", id, "/vernacularNames"))
+  api_query = rt_GET("taxa/", id, "/vernacularNames")
 
   parse_taxa(api_query)
 }

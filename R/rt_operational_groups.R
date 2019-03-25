@@ -23,7 +23,7 @@ rt_operational_groups = function() {
 #' @export
 rt_operational_groups_id = function(opgroup_id) {
 
-  api_query = rt_GET(paste0("operationalGroups/", opgroup_id))
+  api_query = rt_GET("operationalGroups/", opgroup_id)
 
   parse_taxa(api_query)
 }

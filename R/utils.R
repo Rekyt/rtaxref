@@ -3,8 +3,8 @@ rt_base_url = function() {
 }
 
 #' @importFrom httr GET
-rt_GET = function(endpoint, ...) {
-  GET(rt_base_url(), path = paste0("api/", endpoint), ...)
+rt_GET = function(..., query = NULL) {
+  GET(rt_base_url(), path = paste0("api/", ...), query = query)
 }
 
 #' @importFrom httr content http_error status_code

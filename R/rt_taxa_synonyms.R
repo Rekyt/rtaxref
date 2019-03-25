@@ -7,7 +7,7 @@
 #'
 #' @export
 rt_taxa_synonyms = function(id) {
-  api_query = rt_GET(paste0("taxa/", id, "/synonyms"))
+  api_query = rt_GET("taxa/", id, "/synonyms")
 
   parse_taxa(api_query)
 }

@@ -14,6 +14,7 @@ A term contained in the source}
 Search a source from a term
 }
 \examples{
+\dontrun{
 rt_sources_find_term(term = "Ophrys")
-
+}
 }

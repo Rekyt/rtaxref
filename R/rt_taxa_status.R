@@ -6,9 +6,10 @@
 #'               a compact table?
 #'
 #' @examples
+#' \dontrun{
 #' rt_taxa_status(id = 443800, detail = FALSE)
 #' rt_taxa_status(id = 443800, detail = TRUE)
-#'
+#' }
 #' @export
 rt_taxa_status = function(id, detail = FALSE) {
 
@@ -16,7 +17,7 @@ rt_taxa_status = function(id, detail = FALSE) {
 
   if (detail) status_type = "lines"
 
-  api_query = rt_GET(paste0("taxa/", id, "/status/", status_type))
+  api_query = rt_GET("taxa/", id, "/status/", status_type)
 
   parse_taxa(api_query)
 }

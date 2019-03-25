@@ -6,7 +6,7 @@
 #' @export
 rt_interactions_type = function() {
 
-  api_query = GET(rt_base_url(), path = "api/interactions/types/")
+  api_query = rt_GET("interactions/types/")
 
   parse_taxa(api_query)
 }
@@ -26,7 +26,7 @@ rt_interactions_type = function() {
 #' @export
 rt_interactions_type_id = function(interaction_id) {
 
-  api_query = rt_GET(paste0("interactions/types/", interaction_id))
+  api_query = rt_GET("interactions/types/", interaction_id)
 
   parse_taxa(api_query)
 }

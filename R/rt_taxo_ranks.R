@@ -20,7 +20,7 @@ rt_taxo_ranks = function() {
 #' @export
 rt_taxo_ranks_id = function(taxo_id) {
 
-  api_query = rt_GET(paste0("taxonomicRanks/", taxo_id))
+  api_query = rt_GET("taxonomicRanks/", taxo_id)
 
   parse_taxa(api_query)
 }

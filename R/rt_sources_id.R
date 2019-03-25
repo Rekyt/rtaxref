@@ -17,7 +17,7 @@ rt_sources_id = function(source_id, bibtex = FALSE) {
 
   if (bibtex) bib = "/transform/application/x-bibtex"
 
-  api_query = rt_GET(paste0("sources/", source_id, bib))
+  api_query = rt_GET("sources/", source_id, bib)
 
   if (!bibtex) {
     parse_taxa(api_query)

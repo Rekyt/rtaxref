@@ -10,7 +10,7 @@
 #' @export
 rt_taxa_id = function(id) {
 
-  api_query = rt_GET(paste0("taxa/", id))
+  api_query = rt_GET("taxa/", id)
 
   parse_taxa(api_query)
 }

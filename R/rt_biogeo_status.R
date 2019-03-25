@@ -20,7 +20,7 @@ rt_biogeo_status = function() {
 #' @export
 rt_biogeo_status_id = function(biogeo_id) {
 
-  api_query = rt_GET(paste0("biogeographicStatus/", biogeo_id))
+  api_query = rt_GET("biogeographicStatus/", biogeo_id)
 
   parse_taxa(api_query)
 }

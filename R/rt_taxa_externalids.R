@@ -7,7 +7,7 @@
 #'
 #' @export
 rt_taxa_externalids = function(id) {
-  api_query = rt_GET(paste0("taxa/", id, "/externalIds"))
+  api_query = rt_GET("taxa/", id, "/externalIds")
 
   parse_taxa(api_query)
 }
