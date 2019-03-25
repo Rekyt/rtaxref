@@ -1,0 +1,20 @@
+year <- sub("-.*", "", meta$Date)
+note <- sprintf("R package version %s", meta$Version)
+
+bibentry(bibtype = "Manual",
+         title = "{rtaxref}: An {R} Client for {TaxRef} the French Taxonomical Reference {API}",
+         author = c(person("Matthias", "Grenié"),
+                    person("Hugo", "Gruson")),
+         year = year,
+         note = note,
+         header = "To cite this package in publications, please use:",
+         url = "https://github.com/Rekyt/rtaxref")
+
+data_year <- format(Sys.Date(), "%Y")
+
+bibentry(bibtype = "misc",
+         header = "Please also cite the data provider:",
+         author = c(person("TaxRef")),
+         url = "https://taxref.mnhn.fr/taxref-web/accueil",
+         year = data_year,
+         note = "Data released under the Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) license")
