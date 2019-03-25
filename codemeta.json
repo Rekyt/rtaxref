@@ -1,0 +1,132 @@
+{
+  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@type": "SoftwareSourceCode",
+  "identifier": "rtaxref",
+  "description": "Provides an R client to the TaxRef API\n  <https://taxref.mnhn.fr/taxref-web/api/doc>, the French Taxonomical Reference\n  Database which indexes names of species with unique identifiers as well as\n  conservation statuses, biological interactions and taxonomic relationships.",
+  "name": "rtaxref: An R client for TaxRef the French Taxonomical Database",
+  "codeRepository": "https://github.com/Rekyt/rtaxref",
+  "issueTracker": "https://github.com/Rekyt/rtaxref/issues",
+  "license": "https://spdx.org/licenses/GPL-3.0",
+  "version": "0.1.0",
+  "programmingLanguage": {
+    "@type": "ComputerLanguage",
+    "name": "R",
+    "version": "3.5.2",
+    "url": "https://r-project.org"
+  },
+  "runtimePlatform": "R version 3.5.2 (2018-12-20)",
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Matthias",
+      "familyName": "Grenié",
+      "email": "matthias.grenie@gmail.com",
+      "@id": "https://orcid.org/0000-0002-4659-7522"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Hugo",
+      "familyName": "Gruson",
+      "@id": "https://orcid.org/0000-0002-4094-1476"
+    }
+  ],
+  "contributor": {},
+  "copyrightHolder": {},
+  "funder": {},
+  "maintainer": [
+    {
+      "@type": "Person",
+      "givenName": "Matthias",
+      "familyName": "Grenié",
+      "email": "matthias.grenie@gmail.com",
+      "@id": "https://orcid.org/0000-0002-4659-7522"
+    }
+  ],
+  "softwareSuggestions": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "testthat",
+      "name": "testthat",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=testthat"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "knitr",
+      "name": "knitr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=knitr"
+    }
+  ],
+  "softwareRequirements": [
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "httr",
+      "name": "httr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=httr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "tibble",
+      "name": "tibble",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=tibble"
+    }
+  ],
+  "readme": "https://github.com/Rekyt/rtaxref/blob/master/README.md",
+  "fileSize": "159.712KB",
+  "contIntegration": ["https://travis-ci.org/Rekyt/rtaxref", "https://codecov.io/gh/Rekyt/rtaxref"],
+  "developmentStatus": "https://www.repostatus.org/#active",
+  "citation": [
+    {
+      "@type": "SoftwareSourceCode",
+      "author": [
+        {
+          "@type": "Person",
+          "givenName": "Matthias",
+          "familyName": "Grenié"
+        },
+        {
+          "@type": "Person",
+          "givenName": "Hugo",
+          "familyName": "Gruson"
+        }
+      ],
+      "name": "{rtaxref}: An {R} Client for {TaxRef} the French Taxonomical Reference {API}",
+      "url": "https://github.com/Rekyt/rtaxref"
+    },
+    {
+      "@type": "CreativeWork",
+      "datePublished": "2019",
+      "author": [
+        {
+          "@type": "Organization",
+          "name": "TaxRef"
+        }
+      ],
+      "url": "https://taxref.mnhn.fr/taxref-web/accueil",
+      "description": "Data released under the Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) license"
+    }
+  ]
+}
