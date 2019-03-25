@@ -1,5 +1,8 @@
 {
-  "@context": ["https://doi.org/10.5063/schema/codemeta-2.0", "http://schema.org"],
+  "@context": [
+    "https://doi.org/10.5063/schema/codemeta-2.0",
+    "http://schema.org"
+  ],
   "@type": "SoftwareSourceCode",
   "identifier": "rtaxref",
   "description": "Provides an R client to the TaxRef API\n  <https://taxref.mnhn.fr/taxref-web/api/doc>, the French Taxonomical Reference\n  Database which indexes names of species with unique identifiers as well as\n  conservation statuses, biological interactions and taxonomic relationships.",
@@ -66,6 +69,18 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=knitr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "vcr",
+      "name": "vcr",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=vcr"
     }
   ],
   "softwareRequirements": [
@@ -95,8 +110,11 @@
     }
   ],
   "readme": "https://github.com/Rekyt/rtaxref/blob/master/README.md",
-  "fileSize": "159.712KB",
-  "contIntegration": ["https://travis-ci.org/Rekyt/rtaxref", "https://codecov.io/gh/Rekyt/rtaxref"],
+  "fileSize": "168.807KB",
+  "contIntegration": [
+    "https://travis-ci.org/Rekyt/rtaxref",
+    "https://codecov.io/gh/Rekyt/rtaxref"
+  ],
   "developmentStatus": "https://www.repostatus.org/#active",
   "citation": [
     {

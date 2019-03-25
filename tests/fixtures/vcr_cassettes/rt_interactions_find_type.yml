@@ -1,0 +1,131 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/findByType/PREDATEUR?page=1&size=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Mon, 25 Mar 2019 17:47:36 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactions":[{"taxon":{"id":10362,"scientificName":null,"fullNameHtml":"<i>Ablattaria
+        laevigata</i> (Fabricius, 1775)","referenceId":10362,"parentId":null,"referenceNameHtml":"<i>Ablattaria
+        laevigata</i> (Fabricius, 1775)"},"relationId":"PREDATEUR","relationName":"est
+        un prédateur de","specificity":"régulière","inherited":false,"target":{"id":64233,"scientificName":null,"fullNameHtml":"<i>Theba
+        pisana</i> (O.F. Müller, 1774)","referenceId":64233,"parentId":null,"referenceNameHtml":"<i>Theba
+        pisana</i> (O.F. Müller, 1774)"},"source":{"id":197629,"fullCitation":"Martir&eacute;,
+        D. &amp; Merlier, F. 2017. <em>Guide des plus beaux col&eacute;opt&egrave;res</em>.
+        Collection R&eacute;f&eacute;rences Nature. Belin. 319 pp.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}},{"taxon":{"id":10362,"scientificName":null,"fullNameHtml":"<i>Ablattaria
+        laevigata</i> (Fabricius, 1775)","referenceId":10362,"parentId":null,"referenceNameHtml":"<i>Ablattaria
+        laevigata</i> (Fabricius, 1775)"},"relationId":"PREDATEUR","relationName":"est
+        un prédateur de","specificity":"régulière","inherited":false,"target":{"id":64254,"scientificName":null,"fullNameHtml":"<i>Helix
+        aspersa</i> O.F. Müller, 1774","referenceId":199863,"parentId":null,"referenceNameHtml":"<i>Cornu
+        aspersum</i> (O.F. Müller, 1774)"},"source":{"id":197629,"fullCitation":"Martir&eacute;,
+        D. &amp; Merlier, F. 2017. <em>Guide des plus beaux col&eacute;opt&egrave;res</em>.
+        Collection R&eacute;f&eacute;rences Nature. Belin. 319 pp.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}},{"taxon":{"id":245306,"scientificName":null,"fullNameHtml":"<i>Acalyptris
+        platani</i> (Müller-Rutz, 1934)","referenceId":245306,"parentId":null,"referenceNameHtml":"<i>Acalyptris
+        platani</i> (Müller-Rutz, 1934)"},"relationId":"PREDATEUR","relationName":"est
+        un prédateur de","specificity":null,"inherited":false,"target":{"id":114024,"scientificName":null,"fullNameHtml":"<i>Platanus
+        </i>x<i> hispanica</i> Mill. ex Münchh., 1770","referenceId":114024,"parentId":null,"referenceNameHtml":"<i>Platanus
+        </i>x<i> hispanica</i> Mill. ex Münchh., 1770"},"source":{"id":173889,"fullCitation":"Rennwald,
+        E. 2016. <em>Acalyptris platani</em> (M&Uuml;LLER-RUTZ, 1934). Bestimmungshilfe
+        f&uuml;r die in Europa nachgewiesenen Schmetterlingsarten.Consult&eacute;
+        le 13/11/2016.http://www.lepiforum.de/lepiwiki.pl?Acalyptris_Platani","url":"http://www.lepiforum.de/lepiwiki.pl?Acalyptris_Platani","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}},{"taxon":{"id":792990,"scientificName":null,"fullNameHtml":"<i>Acanthopygus
+        griseus</i> Montrouzier, 1861","referenceId":792990,"parentId":null,"referenceNameHtml":"<i>Acanthopygus
+        griseus</i> Montrouzier, 1861"},"relationId":"PREDATEUR","relationName":"est
+        un prédateur de","specificity":"occasionnelle / exceptionnelle","inherited":false,"target":{"id":447593,"scientificName":null,"fullNameHtml":"<i>Litchi
+        chinensis</i> Sonn., 1782","referenceId":447593,"parentId":null,"referenceNameHtml":"<i>Litchi
+        chinensis</i> Sonn., 1782"},"source":{"id":209819,"fullCitation":"Marchal,
+        L., Cazeres, S., Kergoat, G., Letellier, K., Mitchell, A., Nattier, R. &amp;
+        Mille, C. 2017. A new pest of lychees in New Caledonia. <em>New Zealand Journal
+        of Zoology</em>, 44(1): 49-64.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}},{"taxon":{"id":11152,"scientificName":null,"fullNameHtml":"<i>Adalia
+        bipunctata</i> (Linnaeus, 1758)","referenceId":11152,"parentId":null,"referenceNameHtml":"<i>Adalia
+        bipunctata</i> (Linnaeus, 1758)"},"relationId":"PREDATEUR","relationName":"est
+        un prédateur de","specificity":null,"inherited":false,"target":{"id":185100,"scientificName":null,"fullNameHtml":"Aphidoidea
+        Geoffroy, 1762","referenceId":185100,"parentId":null,"referenceNameHtml":"Aphidoidea
+        Geoffroy, 1762"},"source":{"id":119726,"fullCitation":"Coutanceau, J.-P. 2015.
+        Les coccinelles du Parc national du Mercantour (Coleoptera : Coccinellidae).
+        <i>Zoosystema</i>, 37(1): 193-205.<br>","url":"http://dx.doi.org/10.5252/z2015n1a9","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/findByType/PREDATEUR?page=1&size=5"},"first":{"href":"https://taxref.mnhn.fr/api/interactions/findByType/PREDATEUR?page=1&size=5"},"next":{"href":"https://taxref.mnhn.fr/api/interactions/findByType/PREDATEUR?page=2&size=5"},"last":{"href":"https://taxref.mnhn.fr/api/interactions/findByType/PREDATEUR?page=65&size=5"}},"page":{"size":5,"totalElements":321,"totalPages":65,"number":1}}'
+  recorded_at: 2019-03-25 17:47:36 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/findByType/ASDF?page=1&size=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Mon, 25 Mar 2019 17:47:36 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-25 17:47:36 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/findByType/0.123456?page=1&size=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Mon, 25 Mar 2019 17:47:36 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-25 17:47:36 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
