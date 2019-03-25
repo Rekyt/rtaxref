@@ -22,7 +22,7 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:25:44 GMT
+      date: Mon, 25 Mar 2019 21:07:17 GMT
       server: Apache
       transfer-encoding: chunked
     body:
@@ -44,8 +44,8 @@ http_interactions:
         (terrestre et eau douce)","definition":"Espèces terrestres effectuant une
         partie de leur cycle en eau douce (odonates par exemple), ou fortement liées
         au milieu aquatique (loutre par exemple).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/8"},"another.ontology":{"href":"http://another.ontology.org/8"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/"}}}'
-  recorded_at: 2019-03-25 17:25:45 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-03-25 21:07:17 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/habitats/1
@@ -69,15 +69,15 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:25:45 GMT
+      date: Mon, 25 Mar 2019 21:07:17 GMT
       server: Apache
       transfer-encoding: chunked
     body:
       encoding: UTF-8
-      string: '{"id":1,"name":"Marin","definition":"Espèces vivant uniquement en
-        milieu marin.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"another.ontology":{"href":"http://another.ontology.org/1"}}}'
-  recorded_at: 2019-03-25 17:25:45 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+      string: '{"id":1,"name":"Marin","definition":"Espèces vivant uniquement en milieu
+        marin.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"another.ontology":{"href":"http://another.ontology.org/1"}}}'
+  recorded_at: 2019-03-25 21:07:17 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/habitats/9
@@ -102,13 +102,13 @@ http_interactions:
       access-control-allow-origin: '*'
       content-length: '0'
       content-type: text/plain
-      date: Mon, 25 Mar 2019 17:25:45 GMT
+      date: Mon, 25 Mar 2019 21:07:17 GMT
       server: Apache
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: 2019-03-25 17:25:45 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-03-25 21:07:17 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/habitats/a
@@ -123,22 +123,7 @@ http_interactions:
       category: Client error
       reason: Bad Request
       message: 'Client error: (400) Bad Request'
-    headers:
-      access-control-allow-credentials: 'true'
-      access-control-allow-headers: origin, content-type, accept, x-requested-with,
-        destination
-      access-control-allow-methods:
-      - GET, HEAD, OPTIONS, POST, PUT
-      - PUT, GET, POST, DELETE, OPTIONS
-      access-control-allow-origin: '*'
-      connection: close
-      content-encoding: gzip
-      content-language: fr
-      content-length: '413'
-      content-type: text/html;charset=utf-8
-      date: Mon, 25 Mar 2019 17:25:45 GMT
-      server: Apache
-      vary: Accept-Encoding
+    headers: {}
     body:
       encoding: UTF-8
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
@@ -153,5 +138,5 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-25 17:25:45 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-03-25 21:07:17 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100

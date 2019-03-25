@@ -22,51 +22,14 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:14:14 GMT
+      date: Mon, 25 Mar 2019 20:52:05 GMT
       server: Apache
       transfer-encoding: chunked
     body:
-      encoding: UTF-8
-      string: "{\"_embedded\":{\"biogeographicStatus\":[{\"id\":\"P\",\"name\":\"Présente
-        (indigène ou indéterminé)\",\"definition\":\"Taxon présent au sens large
-        dans la zone géographique considérée, c'est�\x90à-dire taxon indigène
-        ou taxon dont on ne sait pas s’il appartient à l'une des autres catégories.
-        Les taxons hivernant quelques mois de l’année entrent dans cette catégorie.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/P\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/P\"}}},{\"id\":\"E\",\"name\":\"Endémique\",\"definition\":\"Taxon
-        naturellement restreint à la zone géographique considérée.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/E\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/E\"},\"tdwgUri\":{\"href\":\"http://rs.tdwg.org/ontology/voc/SPMInfoItems#Endemic\"}}},{\"id\":\"S\",\"name\":\"Subendémique\",\"definition\":\"Taxon
-        naturellement restreint à une zone un peu plus grande que la zone géographique
-        considérée mais dont les principales populations se situent dans la zone
-        géographique considérée.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/S\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/S\"}}},{\"id\":\"C\",\"name\":\"Cryptogène\",\"definition\":\"Taxon
-        dont l’aire d’origine est inconnue, et pour lequel on ne peut donc pas
-        dire s’il est indigène ou introduit.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/C\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/C\"}}},{\"id\":\"I\",\"name\":\"Introduite\",\"definition\":\"Taxon
-        dont la présence dans la zone géographique considérée est due à une intervention
-        humaine (intentionnelle ou non), ou taxon qui est arrivé là sans intervention
-        humaine à partir d’une zone dans laquelle il est introduit.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/I\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/I\"}}},{\"id\":\"J\",\"name\":\"Introduite
-        envahissante\",\"definition\":\"Taxon introduit et naturalisé/établi dans
-        la zone géographique considérée, qui produit des « descendants fertiles
-        » souvent en grand nombre, et qui a le potentiel pour s’étendre de façon
-        exponentielle sur une grande aire, augmentant ainsi rapidement son aire de
-        répartition. Cela induit souvent des conséquences écologiques, économiques
-        ou sanitaires négatives.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/J\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/J\"}}},{\"id\":\"M\",\"name\":\"Introduite
-        non établie (dont cultivée ou domestique)\",\"definition\":\"Taxon dont
-        la présence dans la zone géographique considérée est due à une intervention
-        humaine (intentionnelle ou non), ou taxon qui est arrivé là sans intervention
-        humaine à partir d’une zone dans laquelle il est introduit.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/M\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/M\"}}},{\"id\":\"B\",\"name\":\"Occasionnelle\",\"definition\":\"Taxon
-        occasionnel (migrateur de passage) ou observé de manière exceptionnelle
-        (taxon accidentel dans la zone géographique considérée).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/B\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/B\"}}},{\"id\":\"D\",\"name\":\"Douteux\",\"definition\":\"Taxon
-        dont la présence dans la zone géographique considérée n’est pas avérée
-        (en attente de confirmation).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/D\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/D\"}}},{\"id\":\"Q\",\"name\":\"Signalé
-        par erreur\",\"definition\":\"Taxon mentionné par erreur comme présent sur
-        le territoire considéré.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/Q\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/Q\"}}},{\"id\":\"A\",\"name\":\"Absente\",\"definition\":\"Taxon
-        non présent dans la zone géographique considérée.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/A\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/A\"}}},{\"id\":\"W\",\"name\":\"Disparue\",\"definition\":\"Taxon
-        qui n’est plus présent à l’état sauvage dans la zone géographique
-        considérée mais qui n’est pas globalement éteint.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/W\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/W\"}}},{\"id\":\"X\",\"name\":\"Eteinte\",\"definition\":\"Taxon
-        globalement éteint (= ayant totalement disparu de la surface du globe terrestre).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/X\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/X\"}}},{\"id\":\"Z\",\"name\":\"Endémique
-        éteinte\",\"definition\":\"Taxon endémique et aujourd’hui disparu, donc
-        globalement éteint (X).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/Z\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/Z\"}}},{\"id\":\"Y\",\"name\":\"Introduite
-        éteinte\",\"definition\":\"Taxon introduit par le passé mais aujourd’hui
-        disparu de la zone géographique considérée (W) ou éteint (X).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/Y\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/Y\"}}}]},\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/\"}}}"
-  recorded_at: 2019-03-25 17:14:15 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+      encoding: ASCII-8BIT
+      string: eyJfZW1iZWRkZWQiOnsiYmlvZ2VvZ3JhcGhpY1N0YXR1cyI6W3siaWQiOiJQIiwibmFtZSI6IlByw6lzZW50ZSAoaW5kaWfDqG5lIG91IGluZMOpdGVybWluw6kpIiwiZGVmaW5pdGlvbiI6IlRheG9uIHByw6lzZW50IGF1IHNlbnMgbGFyZ2UgZGFucyBsYSB6b25lIGfDqW9ncmFwaGlxdWUgY29uc2lkw6lyw6llLCBjJ2VzdOKAkMOgLWRpcmUgdGF4b24gaW5kaWfDqG5lIG91IHRheG9uIGRvbnQgb24gbmUgc2FpdCBwYXMgc+KAmWlsIGFwcGFydGllbnQgw6AgbCd1bmUgZGVzIGF1dHJlcyBjYXTDqWdvcmllcy4gTGVzIHRheG9ucyBoaXZlcm5hbnQgcXVlbHF1ZXMgbW9pcyBkZSBs4oCZYW5uw6llIGVudHJlbnQgZGFucyBjZXR0ZSBjYXTDqWdvcmllLiIsIl9saW5rcyI6eyJzZWxmIjp7ImhyZWYiOiJodHRwczovL3RheHJlZi5tbmhuLmZyL2FwaS9iaW9nZW9ncmFwaGljU3RhdHVzL1AifSwidGF4cmVmVXJpIjp7ImhyZWYiOiJodHRwOi8vdGF4cmVmLm1uaG4uZnIvbG9kL2Jpb0dlb1N0YXR1cy9QIn19fSx7ImlkIjoiRSIsIm5hbWUiOiJFbmTDqW1pcXVlIiwiZGVmaW5pdGlvbiI6IlRheG9uIG5hdHVyZWxsZW1lbnQgcmVzdHJlaW50IMOgIGxhIHpvbmUgZ8Opb2dyYXBoaXF1ZSBjb25zaWTDqXLDqWUuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvRSJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0UifSwidGR3Z1VyaSI6eyJocmVmIjoiaHR0cDovL3JzLnRkd2cub3JnL29udG9sb2d5L3ZvYy9TUE1JbmZvSXRlbXMjRW5kZW1pYyJ9fX0seyJpZCI6IlMiLCJuYW1lIjoiU3ViZW5kw6ltaXF1ZSIsImRlZmluaXRpb24iOiJUYXhvbiBuYXR1cmVsbGVtZW50IHJlc3RyZWludCDDoCB1bmUgem9uZSB1biBwZXUgcGx1cyBncmFuZGUgcXVlIGxhIHpvbmUgZ8Opb2dyYXBoaXF1ZSBjb25zaWTDqXLDqWUgbWFpcyBkb250IGxlcyBwcmluY2lwYWxlcyBwb3B1bGF0aW9ucyBzZSBzaXR1ZW50IGRhbnMgbGEgem9uZSBnw6lvZ3JhcGhpcXVlIGNvbnNpZMOpcsOpZS4iLCJfbGlua3MiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly90YXhyZWYubW5obi5mci9hcGkvYmlvZ2VvZ3JhcGhpY1N0YXR1cy9TIn0sInRheHJlZlVyaSI6eyJocmVmIjoiaHR0cDovL3RheHJlZi5tbmhuLmZyL2xvZC9iaW9HZW9TdGF0dXMvUyJ9fX0seyJpZCI6IkMiLCJuYW1lIjoiQ3J5cHRvZ8OobmUiLCJkZWZpbml0aW9uIjoiVGF4b24gZG9udCBs4oCZYWlyZSBk4oCZb3JpZ2luZSBlc3QgaW5jb25udWUsIGV0IHBvdXIgbGVxdWVsIG9uIG5lIHBldXQgZG9uYyBwYXMgZGlyZSBz4oCZaWwgZXN0IGluZGlnw6huZSBvdSBpbnRyb2R1aXQuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvQyJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0MifX19LHsiaWQiOiJJIiwibmFtZSI6IkludHJvZHVpdGUiLCJkZWZpbml0aW9uIjoiVGF4b24gZG9udCBsYSBwcsOpc2VuY2UgZGFucyBsYSB6b25lIGfDqW9ncmFwaGlxdWUgY29uc2lkw6lyw6llIGVzdCBkdWUgw6AgdW5lIGludGVydmVudGlvbiBodW1haW5lIChpbnRlbnRpb25uZWxsZSBvdSBub24pLCBvdSB0YXhvbiBxdWkgZXN0IGFycml2w6kgbMOgIHNhbnMgaW50ZXJ2ZW50aW9uIGh1bWFpbmUgw6AgcGFydGlyIGTigJl1bmUgem9uZSBkYW5zIGxhcXVlbGxlIGlsIGVzdCBpbnRyb2R1aXQuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvSSJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0kifX19LHsiaWQiOiJKIiwibmFtZSI6IkludHJvZHVpdGUgZW52YWhpc3NhbnRlIiwiZGVmaW5pdGlvbiI6IlRheG9uIGludHJvZHVpdCBldCBuYXR1cmFsaXPDqS/DqXRhYmxpIGRhbnMgbGEgem9uZSBnw6lvZ3JhcGhpcXVlIGNvbnNpZMOpcsOpZSwgcXVpIHByb2R1aXQgZGVzIMKrIGRlc2NlbmRhbnRzIGZlcnRpbGVzIMK7IHNvdXZlbnQgZW4gZ3JhbmQgbm9tYnJlLCBldCBxdWkgYSBsZSBwb3RlbnRpZWwgcG91ciBz4oCZw6l0ZW5kcmUgZGUgZmHDp29uIGV4cG9uZW50aWVsbGUgc3VyIHVuZSBncmFuZGUgYWlyZSwgYXVnbWVudGFudCBhaW5zaSByYXBpZGVtZW50IHNvbiBhaXJlIGRlIHLDqXBhcnRpdGlvbi4gQ2VsYSBpbmR1aXQgc291dmVudCBkZXMgY29uc8OpcXVlbmNlcyDDqWNvbG9naXF1ZXMsIMOpY29ub21pcXVlcyBvdSBzYW5pdGFpcmVzIG7DqWdhdGl2ZXMuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvSiJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0oifX19LHsiaWQiOiJNIiwibmFtZSI6IkludHJvZHVpdGUgbm9uIMOpdGFibGllIChkb250IGN1bHRpdsOpZSBvdSBkb21lc3RpcXVlKSIsImRlZmluaXRpb24iOiJUYXhvbiBkb250IGxhIHByw6lzZW5jZSBkYW5zIGxhIHpvbmUgZ8Opb2dyYXBoaXF1ZSBjb25zaWTDqXLDqWUgZXN0IGR1ZSDDoCB1bmUgaW50ZXJ2ZW50aW9uIGh1bWFpbmUgKGludGVudGlvbm5lbGxlIG91IG5vbiksIG91IHRheG9uIHF1aSBlc3QgYXJyaXbDqSBsw6Agc2FucyBpbnRlcnZlbnRpb24gaHVtYWluZSDDoCBwYXJ0aXIgZOKAmXVuZSB6b25lIGRhbnMgbGFxdWVsbGUgaWwgZXN0IGludHJvZHVpdC4iLCJfbGlua3MiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly90YXhyZWYubW5obi5mci9hcGkvYmlvZ2VvZ3JhcGhpY1N0YXR1cy9NIn0sInRheHJlZlVyaSI6eyJocmVmIjoiaHR0cDovL3RheHJlZi5tbmhuLmZyL2xvZC9iaW9HZW9TdGF0dXMvTSJ9fX0seyJpZCI6IkIiLCJuYW1lIjoiT2NjYXNpb25uZWxsZSIsImRlZmluaXRpb24iOiJUYXhvbiBvY2Nhc2lvbm5lbCAobWlncmF0ZXVyIGRlIHBhc3NhZ2UpIG91IG9ic2VydsOpIGRlIG1hbmnDqHJlIGV4Y2VwdGlvbm5lbGxlICh0YXhvbiBhY2NpZGVudGVsIGRhbnMgbGEgem9uZSBnw6lvZ3JhcGhpcXVlIGNvbnNpZMOpcsOpZSkuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvQiJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0IifX19LHsiaWQiOiJEIiwibmFtZSI6IkRvdXRldXgiLCJkZWZpbml0aW9uIjoiVGF4b24gZG9udCBsYSBwcsOpc2VuY2UgZGFucyBsYSB6b25lIGfDqW9ncmFwaGlxdWUgY29uc2lkw6lyw6llIG7igJllc3QgcGFzIGF2w6lyw6llIChlbiBhdHRlbnRlIGRlIGNvbmZpcm1hdGlvbikuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvRCJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0QifX19LHsiaWQiOiJRIiwibmFtZSI6IlNpZ25hbMOpIHBhciBlcnJldXIiLCJkZWZpbml0aW9uIjoiVGF4b24gbWVudGlvbm7DqSBwYXIgZXJyZXVyIGNvbW1lIHByw6lzZW50IHN1ciBsZSB0ZXJyaXRvaXJlIGNvbnNpZMOpcsOpLiIsIl9saW5rcyI6eyJzZWxmIjp7ImhyZWYiOiJodHRwczovL3RheHJlZi5tbmhuLmZyL2FwaS9iaW9nZW9ncmFwaGljU3RhdHVzL1EifSwidGF4cmVmVXJpIjp7ImhyZWYiOiJodHRwOi8vdGF4cmVmLm1uaG4uZnIvbG9kL2Jpb0dlb1N0YXR1cy9RIn19fSx7ImlkIjoiQSIsIm5hbWUiOiJBYnNlbnRlIiwiZGVmaW5pdGlvbiI6IlRheG9uIG5vbiBwcsOpc2VudCBkYW5zIGxhIHpvbmUgZ8Opb2dyYXBoaXF1ZSBjb25zaWTDqXLDqWUuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvQSJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL0EifX19LHsiaWQiOiJXIiwibmFtZSI6IkRpc3BhcnVlIiwiZGVmaW5pdGlvbiI6IlRheG9uIHF1aSBu4oCZZXN0IHBsdXMgcHLDqXNlbnQgw6AgbOKAmcOpdGF0IHNhdXZhZ2UgZGFucyBsYSB6b25lIGfDqW9ncmFwaGlxdWUgY29uc2lkw6lyw6llIG1haXMgcXVpIG7igJllc3QgcGFzIGdsb2JhbGVtZW50IMOpdGVpbnQuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvVyJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL1cifX19LHsiaWQiOiJYIiwibmFtZSI6IkV0ZWludGUiLCJkZWZpbml0aW9uIjoiVGF4b24gZ2xvYmFsZW1lbnQgw6l0ZWludCAoPSBheWFudCB0b3RhbGVtZW50IGRpc3BhcnUgZGUgbGEgc3VyZmFjZSBkdSBnbG9iZSB0ZXJyZXN0cmUpLiIsIl9saW5rcyI6eyJzZWxmIjp7ImhyZWYiOiJodHRwczovL3RheHJlZi5tbmhuLmZyL2FwaS9iaW9nZW9ncmFwaGljU3RhdHVzL1gifSwidGF4cmVmVXJpIjp7ImhyZWYiOiJodHRwOi8vdGF4cmVmLm1uaG4uZnIvbG9kL2Jpb0dlb1N0YXR1cy9YIn19fSx7ImlkIjoiWiIsIm5hbWUiOiJFbmTDqW1pcXVlIMOpdGVpbnRlIiwiZGVmaW5pdGlvbiI6IlRheG9uIGVuZMOpbWlxdWUgZXQgYXVqb3VyZOKAmWh1aSBkaXNwYXJ1LCBkb25jIGdsb2JhbGVtZW50IMOpdGVpbnQgKFgpLiIsIl9saW5rcyI6eyJzZWxmIjp7ImhyZWYiOiJodHRwczovL3RheHJlZi5tbmhuLmZyL2FwaS9iaW9nZW9ncmFwaGljU3RhdHVzL1oifSwidGF4cmVmVXJpIjp7ImhyZWYiOiJodHRwOi8vdGF4cmVmLm1uaG4uZnIvbG9kL2Jpb0dlb1N0YXR1cy9aIn19fSx7ImlkIjoiWSIsIm5hbWUiOiJJbnRyb2R1aXRlIMOpdGVpbnRlIiwiZGVmaW5pdGlvbiI6IlRheG9uIGludHJvZHVpdCBwYXIgbGUgcGFzc8OpIG1haXMgYXVqb3VyZOKAmWh1aSBkaXNwYXJ1IGRlIGxhIHpvbmUgZ8Opb2dyYXBoaXF1ZSBjb25zaWTDqXLDqWUgKFcpIG91IMOpdGVpbnQgKFgpLiIsIl9saW5rcyI6eyJzZWxmIjp7ImhyZWYiOiJodHRwczovL3RheHJlZi5tbmhuLmZyL2FwaS9iaW9nZW9ncmFwaGljU3RhdHVzL1kifSwidGF4cmVmVXJpIjp7ImhyZWYiOiJodHRwOi8vdGF4cmVmLm1uaG4uZnIvbG9kL2Jpb0dlb1N0YXR1cy9ZIn19fV19LCJfbGlua3MiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly90YXhyZWYubW5obi5mci9hcGkvYmlvZ2VvZ3JhcGhpY1N0YXR1cy8ifX19
+  recorded_at: 2019-03-25 20:52:05 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/biogeographicStatus/P
@@ -90,18 +53,14 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:14:15 GMT
+      date: Mon, 25 Mar 2019 20:52:05 GMT
       server: Apache
       transfer-encoding: chunked
     body:
-      encoding: UTF-8
-      string: "{\"id\":\"P\",\"name\":\"Présente (indigène ou indéterminé)\",\"definition\":\"Taxon
-        présent au sens large dans la zone géographique considérée, c'est�\x90à-dire
-        taxon indigène ou taxon dont on ne sait pas s’il appartient à l'une des
-        autres catégories. Les taxons hivernant quelques mois de l’année entrent
-        dans cette catégorie.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/P\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/P\"}}}"
-  recorded_at: 2019-03-25 17:14:15 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+      encoding: ASCII-8BIT
+      string: eyJpZCI6IlAiLCJuYW1lIjoiUHLDqXNlbnRlIChpbmRpZ8OobmUgb3UgaW5kw6l0ZXJtaW7DqSkiLCJkZWZpbml0aW9uIjoiVGF4b24gcHLDqXNlbnQgYXUgc2VucyBsYXJnZSBkYW5zIGxhIHpvbmUgZ8Opb2dyYXBoaXF1ZSBjb25zaWTDqXLDqWUsIGMnZXN04oCQw6AtZGlyZSB0YXhvbiBpbmRpZ8OobmUgb3UgdGF4b24gZG9udCBvbiBuZSBzYWl0IHBhcyBz4oCZaWwgYXBwYXJ0aWVudCDDoCBsJ3VuZSBkZXMgYXV0cmVzIGNhdMOpZ29yaWVzLiBMZXMgdGF4b25zIGhpdmVybmFudCBxdWVscXVlcyBtb2lzIGRlIGzigJlhbm7DqWUgZW50cmVudCBkYW5zIGNldHRlIGNhdMOpZ29yaWUuIiwiX2xpbmtzIjp7InNlbGYiOnsiaHJlZiI6Imh0dHBzOi8vdGF4cmVmLm1uaG4uZnIvYXBpL2Jpb2dlb2dyYXBoaWNTdGF0dXMvUCJ9LCJ0YXhyZWZVcmkiOnsiaHJlZiI6Imh0dHA6Ly90YXhyZWYubW5obi5mci9sb2QvYmlvR2VvU3RhdHVzL1AifX19
+  recorded_at: 2019-03-25 20:52:05 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/biogeographicStatus/ASDF
@@ -126,13 +85,13 @@ http_interactions:
       access-control-allow-origin: '*'
       content-length: '0'
       content-type: text/plain
-      date: Mon, 25 Mar 2019 17:14:15 GMT
+      date: Mon, 25 Mar 2019 20:52:05 GMT
       server: Apache
     body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: 2019-03-25 17:14:15 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+      encoding: ASCII-8BIT
+      string: []
+  recorded_at: 2019-03-25 20:52:05 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/biogeographicStatus/1
@@ -157,10 +116,10 @@ http_interactions:
       access-control-allow-origin: '*'
       content-length: '0'
       content-type: text/plain
-      date: Mon, 25 Mar 2019 17:14:15 GMT
+      date: Mon, 25 Mar 2019 20:52:05 GMT
       server: Apache
     body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: 2019-03-25 17:14:15 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+      encoding: ASCII-8BIT
+      string: []
+  recorded_at: 2019-03-25 20:52:05 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100

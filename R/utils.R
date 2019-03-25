@@ -12,7 +12,7 @@ parse_taxa = function(api_query, cut_names = TRUE) {
 
   reason = http_status(api_query)$reason
 
-  if (status_code(api_query) == 404 & reason == "Bad Request") {
+  if (status_code(api_query) == 400 & reason == "Bad Request") {
 
     stop("The query is invalid. Please try another query.")
 

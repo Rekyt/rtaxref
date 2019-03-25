@@ -1,0 +1,101 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/706?page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Mon, 25 Mar 2019 21:56:51 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactions":[{"taxon":{"id":159424,"scientificName":null,"fullNameHtml":"<i>Bacidia
+        egenula</i> (Nyl.) Arnold, 1870","referenceId":660247,"parentId":null,"referenceNameHtml":"<i>Bacidina
+        egenula</i> (Nyl.) Vězda, 1990"},"relationId":"ASSOCIE","relationName":"est
+        associé à","specificity":null,"inherited":false,"target":{"id":191364,"scientificName":null,"fullNameHtml":"<i>Cupressus</i>
+        L., 1753","referenceId":191364,"parentId":null,"referenceNameHtml":"<i>Cupressus</i>
+        L., 1753"},"source":{"id":68904,"fullCitation":"Aptroot, A., Van De Vijver,
+        B., Lebouvier, M. &amp; Ertz, D. 2011. Lichens of Ile Amsterdam and Ile Saint
+        Paul (TAAF, southern Indian Ocean). <em>Nova Hedwigia</em>, 92(3-4): 343-367.","url":"http://dx.doi.org/10.1127/0029-5035/2011/0092-0343","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/706?page=1&size=1"},"first":{"href":"https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/706?page=1&size=1"},"next":{"href":"https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/706?page=2&size=1"},"last":{"href":"https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/706?page=24&size=1"}},"page":{"size":1,"totalElements":24,"totalPages":24,"number":1}}'
+  recorded_at: 2019-03-25 21:56:52 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/666?page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Mon, 25 Mar 2019 21:56:51 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-25 21:56:52 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/findByOperationalGroup/ASDF?page=1&size=2000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers: {}
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat
+        HTTP 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
+        syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
+        Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-25 21:56:52 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4.9100
