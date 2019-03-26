@@ -1,0 +1,235 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=239523&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:02:27 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactions":[{"taxon":{"id":239523,"scientificName":null,"fullNameHtml":"<i>Apis
+        mellifera</i> Linnaeus, 1758","referenceId":239523,"parentId":null,"referenceNameHtml":"<i>Apis
+        mellifera</i> Linnaeus, 1758"},"relationId":"POLLINISATEUR","relationName":"est
+        un pollinisateur de","specificity":"régulière","inherited":false,"target":{"id":86399,"scientificName":null,"fullNameHtml":"<i>Brassica
+        napus</i> L., 1753","referenceId":86399,"parentId":null,"referenceNameHtml":"<i>Brassica
+        napus</i> L., 1753"},"source":{"id":204031,"fullCitation":"FranceAgriMer,
+        ITSAP, MAAF, SNHF, Astredhor, Vaal&#39;hor, INRA, CNPAIM, Gnis &amp; SBF.
+        2017. <em>Liste des plantes attractives pour les abeilles. Plantes nectarif&egrave;res
+        et pollinif&egrave;res &agrave; semer et &agrave; planter</em>. 24 pp.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=1&size=1{&interactionTypeId,operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=1&size=1{&interactionTypeId,operationalGroupId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=2&size=1{&interactionTypeId,operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=366&size=1{&interactionTypeId,operationalGroupId}","templated":true}},"page":{"size":1,"totalElements":366,"totalPages":366,"number":1}}'
+  recorded_at: 2019-03-26 13:04:14 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:02:27 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactions":[{"taxon":{"id":833018,"scientificName":null,"fullNameHtml":"<i>Varroa
+        destructor</i> Anderson & Trueman, 2000","referenceId":833018,"parentId":null,"referenceNameHtml":"<i>Varroa
+        destructor</i> Anderson & Trueman, 2000"},"relationId":"PARASITE","relationName":"est
+        parasite de","specificity":null,"inherited":false,"target":{"id":239523,"scientificName":null,"fullNameHtml":"<i>Apis
+        mellifera</i> Linnaeus, 1758","referenceId":239523,"parentId":null,"referenceNameHtml":"<i>Apis
+        mellifera</i> Linnaeus, 1758"},"source":{"id":161619,"fullCitation":"Tentcheva,
+        D., Gauthier, L., Zappulla, N., Dainat, B., Cousserans, F., Colin, M. E. &amp;
+        Bergoin, M. 2004. Prevalence and seasonal variations of six bee viruses in
+        <em>Apis mellifera </em>L. and <em>Varroa destructor </em>mite populations
+        in France. <em>Applied and environmental microbiology</em>, <em>70</em>(12):
+        7185-7191.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1{&operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1{&operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1{&operationalGroupId}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
+  recorded_at: 2019-03-26 13:04:14 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=239523&interactionTypeId=PREDATEUR&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:02:27 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactions":[{"taxon":{"id":433589,"scientificName":null,"fullNameHtml":"<i>Vespa
+        velutina</i> Lepeletier, 1836","referenceId":433589,"parentId":null,"referenceNameHtml":"<i>Vespa
+        velutina</i> Lepeletier, 1836"},"relationId":"PREDATEUR","relationName":"est
+        un prédateur de","specificity":null,"inherited":false,"target":{"id":239523,"scientificName":null,"fullNameHtml":"<i>Apis
+        mellifera</i> Linnaeus, 1758","referenceId":239523,"parentId":null,"referenceNameHtml":"<i>Apis
+        mellifera</i> Linnaeus, 1758"},"source":{"id":123907,"fullCitation":"Abrol,
+        D.P. 1994. Ecology, behaviour and management of social wasp, Vespa velutina
+        smith (Hymenoptera: Vespidae), attacking honeybee colonies. <i>Korean Journal
+        of Apiculture</i>, 9(1): 5‑10.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=1&size=1{&operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=1&size=1{&operationalGroupId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=2&size=1{&operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=2&size=1{&operationalGroupId}","templated":true}},"page":{"size":1,"totalElements":2,"totalPages":2,"number":1}}'
+  recorded_at: 2019-03-26 13:04:14 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?operationalGroupId=706&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:03:40 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactions":[{"taxon":{"id":159424,"scientificName":null,"fullNameHtml":"<i>Bacidia
+        egenula</i> (Nyl.) Arnold, 1870","referenceId":660247,"parentId":null,"referenceNameHtml":"<i>Bacidina
+        egenula</i> (Nyl.) Vězda, 1990"},"relationId":"ASSOCIE","relationName":"est
+        associé à","specificity":null,"inherited":false,"target":{"id":191364,"scientificName":null,"fullNameHtml":"<i>Cupressus</i>
+        L., 1753","referenceId":191364,"parentId":null,"referenceNameHtml":"<i>Cupressus</i>
+        L., 1753"},"source":{"id":68904,"fullCitation":"Aptroot, A., Van De Vijver,
+        B., Lebouvier, M. &amp; Ertz, D. 2011. Lichens of Ile Amsterdam and Ile Saint
+        Paul (TAAF, southern Indian Ocean). <em>Nova Hedwigia</em>, 92(3-4): 343-367.","url":"http://dx.doi.org/10.1127/0029-5035/2011/0092-0343","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=1&size=1{&taxrefId,interactionTypeId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=1&size=1{&taxrefId,interactionTypeId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=2&size=1{&taxrefId,interactionTypeId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=24&size=1{&taxrefId,interactionTypeId}","templated":true}},"page":{"size":1,"totalElements":24,"totalPages":24,"number":1}}'
+  recorded_at: 2019-03-26 13:04:14 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=1&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 13:04:14 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 13:04:14 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=ASDF&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      connection: close
+      content-encoding: gzip
+      content-language: fr
+      content-length: '413'
+      content-type: text/html;charset=utf-8
+      date: Tue, 26 Mar 2019 13:04:14 GMT
+      server: Apache
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat
+        HTTP 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
+        syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
+        Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-26 13:04:14 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
