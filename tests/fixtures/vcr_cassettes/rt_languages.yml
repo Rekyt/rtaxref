@@ -1,0 +1,195 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/langages
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:13:08 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"langages":[{"id":"aqr","name":"Arhâ","iso6393":"aqr","wikidataUri":"http://www.wikidata.org/entity/Q4790085","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aqr"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"arw","name":"Arawak
+        [= Lokono]","iso6393":"arw","wikidataUri":"http://www.wikidata.org/entity/Q2655664","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/arw"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"aut","name":"Australe","iso6393":"aut","wikidataUri":"http://www.wikidata.org/entity/Q2669261","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aut"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"axx","name":"Xârâgurè
+        [= Aragure, Borendy, Borindi, Haragure, Naa Xaragure, Thio]","iso6393":"axx","wikidataUri":"http://www.wikidata.org/entity/Q8045635","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/axx"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"bis","name":"Bislama
+        [= Bichelamar]","iso6393":"bis","wikidataUri":"http://www.wikidata.org/entity/Q35452","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/bis"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"aek","name":"Haeke
+        [= Baco]","iso6393":"aek","wikidataUri":"http://www.wikidata.org/entity/Q5638166","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aek"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"aji","name":"Ajië
+        [= Houaïlou, Wai, Wailu]","iso6393":"aji","wikidataUri":"http://www.wikidata.org/entity/Q2828867","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aji"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"ane","name":"Xârâcùù
+        [= Anesu, Canala, Haraneu, Kanala, Naa Xaracuu, Xaracii]","iso6393":"ane","wikidataUri":"http://www.wikidata.org/entity/Q3571097","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/ane"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"aok","name":"Arhö","iso6393":"aok","wikidataUri":"http://www.wikidata.org/entity/Q4790086","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aok"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"bre","name":"Breton","iso6393":"bre","wikidataUri":"http://www.wikidata.org/entity/Q12107","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/bre"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"buc","name":"Bushi
+        [= Shibushi]","iso6393":"buc","wikidataUri":"http://www.wikidata.org/entity/Q5150795","locationName":"Mayotte","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/buc"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER976"}}},{"id":"bwa","name":"Bwatoo","iso6393":"bwa","wikidataUri":"http://www.wikidata.org/entity/Q9232446","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/bwa"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"cam","name":"Cemuhî
+        [= Camuhi, Tie, Touho, Tyamuhi, Wagap]","iso6393":"cam","wikidataUri":"http://www.wikidata.org/entity/Q3009690","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/cam"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"car","name":"Galibi
+        Carib [= Kaliña]","iso6393":"car","wikidataUri":"http://www.wikidata.org/entity/Q56611","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/car"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"cos","name":"Corse","iso6393":"cos","wikidataUri":"http://www.wikidata.org/entity/Q33111","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/cos"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"dhv","name":"Dehu
+        [= Lifou, Qene Drehu]","iso6393":"dhv","wikidataUri":"http://www.wikidata.org/entity/Q3039319","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/dhv"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"djk","name":"Eastern
+        Maroon Creole [=  Aluku, Aukan, Boni, Businenge Tongo, Ndyuka, Nenge, Nenge
+        Tongo]","iso6393":"djk","wikidataUri":"http://www.wikidata.org/entity/Q2659044","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/djk"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"duf","name":"Dumbea
+        [= Drubea, Paita, Naa Drubea]","iso6393":"duf","wikidataUri":"http://www.wikidata.org/entity/Q6983819","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/duf"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"eme","name":"Émérillon
+        [= Melejo, Mereo, Teco]","iso6393":"eme","wikidataUri":"http://www.wikidata.org/entity/Q3588942","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/eme"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"eng","name":"Anglais","iso6393":"eng","wikidataUri":"http://www.wikidata.org/entity/Q1860","locationName":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/eng"},"location":{"href":"https://taxref.mnhn.fr/api/locations/{id}","templated":true}}},{"id":"eus","name":"Basque","iso6393":"eus","wikidataUri":"http://www.wikidata.org/entity/Q8752","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/eus"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"cir","name":"Tiri
+        [= Ciiri, Grand Couli, Hamea, Ha-Tiri, Méa, Tinrin, Tiri-Mea]","iso6393":"cir","wikidataUri":"http://www.wikidata.org/entity/Q7862281","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/cir"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"cks","name":"Tayo","iso6393":"cks","wikidataUri":"http://www.wikidata.org/entity/Q1133089","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/cks"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"bpk","name":"Orowe
+        [= Abwebwe, Boewe, Boewi, Oroe]","iso6393":"bpk","wikidataUri":"http://www.wikidata.org/entity/Q7103905","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/bpk"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"hak","name":"Hakka
+        Chinese","iso6393":"hak","wikidataUri":"http://www.wikidata.org/entity/Q33375","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/hak"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"hvk","name":"Haveke
+        [= Aveke]","iso6393":"hvk","wikidataUri":"http://www.wikidata.org/entity/Q5683513","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/hvk"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"iai","name":"Iaai
+        [= Hwen Iaai, Iai, Yai]","iso6393":"iai","wikidataUri":"http://www.wikidata.org/entity/Q282888","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/iai"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"jas","name":"Javanais
+        de Nouvelle-Calédonie","iso6393":"jas","wikidataUri":"http://www.wikidata.org/entity/Q12953527","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/jas"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"jaz","name":"Jawe
+        [= Diahoue, Njawe, Oubatch]","iso6393":"jaz","wikidataUri":"http://www.wikidata.org/entity/Q3163200","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/jaz"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"jvn","name":"Javanais
+        des Caraïbes","iso6393":"jvn","wikidataUri":"http://www.wikidata.org/entity/Q11732256","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/jvn"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"kdk","name":"Numèè
+        [= Kwényï, Duauru, Kapone, Kunie, Naa Numee, Naa-Wee, Ouen, Touaouru, Truaru,
+        Wen, Xere]","iso6393":"kdk","wikidataUri":"http://www.wikidata.org/entity/Q3346774","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/kdk"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"fra","name":"Français","iso6393":"fra","wikidataUri":"http://www.wikidata.org/entity/Q150","locationName":"France","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/fra"},"location":{"href":"https://taxref.mnhn.fr/api/locations/ETATFRA"}}},{"id":"fud","name":"East
+        Futuna","iso6393":"fud","wikidataUri":"http://www.wikidata.org/entity/Q35334","locationName":"Wallis
+        et Futuna","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/fud"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER986"}}},{"id":"fwa","name":"Fwâi
+        [= Poai, Yehen, Yengen]","iso6393":"fwa","wikidataUri":"http://www.wikidata.org/entity/Q3091331","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/fwa"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"gcf","name":"Créole
+        guadeloupéen","iso6393":"gcf","wikidataUri":"http://www.wikidata.org/entity/Q3006280","locationName":"Antilles
+        françaises","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/gcf"},"location":{"href":"https://taxref.mnhn.fr/api/locations/RCANT"}}},{"id":"gcr","name":"Créole
+        de Guyane française","iso6393":"gcr","wikidataUri":"http://www.wikidata.org/entity/Q1363072","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/gcr"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"mkt","name":"Vamale
+        [= Hmwaeke, Moaeke, Pamale]","iso6393":"mkt","wikidataUri":"http://www.wikidata.org/entity/Q14916907","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/mkt"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"nee","name":"Nêlêmwa-Nixumwak
+        [= Fwa-Goumak, Koumak]","iso6393":"nee","wikidataUri":"http://www.wikidata.org/entity/Q3347266","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/nee"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"nem","name":"Nemi","iso6393":"nem","wikidataUri":"http://www.wikidata.org/entity/Q3338008","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/nem"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"nen","name":"Nengone
+        [= Iwatenu]","iso6393":"nen","wikidataUri":"http://www.wikidata.org/entity/Q3338052","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/nen"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"njt","name":"Ndyuka-Trio
+        Pidgin [=  Ndjuka]","iso6393":"njt","wikidataUri":"http://www.wikidata.org/entity/Q13591205","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/njt"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"nua","name":"Yuanga
+        [= Bonde, Gomen, Juanga, Nua, Nyua, Nyuaanga, Thuanga, Yuaanga, Yaga, Zwanga]","iso6393":"nua","wikidataUri":"http://www.wikidata.org/entity/Q3573088","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/nua"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"oci","name":"Occitan
+        [post 1500]","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q14185","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oym","name":"Wayampi
+        [= Oyampi, Wajapi, Amapari Wayampi, Oiyapoque Wayampi]","iso6393":"oym","wikidataUri":"http://www.wikidata.org/entity/Q7975842","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oym"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"piz","name":"Pije
+        [= Pindje]","iso6393":"piz","wikidataUri":"http://www.wikidata.org/entity/Q3388339","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/piz"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"mqm","name":"Marquisien
+        du sud [= îles Fatu Hiva, Fatu Huka, Hiva Oa, Mohotani et Tahuta]","iso6393":"mqm","wikidataUri":"http://www.wikidata.org/entity/Q19694214","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/mqm"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"mrq","name":"Marquisien
+        du nord [= îles Eiao, Hatutu, Matu One, Motuiti, Nuku Hiva, Ua Huka et Ua
+        Pou]","iso6393":"mrq","wikidataUri":"http://www.wikidata.org/entity/Q2603808","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/mrq"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"mrv","name":"Mangareva","iso6393":"mrv","wikidataUri":"http://www.wikidata.org/entity/Q36237","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/mrv"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"msq","name":"Caac
+        [= Caawac, Moenebeng, Mwelebeng]","iso6393":"msq","wikidataUri":"http://www.wikidata.org/entity/Q2932212","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/msq"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"sih","name":"Zire
+        [= Nere, Siche, Sirhe, Yirhe, Ziche, Zira]","iso6393":"sih","wikidataUri":"http://www.wikidata.org/entity/Q8072753","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/sih"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"plu","name":"Palikúr
+        [= Pa''ikwaki]","iso6393":"plu","wikidataUri":"http://www.wikidata.org/entity/Q3073448","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/plu"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"pme","name":"Pwaamei","iso6393":"pme","wikidataUri":"http://www.wikidata.org/entity/Q3411152","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/pme"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"pmt","name":"Tuamotu","iso6393":"pmt","wikidataUri":"http://www.wikidata.org/entity/Q36763","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/pmt"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"pop","name":"Pwapwâ","iso6393":"pop","wikidataUri":"http://www.wikidata.org/entity/Q3411153","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/pop"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"pri","name":"Paicî
+        [= Pindje]","iso6393":"pri","wikidataUri":"http://www.wikidata.org/entity/Q732131","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/pri"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"tah","name":"Tahitien","iso6393":"tah","wikidataUri":"http://www.wikidata.org/entity/Q34128","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/tah"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"ray","name":"Rapa","iso6393":"ray","wikidataUri":"http://www.wikidata.org/entity/Q36417","locationName":"Polynésie
+        française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/ray"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"wls","name":"Wallisien","iso6393":"wls","wikidataUri":"http://www.wikidata.org/entity/Q36979","locationName":"Wallis
+        et Futuna","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/wls"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER986"}}},{"id":"uve","name":"West
+        Uvean [= Faga Uvea, Fagauvea]","iso6393":"uve","wikidataUri":"http://www.wikidata.org/entity/Q36837","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/uve"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"way","name":"Wayana
+        [= Alukuyana, Guayana, Oyana, Uaiana, Upurui]","iso6393":"way","wikidataUri":"http://www.wikidata.org/entity/Q5908753","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/way"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"wmn","name":"Waamwang
+        [= Wamoang]","iso6393":"wmn","wikidataUri":"http://www.wikidata.org/entity/Q7958575","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/wmn"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"swb","name":"Maore
+        Comorian [= Mahorais, Shimaore, Comores Swahili, Comorian, Comoro, Komoro,
+        Maore]","iso6393":"swb","wikidataUri":"http://www.wikidata.org/entity/Q34075","locationName":"Mayotte","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/swb"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER976"}}},{"id":"srn","name":"Sranan
+        Tongo [= Surinamais, Taki taki]","iso6393":"srn","wikidataUri":"http://www.wikidata.org/entity/Q33989","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/srn"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"yly","name":"Nyâlayu
+        [= Puma, Yalasu, Yalayu]","iso6393":"yly","wikidataUri":"http://www.wikidata.org/entity/Q303154","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/yly"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"srm","name":"Saramaka","iso6393":"srm","wikidataUri":"http://www.wikidata.org/entity/Q33779","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/srm"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"rcf","name":"Créole
+        réunionnais","iso6393":"rcf","wikidataUri":"http://www.wikidata.org/entity/Q13198","locationName":"Réunion","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/rcf"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER974"}}},{"id":"mrk","name":"Hmwaveke
+        [= Ceta, Faa Ceta, Moaveke]","iso6393":"mrk","wikidataUri":"http://www.wikidata.org/entity/Q5873712","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/mrk"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"por","name":"Portuguais
+        / Brésilien","iso6393":"por","wikidataUri":"http://www.wikidata.org/entity/Q5146","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/por"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"oci","name":"Languedocien","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q942602","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oci","name":"Gascon","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q35735","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oci","name":"Auvergnat","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q35359","locationName":"France
+        métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/"}}}'
+  recorded_at: 2019-03-26 13:13:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/langages/arw
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:13:08 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"arw","name":"Arawak [= Lokono]","iso6393":"arw","wikidataUri":"http://www.wikidata.org/entity/Q2655664","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/arw"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}}'
+  recorded_at: 2019-03-26 13:13:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/langages/asdf
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 13:13:08 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 13:13:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/langages/9
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 13:13:08 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 13:13:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

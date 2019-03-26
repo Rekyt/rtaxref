@@ -70,5 +70,9 @@ parse_taxa = function(api_query, cut_names = TRUE) {
     }
   }
 
+  if (identical(dim(response), c(0L, 0L))) {
+    stop("The query returned no results. Please try another query")
+  }
+
   tibble::as_tibble(response)
 }

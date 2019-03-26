@@ -1,0 +1,769 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/operationalGroups
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:19:37 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"operationalGroups":[{"id":143,"name":"Amphibiens","commonName":"Amphibiens","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Amphibiens","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/143"}}},{"id":775,"name":"Anoures","commonName":"Grenouilles
+        et crapauds","shortDescription":"Anoures","mainGroup":"Amphibiens et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Amphibiens","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/775"}}},{"id":919,"name":"Urodèles","commonName":"Salamandres
+        et tritons","shortDescription":"Urodèles","mainGroup":"Amphibiens et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Amphibiens","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/919"}}},{"id":661,"name":"Chéloniens","commonName":"Tortues","shortDescription":"Cheloniens","mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Reptiles","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/661"}}},{"id":920,"name":"Crocodylia","commonName":"Crocodiles","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Reptiles","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/920"}}},{"id":161,"name":"Reptiles","commonName":"Reptiles","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Reptiles","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/161"}}},{"id":763,"name":"Reptiles
+        de Guyane","commonName":"Reptiles de Guyane","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Reptiles","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/763"}}},{"id":915,"name":"Squamates","commonName":"Serpents
+        et lézards","shortDescription":null,"mainGroup":"Amphibiens et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Reptiles","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/915"}}},{"id":963,"name":"Testudines
+        marines de France","commonName":"Tortues de mer de France","shortDescription":"Testudines
+        marines de France (métropole et outre-mer) : inclut les espèces strictement
+        marines (habitat 1) ou pouvant également être retrouvées en eau douce (habitat
+        4 = eau douce / marin), en eau saumâtre (habitat 6) ou a terre (habitat 5
+        = marin et terrestre).","mainGroup":"Amphibiens et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Reptiles","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/963"}}},{"id":506,"name":"Amphibiens
+        et reptiles","commonName":"Amphibiens et reptiles","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/506"}}},{"id":802,"name":"Amphibiens
+        et Reptiles de France métropolitaine","commonName":"Amphibiens et Reptiles
+        de France métropolitaine","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/802"}}},{"id":1132,"name":"Amphibiens
+        et Reptiles de Martinique","commonName":"Amphibiens et Reptiles de Martinique","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1132"}}},{"id":361,"name":"Diatomées","commonName":null,"shortDescription":"Bacillariophyceae","mainGroup":"Autres","vernacularGroup1":"Algues","vernacularGroup2":"Diatomées","vernacularGroup3":null,"description":null,"biology":null,"ecology":"Il
+        existe environ 100 000 espèces connues de diatomées, mais d''après certains
+        auteurs[Lesquels ?], il en existerait près d''un million. Elles sont répandues
+        dans tous les milieux aquatiques (que ce soit en eau douce, salée ou saumâtre)
+        ou même seulement humides et sont soit planctoniques (vivent en suspension
+        dans le milieu liquide) soit benthiques (vivent sur le fond ou sur des supports
+        variés). La mer contient de nombreuses espèces planctoniques de diatomées,
+        isolées ou en colonie, et surtout centrales. En eau douce, elles sont essentiellement
+        benthiques et sont plutôt des diatomées pennales et coloniales. En général,
+        les espèces benthiques sont d''ailleurs souvent pennales.","biogeography":null,"ethology":null,"economy":"Notamment
+        par la masse qu''elles représentent, les diatomées constituent le groupe
+        d''algues le plus important du phytoplancton marin (constitué par ailleurs
+        de dinoflagellés, de cocolithophoridés et d''algues flagellés). Dans les
+        mers et les océans, elles assurent 20 à 25 % de la production phytoplanctonique,
+        jouant un rôle majeur dans la vie des écosystèmes marins. Elles sont à
+        la base des réseaux alimentaires qui aboutissent aux poissons, aux crustacés
+        et à plusieurs espèces de coquillages économiquement importants. À part
+        quelques exceptions, ce sont typiquement des « algues fourrages », contrairement
+        à d''autres algues comme les dinoflagellés qui sont toxiques pour les vertébrés
+        et les invertébrés.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/361"}}},{"id":363,"name":"Ochrophytes","commonName":"Algues
+        brunes","shortDescription":"\r\n","mainGroup":"Autres","vernacularGroup1":"Algues","vernacularGroup2":"Ochrophyta","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/363"}}},{"id":151,"name":"Entognathes","commonName":null,"shortDescription":null,"mainGroup":"Autres","vernacularGroup1":"Arthropodes","vernacularGroup2":"Entognathes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/151"}}},{"id":160,"name":"Pycnogonides","commonName":null,"shortDescription":"Pycnogonida","mainGroup":"Autres","vernacularGroup1":"Arthropodes","vernacularGroup2":"Pycnogonides","vernacularGroup3":null,"description":null,"biology":"Les
+        sexes sont séparés. Les gonades simples ont des diverticules qui s''étendent
+        dans les fémurs des pattes; elles ont plusieurs orifices, situés habituellement
+        sur les pattes.Les ovules sont fécondés dès leur émission, et les mâles
+        les recueillent et les portent sur leurs ovigères jusqu''à l''éclosion.
+        La larve <i>protonymphon </i>porte les trois premières paires d''appendices,
+        les chélicères, les palpes et les ovigères, et les ébauches de la première
+        paire de pattes.<br>","ecology":"La plupart des pycnogonides sont carnivores
+        et se nourrissent de cnidaires (coraux, anémones de mer), de bryozoaires,
+        de petits polychètes ou d''éponges. Ils appliquent leur trompe directement
+        sur leur proie et aspirent les tissus. Certaines se nourrissent d''algues,
+        de microorganismes ou de détritus. Les formes parasites infestent principalement
+        les mollusques.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/160"}}},{"id":102,"name":"Arthropodes","commonName":null,"shortDescription":"Arthropoda","mainGroup":"Autres","vernacularGroup1":"Arthropodes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/102"}}},{"id":104,"name":"Bryozoaires","commonName":null,"shortDescription":"Bryozoa","mainGroup":"Autres","vernacularGroup1":"Bryozoaires","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":"Les
+        individus sont hermaphrodites. La reproduction est sexuée, avec une larve
+        ciliée, ou asexuée par bourgeonnement.","ecology":"Les Bryozoaires sont
+        les plus nombreux et les plus diversifiés dans les eaux tropicales chaudes.
+        Quelques espèces se sont adaptées aux eaux douces.<br>On retrouve des colonies
+        sur tous les types de supports ; sur la roche, en milieu détritique côtier
+        ou au large, sur des grains de sable, cailloux où coquillages, sur le bois,
+        le métal des épaves, ou encore sur d''autres organismes vivants comme les
+        éponges, des algues ou les gorgones.<br>Quelques colonies sont capables de
+        ramper et certaines espèces « non-coloniales » se déplacent entre les
+        grains de sable. Cependant, la plupart sont sessiles, c''est-à-dire définitivement
+        fixées à leur substrat.<br>","biogeography":"toutes les mers du globe.<br>Quelques
+        espèces, probablement transportées de port en port par les navires, sont
+        en train de coloniser les ports et les littoraux européens.<br>","ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/104"}}},{"id":146,"name":"Ascidies","commonName":null,"shortDescription":"Ascidiacea","mainGroup":"Autres","vernacularGroup1":"Chordés","vernacularGroup2":"Ascidies","vernacularGroup3":null,"description":null,"biology":"Les
+        ascidies sont hermaphrodites. Testicules et ovaires libèrent leurs gamètes
+        dans la chambre péripharyngienne où a lieu l’incubation. La larve ressemble
+        extérieurement à un minuscule têtard. Elle nage peu de temps, se fixe à
+        un support et subit une profonde métamorphose. La reproduction asexuée et
+        la régénération ont un rôle important, surtout chez les formes coloniales.","ecology":"Les
+        ascidies vivent fixées sur un support : ce sont des animaux benthiques. La
+        tunique permet d’adhérer au substrat. Elles peuvent être solitaires, sociales
+        ou coloniales. Les ascidies sociales sont des individus complets reliés vasculairement
+        par un stolon basal. Chez les coloniales, tous les individus sont enrobés
+        dans une seule tunique et peuvent parfois partager des organes en commun,
+        notamment le siphon exhalant.","biogeography":"tous les océans du monde","ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/146"}}},{"id":106,"name":"Chordés","commonName":"Chordés","shortDescription":"Chordata","mainGroup":"Autres","vernacularGroup1":"Chordés","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/106"}}},{"id":383,"name":"Hydrozoaires","commonName":null,"shortDescription":"Hydrozoa","mainGroup":"Autres","vernacularGroup1":"Cnidaires","vernacularGroup2":"Hydrozoaires","vernacularGroup3":null,"description":null,"biology":"Le
+        cycle de vie comprend en général les deux stades polype (forme fixe, asexuée)
+        et méduse (forme libre, sexuée), avec prépondérance du stade polype. Chez
+        certains taxons cependant, le cycle se réduit à une seule forme.","ecology":"Les
+        hydrozoaires sont exclusivement marins à l''exception de l''ordre des Hydroida,
+        qui vit en eau douce et comprend notamment les hydres.<br>","biogeography":"<br>","ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/383"}}},{"id":382,"name":"Octocoralliaires","commonName":"Coraux
+        mous et gorgones","shortDescription":"Octocorallia","mainGroup":"Autres","vernacularGroup1":"Cnidaires","vernacularGroup2":"Octocoralliaires","vernacularGroup3":null,"description":null,"biology":"Comme
+        tous les anthozoaires, on ne les trouve que sous la forme polype.","ecology":"benthique
+        sédentaires.","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/382"}}},{"id":381,"name":"Scléractiniaires","commonName":"Coraux
+        scléractiniaires","shortDescription":"Scleractinia","mainGroup":"Autres","vernacularGroup1":"Cnidaires","vernacularGroup2":"Scléractiniaires","vernacularGroup3":null,"description":null,"biology":"Les
+        coraux durs peuvent adopter une grande variété de formes, qui sont \r\nautant
+        d''adaptations à des conditions particulières (disponibilité en \r\nnourriture,
+        prédateurs, courant, profondeur, ensoleillement, \r\nconcurrence...), formes
+        qui ne sont que rarement constantes au sein d''un\r\n même groupe génétique.","ecology":"Les
+        scléractiniaires sont exclusivement marins. Certaines espèces forment des
+        colonies, atteignant parfois des tailles impressionnantes (jusqu''à plusieurs
+        dizaines de mètres), tandis que d''autres constituent des polypes solitaires,
+        souvent plus gros.","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/381"}}},{"id":107,"name":"Cnidaires","commonName":"Méduses,
+        coraux, anémones et plumes de mer","shortDescription":"Cnidaria","mainGroup":"Autres","vernacularGroup1":"Cnidaires","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":"Présente
+        deux morphologies principales: le polype et la méduse. Le polype est un tube
+        creux, fermé au pied et ouvert à sa partie supérieure (bouche). Le polype
+        est fixé par son pied sur un substrat. La paroi est constituée de l''extérieur
+        vers l''intérieur de l''ectoderme, de la mésoglée et de l''endoderme.<br>La
+        méduse libre a plutôt la forme d''un disque, résultant de l''aplatissement
+        et l''élargissement du tube précédent. La couche de mésoglée s''épaissit
+        beaucoup et le plan se retourne: la bouche devient ventrale, toujours entourée
+        de tentacules.<br>Classiquement, au cours de la vie d''un cnidaire, il y a
+        une phase fixée (polype) et une phase de vie libre (méduse) liée à la
+        dissémination de l''espèce. La méduse porte les gonades et produit les
+        gamètes. Le polype se multiplie le plus souvent par bourgeonnement, donc
+        de manière asexuée.Cependant selon les groupes, on peut observer des espèces
+        à cycle mixte, d''autres à phase uniquement fixée, comme les anémones,
+        d''autres encore menant une vie totalement libre, sans polype. Tous les degrés
+        d''importance relative de ces deux phases sont observés.<br><br>Le cycle
+        général de la reproduction passe par deux phases, fixée et libre. Le polype
+        produit des méduses par bourgeonnement, ou chez les cubozoaires, par métamorphose
+        complète. Il peut aussi, chez beaucoup d''espèces, donner par fission d''autres
+        polypes ou encore produire des larves planula asexuées qui donneront d''autres
+        polypes.<br>","ecology":"Les formes sessiles sont présentes sur les côtes
+        ou constituent des récifs coralliens en mers tropicales. Peu d''espèces
+        vivent en eau douce. Les cnidaires sont prédateurs d''organismes planctoniques,
+        de petits invertébrés et parfois de petits poissons. Les tentacules des
+        polypes ou des méduses sont pourvus de cnidocystes, cellules à harpons urticants
+        inoculant aux proies un venin paralysant. Les tentacules amènent la proie
+        dans la bouche centrale.","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/107"}}},{"id":482,"name":"Cténaires","commonName":null,"shortDescription":"Ctenophora","mainGroup":"Autres","vernacularGroup1":"Cténaires","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":"Animaux
+        planctoniques, transparents, que l''on rencontre entre la surface des mers
+        et 3000m de profondeur. Certains ont acquis secondairement une vie benthique.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/482"}}},{"id":103,"name":"Cyanobactéries","commonName":"Algues
+        bleues","shortDescription":"Cyanobacteria","mainGroup":"Autres","vernacularGroup1":"Cyanobactéries","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/103"}}},{"id":109,"name":"Echinodermes","commonName":"Etoiles
+        de mer, oursins et concombres de mer","shortDescription":"Echinodermata","mainGroup":"Autres","vernacularGroup1":"Echinodermes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/109"}}},{"id":421,"name":"Foraminifères","commonName":"Foraminifères","shortDescription":"Foraminifera","mainGroup":"Autres","vernacularGroup1":"Foraminifères","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/421"}}},{"id":110,"name":"Gastrotriches","commonName":null,"shortDescription":"Gastrotricha","mainGroup":"Autres","vernacularGroup1":"Gastrotriches","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":"Les
+        gastrotriches marins sont hermaphrodites : ils produisent alternativement
+        des ovules et des spermatozoïdes, mais pas avec la même gonade.<br>Les gastrotriches
+        d''eau douce se reproduisent le plus souvent par parthénogénèse. Ils produisent
+        2 types d’œufs: des œufs à paroi mince qui se développent dès qu''ils
+        sont pondus; des œufs résistants qui doivent subir des températures extrêmes
+        ou la dessication avant de se développer.<br>","ecology":"Animaux marins
+        principalement des azones intertidales, mais aussi des animaux d''eau douce.
+        Ils habitent des espaces interstitiels des sédiments (sable, vase), la surface
+        des détritus superficiels, la surface des animaux et des plantes submergées,
+        les mousses, l''eau du sol et les eaux douces calmes. Ils se nourrissent de
+        débris organiques, de foraminifères, de diatomées, que leur ciliature ventrale
+        apporte à leur bouche. Ils sont eux-mêmes la proie des amibes, hydres, vers
+        turbellariés, insectes, crustacés et annélides.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/110"}}},{"id":521,"name":"Myxomycètes","commonName":null,"shortDescription":"Myxomycota","mainGroup":"Autres","vernacularGroup1":"Myxomycètes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":"Le
+        plasmode ressemble à une masse gélatineuse, correspondant à une seule cellule
+        non segmentée, dans laquelle baignent de nombreux noyaux. Ce plasmode n''est
+        pas enfermé dans une paroi rigide ; il peut donc être animé de mouvements
+        convulsifs et se déplacer (quelques centimètres par heure). Cette forme
+        se développe en fonction des conditions climatiques favorables (hygrométrie
+        importante).","ecology":"Le plasmode se nourrit de bactéries et de champignons,
+        pouvant même engloutir un sporophore entier. <br>Les myxomycètes se rencontrent
+        sur différents substrats toujours végétaux : bois morts, litière de feuilles
+        et brindilles, compost, mousses…<br>Les myxomycètes servent de nourriture
+        aux insectes comme les psoques, à certaines moisissures…<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/521"}}},{"id":481,"name":"Porifères","commonName":"Eponges","shortDescription":"Porifera","mainGroup":"Autres","vernacularGroup1":"Porifères","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":"Organismes
+        souvent hermaphrodites.<br>","ecology":"dans tous les environnements aquatiques
+        (eaux douces et salées, mers polaires et tropicales), de la zone intertidale
+        jusqu''aux fonds abyssaux (8600 m)!<br>Les éponges se nourrissent et captent
+        le dioxygène en créant dans leurs chambres internes un courant d''eau. Celui-ci
+        est créé par le battement des flagelles des choanocytes. Leur nourriture
+        est constituée de plancton (en particulier des dinoflagellés et des bactéries)
+        et de particules organiques détritiques.<br>Certaines éponges carnivores
+        ont perdu leur système aquifère. L''oxygène diffuse dans les tissus. <br>Contiennent
+        des symbiontes et des commensaux en grande quantité.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/481"}}},{"id":114,"name":"Rotifères","commonName":null,"shortDescription":"Rotifera","mainGroup":"Autres","vernacularGroup1":"Rotifères","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":"Certaines
+        espèces sont parthénogénétiques thélytoques (on ne connait donc que les
+        femelles), d’autres ont la faculté de produire des œufs résistants à
+        la dessiccation.","ecology":"Ce sont en général des organismes d’eau douce,
+        souvent planctoniques. Ils se nourrissent de microorganismes en suspension
+        dans l’eau. Quelques espèces sont parasites d’invertébrés.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/114"}}},{"id":115,"name":"Tardigrades","commonName":null,"shortDescription":"Tardigrada","mainGroup":"Autres","vernacularGroup1":"Tardigrades","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/115"}}},{"id":142,"name":"Acanthocéphales","commonName":null,"shortDescription":"Acanthocephala","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Acanthocéphales","vernacularGroup3":null,"description":null,"biology":"Les
+        sexes sont séparés, les œufs éclosent s’ils sont ingérés par un invertébré.
+        Ce sont des parasites d’Arthropodes (ex. : Amphipodes) à l’état juvénile
+        et d’intestin de vertébré à l’état adulte.","ecology":"Les acanthocéphales
+        sont des parasites obligatoires de vertébrés.","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/142"}}},{"id":144,"name":"Annélides","commonName":null,"shortDescription":"Annelida","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Annélides","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/144"}}},{"id":778,"name":"Lumbricina","commonName":"Vers
+        de terre","shortDescription":"Lumbricina de France métropolitaine et d''outre-mer","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Annélides","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":"Certaines
+        espèces de lombrics sont élevées (vermiculture) et vendues pour la production
+        de compost, ou pour la pêche.<br><br>Les vers du fumier sont utilisés pour
+        produire du vermicompost. Leur usage est tout à fait possible en appartement,
+        car les vers dévorent presque immédiatement toutes les fractions de déchets
+        en voie de décomposition. Les bactéries de la décomposition aérobie (celles
+        du compost) sécrètent des enzymes qui dépolymérisent (hydrolysent) les
+        protéines et polysaccharides des plantes et des restes animaux, elles servent
+        de nourriture aux vers qui les dévorent et transforment ces aliments ramollis
+        en une masse noire inodore qui est un concentré de carbone et d''azote pour
+        engraisser le sol du jardin et les jardinières.<br><br>Une autre application
+        très prometteuse consiste à utiliser des vers pour épurer les eaux usées.
+        Cette utilisation est plus économique et acceptable que les traitements classiques.
+        Son expérimentation est en cours dans le village de Combaillaux.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/778"}}},{"id":751,"name":"Sangsues","commonName":"Sangsues","shortDescription":"Hirudinea
+        (sangsues \"vraies\") et Branchiobdellida (annélides ressemblant aux sangsues
+        avec lesquelles ils sont parfois confondus).","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Annélides","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/751"}}},{"id":777,"name":"Sangsues
+        de France métropolitaine","commonName":"Sangsues de France métropolitaine","shortDescription":"Hirudinea
+        et Branchiobdellida de France métropolitaine","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Annélides","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/777"}}},{"id":156,"name":"Nématodes","commonName":"Vers
+        ronds, oxyures et filaires","shortDescription":"Nematoda","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Nématodes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/156"}}},{"id":157,"name":"Némertes","commonName":"Vers
+        rubanés","shortDescription":"Nemertea","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Némertes","vernacularGroup3":null,"description":null,"biology":"Ovipares
+        à sexes séparés. La fécondation est externe. Les oeufs sont pondus en
+        eau de mer, parfois protégés par une masse gélatineuse. Le développement
+        peut être direct ou indirect avec une larve pilidium qui subit une métamorphose
+        très particulière.<br>","ecology":"Vers marins benthiques. Peu sont pélagiques,
+        comme <i>Nectonemertes mirabilis</i>. Quelques espèces sont terrestres et
+        quelques autres vivent en eau douce. Elles vivent pour la plupart dans des
+        crevasses rocheuses ou sous les pierres. Certaines espèces creusent un terrier
+        dans le substrat marin meuble. Elles se meuvent par leur ciliature externe
+        ou par ondulations du corps. Ce sont d''actifs prédateurs qui utilisent leur
+        trompe pour chasser.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/157"}}},{"id":159,"name":"Plathelminthes","commonName":"Vers
+        plats","shortDescription":"Platyhelminthes","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":"Plathelminthes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/159"}}},{"id":116,"name":"Vers","commonName":"Vers","shortDescription":"Acanthocephala,
+        Annelida, Nematoda, Nemertea et Platyhelminthes","mainGroup":"Autres","vernacularGroup1":"Vers","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/116"}}},{"id":1183,"name":"Cryptophytes","commonName":null,"shortDescription":null,"mainGroup":"Autres","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":"Les
+        cryptophytes se trouvent dans toutes les mers, les eaux douces et \r\nles
+        eaux interstitielles des milieux terrestres humides. Elles forment \r\nune
+        partie significative du nanoplancton. On en trouve dans les eaux \r\ndouces
+        antarctiques. Certaines espèces sont des parasites intestinaux \r\nd''animaux
+        domestiques. D''autres sont devenues des endosymbiontes de \r\ndinophytes.","biogeography":"<br>","ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1183"}}},{"id":1185,"name":"Onychophores","commonName":"Vers
+        de velours","shortDescription":"Onychophora","mainGroup":"Autres","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1185"}}},{"id":2115,"name":"Protéobactéries","commonName":"Protéobactéries","shortDescription":null,"mainGroup":"Autres","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2115"}}},{"id":2117,"name":"Siponcles","commonName":"Siponcles","shortDescription":null,"mainGroup":"Autres","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2117"}}},{"id":147,"name":"Ascomycètes","commonName":"Levures,
+        lichens, moississures, morilles et truffes","shortDescription":"Ascomycota","mainGroup":"Champignons
+        et lichens","vernacularGroup1":"Ascomycètes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/147"}}},{"id":149,"name":"Basidiomycètes","commonName":"Champignons
+        à chapeau et apparentés","shortDescription":"Basidiomycota","mainGroup":"Champignons
+        et lichens","vernacularGroup1":"Basidiomycètes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/149"}}},{"id":1067,"name":"Hygrophoraceae
+        de France métropolitaine","commonName":null,"shortDescription":"Hygrophoraceae,
+        famille de Basidiomycota","mainGroup":"Champignons et lichens","vernacularGroup1":"Basidiomycètes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1067"}}},{"id":2119,"name":"Chytridiomycètes","commonName":null,"shortDescription":null,"mainGroup":"Champignons
+        et lichens","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2119"}}},{"id":501,"name":"Fonge","commonName":"Champignons
+        et lichens","shortDescription":"Fungi","mainGroup":"Champignons et lichens","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/501"}}},{"id":916,"name":"Lichens","commonName":"Lichens","shortDescription":"Lichens
+        et champignons lichénicoles","mainGroup":"Champignons et lichens","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/916"}}},{"id":706,"name":"Lichens
+        de France métropolitaine","commonName":"Lichens de France métropolitaine","shortDescription":"Lichens
+        et champignons lichénicoles de France métropolitaine","mainGroup":"Champignons
+        et lichens","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/706"}}},{"id":2118,"name":"Zygomycètes","commonName":"Mucors
+        et autres moississures","shortDescription":null,"mainGroup":"Champignons et
+        lichens","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2118"}}},{"id":326,"name":"Amphipodes","commonName":null,"shortDescription":"Amphipoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Amphipodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/326"}}},{"id":323,"name":"Branchiopodes","commonName":null,"shortDescription":"Branchiopoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Branchiopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/323"}}},{"id":1140,"name":"Crustacés
+        Branchiopodes Phyllopodes de France","commonName":null,"shortDescription":"Crustacés
+        Branchiopoda Phyllopoda de France (métropole et outre-mer)","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Branchiopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1140"}}},{"id":327,"name":"Branchiures","commonName":null,"shortDescription":"Branchiura","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Branchiures","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/327"}}},{"id":321,"name":"Copépodes","commonName":null,"shortDescription":"Copepoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Copépodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/321"}}},{"id":923,"name":"Brachyura","commonName":"Crabes","shortDescription":"Brachyura
+        ou \"vrais\" crabes","mainGroup":"Crabes, crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Décapodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/923"}}},{"id":324,"name":"Décapodes","commonName":"Crabes,
+        crevettes, langoustes et bernard l''hermite","shortDescription":"Decapoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Décapodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/324"}}},{"id":798,"name":"Décapodes
+        de France métropolitaine","commonName":null,"shortDescription":"Decapoda
+        de France métropolitaine","mainGroup":"Crabes, crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Décapodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/798"}}},{"id":1057,"name":"Homards,
+        langoustes, écrevisses et cigales de mer","commonName":"Homards, langoustes,
+        écrevisses et cigales de mer","shortDescription":null,"mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Décapodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1057"}}},{"id":1058,"name":"Paguroidea","commonName":"Bernards
+        l''hermite","shortDescription":"Paguroidea","mainGroup":"Crabes, crevettes,
+        cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Décapodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1058"}}},{"id":924,"name":"Crustacés
+        Isopodes Oniscidea","commonName":"Cloportes","shortDescription":null,"mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Isopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/924"}}},{"id":2111,"name":"Crustacés
+        Isopodes terrestres de France métropolitaine","commonName":"Cloportes de
+        France métropolitaine","shortDescription":"Crustacés Isopoda terrestres
+        de France métropolitaine : correspond au sous-ordre des Oniscidea (= cloportes).","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Isopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2111"}}},{"id":325,"name":"Isopodes","commonName":null,"shortDescription":"Isopoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Isopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/325"}}},{"id":322,"name":"Ostracodes","commonName":null,"shortDescription":"Ostracoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":"Ostracodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/322"}}},{"id":1055,"name":"Crevettes","commonName":"Crevettes","shortDescription":"Caridea,
+        Mysida, Dendrobranchiata, Stenopodidea, Euphausiacea et Stomatopoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1055"}}},{"id":150,"name":"Crustacés","commonName":"Crabes,
+        crevettes et cloportes","shortDescription":"Branchiopoda, Oligostraca et Multicrustacea","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/150"}}},{"id":925,"name":"Crustacés
+        d''eau douce","commonName":"Crustacés d''eau douce","shortDescription":"Branchiopoda,
+        Oligostraca et Multicrustacea d''eau douce (sens large) de France (métropole
+        et outre-mer) : inclut les espèces strictement d''eau douce (habitat 2) ou
+        également retrouvées dans le milieu marin (habitat 4 = eau douce / marin)
+        ou à terre (habitat 8 = eau douce / terrestre).","mainGroup":"Crabes, crevettes,
+        cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/925"}}},{"id":926,"name":"Crustacés
+        marins","commonName":"Crustacés marins","shortDescription":"Branchiopoda,
+        Oligostraca et Multicrustacea marins (sens large) de France (métropole et
+        outre-mer) : inclut les espèces strictement marines (habitat 1) ou pouvant
+        également être retrouvées en eau douce (habitat 4 = eau douce / marin),
+        en eau saumâtre (habitat 6) ou a terre (habitat 5 = marin et terrestre).","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/926"}}},{"id":303,"name":"Chilopodes","commonName":"Centipèdes,
+        scutigères, scolopendres, géophiles et lithobies","shortDescription":"Chilopoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":"Chilopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/303"}}},{"id":746,"name":"Chilopodes
+        de France métropolitaine","commonName":null,"shortDescription":"Chilopoda
+        de France métropolitaine","mainGroup":"Crabes, crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":"Chilopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/746"}}},{"id":304,"name":"Diplopodes","commonName":"Iules
+        et gloméris","shortDescription":"Diplopoda","mainGroup":"Crabes, crevettes,
+        cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":"Diplopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/304"}}},{"id":747,"name":"Diplopodes
+        de France métropolitaine","commonName":null,"shortDescription":"Diplopoda
+        de France métropolitaine","mainGroup":"Crabes, crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":"Diplopodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/747"}}},{"id":301,"name":"Pauropodes","commonName":null,"shortDescription":"Pauropoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":"Pauropodes","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/301"}}},{"id":302,"name":"Symphyles","commonName":null,"shortDescription":"Symphyla","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":"Symphyles","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/302"}}},{"id":155,"name":"Myriapodes","commonName":"Mille-pattes","shortDescription":"Myriapoda","mainGroup":"Crabes,
+        crevettes, cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":"Myriapodes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/155"}}},{"id":502,"name":"Crustacés
+        et Myriapodes","commonName":"Crabes, crevettes, cloportes et mille-pattes","shortDescription":"Branchiopoda,
+        Oligostraca, Multicrustacea et Myriapoda","mainGroup":"Crabes, crevettes,
+        cloportes et mille-pattes","vernacularGroup1":"Arthropodes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/502"}}},{"id":222,"name":"Bivalves","commonName":"Palourdes,
+        huîtres, moules, pétoncles et autres bivalves","shortDescription":"Bivalvia","mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Bivalves","vernacularGroup3":null,"description":null,"biology":null,"ecology":"Les
+        bivalves sont des mollusques marins ou dulçaquicoles filtreurs, fouisseurs
+        ou fixés, capables de coloniser tous les substrats. Les habitans des fonds
+        durs (huîtres, chames, spondyles) cimentent une valve au support ou s''attachent
+        à celui-ci à l''aide de leur byssus (moules, pintadines). La surface de
+        leurs valves est souvent ornée de rides, lames ou épines.Les bivalves fouisseurs
+        (palourde, mye des sables) ont souvent une coquille aplatie et lisse.D''autres
+        bivalves sont capables de perforer le bois, la pierre calcaire, les grès,
+        le corail ou l''argile, soit mécaniquement (pholades, tarets), soit à l''aide
+        d''acides (dattes de mer), et habitent dans les trous forés. Les bivalves
+        d''eau douce sont présents même en haute montagne et en région arctique.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/222"}}},{"id":693,"name":"Bivalves
+        d''eau douce de France métropolitaine","commonName":"Bivalves d''eau douce
+        de France métropolitaine","shortDescription":"Bivalvia d''eau douce (sens
+        large) de France métropolitaine : inclut les espèces strictement d''eau
+        douce (habitat 2) ou également retrouvées dans le milieu marin (habitat
+        4 = eau douce / marin).","mainGroup":"Escargots et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Bivalves","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/693"}}},{"id":1158,"name":"Bivalves
+        marins","commonName":"Palourdes, huîtres, moules, pétoncles et autres bivalves","shortDescription":"Bivalvia
+        marins (sens large) de France (métropole et outre-mer) : inclut les espèces
+        strictement marines (habitat 1) ou pouvant également être retrouvées en
+        eau douce (habitat 4 = eau douce / marin) ou en eau saumâtre (habitat 6).","mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Bivalves","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1158"}}},{"id":223,"name":"Céphalopodes","commonName":"Pieuvres,
+        poulpes, calmars et seiches","shortDescription":"Cephalopoda","mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Céphalopodes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/223"}}},{"id":221,"name":"Gastéropodes","commonName":null,"shortDescription":"Gastropoda","mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Gastéropodes","vernacularGroup3":null,"description":null,"biology":"Les
+        gastéropodes sont à sexes séparés ou bien hermaphrodites. Les oeufs sont
+        pondus sous forme de frai, de cocons ou bien isolément.<br>","ecology":"Les
+        espèce sont marines, d''eau douce, ou bien terrestres. On trouve des gastéropodes
+        dans tous les milieux, même dans les eaux polaires, et à toutes les profondeurs
+        marines: des grands fonds marins jusqu''en zone de balancement des marées,
+        en haute mer où beaucoup d''espèces mènent une vie totalement pélagique,
+        dans les lacs, les rivières, les milieux terrestres des plus humides jusqu''aux
+        milieux secs, et même les plus arides.<br>Les gastéropodes présentent tous
+        les régimes alimentaires et sont donc ","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/221"}}},{"id":832,"name":"Gastéropodes
+        terrestres","commonName":"Escargots et limaces terrestres","shortDescription":"Gastropoda
+        strictement terrestres (habitat 3) de France (métropole et outre-mer).","mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Gastéropodes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/832"}}},{"id":691,"name":"Limaces
+        de France métropolitaine","commonName":"Limaces de France métropolitaine","shortDescription":null,"mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Gastéropodes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/691"}}},{"id":1341,"name":"Nudibranches","commonName":"Limaces
+        de mer","shortDescription":null,"mainGroup":"Escargots et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":"Gastéropodes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1341"}}},{"id":111,"name":"Mollusques","commonName":"Escargots
+        et autres mollusques","shortDescription":"Mollusca","mainGroup":"Escargots
+        et autres mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/111"}}},{"id":801,"name":"Mollusques
+        continentaux de France métropolitaine","commonName":"Mollusques continentaux
+        de France métropolitaine","shortDescription":"Mollusca continentaux (sens
+        large) de France métropolitaine : inclut l''eau douce (habitat 2), le terrestre
+        (habitat 3) et toutes les combinaisons incluant ces 2 milieux (eau douce /
+        marin (habitat 4), terrestre / marin (habitat 5), eau saumâtre (habitat 6)
+        et eau douce / terrestre (habitats 7 et 8)).","mainGroup":"Escargots et autres
+        mollusques","vernacularGroup1":"Mollusques","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/801"}}},{"id":285,"name":"Acariens","commonName":"Acariens","shortDescription":"Acari","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":"Acariens","description":null,"biology":"Les
+        régimes alimentaires sont variés : prédateurs, parasites, végétariens,
+        saprophages. Le développement présente souvent un nombre fixe de stades
+        de développement postembryonnaires : le premier ne possède que 3 paires
+        de pattes (« larve »), les trois suivants sont des immatures (« proto -
+        , deuto - , tritonymphe »), l’imago ne mue plus. Chez certains parasites
+        aquatiques (Hydracariens), il existe une alternance de stades ectoparasites
+        (d’insectes) immobiles et regressés (hypopes) d’où le terme de nymphe,
+        étendu ensuite de façon impropre à tous les acariens et parfois même à
+        d’autres arachnides. <br>","ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/285"}}},{"id":284,"name":"Araneae","commonName":"Araignées","shortDescription":"Araneae","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":"Araneae","description":null,"biology":"Le
+        cycle est en général annuel mais les plus grandes espèces effectuent un
+        cycle sur plusieurs années (les mygales et les filistates sur 3 à 6 ans),
+        la longévité des imagos est saisonnière excepté chez les cavernicoles
+        et les espèces domestiques – non soumises au climat hivernal – et chez
+        les mygales et les filistates qui peuvent muer au stade imaginal (survie pouvant
+        atteindre 10 ans chez les mygales).","ecology":"Toutes les espèces européennes
+        sont prédatrices. Elles ont colonisé tous","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/284"}}},{"id":635,"name":"Araneae
+        de France métropolitaine","commonName":"Araignées de France métropolitaine","shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":"Araneae","description":null,"biology":"Le
+        cycle est en général annuel mais les plus grandes espèces effectuent un
+        cycle sur plusieurs années (les mygales et les filistates sur 3 à 6 ans),
+        la longévité des imagos est saisonnière excepté chez les cavernicoles
+        et les espèces domestiques – non soumises au climat hivernal – et chez
+        les mygales et les filistates qui peuvent muer au stade imaginal (survie pouvant
+        atteindre 10 ans chez les mygales).","ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/635"}}},{"id":282,"name":"Opilions","commonName":null,"shortDescription":"Opiliones","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":"Opilions","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/282"}}},{"id":283,"name":"Pseudoscorpions","commonName":null,"shortDescription":"Pseudoscorpiones","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":"Pseudoscorpions","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/283"}}},{"id":281,"name":"Scorpions","commonName":"Scorpions","shortDescription":"Scorpionides","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":"Scorpions","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/281"}}},{"id":145,"name":"Arachnides","commonName":"Araignées,
+        scorpions et acariens","shortDescription":null,"mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Arachnides","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/145"}}},{"id":1101,"name":"Cicindèles
+        de France métropolitaine","commonName":"Cicindèles de France métropolitaine","shortDescription":"Coleoptera
+        Carabidae Cicindelinae de France métropolitaine","mainGroup":"Insectes et
+        araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1101"}}},{"id":682,"name":"Coccinellidae
+        de France métropolitaine","commonName":"Coccinelles de France métropolitaine","shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/682"}}},{"id":444,"name":"Coléoptères","commonName":"Coccinelles,
+        scarabées et autres coléoptères","shortDescription":"Coleoptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/444"}}},{"id":809,"name":"Coléoptères
+        aquatiques de France métropolitaine","commonName":null,"shortDescription":"Coleoptera
+        aquatiques (sens large) de France métropolitaine","mainGroup":"Insectes et
+        araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/809"}}},{"id":897,"name":"Coléoptères
+        coprophages de France métropolitaine","commonName":null,"shortDescription":"Geotrupidae,
+        Scarabaeinae et Aphodiinae de France métropolitaine","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/897"}}},{"id":800,"name":"Coléoptères
+        saproxyliques de France métropolitaine","commonName":null,"shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/800"}}},{"id":617,"name":"Longicornes
+        des Antilles","commonName":"Longicornes des Antilles","shortDescription":"Cerambycidae
+        des îles françaises de l''arc antillais, du nord au sud : Saint-Martin,
+        Saint-Barthélemy, Guadeloupe et Martinique.","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Coléoptères","description":null,"biology":"La
+        famille des Cerambycidae est composée d''espèces phytophages: les larves
+        de la majorité des espèces sont liées aux arbres et arbustes, xylophages
+        ou sapro-xylophages; et une autre partie est liée aux plantes herbacées.
+        Les adultes ont un régime alimentaire variable selon les espèces : floricole
+        pollinivore, phyllophage, opophage (sève), voire ne se nourrissant peu ou
+        pas à l''état adulte. Les longicornes antillais sont très majoritairement
+        saproxylophages, quelques espèces se développent dans les lianes et plantes
+        grimpantes peu lignifiées et à notre connaissance, aucune espèce ne se
+        développe dans les plantes herbacées. Les cycles de développement sont
+        généralement assez courts, 4 à 8 mois entre la ponte et l''émergence d''un
+        adulte. Ils sont cependant plus longs chez les grandes espèces qui consomment
+        du bois à des stades de décomposition avancés (prioniens, dont les cycles
+        dépassent souvent les 16 mois).","ecology":null,"biogeography":"Comparativement
+        au continent américain, la richesse spécifique est modérée et l''endémisme
+        est fort. Le taux d''endémisme est important dans les communautés d''espèces
+        des forêts sur les reliefs arrosés des îles volcaniques. A l''inverse,
+        les faunes des milieux littoraux sont composées d''une majorité d''espèces
+        à large répartition. La richesse spécifique par île suit bien la relation
+        de l''équilibre insulaire : le nombre d''espèce croît avec la taille de
+        l''île. Certaines sous-famille et tribus sont bien représentées, alors
+        que d''autres sont absentes, témoignant ainsi des aléas de la colonisation
+        des milieux insulaires et des phénomènes de radiations spécifiques. Pour
+        prendre deux exemples : les prioniens de la tribu des Solenopterini ont donné
+        une multitude d''endémiques aux Antilles (Grandes et Petites); tandis dans
+        la grande tribu néotropicale des Rhinotragini ne compte qu''une espèce aux
+        Petites Antilles (Sainte-Lucie) et aucune aux Antilles françaises.<br>","ethology":null,"economy":"<span
+        style=\"font-style: normal;\">Les espèces antillaises consomment essentiellement
+        du bois mort ou mourant, et à ce titre ne sont pas connues comme ayant un
+        impact agricole ou sylvicole. Seul le </span><i>Lagocheirus araneiformis </i>peut
+        parfois totalement envahir le tronc d''un gommier rouge, sans qu''on sache
+        réellement s''il provoque la mort ou s''il profite d''un arbre déjà mourrant.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/617"}}},{"id":445,"name":"Diptères","commonName":"Mouches
+        et moustiques","shortDescription":"Diptera","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Diptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/445"}}},{"id":2069,"name":"Diptères
+        Ptychopteridae et Tipulidae de France métropolitaine","commonName":null,"shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Diptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2069"}}},{"id":873,"name":"Diptères
+        Syrphidae de France métropolitaine","commonName":"Syrphes de France métropolitaine","shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Diptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/873"}}},{"id":724,"name":"Cicadidae
+        de France métropolitaine","commonName":"Cigales de France métropolitaine","shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hémiptères","description":null,"biology":"Les
+        biologies sont différentes suivant les familles. Les Cigales ont des larves
+        souterraines, les imagos sont aériens et stridulent. Les jeunes ressemblent
+        aux imagos dans les autres familles.","ecology":"Le régime alimentaire est
+        végétarien (sève végétale).","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/724"}}},{"id":447,"name":"Hémiptères","commonName":"Cigales,
+        punaises, pucerons et cochenilles","shortDescription":"Hemiptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hémiptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/447"}}},{"id":906,"name":"Hétéroptères
+        aquatiques de France métropolitaine","commonName":null,"shortDescription":"Heteroptera
+        aquatiques (sens large) de France métropolitaine : inclut l''eau douce (habitat
+        2), l''eau douce / marin (habitat 4) et l''eau douce / terrestre (habitat
+        8).","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hémiptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/906"}}},{"id":723,"name":"Punaises
+        Pentatomoidea de France métropolitaine","commonName":"Punaises de France
+        métropolitaine","shortDescription":"Hemiptera Pentatomoidea de France métropolitaine","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hémiptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/723"}}},{"id":643,"name":"Abeilles
+        sauvages de France métropolitaine","commonName":"Abeilles et bourdons de
+        France métropolitaine","shortDescription":"Apoïdes Anthophiles (= Apidae,
+        Halictidae, Colletidae, Melittidae, Andrenidae et Megachilidae) de France
+        métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hyménoptères","description":null,"biology":null,"ecology":"Les
+        abeilles peuvent être classées selon leur mode de vie : abeilles domestiques,
+        sauvages, solitaires ou bien sociales, etc. <br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/643"}}},{"id":662,"name":"Formicidae
+        de France métropolitaine","commonName":"Fourmis de France métropolitaine","shortDescription":"Formicidae
+        de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hyménoptères","description":null,"biology":null,"ecology":"Les
+        fourmis se sont adaptées à presque tous les milieux terrestres et souterrains
+        mais n''existent a priori pas \r\ndans les milieux aquatiques ni dans les
+        zones polaires et glaciaires \r\npermanentes.","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/662"}}},{"id":446,"name":"Hyménoptères","commonName":"Abeilles,
+        guêpes et fourmis","shortDescription":"Hymenoptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hyménoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/446"}}},{"id":721,"name":"Hyménoptères
+        Symphytes de France métropolitaine","commonName":"Mouches à scie de France
+        métropolitaine","shortDescription":"Hymenoptera Symphyta de France métropolitaine","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Hyménoptères","description":null,"biology":null,"ecology":"Les
+        adultes sont diurnes et, en général, floricoles, se nourrissant de pollen
+        ou de nectar. Les larves sont phytophages, excepté chez les Orussidés (parasites
+        de Coléoptères ?).","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/721"}}},{"id":443,"name":"Lépidoptères","commonName":"Chenilles
+        et papillons","shortDescription":"Lépidoptera","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/443"}}},{"id":902,"name":"Microlépidoptères
+        de France métropolitaine","commonName":null,"shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/902"}}},{"id":807,"name":"Noctuelles
+        de Guyane","commonName":null,"shortDescription":"Noctuidae, Nolidae, Erebidae
+        et Euteliidae de Guyane","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/807"}}},{"id":1221,"name":"Papillons
+        de nuit","commonName":"Papillons de nuit","shortDescription":"Gros papillons
+        de nuit (Cossidae, Hepialidae, Thyrididae, Macroheterocera et Castniidae)
+        et Microlépidoptères","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1221"}}},{"id":808,"name":"Rhopalocères
+        de Martinique","commonName":"Papillons de jour de Martinique","shortDescription":"Hesperiidae,
+        Lycaenidae, Nymphalidae, Papilionidae, Riodinidae et Pieridae de Martinique","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/808"}}},{"id":1219,"name":"Rhopalocères
+        et Zygènes","commonName":"Papillons de jour","shortDescription":"Hesperiidae,
+        Lycaenidae, Nymphalidae, Papilionidae, Zygaenidae, Riodinidae et Pieridae","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1219"}}},{"id":676,"name":"Rhopalocères
+        et Zygènes de France métropolitaine","commonName":"Papillons de jour de
+        métropole","shortDescription":"Hesperiidae, Lycaenidae, Nymphalidae, Papilionidae,
+        Riodinidae, Pieridae et Zygaenidae de France métropolitaine","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/676"}}},{"id":823,"name":"Sésies
+        de France métropolitaine","commonName":null,"shortDescription":"Sesiidae
+        de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Lépidoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/823"}}},{"id":441,"name":"Odonates","commonName":"Libellules
+        et demoiselles","shortDescription":"Odonata","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Odonates","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/441"}}},{"id":782,"name":"Odonates
+        de France métropolitaine","commonName":"Libellules et demoiselles de France
+        métropolitaine","shortDescription":"Odonata de France métropolitaine","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Odonates","description":null,"biology":"Ce
+        sont des prédateurs à l''état larvaire et imaginal. Les larves sont aquatiques.
+        Un grand nombre de stades se succèdent (8 à 15 suivant les espèces et les
+        individus) pendant 1 à 5 ans. Elles chassent à l‘affût. La métamorphose
+        s''effectue hors de l''eau. La dernière exuvie larvaire est abandonnée sur
+        la végétation aquatique. Les imagos ont une activité diurne de chasse.
+        Les mâles possèdent des poches copulatrices avec un pénis sur le second
+        segment abdominal. Lors de l''accouplement, le mâle saisit la femelle en
+        arrière de la tête ou sur le prothorax et la femelle recourbe sont abdomen
+        jusqu''à la poche copulatrice. Les pontes sont parfois endophytiques. Le
+        premier stade larvaire est un stade pharate (appendices non libres).<br>","ecology":"Larves
+        aquatiques et adultes vivant au bord de l''eau dans les zones humides.<br>","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/782"}}},{"id":806,"name":"Odonates
+        des Antilles françaises","commonName":"Libellules et demoiselles des Antilles","shortDescription":"Odonata
+        des Antilles françaises (Martinique, Guadeloupe, Saint-Martin et Saint-Barthélemy)","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Odonates","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/806"}}},{"id":442,"name":"Orthoptères","commonName":"Sauterelles,
+        grillons et criquets","shortDescription":"Orthoptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":"Orthoptères","description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/442"}}},{"id":948,"name":"Blattodea","commonName":"Blattes
+        et termites","shortDescription":null,"mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/948"}}},{"id":949,"name":"Dermaptères","commonName":"Perce-oreilles","shortDescription":"Dermaptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/949"}}},{"id":958,"name":"Ephéméroptères","commonName":"Ephémères","shortDescription":"Ephemeroptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/958"}}},{"id":904,"name":"Ephéméroptères
+        de France métropolitaine","commonName":"Ephémères de France métropolitaine","shortDescription":"Ephemeroptera
+        de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/904"}}},{"id":153,"name":"Insectes","commonName":null,"shortDescription":"Insecta","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/153"}}},{"id":956,"name":"Mantodea","commonName":"Mantes","shortDescription":"Mantodea","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/956"}}},{"id":2068,"name":"Mécoptères
+        et Mégaloptères de France métropolitaine","commonName":null,"shortDescription":"Mecoptera
+        et Megaloptera de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2068"}}},{"id":2067,"name":"Névroptères
+        de France métropolitaine","commonName":"Névroptères de France métropolitaine","shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/2067"}}},{"id":1131,"name":"Orthoptères
+        et Mantides de France métropolitaine","commonName":null,"shortDescription":"Mantodea
+        et Orthoptera de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1131"}}},{"id":957,"name":"Phasmides","commonName":"Phasmes","shortDescription":"Phasmida","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/957"}}},{"id":905,"name":"Plécoptères
+        de France métropolitaine","commonName":null,"shortDescription":"Plecoptera
+        de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/905"}}},{"id":959,"name":"Siphonaptères","commonName":"Puces","shortDescription":"Siphonaptera","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/959"}}},{"id":908,"name":"Trichoptères
+        de France métropolitaine","commonName":null,"shortDescription":"Trichoptera
+        de France métropolitaine","mainGroup":"Insectes et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/908"}}},{"id":960,"name":"Zygentomes","commonName":"Poissons
+        d''argent et apparentés","shortDescription":"Zygentoma","mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":"Insectes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/960"}}},{"id":504,"name":"Insecta
+        et Arachnida","commonName":"Insectes et araignées","shortDescription":null,"mainGroup":"Insectes
+        et araignées","vernacularGroup1":"Arthropodes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/504"}}},{"id":981,"name":"Carnivores","commonName":"Carnivores","shortDescription":"Carnivora","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/981"}}},{"id":891,"name":"Carnivores
+        et Primates de France","commonName":null,"shortDescription":"Carnivora et
+        Primates continentaux de France (métropole et outre-mer) : inclut les espèces
+        terrestres et/ou d''eau douce (habitats 2, 3, 7 et 8) mais exclut les carnivores
+        marins.","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/891"}}},{"id":979,"name":"Cétacés","commonName":"Baleines
+        et dauphins","shortDescription":"Cetacea","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/979"}}},{"id":663,"name":"Chiroptères","commonName":"Chauves-souris","shortDescription":"Chiroptera","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/663"}}},{"id":892,"name":"Chiroptères
+        de France métropolitaine","commonName":"Chauves-souris de France métropolitaine","shortDescription":"Chiroptera
+        de France métropolitaine","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/892"}}},{"id":893,"name":"Chiroptères
+        d''outre mer","commonName":"Chauves-souris d''outre-mer","shortDescription":"Chiroptera
+        d''outre-mer (tous territoires confondus)","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/893"}}},{"id":1020,"name":"Insectivores","commonName":"Musaraignes,
+        hérissons et taupes","shortDescription":"Eulipotyphla de France métropolitaine
+        et d''outre-mer","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1020"}}},{"id":154,"name":"Mammifères","commonName":"Mammifères","shortDescription":"Mammalia","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/154"}}},{"id":797,"name":"Mammifères
+        marins de France","commonName":"Mammifères marins de France","shortDescription":"Mammifères
+        marins (sens large) de France (métropole et outre-mer) : inclut les espèces
+        strictement marines (habitat 1) ou pouvant également être retrouvées en
+        eau douce (habitat 4 = eau douce / marin), en eau saumâtre (habitat 6) ou
+        a terre (habitat 5 = marin et terrestre).","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/797"}}},{"id":869,"name":"Ongulés
+        et Lagomorphes de France","commonName":null,"shortDescription":"Hippopotamidae,
+        Bovidae, Cervidae, Suidae, Tayassuidae, Perissodactyla et Lagomorpha de France
+        (métropole et outre-mer).","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/869"}}},{"id":1061,"name":"Pinnipèdes","commonName":"Phoques,
+        otaries et morse","shortDescription":"Pinnipeda","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1061"}}},{"id":983,"name":"Primates","commonName":"Singes
+        et lémuriens","shortDescription":"Primates","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/983"}}},{"id":987,"name":"Rodentia
+        et Lagomorphes","commonName":"Rongeurs, lièvres et lapins","shortDescription":"Rodentia
+        et Lagomorphes","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/987"}}},{"id":1109,"name":"Rongeurs
+        de France","commonName":"Rongeurs","shortDescription":"Rodentia de France
+        métropolitaine et d''outre-mer","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1109"}}},{"id":1019,"name":"Ruminants
+        et Suines","commonName":"Cerfs, chevreuils, sanglier et pécaris","shortDescription":"Ruminantia
+        et Suina","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1019"}}},{"id":896,"name":"Soricomorphes,
+        Erinacéomorphes, Diprotodontes et Xénarthres de France","commonName":null,"shortDescription":"Eulipotyphla
+        (anciennement Soricomorpha et Erinaceomorpha), Diprotodontia et Xenarthra","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/896"}}},{"id":1035,"name":"Xénarthres","commonName":"Paresseux,
+        fourmiliers et tatous","shortDescription":"Xenarthra","mainGroup":"Mammifères","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1035"}}},{"id":1037,"name":"Accipitriformes
+        et Falconiformes","commonName":"Rapaces diurnes","shortDescription":"Accipitriformes
+        et Falconiformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1037"}}},{"id":1062,"name":"Ansériformes","commonName":"Canards,
+        oies et cygnes","shortDescription":"Anseriformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1062"}}},{"id":1063,"name":"Charadriiformes","commonName":"Mouettes,
+        goélands, sternes et bécasses","shortDescription":"Charadriiformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1063"}}},{"id":982,"name":"Columbiformes","commonName":"Pigeons,
+        tourterelles et apparentés","shortDescription":"Columbiformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/982"}}},{"id":148,"name":"Oiseaux","commonName":"Oiseaux","shortDescription":"Aves","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":"Ils
+        sont toujours ovipares. Leur comportement très complexe est très étudié.<br>","ecology":"Les
+        oiseaux sont présents dans tous les milieux, y compris les plus froids, sauf
+        dans les grands fonds marins. C''est un groupe en pleine expansion, probablement
+        en raison de la colonisation des airs, de leur indépendance vis-à-vis de
+        l''eau pour se reproduire, et de leur homéothermie. Pour des raisons sans
+        doute énergétiques, ils sont le plus souvent carnivores prédateurs (d''insectes
+        ou de vertébrés) ou granivores, rarement herbivores comme les oies, et aussi
+        un cas extraordinaire l''hoazin, <i>Opisthocomus hoazin</i>. La vue est toujours
+        excellente. Les oiseaux peuvent perdre secondairement leur aptitude au vol
+        et se spécialiser dans la course (autruches) ou dans la nage en pleine mer
+        (manchots). Ils peuvent effectuer des migrations saisonnières parmi les plus
+        vastes du monde animal.","biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/148"}}},{"id":1369,"name":"Oiseaux
+        nicheurs de France métropolitaine","commonName":"Oiseaux nicheurs de France
+        métropolitaine","shortDescription":null,"mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1369"}}},{"id":984,"name":"Passériformes","commonName":"Mésanges,
+        moineaux, pinsons et autres passereaux","shortDescription":"Passeriformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/984"}}},{"id":1064,"name":"Pélécaniformes","commonName":"Hérons,
+        spatules et pélicans","shortDescription":"Pelecaniformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1064"}}},{"id":1065,"name":"Piciformes","commonName":"Pics
+        et toucans","shortDescription":"Piciformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1065"}}},{"id":776,"name":"Psittaciformes","commonName":"Perroquets,
+        perruches, cacatoès et apparentés","shortDescription":"Psittaciformes de
+        France métropolitaine et d''outre-mer","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/776"}}},{"id":678,"name":"Strigiformes","commonName":"Chouettes
+        et hiboux","shortDescription":"Strigiformes","mainGroup":"Oiseaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/678"}}},{"id":364,"name":"Rhodophytes","commonName":"Algues
+        rouges","shortDescription":null,"mainGroup":"Plantes, mousses et fougères","vernacularGroup1":"Algues","vernacularGroup2":"Algues
+        rouges","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/364"}}},{"id":341,"name":"Bryidae","commonName":"Mousses","shortDescription":"Bryidae","mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Bryophytes","vernacularGroup2":"Bryidae","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/341"}}},{"id":342,"name":"Hépatiques
+        et Anthocérotes","commonName":null,"shortDescription":"Marchantiidae et Anthocerotidae
+        de France (métropole et outre-mer)","mainGroup":"Plantes, mousses et fougères","vernacularGroup1":"Bryophytes","vernacularGroup2":"Hépatiques
+        et Anthocérotes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/342"}}},{"id":201,"name":"Bryophytes","commonName":"Mousses,
+        hépathiques et anthocérotes","shortDescription":"Bryidae, Marchantiidae
+        et Anthocerotidae","mainGroup":"Plantes, mousses et fougères","vernacularGroup1":"Bryophytes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/201"}}},{"id":708,"name":"Bryophytes
+        de France métropolitaine","commonName":"Mousses de France métropolitaine","shortDescription":"Mousses,
+        Hépatiques et Anthocérotes de France métropolitaine","mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Bryophytes","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/708"}}},{"id":203,"name":"Angiospermes","commonName":"Plantes
+        à fleurs","shortDescription":"Magnoliidae","mainGroup":"Plantes, mousses
+        et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Angiospermes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/203"}}},{"id":675,"name":"Cactacées","commonName":"Cactus","shortDescription":"Cactacées","mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Angiospermes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/675"}}},{"id":990,"name":"Orchidaceae","commonName":"Orchidées","shortDescription":"Orchidaceae","mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Angiospermes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/990"}}},{"id":1060,"name":"Poaceae","commonName":"Herbes
+        et céréales","shortDescription":"Poaceae","mainGroup":"Plantes, mousses
+        et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Angiospermes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1060"}}},{"id":204,"name":"Gymnospermes","commonName":"Plantes
+        à cônes","shortDescription":"Ginkgoidae, Pinidae, Cycadidae et Gnetidae","mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Gymnospermes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/204"}}},{"id":688,"name":"Pinidae","commonName":"Pins,
+        sapins et autres Conifères","shortDescription":"Pinidae","mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Gymnospermes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/688"}}},{"id":202,"name":"Ptéridophytes","commonName":"Fougères","shortDescription":null,"mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":"Plantes vasculaires","vernacularGroup2":"Ptéridophytes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/202"}}},{"id":152,"name":"Plantes
+        vasculaires","commonName":"Plantes vasculaires","shortDescription":"Angiospermes,
+        Gymnospermes et Ptéridophytes","mainGroup":"Plantes, mousses et fougères","vernacularGroup1":"Plantes
+        vasculaires","vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/152"}}},{"id":362,"name":"Chlorophytes
+        et Charophytes","commonName":"Algues vertes","shortDescription":null,"mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":null,"vernacularGroup2":"Algues vertes","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/362"}}},{"id":995,"name":"Algues
+        vertes et rouges","commonName":"Algues vertes et rouges","shortDescription":"Chlorophyta,
+        Charophyta et Rhodophyta","mainGroup":"Plantes, mousses et fougères","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/995"}}},{"id":992,"name":"Arbres","commonName":"Arbres","shortDescription":null,"mainGroup":"Plantes,
+        mousses et fougères","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/992"}}},{"id":505,"name":"Plantes","commonName":"Plantes,
+        mousses et fougères","shortDescription":"Plantae","mainGroup":"Plantes, mousses
+        et fougères","vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/505"}}},{"id":1008,"name":"Anguilles
+        et murènes","commonName":"Anguilles et murènes","shortDescription":"Anguilliformes,
+        Elopiformes, Notacanthiformes, Saccopharyngiformes et Albuliformes","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1008"}}},{"id":1013,"name":"Béloniformes","commonName":"Poissons-volants
+        et apparentés","shortDescription":"Beloniformes","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1013"}}},{"id":1009,"name":"Characiformes,
+        Cypriniformes, Gymnotiformes, Gonorhynchiformes et Siluriformes","commonName":"Carpes,
+        poissons-chats et piranhas","shortDescription":null,"mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1009"}}},{"id":649,"name":"Elasmobranches","commonName":"Requins
+        et raies","shortDescription":"Elasmobranchii","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/649"}}},{"id":1018,"name":"Perciformes","commonName":"Mérous,
+        thons, perches et apparentés","shortDescription":"Perciformes","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1018"}}},{"id":1012,"name":"Pleuronectiformes","commonName":"Soles,
+        flétans, turbots et autres poissons plats","shortDescription":"Pleuronectiformes","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1012"}}},{"id":158,"name":"Poissons","commonName":"Poissons","shortDescription":"Myxini,
+        Petromyzonti, Elasmobranchii, Holocephal, Leptocardii, Dipneusti et Actinopterygii","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/158"}}},{"id":1000,"name":"Poissons
+        d''eau douce","commonName":"Poissons d''eau douce","shortDescription":"Poissons
+        d''eau douce (sens large) de France (métropole et outre-mer) : inclut les
+        espèces strictement d''eau douce (habitat 2) ou également retrouvées dans
+        le milieu marin (habitat 4 = eau douce / marin).","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1000"}}},{"id":625,"name":"Poissons
+        d''eau douce de France métropolitaine","commonName":"Poissons d''eau douce
+        de France métropolitaine","shortDescription":"Poissons d''eau douce (sens
+        large) de France métropolitaine : inclut les espèces strictement d''eau
+        douce (habitat 2) ou également retrouvées dans le milieu marin (habitat
+        4 = eau douce / marin).","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/625"}}},{"id":803,"name":"Poissons
+        d''eau douce de Guyane","commonName":"Poissons d''eau douce de Guyane","shortDescription":"Poissons
+        d''eau douce (sens large) de Guyane : inclut les espèces strictement d''eau
+        douce (habitat 2) ou également retrouvées dans le milieu marin (habitat
+        4 = eau douce / marin).","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/803"}}},{"id":1001,"name":"Poissons
+        marins","commonName":"Poissons marins","shortDescription":"Poissons marins
+        (sens large) de France (métropole et outre-mer) : inclut les espèces strictement
+        marines (habitat 1) ou pouvant également être retrouvées en eau douce (habitat
+        4 = eau douce / marin) ou en eau saumâtre (habitat 6).","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1001"}}},{"id":761,"name":"Poissons
+        marins de France métropolitaine","commonName":"Poissons marins de France
+        métropolitaine","shortDescription":"Poissons marins (sens large) de France
+        métropolitaine : inclut les espèces strictement marines (habitat 1) ou pouvant
+        également être retrouvées en eau douce (habitat 4 = eau douce / marin)
+        ou en eau saumâtre (habitat 6).","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/761"}}},{"id":1014,"name":"Scorpaeniformes","commonName":"Rascasses,
+        grondins et poissons-scorpions","shortDescription":"Scorpaeniformes","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1014"}}},{"id":1015,"name":"Syngnathiformes","commonName":"Hippocampes,
+        poissons-flûtes et poissons-trompettes","shortDescription":"Syngnathiformes","mainGroup":"Poissons","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/1015"}}},{"id":101,"name":"Algues","commonName":"Algues","shortDescription":null,"mainGroup":null,"vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/101"}}},{"id":804,"name":"Poissons
+        et Crustacés d''eau douce de la Martinique","commonName":"Poissons et Crustacés
+        d''eau douce de la Martinique","shortDescription":"Poissons et Crustacés
+        d''eau douce (sens large) de la Martinique : inclut les espèces strictement
+        d''eau douce (habitat 2) ou également retrouvées dans le milieu marin (habitat
+        4 = eau douce / marin) ou à terre (habitat 8 = eau douce / terrestre).","mainGroup":null,"vernacularGroup1":null,"vernacularGroup2":null,"vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/804"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/"}}}'
+  recorded_at: 2019-03-26 13:19:51 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/operationalGroups/143
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:19:38 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":143,"name":"Amphibiens","commonName":"Amphibiens","shortDescription":null,"mainGroup":"Amphibiens
+        et reptiles","vernacularGroup1":"Chordés","vernacularGroup2":"Amphibiens","vernacularGroup3":null,"description":null,"biology":null,"ecology":null,"biogeography":null,"ethology":null,"economy":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/operationalGroups/143"}}}'
+  recorded_at: 2019-03-26 13:19:51 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/operationalGroups/ASDF
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      connection: close
+      content-encoding: gzip
+      content-language: fr
+      content-length: '413'
+      content-type: text/html;charset=utf-8
+      date: Tue, 26 Mar 2019 13:19:51 GMT
+      server: Apache
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat
+        HTTP 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
+        syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
+        Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-26 13:19:51 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/operationalGroups/9
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 13:19:51 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 13:19:51 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

@@ -1,0 +1,83 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/findByTerm/springtail
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:48:52 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"bibliography":[{"id":27221,"fullCitation":"Porco, D.,
+        Bedos, A. & Deharveng, L. 2010. Description and DNA barcoding assessment of
+        the new species <i>Deutonura gibbosa</i> (Collembola: Neanuridae: Neanurinae),
+        a common springtail of Alps and Jura. <i>Zootaxa</i>, 2639: 59-68.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/27221"}}},{"id":235939,"fullCitation":"Schneider,
+        C., Zon, S. & D''Haese, C. 2018. <em>Megalothorax laevis</em> (Neelipleona,
+        Neelidae): Account of a neglected springtail widely distributed in the intertropical
+        zone. <em>International Journal Of Tropical Insect Science</em>, 38(3): 168-191.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":"The
+        springtail Megalothorax laevis Denis, 1948 is redescribed from a broad sampling
+        in the intertropical zone: Vietnam (including type locality), Ivory Coast,
+        Gabon, Reunion island and French Guiana. Pseudopore-like elements are for
+        the first time reported on the trunk and legs of Megalothorax species. New
+        molecular data for M. laevis (16S rDNA, 28S rDNA d1 and d2 and COI Barcode)
+        are provided. The phylogenetic position of the species within the Megalothorax
+        genus is analysed. Megalothorax laevis belongs to the incertus group but shares
+        similitudes with the minimus group acquired through evolutionary convergences
+        (such as smooth lamellae of the mucro). Those similitudes might have created
+        confusion between M. minimus and M. laevis. While M. minimus used to be regarded
+        cosmopolitan, M. laevis has been overlooked since its original discovery.
+        However, the present sampling led us to believe that M. laevis replace M.
+        minimus as the commonest edaphic Megalothorax species in the intertropical
+        zone. A key to the Megalothorax species with smooth mucro lamellae is provided.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/235939"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/findByTerm/springtail"}}}'
+  recorded_at: 2019-03-26 13:48:53 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/findByTerm/azerty
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:48:53 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/findByTerm/azerty"}}}'
+  recorded_at: 2019-03-26 13:48:53 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
