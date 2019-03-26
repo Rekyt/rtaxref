@@ -18,12 +18,12 @@ vcr::use_cassette("rt_taxa_parent", {
                         "vernacularGroup2", "habitat", "fr", "gf", "mar", "gua",
                         "sm", "sb", "spm", "may", "epa", "reu", "sa", "ta",
                         "nc", "wf", "pf", "cli", "taxrefVersion", "self.href",
-                        "reference.href", "parent.href", "classification.href",
-                        "synonyms.href", "parent.href",
+                        "reference.href", "classification.href",
+                        "synonyms.href", "children.href",
                         "vernacularNames.href", "media.href", "status.href",
                         "interactions.href", "taxrefHistory.href",
                         "externalIds.href", "taxonomicRank.href",
-                        "taxrefUri.href", "inpnWebpage.href"))
+                        "taxrefUri.href", "inpnWebpage.href", "parent.href"))
     expect_equal(res$id[1], 349525)
   })
 
