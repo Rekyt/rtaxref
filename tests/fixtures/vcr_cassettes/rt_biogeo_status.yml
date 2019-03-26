@@ -29,7 +29,7 @@ http_interactions:
       encoding: UTF-8
       string: "{\"_embedded\":{\"biogeographicStatus\":[{\"id\":\"P\",\"name\":\"Présente
         (indigène ou indéterminé)\",\"definition\":\"Taxon présent au sens large
-        dans la zone géographique considérée, c'est�\x90à-dire taxon indigène
+        dans la zone géographique considérée, c'est-à-dire taxon indigène
         ou taxon dont on ne sait pas s’il appartient à l'une des autres catégories.
         Les taxons hivernant quelques mois de l’année entrent dans cette catégorie.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/P\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/P\"}}},{\"id\":\"E\",\"name\":\"Endémique\",\"definition\":\"Taxon
         naturellement restreint à la zone géographique considérée.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/E\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/E\"},\"tdwgUri\":{\"href\":\"http://rs.tdwg.org/ontology/voc/SPMInfoItems#Endemic\"}}},{\"id\":\"S\",\"name\":\"Subendémique\",\"definition\":\"Taxon
@@ -96,7 +96,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: "{\"id\":\"P\",\"name\":\"Présente (indigène ou indéterminé)\",\"definition\":\"Taxon
-        présent au sens large dans la zone géographique considérée, c'est�\x90à-dire
+        présent au sens large dans la zone géographique considérée, c'est-à-dire
         taxon indigène ou taxon dont on ne sait pas s’il appartient à l'une des
         autres catégories. Les taxons hivernant quelques mois de l’année entrent
         dans cette catégorie.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/P\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/P\"}}}"
