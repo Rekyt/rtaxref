@@ -1,0 +1,202 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/findByExternalId?externalDbId=gbif&externalId=9418
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 17:22:05 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":443498,"referenceId":443498,"parentId":899341,"scientificName":"Bradypodidae","authority":"Gray,
+        1821","fullName":"Bradypodidae Gray, 1821","fullNameHtml":"Bradypodidae Gray,
+        1821","rankId":"FM","rankName":null,"referenceName":"Bradypodidae Gray, 1821","referenceNameHtml":"Bradypodidae
+        Gray, 1821","frenchVernacularName":"Paresseux tridactyles, Aïs","englishVernacularName":"Three-toed
+        sloths","genusName":null,"familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":null,"vernacularGroup2":null,"habitat":null,"fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/899341"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443498/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443498/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443498/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443498/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443498/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443498/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443498/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443498/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443498/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/FM"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443498"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443498"}}}'
+  recorded_at: 2019-03-26 17:22:06 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/findByExternalId?externalDbId=gbif&externalId=9418
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 17:22:05 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":443498,"referenceId":443498,"parentId":899341,"scientificName":"Bradypodidae","authority":"Gray,
+        1821","fullName":"Bradypodidae Gray, 1821","fullNameHtml":"Bradypodidae Gray,
+        1821","rankId":"FM","rankName":null,"referenceName":"Bradypodidae Gray, 1821","referenceNameHtml":"Bradypodidae
+        Gray, 1821","frenchVernacularName":"Paresseux tridactyles, Aïs","englishVernacularName":"Three-toed
+        sloths","genusName":null,"familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":null,"vernacularGroup2":null,"habitat":null,"fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/899341"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443498/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443498/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443498/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443498/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443498/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443498/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443498/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443498/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443498/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/FM"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443498"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443498"}}}'
+  recorded_at: 2019-03-26 17:22:06 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/findByExternalId?externalDbId=gbif&externalId=9418
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 17:22:05 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":443498,"referenceId":443498,"parentId":899341,"scientificName":"Bradypodidae","authority":"Gray,
+        1821","fullName":"Bradypodidae Gray, 1821","fullNameHtml":"Bradypodidae Gray,
+        1821","rankId":"FM","rankName":null,"referenceName":"Bradypodidae Gray, 1821","referenceNameHtml":"Bradypodidae
+        Gray, 1821","frenchVernacularName":"Paresseux tridactyles, Aïs","englishVernacularName":"Three-toed
+        sloths","genusName":null,"familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":null,"vernacularGroup2":null,"habitat":null,"fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/899341"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443498/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443498/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443498/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443498/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443498/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443498/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443498/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443498/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443498/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/FM"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443498"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443498"}}}'
+  recorded_at: 2019-03-26 17:22:06 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/findByExternalId?externalDbId=blabla&externalId=45
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 17:22:05 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 17:22:06 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/findByExternalId?externalDbId=worms&externalId=45
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 17:22:05 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 17:22:06 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/findByExternalId?externalDbId=worms&externalId=A
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 17:22:05 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 17:22:06 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

@@ -1,0 +1,110 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/443498/externalIds
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 17:15:31 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"externalDb":[{"taxrefId":443498,"externalId":"9418","externalDbName":"GBIF","externalDbTitle":"Global
+        Biodiversity Information Facility","url":"https://www.gbif.org/species/9418","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/externalIds/1790075"},"externalDb":{"href":"https://taxref.mnhn.fr/api/externalDb/gbif"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/443498"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443498/externalIds"}}}'
+  recorded_at: 2019-03-26 17:15:41 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/123456789/externalIds
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 17:15:40 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 17:15:41 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/A/externalIds
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      connection: close
+      content-encoding: gzip
+      content-language: fr
+      content-length: '413'
+      content-type: text/html;charset=utf-8
+      date: Tue, 26 Mar 2019 17:15:40 GMT
+      server: Apache
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat
+        HTTP 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
+        syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
+        Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-26 17:15:41 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

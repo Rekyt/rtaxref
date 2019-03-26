@@ -14,15 +14,16 @@ parse_taxa = function(api_query, cut_names = TRUE) {
 
   if (status_code(api_query) == 400 & reason == "Bad Request") {
 
-    stop("The query is invalid. Please try another query.")
+    stop("The query is invalid. Please try another query.", call. = FALSE)
 
   } else if (status_code(api_query) == 404 & reason == "Not Found"){
 
-    stop("The query returned no results. Please try another query")
+    stop("The query returned no results. Please try another query",
+         call. = FALSE)
 
   } else if (http_error(api_query)) {
 
-    stop("TaxRef is down. Please try again later.")
+    stop("TaxRef is down. Please try again later.", call. = FALSE)
 
   }
 
@@ -71,7 +72,8 @@ parse_taxa = function(api_query, cut_names = TRUE) {
   }
 
   if (identical(dim(response), c(0L, 0L))) {
-    stop("The query returned no results. Please try another query")
+    stop("The query returned no results. Please try another query",
+         call. = FALSE)
   }
 
   tibble::as_tibble(response)

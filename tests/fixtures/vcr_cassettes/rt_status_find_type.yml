@@ -1,0 +1,73 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/findByType/DH?page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 15:36:24 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"status":[{"taxon":{"id":717038,"scientificName":"Abies
+        nebrodensis","fullNameHtml":"<i>Abies nebrodensis</i> (Lojac.) Mattei, 1908","referenceId":717038,"parentId":188665,"referenceNameHtml":"<i>Abies
+        nebrodensis</i> (Lojac.) Mattei, 1908"},"statusTypeName":"Directive Habitat","statusTypeGroup":"Directives
+        européennes","statusCode":"CDH2","statusName":"Directive 92/43/CEE (Directive
+        européenne dite Directive Habitats-Faune-Flore) : Annexe II","statusRemarks":"Espèce
+        prioritaire","locationId":"TERFXFR","locationName":"France métropolitaine","locationAdminLevel":"Territoire","sourceId":755,"source":"Directive
+        92/43/CEE du Conseil du 21 mai 1992 concernant la conservation des habitats
+        naturels ainsi que de la faune et de la flore sauvages (modifiée par la Directive
+        97/62/CEE du Conseil du 27 octobre 1997, le Règlement (CE) n° 1882/2003
+        du Parlement et du Conseil du 29 septembre 2003, la Directive 2006/105/CE
+        du 20 novembre 2006 et la Directive 2013/17/UE du 13 mai 2013)","requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/717038"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/DH"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"},"bibliographicResource":{"href":"https://taxref.mnhn.fr/api/sources/755"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/findByType/DH?page=1&size=1"},"first":{"href":"https://taxref.mnhn.fr/api/status/findByType/DH?page=1&size=1"},"next":{"href":"https://taxref.mnhn.fr/api/status/findByType/DH?page=2&size=1"},"last":{"href":"https://taxref.mnhn.fr/api/status/findByType/DH?page=837&size=1"}},"page":{"size":1,"totalElements":837,"totalPages":837,"number":1}}'
+  recorded_at: 2019-03-26 15:36:25 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/findByType/azerty?page=1&size=2000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 15:36:25 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 15:36:25 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

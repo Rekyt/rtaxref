@@ -1,0 +1,153 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/types/
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 16:42:39 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"statusTypes":[{"id":"BARC","name":"Convention de Barcelone","group":"Conventions
+        internationales","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/BARC"}}},{"id":"BERN","name":"Convention
+        de Berne","group":"Conventions internationales","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/BERN"}}},{"id":"BONN","name":"Convention
+        de Bonn","group":"Conventions internationales","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/BONN"}}},{"id":"OSPAR","name":"Convention
+        OSPAR","group":"Conventions internationales","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/OSPAR"}}},{"id":"DH","name":"Directive
+        Habitat","group":"Directives européennes","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/DH"}}},{"id":"DO","name":"Directive
+        Oiseaux","group":"Directives européennes","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/DO"}}},{"id":"LRE","name":"Liste
+        rouge européenne","group":"Liste rouge","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/LRE"}}},{"id":"LRM","name":"Liste
+        rouge mondiale","group":"Liste rouge","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/LRM"}}},{"id":"LRN","name":"Liste
+        rouge nationale","group":"Liste rouge","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/LRN"}}},{"id":"LRR","name":"Liste
+        rouge régionale","group":"Liste rouge","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/LRR"}}},{"id":"PNA","name":"Plan
+        national en cours","group":"Plan national","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/PNA"}}},{"id":"exPNA","name":"Plan
+        national terminé","group":"Plan national","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/exPNA"}}},{"id":"PAPNAT","name":"Priorité
+        action publique nationale","group":"Priorité action publique","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/PAPNAT"}}},{"id":"POM","name":"Protection
+        COM","group":"Protection","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/POM"}}},{"id":"PD","name":"Protection
+        départementale","group":"Protection","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/PD"}}},{"id":"PN","name":"Protection
+        nationale","group":"Protection","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/PN"}}},{"id":"PR","name":"Protection
+        régionale","group":"Protection","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/PR"}}},{"id":"REGLII","name":"Interdiction
+        d''introduction","group":"Réglementation","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/REGLII"}}},{"id":"REGLLUTTE","name":"Lutte
+        contre certaines espèces","group":"Réglementation","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/REGLLUTTE"}}},{"id":"REGL","name":"Réglementation","group":"Réglementation","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/REGL"}}},{"id":"REGLSO","name":"Réglementation
+        sans objet","group":"Réglementation","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/REGLSO"}}},{"id":"SCAP
+        NAT","name":"SCAP nationale","group":"SCAP","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/SCAP%20NAT"}}},{"id":"SCAP
+        REG","name":"SCAP régionale","group":"SCAP","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/SCAP%20REG"}}},{"id":"SENSDEP","name":"Sensibilité
+        départementale","group":"SENSIBILITE","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/SENSDEP"}}},{"id":"SENSNAT","name":"Sensibilité
+        nationale","group":"SENSIBILITE","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/SENSNAT"}}},{"id":"SENSREG","name":"Sensibilité
+        régionale","group":"SENSIBILITE","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/SENSREG"}}},{"id":"TAXREF_STATUT_BIOGEO","name":"Statut
+        biogéographique territorial (TAXREF)","group":"Statut biogéographique","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/TAXREF_STATUT_BIOGEO"}}},{"id":"ZDET","name":"ZNIEFF
+        Déterminantes","group":"ZNIEFF","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/ZDET"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/"}}}'
+  recorded_at: 2019-03-26 16:43:25 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/types/BARC
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 16:43:24 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"BARC","name":"Convention de Barcelone","group":"Conventions
+        internationales","_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/types/BARC"}}}'
+  recorded_at: 2019-03-26 16:43:25 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/types/9
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 16:43:24 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 16:43:25 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/types/A
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 16:43:25 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 16:43:25 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

@@ -1,0 +1,114 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/findByOperationalGroup/706?page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 15:41:35 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"status":[{"taxon":{"id":660455,"scientificName":"Abrothallus
+        acetabuli","fullNameHtml":"<i>Abrothallus acetabuli</i> Diederich, 1990","referenceId":660455,"parentId":188675,"referenceNameHtml":"<i>Abrothallus
+        acetabuli</i> Diederich, 1990"},"statusTypeName":"Statut biogéographique
+        territorial (TAXREF)","statusTypeGroup":"Statut biogéographique","statusCode":"P","statusName":"Présent
+        (indigène ou indéterminé)","statusRemarks":null,"locationId":"TERFXFR","locationName":"France
+        métropolitaine","locationAdminLevel":"Territoire","sourceId":null,"source":null,"requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/660455"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/TAXREF_STATUT_BIOGEO"},"statusValue":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/P"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/findByOperationalGroup/706?page=1&size=1"},"first":{"href":"https://taxref.mnhn.fr/api/status/findByOperationalGroup/706?page=1&size=1"},"next":{"href":"https://taxref.mnhn.fr/api/status/findByOperationalGroup/706?page=2&size=1"},"last":{"href":"https://taxref.mnhn.fr/api/status/findByOperationalGroup/706?page=4984&size=1"}},"page":{"size":1,"totalElements":4984,"totalPages":4984,"number":1}}'
+  recorded_at: 2019-03-26 15:41:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/findByOperationalGroup/123456?page=1&size=2000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 15:41:35 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 15:41:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/status/findByOperationalGroup/azerty?page=1&size=2000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      connection: close
+      content-encoding: gzip
+      content-language: fr
+      content-length: '413'
+      content-type: text/html;charset=utf-8
+      date: Tue, 26 Mar 2019 15:41:35 GMT
+      server: Apache
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat
+        HTTP 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
+        syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
+        Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-26 15:41:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
