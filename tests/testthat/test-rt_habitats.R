@@ -5,9 +5,8 @@ vcr::use_cassette("rt_habitats", {
     expect_silent(res <- rt_habitats())
 
     expect_is(res, "data.frame")
-    expect_equal(dim(res), c(8, 5))
-    expect_named(res, c("id", "name", "definition", "self.href",
-                        "another.ontology.href"))
+    expect_equal(dim(res), c(8, 4))
+    expect_named(res, c("id", "name", "definition", "self.href"))
   })
 
   test_that("Can retrieve specific habitats", {
@@ -28,4 +27,4 @@ vcr::use_cassette("rt_habitats", {
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })
-})
+}, record = "new_episodes")

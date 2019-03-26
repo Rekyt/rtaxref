@@ -28,4 +28,4 @@ vcr::use_cassette("rt_biogeo_status", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })
-}, preserve_exact_body_bytes = TRUE)
+}, record = "new_episodes")
