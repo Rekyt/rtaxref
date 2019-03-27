@@ -1,0 +1,150 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxrefVersions
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 27 Mar 2019 13:26:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxrefVersions":[{"id":2,"name":"2.0","date":"15/02/2008","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/2"}}},{"id":3,"name":"3.0","date":"20/09/2010","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/3"}}},{"id":4,"name":"4.0","date":"12/10/2011","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/4"}}},{"id":5,"name":"5.0","date":"18/07/2012","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/5"}}},{"id":6,"name":"6.0","date":"08/04/2013","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/6"}}},{"id":7,"name":"7.0","date":"19/11/2013","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/7"}}},{"id":8,"name":"8.0","date":"01/12/2014","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/8"}}},{"id":9,"name":"9.0","date":"09/12/2015","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/9"}}},{"id":10,"name":"10.0","date":"03/11/2016","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/10"}}},{"id":11,"name":"11.0","date":"06/12/2017","responsable":"O.
+        Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/11"}}},{"id":12,"name":"12.0","date":"23/10/2018","responsable":"O.
+        Gargominy","current":true,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/12"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/"}}}'
+  recorded_at: 2019-03-27 13:26:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxrefVersions/2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 27 Mar 2019 13:26:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":2,"name":"2.0","date":"15/02/2008","responsable":"O. Gargominy","current":false,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxrefVersions/2"}}}'
+  recorded_at: 2019-03-27 13:26:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxrefVersions/123
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Wed, 27 Mar 2019 13:26:35 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-27 13:26:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxrefVersions/ASDF
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      connection: close
+      content-encoding: gzip
+      content-language: en
+      content-length: '389'
+      content-type: text/html;charset=utf-8
+      date: Wed, 27 Mar 2019 13:26:35 GMT
+      server: Apache
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Error report</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP
+        Status 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Status report</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>The request sent by the client was syntactically
+        incorrect.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-27 13:26:35 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

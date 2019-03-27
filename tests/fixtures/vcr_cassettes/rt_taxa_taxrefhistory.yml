@@ -1,0 +1,155 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 27 Mar 2019 13:08:10 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":107003,"referenceId":107003,"parentId":null,"scientificName":"Lycopodium
+        clavatum","authority":null,"fullName":"Lycopodium clavatum","fullNameHtml":"Lycopodium
+        clavatum</i> L.","rankId":"ES","rankName":null,"referenceName":null,"referenceNameHtml":"Lycopodium
+        clavatum</i> L.","frenchVernacularName":"Lycopode en massue","englishVernacularName":"Stag''s-horn
+        Clubmoss","genusName":null,"familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Lycopsida","phylumName":"Pteridophyta","kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":null,"vernacularGroup1":null,"vernacularGroup2":null,"habitat":null,"fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"2.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L.","fullName":"Lycopodium clavatum L.","fullNameHtml":"Lycopodium
+        clavatum</i> L.","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L.","referenceNameHtml":"Lycopodium clavatum</i> L.","frenchVernacularName":"Lycopode
+        en massue","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Lycopsida","phylumName":"Pteridophyta","kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":"Ptéridophytes","vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"3.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"4.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"5.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"6.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":"podiacea","vernacularFamilyName":"Lycopodiacées","vernacularOrderName":"Lycopodiales","vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":null,"mar":"P","gua":"P","sm":"A","sb":"A","spm":"P","may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"7.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":"podiacea","vernacularFamilyName":"Lycopodiacées","vernacularOrderName":"Lycopodiales","vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":"A","mar":"P","gua":"P","sm":"A","sb":"A","spm":"P","may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"8.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":"/GN=Lyco","vernacularFamilyName":"Lycopodiacées","vernacularOrderName":"Lycopodiales","vernacularClassName":"Équisétopsides","vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"7","fr":"P","gf":"A","mar":"P","gua":"P","sm":"A","sb":"A","spm":"P","may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"9.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/7"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"3","fr":"P","gf":"A","mar":"P","gua":"P","sm":"A","sb":"A","spm":"P","may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"10.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Lycopodes","vernacularClassName":"Plantes
+        terrestres, Embryophytes, Cormophytes","vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"3","fr":"P","gf":"A","mar":"P","gua":"P","sm":"A","sb":"A","spm":"P","may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"11.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}},{"id":107003,"referenceId":107003,"parentId":194337,"scientificName":"Lycopodium
+        clavatum","authority":"L., 1753","fullName":"Lycopodium clavatum L., 1753","fullNameHtml":"<i>Lycopodium
+        clavatum</i> L., 1753","rankId":"ES","rankName":null,"referenceName":"Lycopodium
+        clavatum L., 1753","referenceNameHtml":"<i>Lycopodium clavatum</i> L., 1753","frenchVernacularName":"Lycopode
+        en massue, Éguaire","englishVernacularName":"Stag''s-horn Clubmoss","genusName":"Lycopodium","familyName":"Lycopodiaceae","orderName":"Lycopodiales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Lycopodes","vernacularClassName":"Plantes
+        terrestres, Embryophytes, Cormophytes","vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":null,"vernacularGroup2":null,"habitat":"3","fr":"P","gf":"A","mar":"P","gua":"P","sm":"A","sb":"A","spm":"P","may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/107003"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/194337"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/107003/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/107003/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/107003/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/107003/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/107003/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/107003/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/107003/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/107003/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/107003"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/107003"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/107003/taxrefHistory"}}}'
+  recorded_at: 2019-03-27 13:08:11 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/1234567/taxrefHistory
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Wed, 27 Mar 2019 13:08:10 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-27 13:08:11 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/A/taxrefHistory
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 400
+      category: Client error
+      reason: Bad Request
+      message: 'Client error: (400) Bad Request'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      connection: close
+      content-encoding: gzip
+      content-language: fr
+      content-length: '413'
+      content-type: text/html;charset=utf-8
+      date: Wed, 27 Mar 2019 13:08:10 GMT
+      server: Apache
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
+        {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
+        H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
+        H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;}
+        BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;}
+        B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;}
+        P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A
+        {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Etat
+        HTTP 400 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
+        <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
+        syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
+        Tomcat/7.0.53</h3></body></html>'
+  recorded_at: 2019-03-27 13:08:11 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
