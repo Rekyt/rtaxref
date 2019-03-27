@@ -2,18 +2,29 @@ rt_base_url = function() {
     "https://taxref.mnhn.fr/"
 }
 
-#' @importFrom httr GET
+#' @importFrom httr GET status_code
 rt_GET = function(..., query = NULL) {
   GET(rt_base_url(), path = paste0("api/", ...), query = query)
 }
 
-#' @importFrom httr content http_error status_code
+#' @importFrom httr content http_error http_status status_code
 parse_taxa = function(api_query, cut_names = TRUE) {
 
-  if (status_code(api_query) == 404) {
-    stop("The query is invalid. Please try another query.")
+  reason = http_status(api_query)$reason
+
+  if (status_code(api_query) == 400 & reason == "Bad Request") {
+
+    stop("The query is invalid. Please try another query.", call. = FALSE)
+
+  } else if (status_code(api_query) == 404 & reason == "Not Found"){
+
+    stop("The query returned no results. Please try another query",
+         call. = FALSE)
+
   } else if (http_error(api_query)) {
-    stop("TaxRef is down. Please try again later.")
+
+    stop("TaxRef is down. Please try again later.", call. = FALSE)
+
   }
 
   raw_response = content(api_query, type = "application/json",
@@ -58,6 +69,11 @@ parse_taxa = function(api_query, cut_names = TRUE) {
                                         collapse = "|"), "", colnames(response))
       }
     }
+  }
+
+  if (identical(dim(response), c(0L, 0L))) {
+    stop("The query returned no results. Please try another query",
+         call. = FALSE)
   }
 
   tibble::as_tibble(response)

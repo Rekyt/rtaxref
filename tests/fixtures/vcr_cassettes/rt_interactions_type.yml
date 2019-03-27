@@ -1,0 +1,213 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/types/
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:07:05 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"interactionTypes":[{"id":"PREDATEUR","name":"est un
+        prédateur de","description":"interaction trophique dans laquelle un organisme
+        vivant (le prédateur) tue sa cible (la proie) afin de la manger ou afin de
+        nourrir sa fratrie, sa progéniture et/ou ses congénères.","example":"Brochet
+        mangeant un crapaud, plathelminthe mangeant un escargot, \nPlante carnivore
+        mangeant des insectes\n","reverseRelationName":"est la proie de","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002439","dbPediaUri":"http://dbpedia.org/resource/Predation","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/PREDATEUR"}}},{"id":"NUTRIMENT","name":"acquiert
+        des nutriments par (y compris herbivorie)","description":"interaction trophique
+        dans laquelle le sujet acquiert des substances nutritives de sa cible sans
+        pour autant la consommer intégralement ni même consommer des parties intégrantes
+        de celle-ci (contrairement à la prédation).\r\nComprend l''herbivorie, c''est-à-dire
+        la condition d''un animal se nourrissant exclusivement ou presque de plantes
+        vivantes.","example":null,"reverseRelationName":"fournit des nutriments à","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002457","dbPediaUri":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/NUTRIMENT"}}},{"id":"MUTUEL","name":"interagit
+        mutuellement avec","description":"interaction symbiotique dans laquelle les
+        deux organismes impliqués tirent tous les deux profit de la relation (= mutualisme).","example":null,"reverseRelationName":"interagit
+        mutuellement avec","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002442","dbPediaUri":"https://fr.wikipedia.org/wiki/Mutualisme_(biologie)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/MUTUEL"}}},{"id":"ENDOSYMBIOTE","name":"est
+        endosymbiote de","description":"interaction mutualiste dans laquelle un organisme
+        (l''endosymbiote) vit à l''intérieur d''une autre cellule ou d''un autre
+        organisme (l''hôte). Beaucoup d''endosymbioses sont obligatoires: soit l''hôte
+        soit l''endosymbiote ne peut survivre sans l''autre organisme ou les deux.","example":"bactéries
+        vivant dans des racines de plantes ou dans des insectes, algues vivant dans
+        des coraux.","reverseRelationName":"a comme endosymbiote","oboRoUri":null,"dbPediaUri":"https://fr.wikipedia.org/wiki/Endosymbiote","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/ENDOSYMBIOTE"}}},{"id":"POLLINISATEUR","name":"est
+        un pollinisateur de","description":"interaction mutualiste dans laquelle un
+        animal (le pollinisateur) transporte des grains de pollen à l’occasion
+        de ses déplacements, ce qui a pour effet de contribuer à la fécondation
+        des plantes à fleurs.","example":null,"reverseRelationName":"est pollinisé
+        par","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002455","dbPediaUri":"https://fr.wikipedia.org/wiki/Pollinisateur","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/POLLINISATEUR"}}},{"id":"PARASITE","name":"est
+        parasite de","description":"interaction symbiotique dans laquelle un organisme
+        vivant (le parasite) tire profit (ressources, habitat, transport, etc.) et
+        inflige des coûts (survie, reproduction, croissance, etc.) à son hôte (=
+        parasitisme).","example":null,"reverseRelationName":"a comme parasite","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002444","dbPediaUri":"https://fr.wikipedia.org/wiki/Parasitisme","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/PARASITE"}}},{"id":"ENDOPARASITE","name":"est
+        endoparasite de","description":"interaction parasitaire dans laquelle le parasite
+        habite à l''intérieur de son hôte.","example":"y compris cavités branchiales
+        par exemple","reverseRelationName":"a comme endoparasite","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002634","dbPediaUri":"https://fr.wikipedia.org/wiki/Endoparasite","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/ENDOPARASITE"}}},{"id":"ECTOPARASITE","name":"est
+        ectoparasite de","description":"interaction parasitaire dans laquelle le parasite
+        habite à l''extérieur de son hôte.","example":"poux humains, tiques","reverseRelationName":"a
+        comme ectoparasite","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002632","dbPediaUri":"http://fr.dbpedia.org/resource/Ectoparasite","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/ECTOPARASITE"}}},{"id":"GALLES","name":"induit
+        des galles chez","description":"interaction symbiotique dans laquelle un organisme
+        vivant (le galligène) induit chez les plantes la formation de galles (ou
+        cécidies) dans lesquelles se développent les larves. Les galligènes peuvent
+        aussi bien être des insectes que des champignons, des nématodes, des bactéries
+        ou bien d''autres plantes. Chaque galligène est généralement spécifique
+        d''une espèce de plante et d''un organe végétal.","example":"Parmi les
+        insectes: les cynips (hyménoptères), les cécidomyies (diptères), les cochenilles,
+        les pucerons et les psylles (hémiptères).","reverseRelationName":"produit
+        des galles à cause de","oboRoUri":null,"dbPediaUri":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/GALLES"}}},{"id":"PARASITOIDE","name":"est
+        parasitoïde de","description":"interaction parasitaire dans laquelle un organisme
+        (le parasitoïde) se développe sur ou à l''intérieur d''un autre organisme
+        (l''hôte), et qui tue inévitablement ce dernier au cours ou à la fin de
+        ce développement (contrairement au parasite).\r\nComprend l''hyperparasitoïde,
+        c''est-à-dire un parasitoïde d''insectes qui pond ses oeufs dans les larves
+        d''un autre parasitoïde.","example":"La majorité des parasitoïdes étudiés
+        et répertoriés sont des insectes, mais des nématodes, des champignons,
+        des protistes, des bactéries et des virus ont aussi ce comportement de parasitisme.\r","reverseRelationName":"a
+        comme parasitoïde ","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002208","dbPediaUri":"http://dbpedia.org/resource/Parasitoid","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/PARASITOIDE"}}},{"id":"COMMENSAL","name":"est
+        commensal de","description":"interaction symbiotique dans laquelle un organisme
+        vivant (le commensal) tire profit de la nourriture de son hôte (généralement
+        plus gros que le commensal), ce dernier n''en retirant aucun avantage ou désavantage
+        (= commensalisme).\r\n Le commensalisme est une exploitation non-parasitaire
+        d''une espèce vivante par une autre espèce.\r\nComprend bien souvent la
+        phorésie = interaction dans laquelle un individu (le phoronte) est transporté
+        par son hôte.","example":"poissons dans le tube digestif d''holothuries,
+        crabes dans les moules.","reverseRelationName":"a comme commensal","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002441","dbPediaUri":"http://dbpedia.org/resource/Commensalism","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/COMMENSAL"}}},{"id":"DISPERSEUR","name":"est
+        un disperseur de","description":"interaction symbiotique dans laquelle un
+        organisme vivant (le disperseur, obligatoirement un animal ?) transporte un
+        autre organisme vivant qui colonise ainsi un nouveau territoire (= dispersion).
+        Dispersion considérée active quand l''organisme transporté est interne
+        (par ex. graine passant par le tube digestif d''un animal, ce qui lui permet
+        de pouvoir germer), considérée passive si transport \"non volontaire\".\r\nComprend
+        la vection = processus actif d''inoculation d''un agent pathogène (bactéries,
+        parasites, champignons, virus (auquel cas on parle d''agent infectieux)).
+        Ce processus fait intervenir le comportement du vecteur au cours du choix
+        de son hôte et/ou de sa prise alimentaire ; il permet ainsi au pathogène
+        de franchir la barrière des parois cellulaires.\r","example":null,"reverseRelationName":"est
+        dispersé par","oboRoUri":null,"dbPediaUri":"https://fr.wikipedia.org/wiki/Dispersion_(biologie)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/DISPERSEUR"}}},{"id":"PHORETIC","name":"est
+        phorétique de","description":"interaction symbiotique dans laquelle un organisme
+        vivant (le phoronte) est transporté par un autre (l''hôte). Il s''agit d''une
+        association libre (les sources de nourriture de l''un et l''autre partenaires
+        étant indépendantes) et non destructrice (le transport en question n''occasionne
+        pas de dommages physiologiques particuliers).","example":"acariens sur coléoptères","reverseRelationName":"a
+        comme phoronte","oboRoUri":null,"dbPediaUri":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/PHORETIC"}}},{"id":"ASSOCIE","name":"est
+        associé à","description":"association biologique entre deux organismes (=
+        symbiose), pouvant être neutre ou profitable pour l''un ou l''autre (= commensalisme)
+        ou les deux organismes (= mutualisme).\r\n","example":null,"reverseRelationName":"est
+        associé à","oboRoUri":null,"dbPediaUri":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/ASSOCIE"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/"}}}'
+  recorded_at: 2019-03-26 13:09:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/types/PREDATEUR
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 13:07:06 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"PREDATEUR","name":"est un prédateur de","description":"interaction
+        trophique dans laquelle un organisme vivant (le prédateur) tue sa cible (la
+        proie) afin de la manger ou afin de nourrir sa fratrie, sa progéniture et/ou
+        ses congénères.","example":"Brochet mangeant un crapaud, plathelminthe mangeant
+        un escargot, \nPlante carnivore mangeant des insectes\n","reverseRelationName":"est
+        la proie de","oboRoUri":"http://purl.obolibrary.org/obo/RO_0002439","dbPediaUri":"http://dbpedia.org/resource/Predation","_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/types/PREDATEUR"}}}'
+  recorded_at: 2019-03-26 13:09:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/types/ASDF
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 13:09:08 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 13:09:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/types/9
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 13:09:08 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-26 13:09:08 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

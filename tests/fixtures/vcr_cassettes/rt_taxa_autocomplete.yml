@@ -1,0 +1,65 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 17:03:04 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":210879,"scientificName":null,"fullNameHtml":"<i>Brachylomia</i>
+        Hampson, 1906","referenceId":210879,"parentId":782082,"referenceNameHtml":"<i>Brachylomia</i>
+        Hampson, 1906","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/210879"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=1&size=1{&taxonomicRanks,territories,domain}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=1&size=1{&taxonomicRanks,territories,domain}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=2&size=1{&taxonomicRanks,territories,domain}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=6979&size=1{&taxonomicRanks,territories,domain}","templated":true}},"page":{"size":1,"totalElements":6979,"totalPages":6979,"number":1}}'
+  recorded_at: 2019-03-26 17:03:04 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=1&size=200
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 17:03:04 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=1&size=200{&taxonomicRanks,territories,domain}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=1&size=200{&taxonomicRanks,territories,domain}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=0&size=200{&taxonomicRanks,territories,domain}","templated":true}},"page":{"size":0,"totalElements":0,"totalPages":0,"number":1}}'
+  recorded_at: 2019-03-26 17:03:04 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

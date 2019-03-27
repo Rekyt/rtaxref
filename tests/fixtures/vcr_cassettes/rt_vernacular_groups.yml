@@ -1,0 +1,38 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/vernacularGroups
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json;charset=UTF-8
+      date: Wed, 27 Mar 2019 13:25:55 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"vernacularGroupList":[{"name":"Arachnides","level":"2"},{"name":"Cnidaires","level":"1"},{"name":"Crustacés","level":"2"},{"name":"Entognathes","level":"2"},{"name":"Fougères","level":"2"},{"name":"Gastéropodes","level":"2"},{"name":"Gymnospermes","level":"2"},{"name":"Myriapodes","level":"2"},{"name":"Némertes","level":"2"},{"name":"Porifères","level":"1"},{"name":"Pycnogonides","level":"2"},{"name":"Algues
+        brunes","level":"2"},{"name":"Ascomycètes","level":"1"},{"name":"Bactéries
+        et algues bleues","level":"1"},{"name":"Diatomées","level":"2"},{"name":"Hépatiques
+        et Anthocérotes","level":"2"},{"name":"Mousses","level":"2"},{"name":"Plantes
+        vasculaires","level":"1"},{"name":"Protozoaires","level":"1"},{"name":"Scléractioniaires","level":"2"},{"name":"Vers","level":"1"},{"name":"Annélides","level":"2"},{"name":"Gastrotriches","level":"1"},{"name":"Insectes","level":"2"},{"name":"Lichens","level":"2"},{"name":"Octocoralliaires","level":"2"},{"name":"Oiseaux","level":"2"},{"name":"Plathelminthes","level":"2"},{"name":"Algues
+        vertes","level":"2"},{"name":"Bryozoaires","level":"1"},{"name":"Céphalopodes","level":"2"},{"name":"Poissons","level":"2"},{"name":"Reptiles","level":"2"},{"name":"Amphibiens","level":"2"},{"name":"Cténophores","level":"1"},{"name":"Nématodes","level":"2"},{"name":"Tardigrades","level":"1"},{"name":"<Autres>","level":"2"},{"name":"Acanthocéphales","level":"2"},{"name":"Basidiomycètes","level":"1"},{"name":"Bivalves","level":"2"},{"name":"Chordés","level":"1"},{"name":"Echinodermes","level":"1"},{"name":"Hydrozoaires","level":"2"},{"name":"Angiospermes","level":"2"},{"name":"Mammifères","level":"2"},{"name":"Rotifères","level":"1"},{"name":"<Autres>","level":"1"},{"name":"Algues","level":"1"},{"name":"Algues
+        rouges","level":"2"},{"name":"Arthropodes","level":"1"},{"name":"Ascidies","level":"2"},{"name":"Bryophytes","level":"1"},{"name":"Mollusques","level":"1"}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/vernacularGroups/"}}}'
+  recorded_at: 2019-03-27 13:25:55 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

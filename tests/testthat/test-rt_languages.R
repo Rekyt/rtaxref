@@ -1,0 +1,33 @@
+context("test-rt_languages")
+
+vcr::use_cassette("rt_languages", {
+  test_that("Can retrieve languages list", {
+    expect_silent(res <- rt_languages())
+
+    expect_is(res, "data.frame")
+    expect_equal(dim(res), c(71, 8))
+    expect_named(res, c("id", "name", "iso6393", "wikidataUri", "locationName",
+                        "self.href", "location.href","location.templated"))
+  })
+
+  test_that("Can retrieve specific languages", {
+    expect_silent(res <- rt_languages_id(languages_id = "arw"))
+
+    expect_is(res, "data.frame")
+    expect_equal(dim(res), c(1, 5))
+    expect_named(res, c("id", "name", "iso6393", "wikidataUri", "locationName"))
+    expect_equal(res$id, factor("arw"))
+    expect_equal(res$locationName, factor("Guyane"))
+  })
+
+  test_that("Wrong query returns error", {
+    expect_error(rt_languages_id("ASDF"),
+                 "The query returned no results. Please try another query",
+                 fixed = TRUE)
+
+    expect_error(rt_languages_id(9),
+                 "The query returned no results. Please try another query",
+                 fixed = TRUE)
+  })
+}, record = "new_episodes")
+

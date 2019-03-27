@@ -1,0 +1,65 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/matchByCitation?citation=Chapman%2C%20T.%20A.%201909.%20Callophrys%20avis%20a%20new%20butterfly%20on%20southern%20France.%20The%20Entomologist%27s%20record%20and%20journal%20of%20variation%2C%2021%3A%20130-131.
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 15:31:48 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"bibliography":[{"id":15441,"fullCitation":"Chapman,
+        T. A. 1909. <i>Callophrys avis </i>a new butterfly on southern France. <i>The
+        Entomologist''s record and journal of variation</i>, 21: 130-131.","url":"http://www.biodiversitylibrary.org/page/9020797","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/15441"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/matchByCitation?citation=Chapman,%20T.%20A.%201909.%20Callophrys%20avis%20a%20new%20butterfly%20on%20southern%20France.%20The%20Entomologist''s%20record%20and%20journal%20of%20variation,%2021:%20130-131."}}}'
+  recorded_at: 2019-03-26 15:31:49 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/matchByCitation?citation=azerty
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 15:31:49 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/matchByCitation?citation=azerty"}}}'
+  recorded_at: 2019-03-26 15:31:49 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4

@@ -1,0 +1,270 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/externalDb
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Mon, 25 Mar 2019 17:14:19 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"externalDb":[{"id":"algaebase","name":"AlgaeBase","title":"AlgaeBase.
+        World-wide electronic publication, National University of Ireland, Galway","websiteUrl":"http://www.algaebase.org","authors":"Guiry,
+        M.D. & Guiry, G.M.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/algaebase"}}},{"id":"antcat","name":"ANTCAT","title":"An
+        Online Catalog of the Ants of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton,
+        B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}},{"id":"aphidsf","name":"Aphid
+        Species File","title":"Aphid Species File","websiteUrl":"http://Aphid.SpeciesFile.org","authors":"Favret,
+        C.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/aphidsf"}}},{"id":"aublet2","name":"AUBLET2","title":"Base
+        de l''Herbier IRD de Guyane","websiteUrl":"http://herbier-guyane.ird.fr/","authors":"Hoff,
+        M., Cremers, G., Feuillet, C. & Granville, J.-J. de","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/aublet2"}}},{"id":"avibase","name":"Avibase","title":"The
+        world bird database","websiteUrl":"http://avibase.bsc-eoc.org/avibase.jsp?lang=FR","authors":"Lepage,
+        D. (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/avibase"}}},{"id":"bdtfx","name":"BDTFX","title":"Base
+        de données des Trachéophytes de France métropolitaine","websiteUrl":"http://www.tela-botanica.org/page:eflore_bdtfx","authors":"Bock,
+        B. (Tela Botanica, FCBN, Ministère chargé de l''Ecologie, MNHN)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/bdtfx"}}},{"id":"blattodeasf","name":"Blattodea
+        Species File Online","title":"Blattodea Species File Online","websiteUrl":"http://blattodea.speciesfile.org","authors":"Beccaloni,
+        G.W.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/blattodeasf"}}},{"id":"bryofrcbn","name":"BRYO_FR_FCBN","title":"Référentiel
+        des mousses, hépatiques et anthocérotes de France métropolitaine de la
+        FCBN","websiteUrl":"http://www.fcbn.fr/","authors":"Hugonnot, V. & Celle,
+        J. (FCBN)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/bryofrcbn"}}},{"id":"ccrusta","name":"CRUSTA","title":"CRUSTA:
+        Database of Crustacea (Decapoda and Stomatopoda), with special interest for
+        those collected in French overseas territories","websiteUrl":"http://crustiesfroverseas.free.fr/","authors":"Legall
+        N. & Poupin, J.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/ccrusta"}}},{"id":"dermapterasf","name":"Dermaptera
+        Species File Online","title":"Dermaptera Species File Online","websiteUrl":"http://Dermaptera.SpeciesFile.org","authors":"Deem,
+        L.S.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/dermapterasf"}}},{"id":"euromedplantbase","name":"Euro+Med
+        Plantbase","title":"The Euro+Med PlantBase - the information resource for
+        Euro-Mediterranean plant diversity","websiteUrl":"http://www.emplantbase.org","authors":"see
+        http://ww2.bgbm.org/euroPlusMed/credits.asp","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/euromedplantbase"}}},{"id":"fao","name":"FAO","title":"Fisheries
+        and Aquaculture Department","websiteUrl":"http://www.fao.org","authors":"FAO
+        partnership","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/fao"}}},{"id":"faeu","name":"Fauna
+        Europaea","title":"Fauna Europaea, scientific names and distribution of all
+        living multicellular European land and fresh-water animals","websiteUrl":"http://www.faunaeur.org/","authors":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/faeu"}}},{"id":"fishbase","name":"FishBase","title":"FishBase","websiteUrl":"http://www.fishbase.org","authors":"Froese,
+        R. & Pauly, D. (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/fishbase"}}},{"id":"florical","name":"FLORICAL","title":"Référentiel
+        taxonomique Florical de la flore vasculaire indigène de la Nouvelle-Calédonie","websiteUrl":"http://www.botanique.nc/herbier/florical","authors":"Morat,
+        P., Jaffré, T., Tronchet, F., Munzinger, J., Pillon, Y., Veillon, J. M.,
+        Chalopin, M., Birnbaum, P., Rigault, F., Dagostini, G., Tinel, J. & Lowry,
+        P.P. II","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/florical"}}},{"id":"gbif","name":"GBIF","title":"Global
+        Biodiversity Information Facility","websiteUrl":"https://www.gbif.org/","authors":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/gbif"}}},{"id":"eumycetozoans","name":"Global
+        Biodiversity of Eumycetozoans","title":"Global Biodiversity of Eumycetozoans","websiteUrl":"http://slimemold.uark.edu/fungi/default.aspx?NavControl=search&selected=NameSearch","authors":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/eumycetozoans"}}},{"id":"grin","name":"GRIN","title":"Germplasm
+        Resources Information Network","websiteUrl":"http://www.ars-grin.gov","authors":"USDA,
+        ARS & National Genetic Resources Program","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/grin"}}},{"id":"indexfugorum","name":"Index
+        Fungorum","title":"Index Fungorum","websiteUrl":"http://www.indexfungorum.org/","authors":"Index
+        Fungorum Partnership","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/indexfugorum"}}},{"id":"ina","name":"Index
+        Nominum Algarum","title":"Index Nominum Algarum Bibliographia Phycologica
+        Universalis","websiteUrl":"http://ucjeps.berkeley.edu/CPD/","authors":"Paul
+        Silva","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/ina"}}},{"id":"ipni","name":"IPNI","title":"International
+        Plant Names Index","websiteUrl":"http://www.ipni.org","authors":"International
+        Plant Names Index (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/ipni"}}},{"id":"itie","name":"ITIE","title":"Index
+        des Trachéophytes des Îles Éparses","websiteUrl":"http://ileseparses.cbnm.org/","authors":"Boullet,
+        V. &  Hivert, J.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/itie"}}},{"id":"itm","name":"ITM","title":"Index
+        des Trachéophytes de Mayotte","websiteUrl":"http://floremaore.cbnm.org/","authors":"Boullet,
+        V.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/itm"}}},{"id":"itr","name":"ITR","title":"Index
+        des Trachéophytes de la Réunion","websiteUrl":"http://flore.cbnm.org/","authors":"Boullet,
+        V.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/itr"}}},{"id":"mmantodeasf","name":"Mantodea
+        Species File Online","title":"Mantodea Species File Online","websiteUrl":"http://Mantodea.SpeciesFile.org","authors":"Otte,
+        D., Spearman L. & Stiewe M.B.D.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/mmantodeasf"}}},{"id":"nadeaud","name":"Nadeaud","title":"Base
+        de données botaniques Nadeaud de l''Herbier de la Polynésie française","websiteUrl":"http://www.herbier-tahiti.pf","authors":"Florence
+        J., Chevillotte H., Ollier C. & Meyer J.-Y. (IRD, MNHN, Délégation à la
+        Recherche, Papeete)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/nadeaud"}}},{"id":"orthopterasf","name":"Orthoptera
+        Species File Online","title":"Orthoptera Species File Online","websiteUrl":"http://orthoptera.speciesfile.org","authors":"Eades,
+        D.C., Otte, D., Cigliano, M.M. & Braun, H.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/orthopterasf"}}},{"id":"phasmidasf","name":"Phasmida
+        Species File Online","title":"Phasmida Species File Online","websiteUrl":"http://Phasmida.SpeciesFile.org","authors":"Brock,
+        P.D.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/phasmidasf"}}},{"id":"plecopterasf","name":"Plecoptera
+        Species File Online","title":"Plecoptera Species File Online","websiteUrl":"http://Plecoptera.SpeciesFile.org","authors":"DeWalt,
+        R.E., Neu-Becker, U. & Stueber, G.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/plecopterasf"}}},{"id":"psyllist","name":"Psyl''list","title":"Psyl''list
+        - The World Psylloidea Database","websiteUrl":"http://rameau.snv.jussieu.fr/cgi-bin/psyllesexplorer.pl?lang=fr","authors":"Ouvrard,
+        D.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/psyllist"}}},{"id":"quadridge","name":"Quadrige²","title":"Quadrige²
+        (IFREMER)","websiteUrl":"https://wwz.ifremer.fr/quadrige2_support/","authors":"IFREMER","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/quadridge"}}},{"id":"sandre","name":"SANDRE","title":"Référentiel
+        des Appellations de Taxon du SANDRE","websiteUrl":"http://www.sandre.eaufrance.fr","authors":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/sandre"}}},{"id":"systemadipterorum","name":"Systema
+        Dipterorum","title":"The BioSystematic Database of World Diptera","websiteUrl":"http://www.diptera.org","authors":"Thompson,
+        F. C. & Pape, T. (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/systemadipterorum"}}},{"id":"tpl","name":"The
+        Plant List (TPL)","title":"The Plant List","websiteUrl":"http://www.theplantlist.org/","authors":"Royal
+        Botanic Gardens, Kew, Missouri Botanical Garden & co (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/tpl"}}},{"id":"worldspidercatalog","name":"The
+        World Spider Catalog","title":"The World Spider Catalog","websiteUrl":"http://www.wsc.nmbe.ch","authors":"Platnick,
+        N. I. (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/worldspidercatalog"}}},{"id":"tropicos","name":"TROPICOS","title":"Tropicos,
+        Missouri Botanical Garden","websiteUrl":"http://www.tropicos.org","authors":"Missouri
+        Botanical Garden","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/tropicos"}}},{"id":"vascan","name":"VASCAN","title":"Database
+        of Vascular Plants of Canada","websiteUrl":"http://data.canadensys.net/vascan","authors":"Brouillet
+        L, Desmet P, Coursol F, Meades SJ, Favreau M, Anions M, Bélisle P, Gendreau
+        C, Shorthouse D, and contributors (2010+)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/vascan"}}},{"id":"worms","name":"WoRMS","title":"World
+        Register of Marine Species","websiteUrl":"http://www.marinespecies.org/","authors":"WoRMS
+        Editorial Board (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/worms"}}},{"id":"zoobank","name":"ZooBank","title":"The
+        Official Registry of Zoological Nomenclature","websiteUrl":"http://zoobank.org","authors":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/zoobank"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/"}}}'
+  recorded_at: 2019-03-25 17:14:19 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/externalDb/antcat
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Mon, 25 Mar 2019 17:14:19 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"antcat","name":"ANTCAT","title":"An Online Catalog of the Ants
+        of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton, B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}}'
+  recorded_at: 2019-03-25 17:14:19 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/externalDb/antcat
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Mon, 25 Mar 2019 17:14:19 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"antcat","name":"ANTCAT","title":"An Online Catalog of the Ants
+        of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton, B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}}'
+  recorded_at: 2019-03-25 17:14:19 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/externalDb/antcat
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Mon, 25 Mar 2019 17:14:19 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"antcat","name":"ANTCAT","title":"An Online Catalog of the Ants
+        of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton, B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}}'
+  recorded_at: 2019-03-25 17:14:19 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/externalDb/asdf
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Mon, 25 Mar 2019 17:14:19 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-25 17:14:19 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/externalDb/1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Mon, 25 Mar 2019 17:14:19 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-03-25 17:14:19 GMT
+  recorded_with: vcr/0.2.6, webmockr/0.3.4
