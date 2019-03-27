@@ -140,7 +140,7 @@ The number of lines returned per page (maximum = 50000)</p></td>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># Find all taxa concerned by Habitat Directive referenced in TaxRef</span>
-<span class='fu'>rt_status_find_type</span>(<span class='st'>"DH"</span>)</div><div class='output co'>#&gt; # A tibble: 837 x 20
+<span class='fu'>rt_status_find_type</span>(<span class='st'>"DH"</span>)</div><div class='output co'>#&gt; # A tibble: 837 x 22
 #&gt;        id scientificName fullNameHtml referenceId parentId referenceNameHt…
 #&gt;     &lt;int&gt; &lt;chr&gt;          &lt;chr&gt;              &lt;int&gt;    &lt;int&gt; &lt;chr&gt;           
 #&gt;  1 717038 Abies nebrode… &lt;i&gt;Abies ne…      717038   188665 &lt;i&gt;Abies nebrod…
@@ -153,12 +153,12 @@ The number of lines returned per page (maximum = 50000)</p></td>
 #&gt;  8 130784 Aconitum nape… &lt;i&gt;Aconitum…      130784    80037 &lt;i&gt;Aconitum nap…
 #&gt;  9 130784 Aconitum nape… &lt;i&gt;Aconitum…      130784    80037 &lt;i&gt;Aconitum nap…
 #&gt; 10 159446 Actias isabel… &lt;i&gt;Actias i…      159446   188791 &lt;i&gt;Actias isabe…
-#&gt; # … with 827 more rows, and 14 more variables: href &lt;chr&gt;,
+#&gt; # … with 827 more rows, and 16 more variables: href &lt;chr&gt;,
 #&gt; #   statusTypeName &lt;chr&gt;, statusTypeGroup &lt;chr&gt;, statusCode &lt;chr&gt;,
-#&gt; #   statusName &lt;chr&gt;, statusRemarks &lt;chr&gt;, locationName &lt;chr&gt;,
-#&gt; #   locationAdminLevel &lt;chr&gt;, source &lt;chr&gt;, requestedLocationId &lt;lgl&gt;,
-#&gt; #   listedName &lt;lgl&gt;, statusType.href &lt;chr&gt;, location.href &lt;chr&gt;,
-#&gt; #   bibliographicResource.href &lt;chr&gt;</div><div class='input'>
+#&gt; #   statusName &lt;chr&gt;, statusRemarks &lt;chr&gt;, locationId &lt;chr&gt;,
+#&gt; #   locationName &lt;chr&gt;, locationAdminLevel &lt;chr&gt;, sourceId &lt;int&gt;, source &lt;chr&gt;,
+#&gt; #   requestedLocationId &lt;lgl&gt;, listedName &lt;lgl&gt;, statusType.href &lt;chr&gt;,
+#&gt; #   location.href &lt;chr&gt;, bibliographicResource.href &lt;chr&gt;</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
