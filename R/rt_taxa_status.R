@@ -13,6 +13,8 @@
 #' @export
 rt_taxa_status = function(id, detail = FALSE) {
 
+  check_required_arg(id, "retrieve status of a taxon using its id")
+
   status_type = "columns"
 
   if (detail) status_type = "lines"

@@ -7,6 +7,9 @@
 #'
 #' @export
 rt_taxa_media = function(id) {
+
+  check_required_arg(id, "retrieve media of a taxon using its id")
+
   api_query = rt_GET("taxa/", id, "/media")
 
   parse_taxa(api_query)

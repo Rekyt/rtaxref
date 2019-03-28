@@ -14,6 +14,8 @@
 #' @export
 rt_status_find_type = function(status_id = NULL, page = 1, size = 2000) {
 
+  check_required_arg(status_id, "retrieve all taxa with given status")
+
   api_query = rt_GET("status/findByType/", status_id,
                      query = list(page = page,
                                   size = size))

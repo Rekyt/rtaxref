@@ -2,7 +2,7 @@
 #'
 #' @param term the beginning of the scientific name of the taxon
 #' @param size {`integer(1)`; default = `200`}\cr{}
-#'             The number of lines returned per page (maximum = 50000)
+#'             The number of lines returned per page (maximum = 200)
 #' @inheritParams rt_taxa_search
 #'
 #' @examples
@@ -14,7 +14,7 @@
 rt_taxa_autocomplete = function(term = NULL, territories = NULL, rank = NULL,
                                 domain = NULL, page = 1, size = 200) {
 
-  if (term == "") stop("`term` is required to autocomplete taxon search")
+  check_required_arg(term, "autocomplete taxon search")
 
   api_query = rt_GET("taxa/autocomplete",
                      query = list(term        = term,

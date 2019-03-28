@@ -17,11 +17,8 @@
 #' @export
 rt_taxa_from_externalids = function(external_db = NULL, external_id = NULL) {
 
-  if (is.null(external_db) | external_db == "" | is.null(external_id) |
-      external_id == "") {
-    stop("Both the ID of the external database and the ID of the taxon in this",
-         " external database are needed")
-  }
+  check_required_arg(external_db, "retrieve taxon using external IDs")
+  check_required_arg(external_id, "retrieve taxon using external IDs")
 
   api_query = rt_GET("taxa/findByExternalId",
                      query = list(externalDbId = tolower(external_db),

@@ -10,6 +10,8 @@
 #' @export
 rt_taxa_id = function(id) {
 
+  check_required_arg(id, "retrieve a specific taxon id")
+
   api_query = rt_GET("taxa/", id)
 
   parse_taxa(api_query)

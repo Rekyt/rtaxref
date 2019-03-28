@@ -7,6 +7,13 @@ rt_GET = function(..., query = NULL) {
   GET(rt_base_url(), path = paste0("api/", ...), query = query)
 }
 
+check_required_arg = function(arg, stop_message) {
+  if (arg == "" | is.null(arg)) {
+    stop("'", substitute(arg), "' argument is needed to ", stop_message,
+         call. = FALSE)
+  }
+}
+
 #' @importFrom httr content http_error http_status status_code
 parse_taxa = function(api_query, cut_names = TRUE) {
 
