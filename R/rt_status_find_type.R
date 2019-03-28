@@ -3,7 +3,7 @@
 #' @param status_id {`character(1)`}\cr{}
 #'                  The identifier of status (see [`rt_status_type()`] for the
 #'                  list of status types)
-#' @inheritParams rt_taxa_search
+#' @inheritParams rt_status_opgroup
 #'
 #' @examples
 #' # Find all taxa concerned by Habitat Directive referenced in TaxRef

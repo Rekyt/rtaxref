@@ -3,7 +3,7 @@
 #' @param interaction_id {`character(1)`}\cr{}
 #'                  The identifier of status (see [`rt_interactions_type()`] for
 #'                  the list of status types)
-#' @inheritParams rt_taxa_search
+#' @inheritParams rt_status_opgroup
 #'
 #' @examples
 #' rt_interactions_find_type(interaction_id = "GALLES")

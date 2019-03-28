@@ -13,9 +13,9 @@ rt_status_search(id = NULL, opgroup_id = NULL, location_id = NULL,
 an integer giving the id of the taxon in TaxRef (also called
 \code{cdNom})}
 
-\item{opgroup_id}{{\code{numeric(1)}}\cr{}
-the id of an operational group referenced in TaxRef see
-\code{\link[=rt_operational_groups]{rt_operational_groups()}}}
+\item{opgroup_id}{{\code{integer(1)}}\cr{}
+identifier of the operational group (see the list of
+operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}})}
 
 \item{location_id}{{\code{character(1)}}\cr{}
 a string identifying a location}
@@ -29,7 +29,7 @@ a longitude value}
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{50000}}\cr{}
+\item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
 The number of lines returned per page (maximum = 50000)}
 
 \item{detail}{{\code{logical(1)} default = \code{FALSE}}\cr{}

@@ -3,6 +3,8 @@
 #' @param opgroup_id {`integer(1)`}\cr{}
 #'                   identifier of the operational group (see the list of
 #'                   operational groups [`rt_operational_groups()`])
+#' @param size {`integer(1)`; default = `2000`}\cr{}
+#'             The number of lines returned per page (maximum = 50000)
 #' @inheritParams rt_taxa_search
 #'
 #' @examples
