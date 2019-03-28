@@ -12,6 +12,9 @@
 #' @export
 rt_interactions_find_type = function(interaction_id = NULL, page = 1,
                                      size = 2000) {
+  check_required_arg(interaction_id, paste0("retrieve all interactions using ",
+                                            "with a given interaction ID"))
+
 
   api_query = rt_GET("interactions/findByType/", interaction_id,
                      query = list(page = page,

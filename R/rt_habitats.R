@@ -34,6 +34,9 @@ rt_habitats = function() {
 #' @export
 rt_habitats_id = function(habitat_id) {
 
+  check_required_arg(habitat_id, paste0("retrieve a specific habitat ",
+                                       "using its id"))
+
   api_query = rt_GET("habitats/", tolower(habitat_id))
 
   parse_taxa(api_query)

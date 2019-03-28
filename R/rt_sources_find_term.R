@@ -10,7 +10,7 @@
 #' @export
 rt_sources_find_term = function(term = NULL) {
 
-  if (term == "" | is.null(term)) stop("term needs to be not empty")
+  check_required_arg(term, "retrieve sources containing a specific term")
 
   api_query = rt_GET("sources/findByTerm/", term)
 

@@ -20,6 +20,9 @@ rt_external_db = function() {
 #' @export
 rt_external_db_id = function(db_id) {
 
+  check_required_arg(db_id, paste0("retrieve a specific external database ",
+                                   "using its id"))
+
   api_query = rt_GET("externalDb/", tolower(db_id))
 
   parse_taxa(api_query)

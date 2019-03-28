@@ -20,6 +20,9 @@ rt_biogeo_status = function() {
 #' @export
 rt_biogeo_status_id = function(biogeo_id) {
 
+  check_required_arg(biogeo_id, paste0("retrieve a specific biogeographic ",
+                                       "status using its id"))
+
   api_query = rt_GET("biogeographicStatus/", biogeo_id)
 
   parse_taxa(api_query)

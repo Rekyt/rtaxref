@@ -16,7 +16,7 @@ the list of status types)}
 The page number returned}
 
 \item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
-The number of lines returned per page (maximum = 50000)}
+The number of lines returned per page (maximum = 2000)}
 }
 \description{
 Retrieve the status of all Taxa according to a Status Type

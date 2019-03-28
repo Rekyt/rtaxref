@@ -13,6 +13,8 @@
 #' @importFrom httr content
 rt_sources_id = function(source_id, bibtex = FALSE) {
 
+  check_required_arg(source_id, "retrieve a specific source using its id")
+
   bib = ""
 
   if (bibtex) bib = "/transform/application/x-bibtex"
