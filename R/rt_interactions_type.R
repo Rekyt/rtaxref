@@ -26,6 +26,9 @@ rt_interactions_type = function() {
 #' @export
 rt_interactions_type_id = function(interaction_id) {
 
+  check_required_arg(interaction_id, paste0("retrieve a specific interaction ",
+                                            "type using its id"))
+
   api_query = rt_GET("interactions/types/", interaction_id)
 
   parse_taxa(api_query)

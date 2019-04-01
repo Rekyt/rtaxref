@@ -7,7 +7,9 @@
 #' @export
 rt_taxa_fuzzymatch = function(sciname) {
 
-  api_query = rt_GET("taxa/fuzzymatch",
+  check_required_arg(sciname, "fuzzymatch taxon search")
+
+  api_query = rt_GET("taxa/fuzzyMatch",
                      query = list(term = sciname))
 
   parse_taxa(api_query)

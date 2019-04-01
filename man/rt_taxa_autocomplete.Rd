@@ -65,8 +65,8 @@ Rank of the taxon:
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{50000}}\cr{}
-The number of lines returned per page (maximum = 50000)}
+\item{size}{{\code{integer(1)}; default = \code{200}}\cr{}
+The number of lines returned per page (maximum = 200)}
 }
 \description{
 Retrieve Synonyms associated with a Taxon

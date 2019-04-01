@@ -9,6 +9,9 @@
 #' @export
 rt_interactions_opgroup = function(opgroup_id, page = 1, size = 2000) {
 
+  check_required_arg(opgroup_id, paste0("retrieve interactions using ",
+                                        "operational group ID"))
+
   api_query = rt_GET("interactions/findByOperationalGroup/", opgroup_id,
                      query = list(page = page,
                                   size = size))

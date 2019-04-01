@@ -14,8 +14,8 @@ operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}}
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{50000}}\cr{}
-The number of lines returned per page (maximum = 50000)}
+\item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
+The number of lines returned per page (maximum = 2000)}
 }
 \description{
 Retrieve the status of all Taxa in an Operational Group

@@ -1,14 +1,13 @@
 #' Search statuses based on a list of criteria
 #'
 #' @inheritParams rt_taxa_status
-#' @inheritParams rt_operational_groups_id
 #' @param location_id {`character(1)`}\cr{}
 #'                    a string identifying a location
 #' @param latitude    {`numeric(1)`}\cr{}
 #'                    a latitude value
 #' @param longitude   {`numeric(1)`}\cr{}
 #'                    a longitude value
-#' @inheritParams rt_taxa_search
+#' @inheritParams rt_status_opgroup
 #'
 #' @examples
 #' \dontrun{

@@ -23,6 +23,9 @@ rt_operational_groups = function() {
 #' @export
 rt_operational_groups_id = function(opgroup_id) {
 
+  check_required_arg(opgroup_id, paste0("retrieve a specific operational ",
+                                        "group using its ID"))
+
   api_query = rt_GET("operationalGroups/", opgroup_id)
 
   parse_taxa(api_query)

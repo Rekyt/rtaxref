@@ -24,6 +24,8 @@ rt_source_uses = function() {
 #' @export
 rt_source_uses_id = function(usage_id) {
 
+  check_required_arg(usage_id, "retrieve a specific source use using its id")
+
   api_query = rt_GET("sourceUses/", usage_id)
 
   parse_taxa(api_query)
