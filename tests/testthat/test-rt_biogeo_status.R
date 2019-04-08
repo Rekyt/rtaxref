@@ -11,7 +11,7 @@ vcr::use_cassette("rt_biogeo_status", {
   })
 
   test_that("Can retrieve specific biogeographic status", {
-    expect_silent(res <- rt_biogeo_status_id("P"))
+    expect_silent(res <- rt_biogeo_status("P"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 3))
@@ -20,11 +20,11 @@ vcr::use_cassette("rt_biogeo_status", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_biogeo_status_id("ASDF"),
+    expect_error(rt_biogeo_status("ASDF"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_biogeo_status_id(1),
+    expect_error(rt_biogeo_status(1),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })

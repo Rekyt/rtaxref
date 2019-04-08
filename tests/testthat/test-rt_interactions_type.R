@@ -12,7 +12,7 @@ vcr::use_cassette("rt_interactions_type", {
   })
 
   test_that("Can retrieve specific interaction types", {
-    expect_silent(res <- rt_interactions_type_id(interaction_id = "PREDATEUR"))
+    expect_silent(res <- rt_interactions_type(interaction_id = "PREDATEUR"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 7))
@@ -22,11 +22,11 @@ vcr::use_cassette("rt_interactions_type", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_interactions_type_id("ASDF"),
+    expect_error(rt_interactions_type("ASDF"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_interactions_type_id(9),
+    expect_error(rt_interactions_type(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })

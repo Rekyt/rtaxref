@@ -2,9 +2,13 @@
 % Please edit documentation in R/rt_operational_groups.R
 \name{rt_operational_groups}
 \alias{rt_operational_groups}
-\title{Retrieve the list of operational groups used in TaxRef}
+\title{Retrieve operational groups used in TaxRef}
 \usage{
-rt_operational_groups()
+rt_operational_groups(opgroup_id = NULL)
+}
+\arguments{
+\item{opgroup_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
+the id of an operational group referenced in TaxRef}
 }
 \description{
 Operational Groups are names of groups either taxonomic or vernacular

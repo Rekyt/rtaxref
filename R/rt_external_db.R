@@ -1,29 +1,22 @@
-#' Retrieve the list of external DBs referenced in TaxRef
+#' Retrieve external DBs referenced in TaxRef
 #'
-#' @export
-rt_external_db = function() {
-
-  api_query = rt_GET("externalDb")
-
-  parse_taxa(api_query)
-}
-
-#' Retrieve an external database referenced in TaxRef
+#' If the function is used without arguments returns the list of external
+#' databases used in TaxRef.
 #'
-#' @param db_id {`character(1)`}\cr{}
+#' @param db_id {`character(1)`, default = `NULL`}\cr{}
 #'              The id of an external db referenced in TaxRef
-#'              [`rt_biogeo_status()`]
 #'
 #' @examples
-#' rt_external_db_id(db_id = "avibase")
+#' rt_external_db(db_id = "worms")
 #'
 #' @export
-rt_external_db_id = function(db_id) {
+rt_external_db = function(db_id = NULL) {
 
-  check_required_arg(db_id, paste0("retrieve a specific external database ",
-                                   "using its id"))
-
-  api_query = rt_GET("externalDb/", tolower(db_id))
+  if (is.null(db_id)) {
+    api_query = rt_GET("externalDb")
+  } else {
+    api_query = rt_GET("externalDb/", tolower(db_id))
+  }
 
   parse_taxa(api_query)
 }

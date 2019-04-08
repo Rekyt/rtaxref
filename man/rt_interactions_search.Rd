@@ -12,13 +12,11 @@ rt_interactions_search(id = NULL, interaction_id = NULL,
 an integer giving the id of the taxon in TaxRef (also called
 \code{cdNom})}
 
-\item{interaction_id}{{\code{character(1)}}\cr{}
-A character identifying the type of interactions (see
-\code{\link[=rt_interactions_type]{rt_interactions_type()}} for a list of interactions types)}
+\item{interaction_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+A character identifying the type of interactions}
 
-\item{opgroup_id}{{\code{numeric(1)}}\cr{}
-the id of an operational group referenced in TaxRef see
-\code{\link[=rt_operational_groups]{rt_operational_groups()}}}
+\item{opgroup_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
+the id of an operational group referenced in TaxRef}
 
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}

@@ -4,8 +4,16 @@
 \alias{rt_taxref_versions}
 \title{Retrieve the list of existing TaxRef versions}
 \usage{
-rt_taxref_versions()
+rt_taxref_versions(version_id = NULL)
+}
+\arguments{
+\item{version_id}{{\code{integer(1)}, default = \code{NULL}}\cr{}
+the id of a TaxRef version}
 }
 \description{
 Retrieve the list of existing TaxRef versions
+}
+\examples{
+rt_taxref_versions(version_id = 12)
+
 }

@@ -11,9 +11,9 @@ vcr::use_cassette("rt_external_db", {
   })
 
   test_that("Can retrieve specific external database", {
-    expect_silent(res <- rt_external_db_id("antcat"))
+    expect_silent(res <- rt_external_db("antcat"))
     # Also in capital
-    expect_silent(res2 <- rt_external_db_id("ANTCAT"))
+    expect_silent(res2 <- rt_external_db("ANTCAT"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 5))
@@ -24,11 +24,11 @@ vcr::use_cassette("rt_external_db", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_external_db_id("ASDF"),
+    expect_error(rt_external_db("ASDF"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_external_db_id(1),
+    expect_error(rt_external_db(1),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })

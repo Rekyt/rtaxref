@@ -1,28 +1,19 @@
 #' Retrieve the list of existing TaxRef versions
 #'
-#' @export
-rt_taxref_versions = function() {
-
-  api_query = rt_GET("taxrefVersions")
-
-  parse_taxa(api_query)
-}
-
-#' Retrieve information about a TaxRef version
-#'
-#' @param version_id {`integer(1)`}\cr{}
+#' @param version_id {`integer(1)`, default = `NULL`}\cr{}
 #'                   the id of a TaxRef version
-#'                   [`rt_taxref_versions()`]
 #'
 #' @examples
-#' rt_taxref_versions_id(version_id = 12)
+#' rt_taxref_versions(version_id = 12)
 #'
 #' @export
-rt_taxref_versions_id = function(version_id) {
+rt_taxref_versions = function(version_id = NULL) {
 
-  check_required_arg(version_id, "retrieve a taxref version using its id")
-
-  api_query = rt_GET(paste0("taxrefVersions/", version_id))
+  if (is.null(version_id)) {
+    api_query = rt_GET("taxrefVersions")
+  } else {
+    api_query = rt_GET(paste0("taxrefVersions/", version_id))
+  }
 
   parse_taxa(api_query)
 }

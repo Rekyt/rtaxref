@@ -12,7 +12,7 @@ vcr::use_cassette("rt_taxo_ranks", {
   })
 
   test_that("Can retrieve specific taxonomic ranks", {
-    expect_silent(res <- rt_taxo_ranks_id(taxo_id = "AB"))
+    expect_silent(res <- rt_taxo_ranks(taxo_id = "AB"))
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 2))
     expect_named(res, c("id", "name"))
@@ -21,11 +21,11 @@ vcr::use_cassette("rt_taxo_ranks", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_taxo_ranks_id("ASDF"),
+    expect_error(rt_taxo_ranks("ASDF"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxo_ranks_id(9),
+    expect_error(rt_taxo_ranks(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })

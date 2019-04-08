@@ -11,7 +11,7 @@ vcr::use_cassette("rt_taxref_versions", {
   })
 
   test_that("Can retrieve specific TaxRef version", {
-    expect_silent(res <- rt_taxref_versions_id(version_id = 2))
+    expect_silent(res <- rt_taxref_versions(version_id = 2))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 5))
@@ -21,11 +21,11 @@ vcr::use_cassette("rt_taxref_versions", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_taxref_versions_id(123),
+    expect_error(rt_taxref_versions(123),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxref_versions_id("ASDF"),
+    expect_error(rt_taxref_versions("ASDF"),
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })
