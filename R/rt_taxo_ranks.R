@@ -12,14 +12,7 @@
 #' @export
 rt_taxo_ranks = function(taxo_id = NULL) {
 
-  if (is.null(taxo_id)) taxo_id = ""
-
-  # Consider the only mixed-case name in taxonomic ranks
-  if(taxo_id %in% c("dumm", "Dumm", "DUMM")) {
-    taxo_id = "Dumm"
-  } else {
-    taxo_id = toupper(taxo_id)
-  }
+  taxo_id = gsub("DUMM", "Dumm", toupper(taxo_id))
 
   api_query = rt_GET("taxonomicRanks/", taxo_id)
 
