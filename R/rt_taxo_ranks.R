@@ -4,7 +4,7 @@
 #' taxonomic ranks used in TaxRef.
 #'
 #' @param taxo_id {`character(1)`, default = `NULL`}\cr{}
-#'                the id of a taxonomic rank in TaxRef
+#'                the id of a taxonomic rank in TaxRef.
 #'
 #' @examples
 #' rt_taxo_ranks(taxo_id = "VAR")
@@ -12,11 +12,16 @@
 #' @export
 rt_taxo_ranks = function(taxo_id = NULL) {
 
-  if (is.null(taxo_id)) {
-    api_query = rt_GET("taxonomicRanks")
+  if (is.null(taxo_id)) taxo_id = ""
+
+  # Consider the only mixed-case name in taxonomic ranks
+  if(taxo_id %in% c("dumm", "Dumm", "DUMM")) {
+    taxo_id = "Dumm"
   } else {
-    api_query = rt_GET("taxonomicRanks/", taxo_id)
+    taxo_id = toupper(taxo_id)
   }
+
+  api_query = rt_GET("taxonomicRanks/", taxo_id)
 
   parse_taxa(api_query)
 }

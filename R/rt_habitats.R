@@ -3,8 +3,8 @@
 #' If the function is used without arguments returns the list of habitats used
 #' in TaxRef.
 #'
-#' @param habitat_id {`character(1)`, default = `NULL`}\cr{}
-#'              The id of a habitat referenced in TaxRef
+#' @param habitat_id {`integer(1)`, default = `NULL`}\cr{}
+#'                   The id of a habitat referenced in TaxRef
 #'
 #' @section Habitats:
 #'
@@ -23,11 +23,7 @@
 #' @export
 rt_habitats = function(habitat_id = NULL) {
 
-  if (is.null(habitat_id)) {
-    api_query = rt_GET("habitats")
-  } else {
-    api_query = rt_GET("habitats/", habitat_id)
-  }
+  api_query = rt_GET("habitats/", habitat_id)
 
   parse_taxa(api_query)
 }

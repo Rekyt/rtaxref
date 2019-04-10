@@ -9,11 +9,7 @@
 #' @export
 rt_taxref_versions = function(version_id = NULL) {
 
-  if (is.null(version_id)) {
-    api_query = rt_GET("taxrefVersions")
-  } else {
-    api_query = rt_GET(paste0("taxrefVersions/", version_id))
-  }
+  api_query = rt_GET("taxrefVersions/", version_id)
 
   parse_taxa(api_query)
 }

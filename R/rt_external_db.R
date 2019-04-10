@@ -12,11 +12,7 @@
 #' @export
 rt_external_db = function(db_id = NULL) {
 
-  if (is.null(db_id)) {
-    api_query = rt_GET("externalDb")
-  } else {
-    api_query = rt_GET("externalDb/", tolower(db_id))
-  }
+  api_query = rt_GET("externalDb/", tolower(db_id))
 
   parse_taxa(api_query)
 }

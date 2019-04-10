@@ -10,7 +10,7 @@ vcr::use_cassette("rt_status_type", {
   })
 
   test_that("Can retrieve specific status types", {
-    expect_silent(res <- rt_status_type_id(status_id = "BARC"))
+    expect_silent(res <- rt_status_type(status_id = "BARC"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 3))
@@ -19,11 +19,11 @@ vcr::use_cassette("rt_status_type", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_status_type_id(9),
+    expect_error(rt_status_type(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_status_type_id("A"),
+    expect_error(rt_status_type("A"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })

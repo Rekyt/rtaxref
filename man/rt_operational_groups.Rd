@@ -12,5 +12,9 @@ the id of an operational group referenced in TaxRef}
 }
 \description{
 Operational Groups are names of groups either taxonomic or vernacular
-used across TaxRef in French
+used across TaxRef in French. If used without argument returns the list of
+all operational groups used in TaxRef.
+}
+\examples{
+rt_operational_groups(opgroup_id = 143)
 }

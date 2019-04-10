@@ -12,11 +12,11 @@ the id of a source use in TaxRef}
 }
 \description{
 TaxRef references many publications across its documentation. The different
-sources are used for different reasons this function returns the list of
+sources are used for different reasons. This function returns the list of
 usages for a source when no arguments are provided, otherwise returns the
 specific type of use.
 }
 \examples{
-rt_source_uses(276)
+rt_source_uses(usage_id = 276)
 
 }

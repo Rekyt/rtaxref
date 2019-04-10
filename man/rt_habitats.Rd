@@ -7,7 +7,7 @@
 rt_habitats(habitat_id = NULL)
 }
 \arguments{
-\item{habitat_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{habitat_id}{{\code{integer(1)}, default = \code{NULL}}\cr{}
 The id of a habitat referenced in TaxRef}
 }
 \description{

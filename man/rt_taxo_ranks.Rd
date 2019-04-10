@@ -8,7 +8,7 @@ rt_taxo_ranks(taxo_id = NULL)
 }
 \arguments{
 \item{taxo_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
-the id of a taxonomic rank in TaxRef}
+the id of a taxonomic rank in TaxRef.}
 }
 \description{
 If the function is used without arguments returns the entire list of

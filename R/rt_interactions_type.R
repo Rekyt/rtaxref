@@ -6,16 +6,12 @@
 #'                  A character identifying the type of interactions
 #'
 #' @examples
-#' rt_interactions_type("PREDATEUR")
+#' rt_interactions_type(interaction_id = "PREDATEUR")
 #'
 #' @export
 rt_interactions_type = function(interaction_id = NULL) {
 
-  if (is.null(interaction_id)) {
-    api_query = rt_GET("interactions/types/")
-  } else {
-    api_query = rt_GET("interactions/types/", interaction_id)
-  }
+  api_query = rt_GET("interactions/types/", toupper(interaction_id))
 
   parse_taxa(api_query)
 }

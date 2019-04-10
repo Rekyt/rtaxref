@@ -44,7 +44,7 @@ http_interactions:
         (terrestre et eau douce)","definition":"Espèces terrestres effectuant une
         partie de leur cycle en eau douce (odonates par exemple), ou fortement liées
         au milieu aquatique (loutre par exemple).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/8"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/"}}}'
-  recorded_at: 2019-04-08 16:22:29 GMT
+  recorded_at: 2019-04-10 13:10:14 GMT
   recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
@@ -76,7 +76,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"id":1,"name":"Marin","definition":"Espèces vivant uniquement en
         milieu marin.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/1"}}}'
-  recorded_at: 2019-04-08 16:22:29 GMT
+  recorded_at: 2019-04-10 13:10:14 GMT
   recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
@@ -107,7 +107,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: 2019-04-08 16:22:29 GMT
+  recorded_at: 2019-04-10 13:10:14 GMT
   recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
@@ -153,7 +153,7 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-04-08 16:22:29 GMT
+  recorded_at: 2019-04-10 13:10:14 GMT
   recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
@@ -199,5 +199,52 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-04-08 16:22:29 GMT
+  recorded_at: 2019-04-10 13:10:14 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/habitats/
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json;charset=UTF-8
+      date: Wed, 10 Apr 2019 13:10:13 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"habitats":[{"id":1,"name":"Marin","definition":"Espèces
+        vivant uniquement en milieu marin.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/1"}}},{"id":2,"name":"Eau
+        douce","definition":"Espèces vivant uniquement en milieu d’eau douce.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/2"}}},{"id":3,"name":"Terrestre","definition":"Espèces
+        vivant uniquement en milieu terrestre.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/3"}}},{"id":4,"name":"Marin
+        et eau douce","definition":"Espèces effectuant une partie de leur cycle de
+        vie en eau douce et l’autre partie en mer (espèces diadromes, amphidromes,
+        anadromes ou catadromes).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/4"}}},{"id":5,"name":"Marin
+        et terrestre","definition":"Espèces effectuant une partie de leur cycle de
+        vie en mer et l’autre partie à terre (pinnipèdes, tortues ou oiseaux marins
+        par exemple).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/5"}}},{"id":6,"name":"Eau
+        saumâtre","definition":"Espèces vivant exclusivement en eau saumâtre.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/6"}}},{"id":7,"name":"Continental
+        (terrestre et/ou eau douce)","definition":"Espèces continentales (non marines)
+        dont on ne sait pas si elles sont terrestres et/ou d’eau douce (taxons provenant
+        de Fauna Europaea). ","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/7"}}},{"id":8,"name":"Continental
+        (terrestre et eau douce)","definition":"Espèces terrestres effectuant une
+        partie de leur cycle en eau douce (odonates par exemple), ou fortement liées
+        au milieu aquatique (loutre par exemple).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/8"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/habitats/"}}}'
+  recorded_at: 2019-04-10 13:10:14 GMT
   recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
