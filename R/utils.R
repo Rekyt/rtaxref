@@ -2,9 +2,16 @@ rt_base_url = function() {
     "https://taxref.mnhn.fr/"
 }
 
-#' @importFrom httr GET status_code
+#' rtaxref User Agent
+rt_ua <- function() {
+  paste0("http://github.com/Rekyt/rtaxref R package rtaxref/",
+         utils::packageVersion("rtaxref"))
+}
+
+#' @importFrom httr GET status_code add_headers
 rt_GET = function(..., query = NULL) {
-  GET(rt_base_url(), path = paste0("api/", ...), query = query)
+  GET(rt_base_url(), config = add_headers("user-agent" = rt_ua()),
+      path = paste0("api/", ...), query = query)
 }
 
 check_required_arg = function(arg, stop_message) {
@@ -13,6 +20,7 @@ check_required_arg = function(arg, stop_message) {
          call. = FALSE)
   }
 }
+
 
 #' @importFrom httr content http_error http_status status_code
 parse_taxa = function(api_query, cut_names = TRUE) {
