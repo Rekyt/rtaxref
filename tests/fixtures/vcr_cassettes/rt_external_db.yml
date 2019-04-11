@@ -1,7 +1,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://taxref.mnhn.fr/api/externalDb
+    uri: https://taxref.mnhn.fr/api/externalDb/
     body:
       encoding: ''
       string: ''
@@ -22,7 +22,7 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:14:19 GMT
+      date: Wed, 10 Apr 2019 13:38:45 GMT
       server: Apache
       transfer-encoding: chunked
     body:
@@ -108,8 +108,8 @@ http_interactions:
         Register of Marine Species","websiteUrl":"http://www.marinespecies.org/","authors":"WoRMS
         Editorial Board (%Y)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/worms"}}},{"id":"zoobank","name":"ZooBank","title":"The
         Official Registry of Zoological Nomenclature","websiteUrl":"http://zoobank.org","authors":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/zoobank"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/"}}}'
-  recorded_at: 2019-03-25 17:14:19 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:38:46 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/externalDb/antcat
@@ -133,15 +133,15 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:14:19 GMT
+      date: Wed, 10 Apr 2019 13:38:45 GMT
       server: Apache
       transfer-encoding: chunked
     body:
       encoding: UTF-8
       string: '{"id":"antcat","name":"ANTCAT","title":"An Online Catalog of the Ants
         of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton, B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}}'
-  recorded_at: 2019-03-25 17:14:19 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:38:46 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/externalDb/antcat
@@ -165,15 +165,15 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:14:19 GMT
+      date: Wed, 10 Apr 2019 13:38:45 GMT
       server: Apache
       transfer-encoding: chunked
     body:
       encoding: UTF-8
       string: '{"id":"antcat","name":"ANTCAT","title":"An Online Catalog of the Ants
         of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton, B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}}'
-  recorded_at: 2019-03-25 17:14:19 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:38:46 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/externalDb/antcat
@@ -197,15 +197,15 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Mon, 25 Mar 2019 17:14:19 GMT
+      date: Wed, 10 Apr 2019 13:38:45 GMT
       server: Apache
       transfer-encoding: chunked
     body:
       encoding: UTF-8
       string: '{"id":"antcat","name":"ANTCAT","title":"An Online Catalog of the Ants
         of the World","websiteUrl":"http://www.antcat.org","authors":"Bolton, B.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/externalDb/antcat"}}}'
-  recorded_at: 2019-03-25 17:14:19 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:38:46 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/externalDb/asdf
@@ -230,13 +230,13 @@ http_interactions:
       access-control-allow-origin: '*'
       content-length: '0'
       content-type: text/plain
-      date: Mon, 25 Mar 2019 17:14:19 GMT
+      date: Wed, 10 Apr 2019 13:38:46 GMT
       server: Apache
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: 2019-03-25 17:14:19 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:38:46 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/externalDb/1
@@ -261,10 +261,10 @@ http_interactions:
       access-control-allow-origin: '*'
       content-length: '0'
       content-type: text/plain
-      date: Mon, 25 Mar 2019 17:14:19 GMT
+      date: Wed, 10 Apr 2019 13:38:46 GMT
       server: Apache
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: 2019-03-25 17:14:19 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:38:46 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4

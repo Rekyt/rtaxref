@@ -10,7 +10,7 @@ vcr::use_cassette("rt_sources_use", {
   })
 
   test_that("Can retrieve sources use", {
-    expect_silent(res <- rt_source_uses_id(usage_id = 276))
+    expect_silent(res <- rt_source_uses(usage_id = 276))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 2))
@@ -20,11 +20,11 @@ vcr::use_cassette("rt_sources_use", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_source_uses_id(9),
+    expect_error(rt_source_uses(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_source_uses_id("ASDF"),
+    expect_error(rt_source_uses("ASDF"),
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })

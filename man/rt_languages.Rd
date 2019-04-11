@@ -2,10 +2,21 @@
 % Please edit documentation in R/rt_languages.R
 \name{rt_languages}
 \alias{rt_languages}
-\title{Retrieve the list of languages used in TaxRef}
+\title{Retrieve the languages used in TaxRef}
 \usage{
-rt_languages()
+rt_languages(languages_id = NULL)
+}
+\arguments{
+\item{languages_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+three-letter lowercase code that is the id of a language
+referenced in TaxRef}
 }
 \description{
-Retrieve the list of languages used in TaxRef
+If used without argument returns the list of languages used in TaxRef
+otherwise the specific
+}
+\examples{
+# Retrieve the TaxRef definition in the Wayana Language
+rt_languages(languages_id = "way")
+
 }

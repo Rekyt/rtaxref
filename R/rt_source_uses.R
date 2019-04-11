@@ -1,30 +1,18 @@
 #' Retrieve the list of source uses in TaxRef
 #'
 #' TaxRef references many publications across its documentation. The different
-#' sources are used for different reasons this function returns the list of
-#' usages for a source.
+#' sources are used for different reasons. This function returns the list of
+#' usages for a source when no arguments are provided, otherwise returns the
+#' specific type of use.
 #'
-#' @export
-rt_source_uses = function() {
-
-  api_query = rt_GET("sourceUses")
-
-  parse_taxa(api_query)
-}
-
-#' Retrieve a source use in TaxRef
-#'
-#' @param usage_id {`numeric(1)`}\cr{}
-#'                 the id of a source use in TaxRef see
-#'                 [`rt_source_uses()`]
+#' @param usage_id {`numeric(1)`, default = `NULL`}\cr{}
+#'                 the id of a source use in TaxRef
 #'
 #' @examples
-#' rt_source_uses_id(usage_id = 11)
+#' rt_source_uses(usage_id = 276)
 #'
 #' @export
-rt_source_uses_id = function(usage_id) {
-
-  check_required_arg(usage_id, "retrieve a specific source use using its id")
+rt_source_uses = function(usage_id = NULL) {
 
   api_query = rt_GET("sourceUses/", usage_id)
 

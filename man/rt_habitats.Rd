@@ -2,12 +2,17 @@
 % Please edit documentation in R/rt_habitats.R
 \name{rt_habitats}
 \alias{rt_habitats}
-\title{Retrieve the list of habitats used in TaxRef}
+\title{Retrieve habitats used in TaxRef}
 \usage{
-rt_habitats()
+rt_habitats(habitat_id = NULL)
+}
+\arguments{
+\item{habitat_id}{{\code{integer(1)}, default = \code{NULL}}\cr{}
+The id of a habitat referenced in TaxRef}
 }
 \description{
-Retrieve the list of habitats used in TaxRef
+If the function is used without arguments returns the list of habitats used
+in TaxRef.
 }
 \section{Habitats}{
 
@@ -23,3 +28,7 @@ Retrieve the list of habitats used in TaxRef
 }
 }
 
+\examples{
+rt_habitats(habitat_id = 8)
+
+}

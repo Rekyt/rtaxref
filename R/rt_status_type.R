@@ -1,33 +1,16 @@
-#' Retrieve all Status Types
+#' Retrieve Status Types Used in TaxRef
 #'
-#' @seealso [`rt_status_find_type()`] to retrieve all information by status
-#'
-#' @export
-rt_status_type = function() {
-
-  api_query = GET(rt_base_url(), path = "api/status/types/")
-
-  parse_taxa(api_query)
-}
-
-
-#' Retrieve a Status Types based on its id
-#'
-#' @param status_id {`character(1)`}\cr{}
-#'                  A character identifying the type of status (see
-#'                  [`rt_status_type()`] for a list of status types)
-#'
-#' @examples
-#' rt_status_type_id("DH")
-#'
-#' @seealso see [`rt_status_type()`] for a list of status types
+#' If the function is provided without arguments returns the entire list of
+#' status types used in TaxRef.
+#' @param status_id {`character(1)`, default = `NULL`}\cr{}
+#'                  A character identifying the type of status
 #'
 #' @export
-rt_status_type_id = function(status_id) {
+rt_status_type = function(status_id = NULL) {
 
-  check_required_arg(status_id, "retrieve a specific status using its id")
+  status_id = gsub("^EXPNA$", "exPNA", toupper(status_id))
 
-  api_query = rt_GET(paste0("status/types/", status_id))
+  api_query = rt_GET("status/types/", status_id)
 
   parse_taxa(api_query)
 }

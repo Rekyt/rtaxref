@@ -10,7 +10,7 @@ vcr::use_cassette("rt_habitats", {
   })
 
   test_that("Can retrieve specific habitats", {
-    expect_silent(res <- rt_habitats_id(habitat_id = 1))
+    expect_silent(res <- rt_habitats(habitat_id = 1))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 3))
@@ -19,11 +19,11 @@ vcr::use_cassette("rt_habitats", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_habitats_id(9),
+    expect_error(rt_habitats(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_habitats_id("A"),
+    expect_error(rt_habitats("A"),
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })

@@ -63,8 +63,8 @@ http_interactions:
         pour Saint-Martin","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/20"}}},{"id":22,"name":"Statut
         pour Saint-Pierre-et-Miquelon","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/22"}}},{"id":28,"name":"Statut
         pour Wallis et Futuna","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/28"}}},{"id":10,"name":"Taxonomie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/10"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/"}}}'
-  recorded_at: 2019-03-26 13:48:27 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:10:18 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/sourceUses/276
@@ -94,8 +94,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"id":276,"name":"Abaissement de rang","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/276"}}}'
-  recorded_at: 2019-03-26 13:48:27 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:10:18 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/sourceUses/9
@@ -125,8 +125,8 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: 2019-03-26 13:48:27 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:10:18 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/sourceUses/ASDF
@@ -171,5 +171,71 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 13:48:27 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:10:18 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sourceUses/
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 10 Apr 2019 13:10:17 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"sourceUses":[{"id":276,"name":"Abaissement de rang","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/276"}}},{"id":56,"name":"Analyses
+        moléculaires","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/56"}}},{"id":116,"name":"Biologie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/116"}}},{"id":296,"name":"Classification
+        (Systématique)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/296"}}},{"id":236,"name":"Clé
+        d''identification des espèces","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/236"}}},{"id":237,"name":"Clé
+        d''identification des genres","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/237"}}},{"id":176,"name":"Date
+        de publication","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/176"}}},{"id":1,"name":"Description
+        originale","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/1"}}},{"id":13,"name":"Désignation
+        de type subséquente","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/13"}}},{"id":11,"name":"Ecologie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/11"}}},{"id":256,"name":"Elévation
+        de rang","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/256"}}},{"id":156,"name":"Fiche
+        espèce INPN","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/156"}}},{"id":31,"name":"Habitat","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/31"}}},{"id":12,"name":"Identification","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/12"}}},{"id":33,"name":"Illustration","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/33"}}},{"id":34,"name":"Illustration
+        de type","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/34"}}},{"id":32,"name":"Illustration
+        originale","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/32"}}},{"id":15,"name":"Mauvaise
+        application du nom","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/15"}}},{"id":277,"name":"Nom
+        de remplacement","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/277"}}},{"id":96,"name":"Nomen
+        Nudum","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/96"}}},{"id":136,"name":"Nomenclature","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/136"}}},{"id":5,"name":"Redescription","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/5"}}},{"id":36,"name":"[sans
+        objet]","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/36"}}},{"id":3,"name":"Source
+        additionnelle","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/3"}}},{"id":6,"name":"Source
+        de la nouvelle combinaison","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/6"}}},{"id":4,"name":"Source
+        de la synonymie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/4"}}},{"id":2,"name":"Source
+        de l''enregistrement","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/2"}}},{"id":30,"name":"Statut
+        pour Clipperton","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/30"}}},{"id":16,"name":"Statut
+        pour la France métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/16"}}},{"id":19,"name":"Statut
+        pour la Guadeloupe","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/19"}}},{"id":17,"name":"Statut
+        pour la Guyane française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/17"}}},{"id":18,"name":"Statut
+        pour la Martinique","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/18"}}},{"id":27,"name":"Statut
+        pour la Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/27"}}},{"id":29,"name":"Statut
+        pour la Polynésie française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/29"}}},{"id":24,"name":"Statut
+        pour la Réunion","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/24"}}},{"id":197,"name":"Statut
+        pour la Terre Adélie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/197"}}},{"id":26,"name":"Statut
+        pour les Iles Eparses","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/26"}}},{"id":196,"name":"Statut
+        pour les îles subantarctiques","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/196"}}},{"id":23,"name":"Statut
+        pour Mayotte","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/23"}}},{"id":21,"name":"Statut
+        pour Saint-Barthélemy","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/21"}}},{"id":20,"name":"Statut
+        pour Saint-Martin","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/20"}}},{"id":22,"name":"Statut
+        pour Saint-Pierre-et-Miquelon","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/22"}}},{"id":28,"name":"Statut
+        pour Wallis et Futuna","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/28"}}},{"id":10,"name":"Taxonomie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/10"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sourceUses/"}}}'
+  recorded_at: 2019-04-10 13:10:18 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4

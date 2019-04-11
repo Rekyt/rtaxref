@@ -4,10 +4,19 @@
 \alias{rt_source_uses}
 \title{Retrieve the list of source uses in TaxRef}
 \usage{
-rt_source_uses()
+rt_source_uses(usage_id = NULL)
+}
+\arguments{
+\item{usage_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
+the id of a source use in TaxRef}
 }
 \description{
 TaxRef references many publications across its documentation. The different
-sources are used for different reasons this function returns the list of
-usages for a source.
+sources are used for different reasons. This function returns the list of
+usages for a source when no arguments are provided, otherwise returns the
+specific type of use.
+}
+\examples{
+rt_source_uses(usage_id = 276)
+
 }

@@ -27,6 +27,171 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      string: '{"_embedded":{"biogeographicStatus":[{"id":"P","name":"Présente (indigène
+        ou indéterminé)","definition":"Taxon présent au sens large dans la zone
+        géographique considérée, c''est-à-dire taxon indigène ou taxon dont on
+        ne sait pas s’il appartient à l''une des autres catégories. Les taxons
+        hivernant quelques mois de l’année entrent dans cette catégorie.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/P"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/P"}}},{"id":"E","name":"Endémique","definition":"Taxon
+        naturellement restreint à la zone géographique considérée.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/E"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/E"},"tdwgUri":{"href":"http://rs.tdwg.org/ontology/voc/SPMInfoItems#Endemic"}}},{"id":"S","name":"Subendémique","definition":"Taxon
+        naturellement restreint à une zone un peu plus grande que la zone géographique
+        considérée mais dont les principales populations se situent dans la zone
+        géographique considérée.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/S"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/S"}}},{"id":"C","name":"Cryptogène","definition":"Taxon
+        dont l’aire d’origine est inconnue, et pour lequel on ne peut donc pas
+        dire s’il est indigène ou introduit.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/C"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/C"}}},{"id":"I","name":"Introduite","definition":"Taxon
+        dont la présence dans la zone géographique considérée est due à une intervention
+        humaine (intentionnelle ou non), ou taxon qui est arrivé là sans intervention
+        humaine à partir d’une zone dans laquelle il est introduit.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/I"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/I"}}},{"id":"J","name":"Introduite
+        envahissante","definition":"Taxon introduit et naturalisé/établi dans la
+        zone géographique considérée, qui produit des « descendants fertiles »
+        souvent en grand nombre, et qui a le potentiel pour s’étendre de façon
+        exponentielle sur une grande aire, augmentant ainsi rapidement son aire de
+        répartition. Cela induit souvent des conséquences écologiques, économiques
+        ou sanitaires négatives.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/J"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/J"}}},{"id":"M","name":"Introduite
+        non établie (dont cultivée ou domestique)","definition":"Taxon dont la présence
+        dans la zone géographique considérée est due à une intervention humaine
+        (intentionnelle ou non), ou taxon qui est arrivé là sans intervention humaine
+        à partir d’une zone dans laquelle il est introduit.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/M"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/M"}}},{"id":"B","name":"Occasionnelle","definition":"Taxon
+        occasionnel (migrateur de passage) ou observé de manière exceptionnelle
+        (taxon accidentel dans la zone géographique considérée).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/B"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/B"}}},{"id":"D","name":"Douteux","definition":"Taxon
+        dont la présence dans la zone géographique considérée n’est pas avérée
+        (en attente de confirmation).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/D"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/D"}}},{"id":"Q","name":"Signalé
+        par erreur","definition":"Taxon mentionné par erreur comme présent sur le
+        territoire considéré.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/Q"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/Q"}}},{"id":"A","name":"Absente","definition":"Taxon
+        non présent dans la zone géographique considérée.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/A"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/A"}}},{"id":"W","name":"Disparue","definition":"Taxon
+        qui n’est plus présent à l’état sauvage dans la zone géographique
+        considérée mais qui n’est pas globalement éteint.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/W"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/W"}}},{"id":"X","name":"Eteinte","definition":"Taxon
+        globalement éteint (= ayant totalement disparu de la surface du globe terrestre).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/X"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/X"}}},{"id":"Z","name":"Endémique
+        éteinte","definition":"Taxon endémique et aujourd’hui disparu, donc globalement
+        éteint (X).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/Z"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/Z"}}},{"id":"Y","name":"Introduite
+        éteinte","definition":"Taxon introduit par le passé mais aujourd’hui disparu
+        de la zone géographique considérée (W) ou éteint (X).","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/Y"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/Y"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/"}}}'
+  recorded_at: 2019-04-10 13:10:12 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/biogeographicStatus/P
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Tue, 26 Mar 2019 10:55:16 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":"P","name":"Présente (indigène ou indéterminé)","definition":"Taxon
+        présent au sens large dans la zone géographique considérée, c''est-à-dire
+        taxon indigène ou taxon dont on ne sait pas s’il appartient à l''une des
+        autres catégories. Les taxons hivernant quelques mois de l’année entrent
+        dans cette catégorie.","_links":{"self":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/P"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/bioGeoStatus/P"}}}'
+  recorded_at: 2019-04-10 13:10:12 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/biogeographicStatus/ASDF
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 10:55:16 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-04-10 13:10:12 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/biogeographicStatus/1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Tue, 26 Mar 2019 10:55:16 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-04-10 13:10:12 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/biogeographicStatus/
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 10 Apr 2019 13:10:12 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
       string: "{\"_embedded\":{\"biogeographicStatus\":[{\"id\":\"P\",\"name\":\"Présente
         (indigène ou indéterminé)\",\"definition\":\"Taxon présent au sens large
         dans la zone géographique considérée, c'est-à-dire taxon indigène
@@ -65,102 +230,5 @@ http_interactions:
         globalement éteint (X).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/Z\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/Z\"}}},{\"id\":\"Y\",\"name\":\"Introduite
         éteinte\",\"definition\":\"Taxon introduit par le passé mais aujourd’hui
         disparu de la zone géographique considérée (W) ou éteint (X).\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/Y\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/Y\"}}}]},\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/\"}}}"
-  recorded_at: 2019-03-26 10:55:16 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
-- request:
-    method: get
-    uri: https://taxref.mnhn.fr/api/biogeographicStatus/P
-    body:
-      encoding: ''
-      string: ''
-    headers:
-      Accept: application/json, text/xml, application/xml, */*
-  response:
-    status:
-      status_code: 200
-      category: Success
-      reason: OK
-      message: 'Success: (200) OK'
-    headers:
-      access-control-allow-credentials: 'true'
-      access-control-allow-headers: origin, content-type, accept, x-requested-with,
-        destination
-      access-control-allow-methods:
-      - GET, HEAD, OPTIONS, POST, PUT
-      - PUT, GET, POST, DELETE, OPTIONS
-      access-control-allow-origin: '*'
-      content-type: application/hal+json; version=1;charset=UTF-8
-      date: Tue, 26 Mar 2019 10:55:16 GMT
-      server: Apache
-      transfer-encoding: chunked
-    body:
-      encoding: UTF-8
-      string: "{\"id\":\"P\",\"name\":\"Présente (indigène ou indéterminé)\",\"definition\":\"Taxon
-        présent au sens large dans la zone géographique considérée, c'est-à-dire
-        taxon indigène ou taxon dont on ne sait pas s’il appartient à l'une des
-        autres catégories. Les taxons hivernant quelques mois de l’année entrent
-        dans cette catégorie.\",\"_links\":{\"self\":{\"href\":\"https://taxref.mnhn.fr/api/biogeographicStatus/P\"},\"taxrefUri\":{\"href\":\"http://taxref.mnhn.fr/lod/bioGeoStatus/P\"}}}"
-  recorded_at: 2019-03-26 10:55:16 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
-- request:
-    method: get
-    uri: https://taxref.mnhn.fr/api/biogeographicStatus/ASDF
-    body:
-      encoding: ''
-      string: ''
-    headers:
-      Accept: application/json, text/xml, application/xml, */*
-  response:
-    status:
-      status_code: 404
-      category: Client error
-      reason: Not Found
-      message: 'Client error: (404) Not Found'
-    headers:
-      access-control-allow-credentials: 'true'
-      access-control-allow-headers: origin, content-type, accept, x-requested-with,
-        destination
-      access-control-allow-methods:
-      - GET, HEAD, OPTIONS, POST, PUT
-      - PUT, GET, POST, DELETE, OPTIONS
-      access-control-allow-origin: '*'
-      content-length: '0'
-      content-type: text/plain
-      date: Tue, 26 Mar 2019 10:55:16 GMT
-      server: Apache
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: 2019-03-26 10:55:16 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
-- request:
-    method: get
-    uri: https://taxref.mnhn.fr/api/biogeographicStatus/1
-    body:
-      encoding: ''
-      string: ''
-    headers:
-      Accept: application/json, text/xml, application/xml, */*
-  response:
-    status:
-      status_code: 404
-      category: Client error
-      reason: Not Found
-      message: 'Client error: (404) Not Found'
-    headers:
-      access-control-allow-credentials: 'true'
-      access-control-allow-headers: origin, content-type, accept, x-requested-with,
-        destination
-      access-control-allow-methods:
-      - GET, HEAD, OPTIONS, POST, PUT
-      - PUT, GET, POST, DELETE, OPTIONS
-      access-control-allow-origin: '*'
-      content-length: '0'
-      content-type: text/plain
-      date: Tue, 26 Mar 2019 10:55:16 GMT
-      server: Apache
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: 2019-03-26 10:55:16 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-10 13:10:12 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4

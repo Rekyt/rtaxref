@@ -1,30 +1,17 @@
-#' Retrieve the list of operational groups used in TaxRef
+#' Retrieve operational groups used in TaxRef
 #'
 #' Operational Groups are names of groups either taxonomic or vernacular
-#' used across TaxRef in French
+#' used across TaxRef in French. If used without argument returns the list of
+#' all operational groups used in TaxRef.
+#'
+#' @param opgroup_id {`numeric(1)`, default = `NULL`}\cr{}
+#'                    the id of an operational group referenced in TaxRef
 #'
 #' @export
-rt_operational_groups = function() {
-
-  api_query = rt_GET("operationalGroups")
-
-  parse_taxa(api_query)
-}
-
-#' Retrieve an operational group used in TaxRef
-#'
-#' @param opgroup_id {`numeric(1)`}\cr{}
-#'                    the id of an operational group referenced in TaxRef see
-#'                    [`rt_operational_groups()`]
 #'
 #' @examples
-#' rt_operational_groups_id(opgroup_id = 963)
-#'
-#' @export
-rt_operational_groups_id = function(opgroup_id) {
-
-  check_required_arg(opgroup_id, paste0("retrieve a specific operational ",
-                                        "group using its ID"))
+#' rt_operational_groups(opgroup_id = 143)
+rt_operational_groups = function(opgroup_id = NULL) {
 
   api_query = rt_GET("operationalGroups/", opgroup_id)
 

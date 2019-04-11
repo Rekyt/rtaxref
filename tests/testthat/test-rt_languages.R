@@ -11,7 +11,7 @@ vcr::use_cassette("rt_languages", {
   })
 
   test_that("Can retrieve specific languages", {
-    expect_silent(res <- rt_languages_id(languages_id = "arw"))
+    expect_silent(res <- rt_languages(languages_id = "arw"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 5))
@@ -21,11 +21,11 @@ vcr::use_cassette("rt_languages", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_languages_id("ASDF"),
+    expect_error(rt_languages("ASDF"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_languages_id(9),
+    expect_error(rt_languages(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })

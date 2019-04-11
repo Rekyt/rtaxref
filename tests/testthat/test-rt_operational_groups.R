@@ -13,7 +13,7 @@ vcr::use_cassette("rt_operational_groups", {
   })
 
   test_that("Can retrieve specific operational group", {
-    expect_silent(res <- rt_operational_groups_id(opgroup_id = 143))
+    expect_silent(res <- rt_operational_groups(opgroup_id = 143))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 14))
@@ -26,11 +26,11 @@ vcr::use_cassette("rt_operational_groups", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_operational_groups_id(9),
+    expect_error(rt_operational_groups(9),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_operational_groups_id("ASDF"),
+    expect_error(rt_operational_groups("ASDF"),
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })
