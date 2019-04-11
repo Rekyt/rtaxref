@@ -8,7 +8,7 @@
 #' @export
 rt_status_type = function(status_id = NULL) {
 
-  status_id = gsub("EXPNA", "exPNA", toupper(status_id))
+  status_id = gsub("^EXPNA$", "exPNA", toupper(status_id))
 
   api_query = rt_GET("status/types/", status_id)
 

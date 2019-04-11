@@ -12,7 +12,7 @@
 #' @export
 rt_taxo_ranks = function(taxo_id = NULL) {
 
-  taxo_id = gsub("DUMM", "Dumm", toupper(taxo_id))
+  taxo_id = gsub("^DUMM$", "Dumm", toupper(taxo_id))
 
   api_query = rt_GET("taxonomicRanks/", taxo_id)
 
