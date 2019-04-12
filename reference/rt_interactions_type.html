@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrieve all Interactions Types — rt_interactions_type • rtaxref</title>
+<title>Retrieve Interactions Types used in TaxRef — rt_interactions_type • rtaxref</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,9 @@
 
 
 
-<meta property="og:title" content="Retrieve all Interactions Types — rt_interactions_type" />
+<meta property="og:title" content="Retrieve Interactions Types used in TaxRef — rt_interactions_type" />
 
-<meta property="og:description" content="Retrieve all Interactions Types" />
+<meta property="og:description" content="If used without argument returns the list of all interactions used in TaxRef." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -99,32 +99,44 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrieve all Interactions Types</h1>
+    <h1>Retrieve Interactions Types used in TaxRef</h1>
     <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_interactions_type.R'><code>R/rt_interactions_type.R</code></a></small>
     <div class="hidden name"><code>rt_interactions_type.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Retrieve all Interactions Types</p>
+    <p>If used without argument returns the list of all interactions used in TaxRef.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rt_interactions_type</span>()</pre>
-        
-    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
-
-    <div class='dont-index'><p><code><a href='rt_interactions_find_type.html'>rt_interactions_find_type()</a></code> to retrieve all information by
-interactions</p></div>
+    <pre class="usage"><span class='fu'>rt_interactions_type</span>(<span class='kw'>interaction_id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>interaction_id</th>
+      <td><p><code><a href='https://www.rdocumentation.org/packages/base/topics/character'>character(1)</a></code>, default = <code>NULL</code><br />
+A character identifying the type of interactions</p></td>
+    </tr>
+    </table>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_interactions_type</span>(<span class='kw'>interaction_id</span> <span class='kw'>=</span> <span class='st'>"PREDATEUR"</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 7
+#&gt;   id     name   description    example    reverseRelation… oboRoUri  dbPediaUri 
+#&gt;   &lt;fct&gt;  &lt;fct&gt;  &lt;fct&gt;          &lt;fct&gt;      &lt;fct&gt;            &lt;fct&gt;     &lt;fct&gt;      
+#&gt; 1 PREDA… est u… interaction t… "Brochet … est la proie de  http://p… http://dbp…</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      
-      <li><a href="#see-also">See also</a></li>
-          </ul>
+      <li><a href="#arguments">Arguments</a></li>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

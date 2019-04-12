@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Retrieve the list of operational groups used in TaxRef — rt_operational_groups • rtaxref</title>
+<title>Retrieve operational groups used in TaxRef — rt_operational_groups • rtaxref</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,10 +30,11 @@
 
 
 
-<meta property="og:title" content="Retrieve the list of operational groups used in TaxRef — rt_operational_groups" />
+<meta property="og:title" content="Retrieve operational groups used in TaxRef — rt_operational_groups" />
 
 <meta property="og:description" content="Operational Groups are names of groups either taxonomic or vernacular
-used across TaxRef in French" />
+used across TaxRef in French. If used without argument returns the list of
+all operational groups used in TaxRef." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -100,7 +101,7 @@ used across TaxRef in French" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Retrieve the list of operational groups used in TaxRef</h1>
+    <h1>Retrieve operational groups used in TaxRef</h1>
     <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/rt_operational_groups.R'><code>R/rt_operational_groups.R</code></a></small>
     <div class="hidden name"><code>rt_operational_groups.Rd</code></div>
     </div>
@@ -108,18 +109,40 @@ used across TaxRef in French" />
     <div class="ref-description">
     
     <p>Operational Groups are names of groups either taxonomic or vernacular
-used across TaxRef in French</p>
+used across TaxRef in French. If used without argument returns the list of
+all operational groups used in TaxRef.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rt_operational_groups</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>rt_operational_groups</span>(<span class='kw'>opgroup_id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>opgroup_id</th>
+      <td><p><code><a href='https://www.rdocumentation.org/packages/base/topics/numeric'>numeric(1)</a></code>, default = <code>NULL</code><br />
+the id of an operational group referenced in TaxRef</p></td>
+    </tr>
+    </table>
+    
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_operational_groups</span>(<span class='kw'>opgroup_id</span> <span class='kw'>=</span> <span class='fl'>143</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 14
+#&gt;      id name  commonName shortDescription mainGroup vernacularGroup1
+#&gt;   &lt;int&gt; &lt;fct&gt; &lt;fct&gt;      &lt;lgl&gt;            &lt;fct&gt;     &lt;fct&gt;           
+#&gt; 1   143 Amph… Amphibiens NA               Amphibie… Chordés         
+#&gt; # … with 8 more variables: vernacularGroup2 &lt;fct&gt;, vernacularGroup3 &lt;lgl&gt;,
+#&gt; #   description &lt;lgl&gt;, biology &lt;lgl&gt;, ecology &lt;lgl&gt;, biogeography &lt;lgl&gt;,
+#&gt; #   ethology &lt;lgl&gt;, economy &lt;lgl&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-                </ul>
+      <li><a href="#arguments">Arguments</a></li>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>

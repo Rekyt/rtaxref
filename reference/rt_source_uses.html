@@ -33,8 +33,9 @@
 <meta property="og:title" content="Retrieve the list of source uses in TaxRef — rt_source_uses" />
 
 <meta property="og:description" content="TaxRef references many publications across its documentation. The different
-sources are used for different reasons this function returns the list of
-usages for a source." />
+sources are used for different reasons. This function returns the list of
+usages for a source when no arguments are provided, otherwise returns the
+specific type of use." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -109,19 +110,39 @@ usages for a source." />
     <div class="ref-description">
     
     <p>TaxRef references many publications across its documentation. The different
-sources are used for different reasons this function returns the list of
-usages for a source.</p>
+sources are used for different reasons. This function returns the list of
+usages for a source when no arguments are provided, otherwise returns the
+specific type of use.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>rt_source_uses</span>()</pre>
-        
+    <pre class="usage"><span class='fu'>rt_source_uses</span>(<span class='kw'>usage_id</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>usage_id</th>
+      <td><p><code><a href='https://www.rdocumentation.org/packages/base/topics/numeric'>numeric(1)</a></code>, default = <code>NULL</code><br />
+the id of a source use in TaxRef</p></td>
+    </tr>
+    </table>
+    
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>rt_source_uses</span>(<span class='kw'>usage_id</span> <span class='kw'>=</span> <span class='fl'>276</span>)</div><div class='output co'>#&gt; # A tibble: 1 x 2
+#&gt;      id name               
+#&gt;   &lt;int&gt; &lt;fct&gt;              
+#&gt; 1   276 Abaissement de rang</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-                </ul>
+      <li><a href="#arguments">Arguments</a></li>
+            
+      <li><a href="#examples">Examples</a></li>
+    </ul>
 
   </div>
 </div>
