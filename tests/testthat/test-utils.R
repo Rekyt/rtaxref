@@ -34,3 +34,15 @@ vcr::use_cassette("rt_GET", {
 }, record = "new_episodes")
 
 
+test_that("check_required_arg() works", {
+  a <- NULL
+  b <- ""
+
+  expect_silent(check_required_arg("bla", "bla"))
+
+  expect_error(check_required_arg(a, "test"),
+               regexp = "'a' argument is needed to test", fixed = TRUE)
+
+  expect_error(check_required_arg(b, "test"),
+               regexp = "'b' argument is needed to test", fixed = TRUE)
+})

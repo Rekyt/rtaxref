@@ -15,7 +15,7 @@ rt_GET = function(..., query = NULL) {
 }
 
 check_required_arg = function(arg, stop_message) {
-  if (arg == "" | is.null(arg)) {
+  if (is.null(arg) | (length(arg) != 0 && arg == "")) {
     stop("'", substitute(arg), "' argument is needed to ", stop_message,
          call. = FALSE)
   }

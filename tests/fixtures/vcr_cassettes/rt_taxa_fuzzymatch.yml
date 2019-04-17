@@ -1,1 +1,107 @@
-
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/fuzzyMatch?term=Centaurea
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 13:04:09 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":190443,"referenceId":190443,"parentId":187227,"scientificName":"Centaurea","authority":"L.,
+        1753","fullName":"Centaurea L., 1753","fullNameHtml":"<i>Centaurea</i> L.,
+        1753","rankId":"GN","rankName":"Genre","referenceName":"Centaurea L., 1753","referenceNameHtml":"<i>Centaurea</i>
+        L., 1753","frenchVernacularName":null,"englishVernacularName":"knapweeds","genusName":"Centaurea","familyName":"Asteraceae","orderName":"Asterales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":"Plantes
+        terrestres, Embryophytes, Cormophytes","vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":"Plantes
+        vasculaires","vernacularGroup2":"Angiospermes","habitat":null,"fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":"P","ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/190443"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/190443"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/187227"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/190443/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/190443/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/190443/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/190443/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/190443/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/190443/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/190443/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/190443/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/190443/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/GN"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/190443"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/190443"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/fuzzyMatch?term=Centaurea"}}}'
+  recorded_at: 2019-04-17 13:04:29 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/fuzzyMatch?term=Centaurea%20L.
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 13:04:09 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":190443,"referenceId":190443,"parentId":187227,"scientificName":"Centaurea","authority":"L.,
+        1753","fullName":"Centaurea L., 1753","fullNameHtml":"<i>Centaurea</i> L.,
+        1753","rankId":"GN","rankName":"Genre","referenceName":"Centaurea L., 1753","referenceNameHtml":"<i>Centaurea</i>
+        L., 1753","frenchVernacularName":null,"englishVernacularName":"knapweeds","genusName":"Centaurea","familyName":"Asteraceae","orderName":"Asterales","className":"Equisetopsida","phylumName":null,"kingdomName":"Plantae","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":"Plantes
+        terrestres, Embryophytes, Cormophytes","vernacularPhylumName":null,"vernacularKingdomName":"Plantes","vernacularGroup1":"Plantes
+        vasculaires","vernacularGroup2":"Angiospermes","habitat":null,"fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":"P","may":null,"epa":null,"reu":null,"sa":"P","ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/190443"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/190443"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/187227"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/190443/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/190443/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/190443/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/190443/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/190443/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/190443/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/190443/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/190443/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/190443/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/GN"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/190443"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/190443"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/fuzzyMatch?term=Centaurea%20L."}}}'
+  recorded_at: 2019-04-17 13:04:29 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/fuzzyMatch?term=azerty
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 13:04:19 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/fuzzyMatch?term=azerty"}}}'
+  recorded_at: 2019-04-17 13:04:29 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
