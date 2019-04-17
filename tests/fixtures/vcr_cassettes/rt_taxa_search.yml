@@ -1,0 +1,519 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=Bradypus%20tridactylus&page=1&size=50000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:33 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":443800,"referenceId":443800,"parentId":443585,"scientificName":"Bradypus
+        tridactylus","authority":"Linnaeus, 1758","fullName":"Bradypus tridactylus
+        Linnaeus, 1758","fullNameHtml":"<i>Bradypus tridactylus</i> Linnaeus, 1758","rankId":"ES","rankName":"Espèce","referenceName":"Bradypus
+        tridactylus Linnaeus, 1758","referenceNameHtml":"<i>Bradypus tridactylus</i>
+        Linnaeus, 1758","frenchVernacularName":"Aï, Paresseux à trois doigts, Mouton
+        paresseux, Dos boulé","englishVernacularName":null,"genusName":"Bradypus","familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":"3","fr":null,"gf":"S","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443800/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443800/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443800/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443800/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443800/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443800/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443800/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443800/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443800/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443800"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443800"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus%20tridactylus&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus%20tridactylus&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus%20tridactylus&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats,vernacularGroups}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
+  recorded_at: 2019-04-17 15:39:34 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?frenchVernacularNames=Paresseux%20%C3%A0%20trois%20doigts&page=1&size=50000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:33 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":443800,"referenceId":443800,"parentId":443585,"scientificName":"Bradypus
+        tridactylus","authority":"Linnaeus, 1758","fullName":"Bradypus tridactylus
+        Linnaeus, 1758","fullNameHtml":"<i>Bradypus tridactylus</i> Linnaeus, 1758","rankId":"ES","rankName":"Espèce","referenceName":"Bradypus
+        tridactylus Linnaeus, 1758","referenceNameHtml":"<i>Bradypus tridactylus</i>
+        Linnaeus, 1758","frenchVernacularName":"Aï, Paresseux à trois doigts, Mouton
+        paresseux, Dos boulé","englishVernacularName":null,"genusName":"Bradypus","familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":"3","fr":null,"gf":"S","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443800/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443800/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443800/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443800/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443800/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443800/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443800/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443800/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443800/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443800"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443800"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&frenchVernacularNames=Paresseux%20%C3%83%C2%A0%20trois%20doigts&page=1&size=50000{&taxrefIds,scientificNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&frenchVernacularNames=Paresseux%20%C3%83%C2%A0%20trois%20doigts&page=1&size=50000{&taxrefIds,scientificNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&frenchVernacularNames=Paresseux%20%C3%83%C2%A0%20trois%20doigts&page=1&size=50000{&taxrefIds,scientificNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats,vernacularGroups}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
+  recorded_at: 2019-04-17 15:39:34 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=Bradypus&taxonomicRanks=GN&page=1&size=50000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:33 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":443585,"referenceId":443585,"parentId":443498,"scientificName":"Bradypus","authority":"Linnaeus,
+        1758","fullName":"Bradypus Linnaeus, 1758","fullNameHtml":"<i>Bradypus</i>
+        Linnaeus, 1758","rankId":"GN","rankName":"Genre","referenceName":"Bradypus
+        Linnaeus, 1758","referenceNameHtml":"<i>Bradypus</i> Linnaeus, 1758","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Bradypus","familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":null,"fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443585/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443585/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443585/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443585/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443585/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443585/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443585/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443585/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443585/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/GN"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443585"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443585"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&taxonomicRanks=GN&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,territories,domain,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&taxonomicRanks=GN&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,territories,domain,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&taxonomicRanks=GN&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,territories,domain,habitats,vernacularGroups}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
+  recorded_at: 2019-04-17 15:39:34 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=Parus%20major&taxonomicRanks=SSES&page=1&size=50000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:33 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":3767,"referenceId":3764,"parentId":null,"scientificName":"Parus
+        major corsus","authority":"Kleinschmidt, 1903","fullName":"Parus major corsus
+        Kleinschmidt, 1903","fullNameHtml":"<i>Parus major corsus</i> Kleinschmidt,
+        1903","rankId":"SSES","rankName":"Sous-Espèce","referenceName":"Parus major
+        Linnaeus, 1758","referenceNameHtml":"<i>Parus major</i> Linnaeus, 1758","frenchVernacularName":"Mésange
+        charbonnière","englishVernacularName":"Great Tit","genusName":"Parus","familyName":"Paridae","orderName":"Passeriformes","className":"Aves","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Mésanges","vernacularOrderName":"Passereaux","vernacularClassName":"Oiseaux","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","habitat":"3","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/3767"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/3764"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/3767/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/3767/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/SSES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/3767"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/3767"}}},{"id":3766,"referenceId":3764,"parentId":null,"scientificName":"Parus
+        major major","authority":"Linnaeus, 1758","fullName":"Parus major major Linnaeus,
+        1758","fullNameHtml":"<i>Parus major major</i> Linnaeus, 1758","rankId":"SSES","rankName":"Sous-Espèce","referenceName":"Parus
+        major Linnaeus, 1758","referenceNameHtml":"<i>Parus major</i> Linnaeus, 1758","frenchVernacularName":"Mésange
+        charbonnière","englishVernacularName":"Great Tit","genusName":"Parus","familyName":"Paridae","orderName":"Passeriformes","className":"Aves","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Mésanges","vernacularOrderName":"Passereaux","vernacularClassName":"Oiseaux","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","habitat":"3","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/3766"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/3764"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/3766/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/3766/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/SSES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/3766"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/3766"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Parus%20major&taxonomicRanks=SSES&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,territories,domain,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Parus%20major&taxonomicRanks=SSES&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,territories,domain,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Parus%20major&taxonomicRanks=SSES&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,territories,domain,habitats,vernacularGroups}","templated":true}},"page":{"size":2,"totalElements":2,"totalPages":1,"number":1}}'
+  recorded_at: 2019-04-17 15:39:34 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=Bradypus&territories=fr&page=1&size=50000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:33 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":892228,"referenceId":892228,"parentId":353650,"scientificName":"Stygarctus
+        bradypus","authority":"Schulz, 1951","fullName":"Stygarctus bradypus Schulz,
+        1951","fullNameHtml":"<i>Stygarctus bradypus</i> Schulz, 1951","rankId":"ES","rankName":"Espèce","referenceName":"Stygarctus
+        bradypus Schulz, 1951","referenceNameHtml":"<i>Stygarctus bradypus</i> Schulz,
+        1951","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Stygarctus","familyName":"Stygarctidae","orderName":"Arthrotardigrada","className":"Heterotardigrada","phylumName":"Tardigrada","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":"Tardigrades","vernacularKingdomName":"Animaux","vernacularGroup1":"Tardigrades","vernacularGroup2":"Autres","habitat":"1","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/892228"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/892228"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/353650"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/892228/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/892228/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/892228/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/892228/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/892228/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/892228/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/892228/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/892228/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/892228/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/892228"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/892228"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&territories=fr&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,domain,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&territories=fr&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,domain,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&territories=fr&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,domain,habitats,vernacularGroups}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=Bradypus&territories=gf&page=1&size=50000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":443585,"referenceId":443585,"parentId":443498,"scientificName":"Bradypus","authority":"Linnaeus,
+        1758","fullName":"Bradypus Linnaeus, 1758","fullNameHtml":"<i>Bradypus</i>
+        Linnaeus, 1758","rankId":"GN","rankName":"Genre","referenceName":"Bradypus
+        Linnaeus, 1758","referenceNameHtml":"<i>Bradypus</i> Linnaeus, 1758","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Bradypus","familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":null,"fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/443498"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443585/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443585/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443585/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443585/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443585/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443585/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443585/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443585/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443585/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/GN"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443585"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443585"}}},{"id":443800,"referenceId":443800,"parentId":443585,"scientificName":"Bradypus
+        tridactylus","authority":"Linnaeus, 1758","fullName":"Bradypus tridactylus
+        Linnaeus, 1758","fullNameHtml":"<i>Bradypus tridactylus</i> Linnaeus, 1758","rankId":"ES","rankName":"Espèce","referenceName":"Bradypus
+        tridactylus Linnaeus, 1758","referenceNameHtml":"<i>Bradypus tridactylus</i>
+        Linnaeus, 1758","frenchVernacularName":"Aï, Paresseux à trois doigts, Mouton
+        paresseux, Dos boulé","englishVernacularName":null,"genusName":"Bradypus","familyName":"Bradypodidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        tridactyles, Aïs","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":"3","fr":null,"gf":"S","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/443585"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/443800/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/443800/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/443800/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/443800/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/443800/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/443800/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/443800/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/443800/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/443800/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/443800"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/443800"}}},{"id":822942,"referenceId":443805,"parentId":null,"scientificName":"Bradypus
+        didactylus","authority":"Linnaeus, 1758","fullName":"Bradypus didactylus Linnaeus,
+        1758","fullNameHtml":"<i>Bradypus didactylus</i> Linnaeus, 1758","rankId":"ES","rankName":"Espèce","referenceName":"Choloepus
+        didactylus (Linnaeus, 1758)","referenceNameHtml":"<i>Choloepus didactylus</i>
+        (Linnaeus, 1758)","frenchVernacularName":"Paresseux à deux doigts, Unau,
+        Parsou mouton","englishVernacularName":"Two-toed Sloth, Linnaeus’s Two-toed
+        Sloth, Linne’s Two-toed Sloth","genusName":"Choloepus","familyName":"Megalonychidae","orderName":"Pilosa","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Paresseux
+        didactyles, Unaus","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":"3","fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/822942"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/443805"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/822942/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/822942/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/822942"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/822942"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&territories=gf&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,domain,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&territories=gf&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,domain,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=Bradypus&territories=gf&page=1&size=50000{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,domain,habitats,vernacularGroups}","templated":true}},"page":{"size":3,"totalElements":3,"totalPages":1,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=albus&domain=marin&page=1&size=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":576043,"referenceId":460532,"parentId":null,"scientificName":"Spondylus
+        albus","authority":"Schreibers, 1793","fullName":"Spondylus albus Schreibers,
+        1793","fullNameHtml":"<i>Spondylus albus</i> Schreibers, 1793","rankId":"ES","rankName":"Espèce","referenceName":"Spondylus
+        americanus Hermann, 1781","referenceNameHtml":"<i>Spondylus americanus</i>
+        Hermann, 1781","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Spondylus","familyName":"Spondylidae","orderName":"Pectinida","className":"Bivalvia","phylumName":"Mollusca","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":"Bivalves","vernacularPhylumName":"Mollusques","vernacularKingdomName":"Animaux","vernacularGroup1":"Mollusques","vernacularGroup2":"Bivalves","habitat":"1","fr":null,"gf":"P","mar":"P","gua":"P","sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/576043"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/460532"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/576043/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/576043/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/576043"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/576043"}}},{"id":556886,"referenceId":67772,"parentId":null,"scientificName":"Salmo
+        albus","authority":"Bonnaterre, 1788","fullName":"Salmo albus Bonnaterre,
+        1788","fullNameHtml":"<i>Salmo albus</i> Bonnaterre, 1788","rankId":"ES","rankName":"Espèce","referenceName":"Salmo
+        trutta Linnaeus, 1758","referenceNameHtml":"<i>Salmo trutta</i> Linnaeus,
+        1758","frenchVernacularName":"Truite de mer, Truite commune, Truite d''Europe","englishVernacularName":"Sea
+        trout, Brown trout","genusName":"Salmo","familyName":"Salmonidae","orderName":"Salmoniformes","className":"Actinopterygii","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Saumons,
+        Truites","vernacularClassName":"Actinopterygiens, Poissons actinoptérygiens","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","habitat":"4","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":"I","ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/556886"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/67772"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/556886/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/556886/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/4"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/556886"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/556886"}}},{"id":556887,"referenceId":67772,"parentId":null,"scientificName":"Salmo
+        albus","authority":"Walbaum, 1792","fullName":"Salmo albus Walbaum, 1792","fullNameHtml":"<i>Salmo
+        albus</i> Walbaum, 1792","rankId":"ES","rankName":"Espèce","referenceName":"Salmo
+        trutta Linnaeus, 1758","referenceNameHtml":"<i>Salmo trutta</i> Linnaeus,
+        1758","frenchVernacularName":"Truite de mer, Truite commune, Truite d''Europe","englishVernacularName":"Sea
+        trout, Brown trout","genusName":"Salmo","familyName":"Salmonidae","orderName":"Salmoniformes","className":"Actinopterygii","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Saumons,
+        Truites","vernacularClassName":"Actinopterygiens, Poissons actinoptérygiens","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","habitat":"4","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":"I","ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/556887"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/67772"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/556887/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/556887/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/4"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/556887"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/556887"}}},{"id":595652,"referenceId":595652,"parentId":594084,"scientificName":"Pseudograpsus
+        albus","authority":"Stimpson, 1858","fullName":"Pseudograpsus albus Stimpson,
+        1858","fullNameHtml":"<i>Pseudograpsus albus</i> Stimpson, 1858","rankId":"ES","rankName":"Espèce","referenceName":"Pseudograpsus
+        albus Stimpson, 1858","referenceNameHtml":"<i>Pseudograpsus albus</i> Stimpson,
+        1858","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Pseudograpsus","familyName":"Varunidae","orderName":"Decapoda","className":"Malacostraca","phylumName":"Arthropoda","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Crustacés
+        Décapodes","vernacularClassName":"Malacostracés","vernacularPhylumName":"Arthropodes","vernacularKingdomName":"Animaux","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","habitat":"1","fr":null,"gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":"P","epa":"P","reu":"P","sa":null,"ta":null,"nc":"P","wf":"P","pf":"P","cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/595652"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/595652"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/594084"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/595652/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/595652/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/595652/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/595652/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/595652/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/595652/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/595652/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/595652/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/595652/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/595652"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/595652"}}},{"id":579080,"referenceId":18584,"parentId":null,"scientificName":"Cancer
+        mytilorum albus","authority":"Herbst, 1783","fullName":"Cancer mytilorum albus
+        Herbst, 1783","fullNameHtml":"<i>Cancer mytilorum albus</i> Herbst, 1783","rankId":"SSES","rankName":"Sous-Espèce","referenceName":"Pinnotheres
+        pisum (Linnaeus, 1767)","referenceNameHtml":"<i>Pinnotheres pisum</i> (Linnaeus,
+        1767)","frenchVernacularName":"Pinnothère (Le), Crabe petit-pois (Le), Crabe
+        de l''huître (Le), Pinnothère des moules (Le), Pinnothère pois (Le)","englishVernacularName":null,"genusName":"Pinnotheres","familyName":"Pinnotheridae","orderName":"Decapoda","className":"Malacostraca","phylumName":"Arthropoda","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Crustacés
+        Décapodes","vernacularClassName":"Malacostracés","vernacularPhylumName":"Arthropodes","vernacularKingdomName":"Animaux","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","habitat":"1","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/579080"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/18584"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/579080/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/579080/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/SSES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/579080"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/579080"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=marin&page=1&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=marin&page=1&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=marin&page=2&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=marin&page=7&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true}},"page":{"size":5,"totalElements":33,"totalPages":7,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=albus&domain=continental&page=1&size=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":418745,"referenceId":418745,"parentId":191178,"scientificName":"Corvus
+        albus","authority":"Müller, 1776","fullName":"Corvus albus Müller, 1776","fullNameHtml":"<i>Corvus
+        albus</i> Müller, 1776","rankId":"ES","rankName":"Espèce","referenceName":"Corvus
+        albus Müller, 1776","referenceNameHtml":"<i>Corvus albus</i> Müller, 1776","frenchVernacularName":"Corbeau
+        pie","englishVernacularName":null,"genusName":"Corvus","familyName":"Corvidae","orderName":"Passeriformes","className":"Aves","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Corbeaux,
+        Corneilles, Pies, Geais, Casse-noix","vernacularOrderName":"Passereaux","vernacularClassName":"Oiseaux","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","habitat":"3","fr":null,"gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":"C","epa":"P","reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/418745"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/418745"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/191178"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/418745/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/418745/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/418745/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/418745/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/418745/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/418745/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/418745/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/418745/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/418745/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/418745"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/418745"}}},{"id":556886,"referenceId":67772,"parentId":null,"scientificName":"Salmo
+        albus","authority":"Bonnaterre, 1788","fullName":"Salmo albus Bonnaterre,
+        1788","fullNameHtml":"<i>Salmo albus</i> Bonnaterre, 1788","rankId":"ES","rankName":"Espèce","referenceName":"Salmo
+        trutta Linnaeus, 1758","referenceNameHtml":"<i>Salmo trutta</i> Linnaeus,
+        1758","frenchVernacularName":"Truite de mer, Truite commune, Truite d''Europe","englishVernacularName":"Sea
+        trout, Brown trout","genusName":"Salmo","familyName":"Salmonidae","orderName":"Salmoniformes","className":"Actinopterygii","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Saumons,
+        Truites","vernacularClassName":"Actinopterygiens, Poissons actinoptérygiens","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","habitat":"4","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":"I","ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/556886"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/67772"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/556886/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/556886/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/4"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/556886"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/556886"}}},{"id":556887,"referenceId":67772,"parentId":null,"scientificName":"Salmo
+        albus","authority":"Walbaum, 1792","fullName":"Salmo albus Walbaum, 1792","fullNameHtml":"<i>Salmo
+        albus</i> Walbaum, 1792","rankId":"ES","rankName":"Espèce","referenceName":"Salmo
+        trutta Linnaeus, 1758","referenceNameHtml":"<i>Salmo trutta</i> Linnaeus,
+        1758","frenchVernacularName":"Truite de mer, Truite commune, Truite d''Europe","englishVernacularName":"Sea
+        trout, Brown trout","genusName":"Salmo","familyName":"Salmonidae","orderName":"Salmoniformes","className":"Actinopterygii","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Saumons,
+        Truites","vernacularClassName":"Actinopterygiens, Poissons actinoptérygiens","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Poissons","habitat":"4","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":"I","ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/556887"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/67772"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/556887/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/556887/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/4"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/556887"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/556887"}}},{"id":60737,"referenceId":60731,"parentId":null,"scientificName":"Mustela
+        albus","authority":null,"fullName":"Mustela albus ","fullNameHtml":"<i>Mustela
+        albus</i>","rankId":"ES","rankName":"Espèce","referenceName":"Mustela putorius
+        Linnaeus, 1758","referenceNameHtml":"<i>Mustela putorius</i> Linnaeus, 1758","frenchVernacularName":"Putois
+        d''Europe, Furet","englishVernacularName":"Polecat","genusName":"Mustela","familyName":"Mustelidae","orderName":"Carnivora","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Belettes,
+        Blaireaux, Loutres","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":"3","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":"M","sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/60737"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/60731"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/60737/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/60737/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/60737"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/60737"}}},{"id":459519,"referenceId":459519,"parentId":440576,"scientificName":"Procnias
+        albus","authority":"(Hermann, 1783)","fullName":"Procnias albus (Hermann,
+        1783)","fullNameHtml":"<i>Procnias albus</i> (Hermann, 1783)","rankId":"ES","rankName":"Espèce","referenceName":"Procnias
+        albus (Hermann, 1783)","referenceNameHtml":"<i>Procnias albus</i> (Hermann,
+        1783)","frenchVernacularName":"Araponga blanc","englishVernacularName":"White
+        Bellbird","genusName":"Procnias","familyName":"Cotingidae","orderName":"Passeriformes","className":"Aves","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Passereaux","vernacularClassName":"Oiseaux","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","habitat":"3","fr":null,"gf":"P","mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/459519"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/459519"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/440576"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/459519/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/459519/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/459519/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/459519/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/459519/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/459519/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/459519/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/459519/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/459519/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/459519"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/459519"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=continental&page=1&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=continental&page=1&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=continental&page=2&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&domain=continental&page=25&size=5{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,habitats,vernacularGroups}","templated":true}},"page":{"size":5,"totalElements":122,"totalPages":25,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=albus&habitats=1&page=1&size=2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":576043,"referenceId":460532,"parentId":null,"scientificName":"Spondylus
+        albus","authority":"Schreibers, 1793","fullName":"Spondylus albus Schreibers,
+        1793","fullNameHtml":"<i>Spondylus albus</i> Schreibers, 1793","rankId":"ES","rankName":"Espèce","referenceName":"Spondylus
+        americanus Hermann, 1781","referenceNameHtml":"<i>Spondylus americanus</i>
+        Hermann, 1781","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Spondylus","familyName":"Spondylidae","orderName":"Pectinida","className":"Bivalvia","phylumName":"Mollusca","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":"Bivalves","vernacularPhylumName":"Mollusques","vernacularKingdomName":"Animaux","vernacularGroup1":"Mollusques","vernacularGroup2":"Bivalves","habitat":"1","fr":null,"gf":"P","mar":"P","gua":"P","sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":"P","sa":null,"ta":null,"nc":"P","wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/576043"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/460532"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/576043/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/576043/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/576043"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/576043"}}},{"id":595652,"referenceId":595652,"parentId":594084,"scientificName":"Pseudograpsus
+        albus","authority":"Stimpson, 1858","fullName":"Pseudograpsus albus Stimpson,
+        1858","fullNameHtml":"<i>Pseudograpsus albus</i> Stimpson, 1858","rankId":"ES","rankName":"Espèce","referenceName":"Pseudograpsus
+        albus Stimpson, 1858","referenceNameHtml":"<i>Pseudograpsus albus</i> Stimpson,
+        1858","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Pseudograpsus","familyName":"Varunidae","orderName":"Decapoda","className":"Malacostraca","phylumName":"Arthropoda","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":"Crustacés
+        Décapodes","vernacularClassName":"Malacostracés","vernacularPhylumName":"Arthropodes","vernacularKingdomName":"Animaux","vernacularGroup1":"Arthropodes","vernacularGroup2":"Crustacés","habitat":"1","fr":null,"gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":"P","epa":"P","reu":"P","sa":null,"ta":null,"nc":"P","wf":"P","pf":"P","cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/595652"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/595652"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/594084"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/595652/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/595652/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/595652/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/595652/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/595652/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/595652/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/595652/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/595652/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/595652/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/595652"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/595652"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=1&page=1&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=1&page=1&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=1&page=2&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=1&page=15&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true}},"page":{"size":2,"totalElements":30,"totalPages":15,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=albus&habitats=2&page=1&size=2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":64104,"referenceId":64104,"parentId":192995,"scientificName":"Gyraulus
+        albus","authority":"(O.F. Müller, 1774)","fullName":"Gyraulus albus (O.F.
+        Müller, 1774)","fullNameHtml":"<i>Gyraulus albus</i> (O.F. Müller, 1774)","rankId":"ES","rankName":"Espèce","referenceName":"Gyraulus
+        albus (O.F. Müller, 1774)","referenceNameHtml":"<i>Gyraulus albus</i> (O.F.
+        Müller, 1774)","frenchVernacularName":"Planorbine poilue","englishVernacularName":"White
+        Ramshorn","genusName":"Gyraulus","familyName":"Planorbidae","orderName":null,"className":"Gastropoda","phylumName":"Mollusca","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":"Gastéropodes","vernacularPhylumName":"Mollusques","vernacularKingdomName":"Animaux","vernacularGroup1":"Mollusques","vernacularGroup2":"Gastéropodes","habitat":"2","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/64104"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/64104"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/192995"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/64104/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/64104/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/64104/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/64104/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/64104/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/64104/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/64104/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/64104/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/64104/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/2"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/64104"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/64104"}}},{"id":64105,"referenceId":64104,"parentId":null,"scientificName":"Planorbis
+        albus","authority":"O.F. Müller, 1774","fullName":"Planorbis albus O.F. Müller,
+        1774","fullNameHtml":"<i>Planorbis albus</i> O.F. Müller, 1774","rankId":"ES","rankName":"Espèce","referenceName":"Gyraulus
+        albus (O.F. Müller, 1774)","referenceNameHtml":"<i>Gyraulus albus</i> (O.F.
+        Müller, 1774)","frenchVernacularName":"Planorbine poilue","englishVernacularName":"White
+        Ramshorn","genusName":"Gyraulus","familyName":"Planorbidae","orderName":null,"className":"Gastropoda","phylumName":"Mollusca","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":"Gastéropodes","vernacularPhylumName":"Mollusques","vernacularKingdomName":"Animaux","vernacularGroup1":"Mollusques","vernacularGroup2":"Gastéropodes","habitat":"2","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/64105"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/64104"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/64105/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/64105/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/2"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/64105"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/64105"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=2&page=1&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=2&page=1&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=2&page=2&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=2&page=3&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true}},"page":{"size":2,"totalElements":5,"totalPages":3,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?scientificNames=albus&habitats=3&page=1&size=2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":418745,"referenceId":418745,"parentId":191178,"scientificName":"Corvus
+        albus","authority":"Müller, 1776","fullName":"Corvus albus Müller, 1776","fullNameHtml":"<i>Corvus
+        albus</i> Müller, 1776","rankId":"ES","rankName":"Espèce","referenceName":"Corvus
+        albus Müller, 1776","referenceNameHtml":"<i>Corvus albus</i> Müller, 1776","frenchVernacularName":"Corbeau
+        pie","englishVernacularName":null,"genusName":"Corvus","familyName":"Corvidae","orderName":"Passeriformes","className":"Aves","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Corbeaux,
+        Corneilles, Pies, Geais, Casse-noix","vernacularOrderName":"Passereaux","vernacularClassName":"Oiseaux","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Oiseaux","habitat":"3","fr":null,"gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":"C","epa":"P","reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/418745"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/418745"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/191178"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/418745/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/418745/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/418745/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/418745/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/418745/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/418745/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/418745/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/418745/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/418745/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/418745"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/418745"}}},{"id":60737,"referenceId":60731,"parentId":null,"scientificName":"Mustela
+        albus","authority":null,"fullName":"Mustela albus ","fullNameHtml":"<i>Mustela
+        albus</i>","rankId":"ES","rankName":"Espèce","referenceName":"Mustela putorius
+        Linnaeus, 1758","referenceNameHtml":"<i>Mustela putorius</i> Linnaeus, 1758","frenchVernacularName":"Putois
+        d''Europe, Furet","englishVernacularName":"Polecat","genusName":"Mustela","familyName":"Mustelidae","orderName":"Carnivora","className":"Mammalia","phylumName":"Chordata","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":"Belettes,
+        Blaireaux, Loutres","vernacularOrderName":null,"vernacularClassName":"Mammifères","vernacularPhylumName":"Chordés","vernacularKingdomName":"Animaux","vernacularGroup1":"Chordés","vernacularGroup2":"Mammifères","habitat":"3","fr":"P","gf":null,"mar":null,"gua":null,"sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":"M","sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/60737"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/60731"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/60737/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/60737/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/3"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/60737"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/60737"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=3&page=1&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=3&page=1&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=3&page=2&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&scientificNames=albus&habitats=3&page=36&size=2{&taxrefIds,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,vernacularGroups}","templated":true}},"page":{"size":2,"totalElements":71,"totalPages":36,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/search?vernacularGroups=Tardigrades&page=1&size=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 15:39:34 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"_embedded":{"taxa":[{"id":368462,"referenceId":368462,"parentId":353643,"scientificName":"Orzeliscus
+        belopus","authority":"du Bois-Reymond Marcus, 1952","fullName":"Orzeliscus
+        belopus du Bois-Reymond Marcus, 1952","fullNameHtml":"<i>Orzeliscus belopus</i>
+        du Bois-Reymond Marcus, 1952","rankId":"ES","rankName":"Espèce","referenceName":"Orzeliscus
+        belopus du Bois-Reymond Marcus, 1952","referenceNameHtml":"<i>Orzeliscus belopus</i>
+        du Bois-Reymond Marcus, 1952","frenchVernacularName":null,"englishVernacularName":null,"genusName":"Orzeliscus","familyName":"Halechiniscidae","orderName":"Arthrotardigrada","className":"Heterotardigrada","phylumName":"Tardigrada","kingdomName":"Animalia","vernacularGenusName":null,"vernacularFamilyName":null,"vernacularOrderName":null,"vernacularClassName":null,"vernacularPhylumName":"Tardigrades","vernacularKingdomName":"Animaux","vernacularGroup1":"Tardigrades","vernacularGroup2":"Autres","habitat":"1","fr":null,"gf":null,"mar":null,"gua":"P","sm":null,"sb":null,"spm":null,"may":null,"epa":null,"reu":null,"sa":null,"ta":null,"nc":null,"wf":null,"pf":null,"cli":null,"taxrefVersion":"12.0","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/368462"},"reference":{"href":"https://taxref.mnhn.fr/api/taxa/368462"},"parent":{"href":"https://taxref.mnhn.fr/api/taxa/353643"},"classification":{"href":"https://taxref.mnhn.fr/api/taxa/368462/classification"},"synonyms":{"href":"https://taxref.mnhn.fr/api/taxa/368462/synonyms"},"children":{"href":"https://taxref.mnhn.fr/api/taxa/368462/children"},"vernacularNames":{"href":"https://taxref.mnhn.fr/api/taxa/368462/vernacularNames"},"media":{"href":"https://taxref.mnhn.fr/api/taxa/368462/media"},"status":{"href":"https://taxref.mnhn.fr/api/taxa/368462/status/lines"},"interactions":{"href":"https://taxref.mnhn.fr/api/taxa/368462/interactions"},"taxrefHistory":{"href":"https://taxref.mnhn.fr/api/taxa/368462/taxrefHistory"},"externalIds":{"href":"https://taxref.mnhn.fr/api/taxa/368462/externalIds"},"taxonomicRank":{"href":"https://taxref.mnhn.fr/api/taxonomicRanks/ES"},"habitat":{"href":"https://taxref.mnhn.fr/api/habitats/1"},"taxrefUri":{"href":"http://taxref.mnhn.fr/lod/taxon/368462"},"inpnWebpage":{"href":"https://inpn.mnhn.fr/espece/cd_nom/368462"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&vernacularGroups=Tardigrades&page=1&size=1{&taxrefIds,scientificNames,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&vernacularGroups=Tardigrades&page=1&size=1{&taxrefIds,scientificNames,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&vernacularGroups=Tardigrades&page=2&size=1{&taxrefIds,scientificNames,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/search?version=12.0&vernacularGroups=Tardigrades&page=253&size=1{&taxrefIds,scientificNames,frenchVernacularNames,englishVernacularNames,taxonomicRanks,territories,domain,habitats}","templated":true}},"page":{"size":1,"totalElements":253,"totalPages":253,"number":1}}'
+  recorded_at: 2019-04-17 15:39:35 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4

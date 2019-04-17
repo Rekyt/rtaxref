@@ -7,6 +7,7 @@ http_interactions:
       string: ''
     headers:
       Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
   response:
     status:
       status_code: 200
@@ -22,7 +23,7 @@ http_interactions:
       - PUT, GET, POST, DELETE, OPTIONS
       access-control-allow-origin: '*'
       content-type: application/hal+json; version=1;charset=UTF-8
-      date: Tue, 26 Mar 2019 15:28:23 GMT
+      date: Wed, 17 Apr 2019 12:34:50 GMT
       server: Apache
       transfer-encoding: chunked
     body:
@@ -31,8 +32,148 @@ http_interactions:
         per regna tria naturæ, secundum classes, ordines, genera, species, cum characteribus,
         differentiis, synonymis, locis</em>. <em>Editio duodecima, reformata</em>.
         Holmiæ. (Salvius). Tomus I: 1-532.","url":"http://biodiversitylibrary.org/page/42946197","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/160688"}}}'
-  recorded_at: 2019-03-26 15:28:23 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-17 12:35:10 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/160688
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 12:34:51 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":160688,"fullCitation":"Linnaeus, C. 1766. <em>Systema naturæ
+        per regna tria naturæ, secundum classes, ordines, genera, species, cum characteribus,
+        differentiis, synonymis, locis</em>. <em>Editio duodecima, reformata</em>.
+        Holmiæ. (Salvius). Tomus I: 1-532.","url":"http://biodiversitylibrary.org/page/42946197","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/160688"}}}'
+  recorded_at: 2019-04-17 12:35:10 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/160688
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Wed, 17 Apr 2019 12:34:51 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      string: '{"id":160688,"fullCitation":"Linnaeus, C. 1766. <em>Systema naturæ
+        per regna tria naturæ, secundum classes, ordines, genera, species, cum characteribus,
+        differentiis, synonymis, locis</em>. <em>Editio duodecima, reformata</em>.
+        Holmiæ. (Salvius). Tomus I: 1-532.","url":"http://biodiversitylibrary.org/page/42946197","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/sources/160688"}}}'
+  recorded_at: 2019-04-17 12:35:10 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/160688/transform/application/x-bibtex
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-disposition: attachment; filename=Linnaeus_1766.bib
+      content-encoding: gzip
+      content-type: text/plain;charset=UTF-8
+      date: Wed, 17 Apr 2019 12:35:10 GMT
+      server: Apache
+      transfer-encoding: chunked
+      vary: Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: "@article{Linnaeus_1766,\n\tdoi = {},\n\turl = {http://biodiversitylibrary.org/page/42946197},\n\tyear
+        = 1766,\n\tpublisher = {},\n\tvolume = {},\n\tnumber = {},\n\tpages = {},\n\tauthor
+        = {},\n\ttitle = {},\n\tjournal = {},\n\teditor = {},\n\tbooktitle = {},\n\tabstract
+        = {}\n}"
+  recorded_at: 2019-04-17 12:35:10 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/sources/123456
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Wed, 17 Apr 2019 12:35:10 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: 2019-04-17 12:35:10 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/sources/azerty
@@ -41,6 +182,7 @@ http_interactions:
       string: ''
     headers:
       Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
   response:
     status:
       status_code: 400
@@ -60,7 +202,7 @@ http_interactions:
       content-language: fr
       content-length: '413'
       content-type: text/html;charset=utf-8
-      date: Tue, 26 Mar 2019 15:28:23 GMT
+      date: Wed, 17 Apr 2019 12:35:10 GMT
       server: Apache
       vary: Accept-Encoding
     body:
@@ -77,36 +219,5 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 15:28:23 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
-- request:
-    method: get
-    uri: https://taxref.mnhn.fr/api/sources/123456
-    body:
-      encoding: ''
-      string: ''
-    headers:
-      Accept: application/json, text/xml, application/xml, */*
-  response:
-    status:
-      status_code: 404
-      category: Client error
-      reason: Not Found
-      message: 'Client error: (404) Not Found'
-    headers:
-      access-control-allow-credentials: 'true'
-      access-control-allow-headers: origin, content-type, accept, x-requested-with,
-        destination
-      access-control-allow-methods:
-      - GET, HEAD, OPTIONS, POST, PUT
-      - PUT, GET, POST, DELETE, OPTIONS
-      access-control-allow-origin: '*'
-      content-length: '0'
-      content-type: text/plain
-      date: Tue, 26 Mar 2019 15:28:23 GMT
-      server: Apache
-    body:
-      encoding: UTF-8
-      string: ''
-  recorded_at: 2019-03-26 15:28:23 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2019-04-17 12:35:10 GMT
+  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
