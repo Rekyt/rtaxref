@@ -9,11 +9,44 @@ rt_ua <- function() {
 }
 
 #' @importFrom httr GET status_code add_headers
-rt_GET = function(..., query = NULL) {
+rt_GET <- function(..., query = NULL) {
+  if(!is.null(query)) {
+    query <- rt_flatten_query(query)
+  }
+
   GET(rt_base_url(), config = add_headers("user-agent" = rt_ua()),
       path = paste0("api/", ...), query = query)
 }
 
+#' Flatten query
+#'
+#' Flatten a query, meaning that when an argument of the query is an array
+#' the function gives back a list with as many elements in the array named the
+#' same.
+#'
+#' @param query {`list(1)`}\cr{}
+#'              a list that represents the query argument from `rt_GET()`
+rt_flatten_query <- function(query) {
+  flat_query <- lapply(names(query), function(el) {
+    trans_list <- as.list(query[[el]])
+    names(trans_list) <- rep(el, length(query[[el]]))
+    return(trans_list)
+  })
+
+  unlist(flat_query, recursive = FALSE)
+}
+
+
+
+#' Simple Check
+#'
+#' Check that argument is not null nor equal to ""
+#'
+#' @param arg actual variable\cr{}
+#'            give the variable to be used and checked
+#' @param stop_message {`character(1)`}\cr{}
+#'                     The `stop()` message to display explaining why this
+#'                     argument is needed
 check_required_arg = function(arg, stop_message) {
   if (is.null(arg) | (length(arg) != 0 && arg == "")) {
     stop("'", substitute(arg), "' argument is needed to ", stop_message,
