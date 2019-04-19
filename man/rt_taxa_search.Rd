@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_taxa_search.R
 \name{rt_taxa_search}
 \alias{rt_taxa_search}
-\title{Search fo a taxon information}
+\title{Search for a taxon information}
 \usage{
 rt_taxa_search(sciname = NULL, fr_name = NULL, en_name = NULL,
   rank = NULL, territories = NULL, domain = NULL, habitats = NULL,
@@ -91,7 +91,7 @@ The page number returned}
 The number of lines returned per page (maximum = 50000)}
 }
 \description{
-Search fo a taxon information
+Search for a taxon information
 }
 \examples{
 rt_taxa_search(sciname = "Bradypus")

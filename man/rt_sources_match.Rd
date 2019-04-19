@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_sources_match.R
 \name{rt_sources_match}
 \alias{rt_sources_match}
-\title{Search a source from a citation by fuzzy matchin}
+\title{Search a source from a citation by fuzzy matching}
 \usage{
 rt_sources_match(citation = NULL)
 }
@@ -11,7 +11,7 @@ rt_sources_match(citation = NULL)
 A (partial) citation}
 }
 \description{
-Search a source from a citation by fuzzy matchin
+Search a source from a citation by fuzzy matching
 }
 \examples{
 \dontrun{

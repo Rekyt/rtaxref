@@ -1,4 +1,4 @@
-#' Search fo a taxon information
+#' Search for a taxon information
 #'
 #' @param sciname     {`character(1)`}\cr{}
 #'                    Scientific name

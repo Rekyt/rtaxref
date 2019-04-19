@@ -1,4 +1,4 @@
-#' Search a source from a citation by fuzzy matchin
+#' Search a source from a citation by fuzzy matching
 #'
 #' @param citation {`character(1)`}\cr{}
 #'                 A (partial) citation
