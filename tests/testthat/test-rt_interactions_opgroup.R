@@ -3,7 +3,9 @@ context("test-rt_interactions_opgroup")
 vcr::use_cassette("rt_interactions_opgroup", {
 
   test_that("Can retrieve interactions from operational group", {
-    expect_silent(res <- rt_interactions_opgroup(706, size = 1))
+    expect_silent(suppressMessages({
+      res <- rt_interactions_opgroup(706, size = 1)
+    }))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 25))
@@ -17,7 +19,7 @@ vcr::use_cassette("rt_interactions_opgroup", {
                         "source.id", "source.fullCitation", "source.url",
                         "source.doi", "source.doiUri", "source.zooBankId",
                         "source.zooBankUri", "source.abstract",
-                        "_links.self.href"))
+                        "._links.self.href"))
     expect_equal(res$taxon.id, 159424)
   })
 

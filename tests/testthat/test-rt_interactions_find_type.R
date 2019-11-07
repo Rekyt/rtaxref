@@ -2,7 +2,10 @@ context("test-rt_interactions_find_type")
 
 vcr::use_cassette("rt_interactions_find_type", {
   test_that("Can retrieve interaction by type", {
-    expect_silent(res <- rt_interactions_find_type("PREDATEUR", size = 5))
+    expect_silent(suppressMessages({
+      res <- rt_interactions_find_type("PREDATEUR", size = 5)
+      })
+    )
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(5, 25))
@@ -16,7 +19,7 @@ vcr::use_cassette("rt_interactions_find_type", {
                         "source.id", "source.fullCitation", "source.url",
                         "source.doi", "source.doiUri", "source.zooBankId",
                         "source.zooBankUri", "source.abstract",
-                        "_links.self.href"))
+                        "._links.self.href"))
   })
 
   test_that("Wrong query returns error", {

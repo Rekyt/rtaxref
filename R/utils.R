@@ -124,5 +124,5 @@ parse_taxa = function(api_query, cut_names = TRUE) {
          call. = FALSE)
   }
 
-  tibble::as_tibble(response)
+  tibble::as_tibble(response, .name_repair = "universal")
 }
