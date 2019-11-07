@@ -9,17 +9,18 @@ rt_taxa_search(sciname = NULL, fr_name = NULL, en_name = NULL,
   vernacular = NULL, page = 1, size = 50000)
 }
 \arguments{
-\item{sciname}{{\code{character(1)}}\cr{}
-Scientific name}
+\item{sciname}{{\code{character(1+)}}\cr{}
+One or more scientific name of searched taxa}
 
-\item{fr_name}{{\code{character(1)}}\cr{}
-Common name in French}
+\item{fr_name}{{\code{character(1+)}}\cr{}
+One or more common name(s) in French of searched taxa}
 
-\item{en_name}{{\code{character(1)}}\cr{}
-Common name in English}
+\item{en_name}{{\code{character(1+)}}\cr{}
+One or more common name(s) in English of searched taxa}
 
 \item{rank}{{\code{character(1+)}}\cr{}
-Rank of the taxon:
+One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
+of all ranks available):
 \itemize{
 \item \code{Dumm}= Domain
 \item \code{KD}= Kingdom
@@ -44,7 +45,7 @@ Rank of the taxon:
 }}
 
 \item{territories}{{\code{character(1+)}}\cr{}
-Territories where species is present:
+One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
 \item \code{"gf"} = French Guiana
@@ -64,13 +65,16 @@ Territories where species is present:
 \item \code{"cli"} = Clipperton Island
 }}
 
-\item{domain}{{\code{integer(1+)}}\cr{}
+\item{domain}{{\code{character(1)}}\cr{}
+The domain where the species is found:
 \itemize{
 \item \code{"marin"} = Marine
 \item \code{"continental"} = Continental
 }}
 
 \item{habitats}{{\code{integer(1+)}}\cr{}
+One or more habitats where the species is found (see \code{\link[=rt_habitats]{rt_habitats()}} for a
+list of all habitats):
 \itemize{
 \item \code{1} = Marine
 \item \code{2} = Freshwater
@@ -82,7 +86,9 @@ Territories where species is present:
 \item \code{8} = Continental (terrestrial and freshwater)
 }}
 
-\item{vernacular}{{\code{character(1)}}\cr{}}
+\item{vernacular}{{\code{character(1+)}}\cr{}
+Name of a vernacular group (see the list using
+\code{\link[=rt_vernacular_groups]{rt_vernacular_groups()}})}
 
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}

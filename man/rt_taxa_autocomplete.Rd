@@ -8,10 +8,11 @@ rt_taxa_autocomplete(term = NULL, territories = NULL, rank = NULL,
   domain = NULL, page = 1, size = 200)
 }
 \arguments{
-\item{term}{the beginning of the scientific name of the taxon}
+\item{term}{{\code{character(1)} \strong{required}}\cr{}
+the beginning of the scientific name of the searched taxa}
 
 \item{territories}{{\code{character(1+)}}\cr{}
-Territories where species is present:
+One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
 \item \code{"gf"} = French Guiana
@@ -32,7 +33,8 @@ Territories where species is present:
 }}
 
 \item{rank}{{\code{character(1+)}}\cr{}
-Rank of the taxon:
+One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
+of all ranks available):
 \itemize{
 \item \code{Dumm}= Domain
 \item \code{KD}= Kingdom
@@ -56,7 +58,8 @@ Rank of the taxon:
 \item \code{AB}= Abberatio
 }}
 
-\item{domain}{{\code{integer(1+)}}\cr{}
+\item{domain}{{\code{character(1)}}\cr{}
+The domain where the species is found:
 \itemize{
 \item \code{"marin"} = Marine
 \item \code{"continental"} = Continental

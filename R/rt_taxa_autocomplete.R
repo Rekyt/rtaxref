@@ -1,6 +1,7 @@
 #' Retrieve Synonyms associated with a Taxon
 #'
-#' @param term the beginning of the scientific name of the taxon
+#' @param term {`character(1)` **required**}\cr{}
+#'             the beginning of the scientific name of the searched taxa
 #' @param size {`integer(1)`; default = `200`}\cr{}
 #'             The number of lines returned per page (maximum = 200)
 #' @inheritParams rt_taxa_search
