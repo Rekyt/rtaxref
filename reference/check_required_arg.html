@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>rtaxref User Agent — rt_ua • rtaxref</title>
+<title>Simple Check — check_required_arg • rtaxref</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="rtaxref User Agent — rt_ua" />
-<meta property="og:description" content="rtaxref User Agent" />
+<meta property="og:title" content="Simple Check — check_required_arg" />
+<meta property="og:description" content="Check that argument is not null nor equal to &quot;&quot;" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -105,23 +105,39 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>rtaxref User Agent</h1>
+    <h1>Simple Check</h1>
     <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
-    <div class="hidden name"><code>rt_ua.Rd</code></div>
+    <div class="hidden name"><code>check_required_arg.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>rtaxref User Agent</p>
+    <p>Check that argument is not null nor equal to ""</p>
     </div>
 
-    <pre class="usage"><span class='fu'>rt_ua</span>()</pre>
+    <pre class="usage"><span class='fu'>check_required_arg</span>(<span class='no'>arg</span>, <span class='no'>stop_message</span>)</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>arg</th>
+      <td><p>actual variable<br />
+give the variable to be used and checked</p></td>
+    </tr>
+    <tr>
+      <th>stop_message</th>
+      <td><p><code><a href='https://rdrr.io/r/base/character.html'>character(1)</a></code><br />
+The <code><a href='https://rdrr.io/r/base/stop.html'>stop()</a></code> message to display explaining why this
+argument is needed</p></td>
+    </tr>
+    </table>
 
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
     </ul>
 
   </div>

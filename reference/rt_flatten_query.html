@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>rtaxref User Agent — rt_ua • rtaxref</title>
+<title>Flatten query — rt_flatten_query • rtaxref</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,10 @@
 
 
 
-<meta property="og:title" content="rtaxref User Agent — rt_ua" />
-<meta property="og:description" content="rtaxref User Agent" />
+<meta property="og:title" content="Flatten query — rt_flatten_query" />
+<meta property="og:description" content="Flatten a query, meaning that when an argument of the query is an array
+the function gives back a list with as many elements in the array named the
+same." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -105,23 +107,35 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>rtaxref User Agent</h1>
+    <h1>Flatten query</h1>
     <small class="dont-index">Source: <a href='https://github.com/Rekyt/rtaxref/blob/master/R/utils.R'><code>R/utils.R</code></a></small>
-    <div class="hidden name"><code>rt_ua.Rd</code></div>
+    <div class="hidden name"><code>rt_flatten_query.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>rtaxref User Agent</p>
+    <p>Flatten a query, meaning that when an argument of the query is an array
+the function gives back a list with as many elements in the array named the
+same.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>rt_ua</span>()</pre>
+    <pre class="usage"><span class='fu'>rt_flatten_query</span>(<span class='no'>query</span>)</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>query</th>
+      <td><p><code><a href='https://rdrr.io/r/base/list.html'>list(1)</a></code><br />
+a list that represents the query argument from <code>rt_GET()</code></p></td>
+    </tr>
+    </table>
 
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
     </ul>
 
   </div>
