@@ -1,13 +1,14 @@
 #' Search for a taxon information
 #'
-#' @param sciname     {`character(1)`}\cr{}
-#'                    Scientific name
-#' @param fr_name     {`character(1)`}\cr{}
-#'                    Common name in French
-#' @param en_name     {`character(1)`}\cr{}
-#'                    Common name in English
+#' @param sciname     {`character(1+)`}\cr{}
+#'                    One or more scientific name of searched taxa
+#' @param fr_name     {`character(1+)`}\cr{}
+#'                    One or more common name(s) in French of searched taxa
+#' @param en_name     {`character(1+)`}\cr{}
+#'                    One or more common name(s) in English of searched taxa
 #' @param rank        {`character(1+)`}\cr{}
-#' Rank of the taxon:
+#' One of more rank of the searched taxa (see [`rt_taxo_ranks()`] for the list
+#' of all ranks available):
 #' * `Dumm`= Domain
 #' * `KD`= Kingdom
 #' * `PH`= Phylum
@@ -29,7 +30,7 @@
 #' * `CAR`= Cultivar
 #' * `AB`= Abberatio
 #' @param territories {`character(1+)`}\cr{}
-#' Territories where species is present:
+#' One or more territories where species is present:
 #' * `"fr"` = Mainland France
 #' * `"gf"` = French Guiana
 #' * `"gua"` = Guadeloupe
@@ -46,10 +47,13 @@
 #' * `"wf"` = Wallis and Futuna
 #' * `"pf"` = French Polynesia
 #' * `"cli"` = Clipperton Island
-#' @param domain      {`integer(1+)`}\cr{}
+#' @param domain      {`character(1)`}\cr{}
+#' The domain where the species is found:
 #' * `"marin"` = Marine
 #' * `"continental"` = Continental
 #' @param habitats    {`integer(1+)`}\cr{}
+#' One or more habitats where the species is found (see [`rt_habitats()`] for a
+#' list of all habitats):
 #' * `1` = Marine
 #' * `2` = Freshwater
 #' * `3` = Terrestrial
@@ -58,7 +62,9 @@
 #' * `6` = Brackish water
 #' * `7` = Continental (terrestrial and/or freshwater)
 #' * `8` = Continental (terrestrial and freshwater)
-#' @param vernacular  {`character(1)`}\cr{}
+#' @param vernacular  {`character(1+)`}\cr{}
+#'                    Name of a vernacular group (see the list using
+#'                    [`rt_vernacular_groups()`])
 #' @param page {`integer(1)`; default = `1`}\cr{}
 #'             The page number returned
 #' @param size {`integer(1)`; default = `50000`}\cr{}

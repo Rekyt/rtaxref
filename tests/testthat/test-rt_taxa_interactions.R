@@ -2,7 +2,9 @@ context("test-rt_taxa_interactions")
 
 vcr::use_cassette("rt_taxa_interactions", {
   test_that("Can retrieve a taxon's interactions using its id", {
-    expect_silent(res <- rt_taxa_interactions(110335))
+    expect_silent(suppressMessages({
+      res <- rt_taxa_interactions(110335)
+    }))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 25))
@@ -16,7 +18,7 @@ vcr::use_cassette("rt_taxa_interactions", {
                         "source.id", "source.fullCitation", "source.url",
                         "source.doi", "source.doiUri", "source.zooBankId",
                         "source.zooBankUri", "source.abstract",
-                        "_links.self.href"))
+                        "._links.self.href"))
     expect_equal(res$taxon.id, 241554)
   })
 

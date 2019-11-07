@@ -9,6 +9,27 @@ test_that("User Agent is well returned", {
                "http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0")
 })
 
+test_that("Query flattening works as expected", {
+
+  simple_query <- list(a = 1, b = 2, c = 3)
+
+  expect_equal(rt_flatten_query(simple_query), simple_query)
+
+  complex_query <- list(a = c(1, 2), b = 2, c = 3)
+
+  expect_equal(rt_flatten_query(complex_query),
+               list(a = 1, a = 2, b = 2, c = 3))
+
+  more_complex_query <- list(a = c(1, 2),
+                             b = c("a", "b", "c"),
+                             c = c("x", "y"))
+
+  expect_equal(rt_flatten_query(more_complex_query),
+               list(a = 1, a = 2,
+                    b = "a", b = "b", b = "c",
+                    c = "x", c = "y"))
+})
+
 vcr::use_cassette("rt_GET", {
 
   test_that("rt_GET works", {
