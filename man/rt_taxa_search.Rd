@@ -13,6 +13,7 @@ rt_taxa_search(
   domain = NULL,
   habitats = NULL,
   vernacular = NULL,
+  version = NULL,
   page = 1,
   size = 5000
 )
@@ -98,6 +99,11 @@ list of all habitats):
 \item{vernacular}{{\verb{character(1+)}}\cr{}
 Name of a vernacular group (see the list using
 \code{\link[=rt_vernacular_groups]{rt_vernacular_groups()}})}
+
+\item{version}{{\verb{NULL or character(1)}}\cr{}
+A string indicating which version of TAXREF should be queried.
+Should be of the form \code{"2.0"} up to \code{"15.0"}. You can check
+the available TAXREF versions with \code{rt_taxref_versions()}.}
 
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
