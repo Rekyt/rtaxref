@@ -51,6 +51,7 @@ rt_flatten_query <- function(query) {
 #' @param stop_message {`character(1)`}\cr{}
 #'                     The `stop()` message to display explaining why this
 #'                     argument is needed
+#' @noRd
 check_required_arg = function(arg, stop_message) {
   if (is.null(arg) | (length(arg) != 0 && arg == "")) {
     stop("'", substitute(arg), "' argument is needed to ", stop_message,
