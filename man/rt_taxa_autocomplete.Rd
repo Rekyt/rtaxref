@@ -4,14 +4,20 @@
 \alias{rt_taxa_autocomplete}
 \title{Retrieve Synonyms associated with a Taxon}
 \usage{
-rt_taxa_autocomplete(term = NULL, territories = NULL, rank = NULL,
-  domain = NULL, page = 1, size = 200)
+rt_taxa_autocomplete(
+  term = NULL,
+  territories = NULL,
+  rank = NULL,
+  domain = NULL,
+  page = 1,
+  size = 200
+)
 }
 \arguments{
 \item{term}{{\code{character(1)} \strong{required}}\cr{}
 the beginning of the scientific name of the searched taxa}
 
-\item{territories}{{\code{character(1+)}}\cr{}
+\item{territories}{{\verb{character(1+)}}\cr{}
 One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
@@ -32,7 +38,7 @@ One or more territories where species is present:
 \item \code{"cli"} = Clipperton Island
 }}
 
-\item{rank}{{\code{character(1+)}}\cr{}
+\item{rank}{{\verb{character(1+)}}\cr{}
 One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
 of all ranks available):
 \itemize{

@@ -4,9 +4,16 @@
 \alias{rt_status_search}
 \title{Search statuses based on a list of criteria}
 \usage{
-rt_status_search(id = NULL, opgroup_id = NULL, location_id = NULL,
-  latitude = NULL, longitude = NULL, page = 1, size = 2000,
-  detail = FALSE)
+rt_status_search(
+  id = NULL,
+  opgroup_id = NULL,
+  location_id = NULL,
+  latitude = NULL,
+  longitude = NULL,
+  page = 1,
+  size = 2000,
+  detail = FALSE
+)
 }
 \arguments{
 \item{id}{{\code{integer(1)}}\cr{}

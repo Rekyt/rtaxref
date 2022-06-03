@@ -23,7 +23,7 @@ Suggests:
     knitr,
     vcr
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.0
 Language: en-US
 VignetteBuilder: knitr
 URL: https://github.com/Rekyt/rtaxref

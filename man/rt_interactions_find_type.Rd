@@ -4,8 +4,7 @@
 \alias{rt_interactions_find_type}
 \title{Retrieve the status of all Taxa according to a Status Type}
 \usage{
-rt_interactions_find_type(interaction_id = NULL, page = 1,
-  size = 2000)
+rt_interactions_find_type(interaction_id = NULL, page = 1, size = 2000)
 }
 \arguments{
 \item{interaction_id}{{\code{character(1)}}\cr{}

@@ -4,8 +4,13 @@
 \alias{rt_interactions_search}
 \title{Search Interactions based on a list of criteria}
 \usage{
-rt_interactions_search(id = NULL, interaction_id = NULL,
-  opgroup_id = NULL, page = 1, size = 2000)
+rt_interactions_search(
+  id = NULL,
+  interaction_id = NULL,
+  opgroup_id = NULL,
+  page = 1,
+  size = 2000
+)
 }
 \arguments{
 \item{id}{{\code{integer(1)}}\cr{}
@@ -21,8 +26,8 @@ the id of an operational group referenced in TaxRef}
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{50000}}\cr{}
-The number of lines returned per page (maximum = 50000)}
+\item{size}{{\code{integer(1)}; default = \code{5000}}\cr{}
+The number of lines returned per page (maximum = 5000)}
 }
 \description{
 Search Interactions based on a list of criteria
