@@ -23,6 +23,11 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
+      - name: Install remotes and rmarkdown
+        run: |
+          install.packages("remotes")
+          remotes::install_cran("rmarkdown")
+
       - name: Render Rmarkdown files and Commit Results
         run: |
           Rscript -e 'rmarkdown::render("README.Rmd")'
