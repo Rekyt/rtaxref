@@ -16,8 +16,8 @@ vcr::use_cassette("rt_languages", {
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 5))
     expect_named(res, c("id", "name", "iso6393", "wikidataUri", "locationName"))
-    expect_equal(res$id, factor("arw"))
-    expect_equal(res$locationName, factor("Guyane"))
+    expect_equal(res$id, "arw")
+    expect_equal(res$locationName, "Guyane")
   })
 
   test_that("Wrong query returns error", {

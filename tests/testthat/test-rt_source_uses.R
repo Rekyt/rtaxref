@@ -16,7 +16,7 @@ vcr::use_cassette("rt_sources_use", {
     expect_equal(dim(res), c(1, 2))
     expect_named(res, c("id", "name"))
     expect_equal(res$id, 276)
-    expect_equal(res$name, factor("Abaissement de rang"))
+    expect_equal(res$name, "Abaissement de rang")
   })
 
   test_that("Wrong query returns error", {

@@ -17,7 +17,7 @@ vcr::use_cassette("rt_taxref_versions", {
     expect_equal(dim(res), c(1, 5))
     expect_named(res, c("id", "name", "date", "responsable", "current"))
     expect_equal(res$id, 2L)
-    expect_equal(res$name, factor("2.0"))
+    expect_equal(res$name, "2.0")
   })
 
   test_that("Wrong query returns error", {

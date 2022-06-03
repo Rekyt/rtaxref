@@ -15,7 +15,7 @@ vcr::use_cassette("rt_status_type", {
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 3))
     expect_named(res, c("id", "name", "group"))
-    expect_equal(res$id, factor("BARC"))
+    expect_equal(res$id, "BARC")
   })
 
   test_that("Wrong query returns error", {

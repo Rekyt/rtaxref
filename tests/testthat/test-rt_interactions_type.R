@@ -18,7 +18,7 @@ vcr::use_cassette("rt_interactions_type", {
     expect_equal(dim(res), c(1, 7))
     expect_named(res, c("id", "name", "description", "example",
                         "reverseRelationName", "oboRoUri", "dbPediaUri"))
-    expect_equal(res$id, factor("PREDATEUR"))
+    expect_equal(res$id, "PREDATEUR")
   })
 
   test_that("Wrong query returns error", {

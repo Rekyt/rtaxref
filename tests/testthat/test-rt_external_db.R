@@ -18,7 +18,7 @@ vcr::use_cassette("rt_external_db", {
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 5))
     expect_named(res, c("id", "name", "title", "websiteUrl", "authors"))
-    expect_equal(res$id, factor("antcat"))
+    expect_equal(res$id, "antcat")
     expect_identical(res, res2)
 
   })

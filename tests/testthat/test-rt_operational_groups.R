@@ -22,7 +22,7 @@ vcr::use_cassette("rt_operational_groups", {
                         "vernacularGroup3", "description", "biology", "ecology",
                         "biogeography", "ethology", "economy"))
     expect_equal(res$id, 143)
-    expect_equal(res$name, factor("Amphibiens"))
+    expect_equal(res$name, "Amphibiens")
   })
 
   test_that("Wrong query returns error", {

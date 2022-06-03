@@ -16,8 +16,8 @@ vcr::use_cassette("rt_taxo_ranks", {
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 2))
     expect_named(res, c("id", "name"))
-    expect_equal(res$id, factor("AB"))
-    expect_equivalent(res$name, factor("Abberatio"))
+    expect_equal(res$id, "AB")
+    expect_equivalent(res$name, "Abberatio")
   })
 
   test_that("Wrong query returns error", {

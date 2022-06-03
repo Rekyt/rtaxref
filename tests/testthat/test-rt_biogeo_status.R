@@ -16,7 +16,7 @@ vcr::use_cassette("rt_biogeo_status", {
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 3))
     expect_named(res, c("id", "name", "definition"))
-    expect_equal(res$id, factor("P"))
+    expect_equal(res$id, "P")
   })
 
   test_that("Wrong query returns error", {
