@@ -2,7 +2,7 @@
 # Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
-    paths: ['README.Rmd']
+    paths: ['README.Rmd', '.github/workflows/render-readme.yaml']
 
 name: render-readme
 
@@ -25,8 +25,8 @@ jobs:
 
       - name: Install remotes and rmarkdown
         run: |
-          install.packages("remotes")
-          remotes::install_cran("rmarkdown")
+          Rscript -e 'install.packages("remotes")'
+          Rscript -e 'remotes::install_cran("rmarkdown")'
 
       - name: Render Rmarkdown files and Commit Results
         run: |
