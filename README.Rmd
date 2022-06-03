@@ -23,9 +23,16 @@ devtools::load_all()
 [![R-CMD-check](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml)
   <!-- badges: end -->
 
+The goal of rtaxref is to provide an R client to TaxRef API,
+the French Taxonomical Reference and associated database on species.
+The API provides nomenclature, taxonomy, biogeographic repartition, statuses
+and interactions of species. See the API documentation
+[here](https://taxref.mnhn.fr/taxref-web/api/doc).
 
-
-The goal of rtaxref is to provide an R client to TaxRef API, the French Taxonomical Reference and associated database on species. The API provides nomenclature, taxonomy, biogeographic repartition, statuses and interactions of species. See the API documentation [here](https://taxref.mnhn.fr/taxref-web/api/doc).
+This project is still under development (especially the documentation) but most
+functions should work out of the box. Please do use the
+[issue tracker](https://github.com/Rekyt/rtaxref/issues) for any bug report,
+suggestion, or idea.
 
 
 ## Installation
