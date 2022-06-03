@@ -3,6 +3,8 @@ rt_base_url = function() {
 }
 
 #' rtaxref User Agent
+#'
+#' @noRd
 rt_ua <- function() {
   paste0("http://github.com/Rekyt/rtaxref R package rtaxref/",
          utils::packageVersion("rtaxref"))
@@ -26,6 +28,8 @@ rt_GET <- function(..., query = NULL) {
 #'
 #' @param query {`list(1)`}\cr{}
 #'              a list that represents the query argument from `rt_GET()`
+#'
+#' @noRd
 rt_flatten_query <- function(query) {
   flat_query <- lapply(names(query), function(el) {
     trans_list <- as.list(query[[el]])
