@@ -3,7 +3,8 @@
 #' @inheritParams rt_status_opgroup
 #'
 #' @examples
-#' rt_interactions_opgroup(opgroup_id = 706)
+#' \dontrun{rt_interactions_opgroup(opgroup_id = 706)}
+#'
 #' @seealso the list of operational groups [`rt_operational_groups()`]
 #'
 #' @export
