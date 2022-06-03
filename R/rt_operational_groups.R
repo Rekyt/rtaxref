@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#' rt_operational_groups(opgroup_id = 143)
+#' \dontrun{rt_operational_groups(opgroup_id = 143)}
 rt_operational_groups = function(opgroup_id = NULL) {
 
   api_query = rt_GET("operationalGroups/", opgroup_id)
