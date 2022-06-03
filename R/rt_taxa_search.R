@@ -67,8 +67,8 @@
 #'                    [`rt_vernacular_groups()`])
 #' @param page {`integer(1)`; default = `1`}\cr{}
 #'             The page number returned
-#' @param size {`integer(1)`; default = `50000`}\cr{}
-#'             The number of lines returned per page (maximum = 50000)
+#' @param size {`integer(1)`; default = `5000`}\cr{}
+#'             The number of lines returned per page (maximum = 5000)
 #'
 #' @examples
 #' rt_taxa_search(sciname = "Bradypus")
@@ -77,7 +77,7 @@
 rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
                           rank = NULL, territories = NULL, domain = NULL,
                           habitats = NULL, vernacular = NULL, page = 1,
-                          size = 50000) {
+                          size = 5000) {
 
   api_query = rt_GET("taxa/search",
                      query = list(scientificNames = sciname,

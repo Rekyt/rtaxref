@@ -4,21 +4,30 @@
 \alias{rt_taxa_search}
 \title{Search for a taxon information}
 \usage{
-rt_taxa_search(sciname = NULL, fr_name = NULL, en_name = NULL,
-  rank = NULL, territories = NULL, domain = NULL, habitats = NULL,
-  vernacular = NULL, page = 1, size = 50000)
+rt_taxa_search(
+  sciname = NULL,
+  fr_name = NULL,
+  en_name = NULL,
+  rank = NULL,
+  territories = NULL,
+  domain = NULL,
+  habitats = NULL,
+  vernacular = NULL,
+  page = 1,
+  size = 5000
+)
 }
 \arguments{
-\item{sciname}{{\code{character(1+)}}\cr{}
+\item{sciname}{{\verb{character(1+)}}\cr{}
 One or more scientific name of searched taxa}
 
-\item{fr_name}{{\code{character(1+)}}\cr{}
+\item{fr_name}{{\verb{character(1+)}}\cr{}
 One or more common name(s) in French of searched taxa}
 
-\item{en_name}{{\code{character(1+)}}\cr{}
+\item{en_name}{{\verb{character(1+)}}\cr{}
 One or more common name(s) in English of searched taxa}
 
-\item{rank}{{\code{character(1+)}}\cr{}
+\item{rank}{{\verb{character(1+)}}\cr{}
 One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
 of all ranks available):
 \itemize{
@@ -44,7 +53,7 @@ of all ranks available):
 \item \code{AB}= Abberatio
 }}
 
-\item{territories}{{\code{character(1+)}}\cr{}
+\item{territories}{{\verb{character(1+)}}\cr{}
 One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
@@ -72,7 +81,7 @@ The domain where the species is found:
 \item \code{"continental"} = Continental
 }}
 
-\item{habitats}{{\code{integer(1+)}}\cr{}
+\item{habitats}{{\verb{integer(1+)}}\cr{}
 One or more habitats where the species is found (see \code{\link[=rt_habitats]{rt_habitats()}} for a
 list of all habitats):
 \itemize{
@@ -86,15 +95,15 @@ list of all habitats):
 \item \code{8} = Continental (terrestrial and freshwater)
 }}
 
-\item{vernacular}{{\code{character(1+)}}\cr{}
+\item{vernacular}{{\verb{character(1+)}}\cr{}
 Name of a vernacular group (see the list using
 \code{\link[=rt_vernacular_groups]{rt_vernacular_groups()}})}
 
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{50000}}\cr{}
-The number of lines returned per page (maximum = 50000)}
+\item{size}{{\code{integer(1)}; default = \code{5000}}\cr{}
+The number of lines returned per page (maximum = 5000)}
 }
 \description{
 Search for a taxon information
