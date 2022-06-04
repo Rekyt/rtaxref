@@ -34,12 +34,11 @@ functions should work out of the box. Please do use the
 [issue tracker](https://github.com/Rekyt/rtaxref/issues) for any bug report,
 suggestion, or idea.
 
-
 ## Installation
 
 `rtaxref` is not yet on CRAN. However, you can install the development version of `rtaxref` from GitHub with:
 
-```r
+```{r, eval=FALSE}
 # install.packages("remotes")
 remotes::install_github("Rekyt/rtaxref")
 ```
@@ -64,19 +63,6 @@ rtaxref::rt_taxa_search(sciname = "Helianthus annuus")
 
 You a full list of functions included in `rtaxref` by going to the [`rtaxref` website](https://rekyt.github.io/rtaxref).
 
-## Dependency network (Imports only)
-
-```{r dependency_network_imports, echo=FALSE, message=FALSE, warning=FALSE}
-source("https://gist.githubusercontent.com/Rekyt/261c2c3040715dcd8c211d7f5d18c9c8/raw/")
-plot_dependencies()
-```
-
-## Dependency network (Imports and Suggests)
-
-```{r dependency_network_full, echo=FALSE, message=FALSE, warning=FALSE}
-source("https://gist.githubusercontent.com/Rekyt/261c2c3040715dcd8c211d7f5d18c9c8/raw/")
-plot_dependencies(type = "full")
-```
 
 ## Code of Conduct
 
