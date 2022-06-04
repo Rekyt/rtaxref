@@ -1,0 +1,51 @@
+---
+title: "Introduction to rtaxref"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{rtaxref}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rtaxref)
+```
+
+rtaxref queries [the API](https://taxref.mnhn.fr/taxref-web/api/doc) of
+[the French Taxonomic Referential (TAXREF)](https://inpn.mnhn.fr/programme/referentiel-taxonomique-taxref).
+This referential contains much taxonomical information as well as many other
+kinds of information (occurrence in French territories, conservation statuses,
+etc.).
+
+
+## Searching for a taxon name
+
+TODO explain `rt_taxa_search()`.
+
+Talk about importance of id of species (CD_NOM).
+
+Refer to the documentation of function to get lists of values of potential
+arguments.
+
+Querying a specific version of TAXREF.
+
+## Retrieving the status of species
+
+
+## Additional info
+
+Vernacular names, history of taxon in TAXREF, uses
+
+
+## Getting interaction data
+
+## Linking this information to other databases
+
+externals ids and related databases.
