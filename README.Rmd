@@ -12,9 +12,8 @@ knitr::opts_chunk$set(
   out.width = "100%",
   eval = TRUE
 )
-
-pkgload::load_all()
 ```
+
 # rtaxref – an R client to the French Taxonomical Reference
 
 <!-- badges: start -->
@@ -50,7 +49,9 @@ remotes::install_github("Rekyt/rtaxref")
 To avoid collisions with other packages all `rtaxref` functions are prefixed with `rt_*()`, for example `rt_taxa_id()` lets you access to the information about a taxon using its unique id (also called `cdNom` in TAXREF):
 
 ```{r rt_taxa_id}
-rtaxref::rt_taxa_id(id = 101027)
+library("rtaxref")
+
+rt_taxa_id(id = 101027)
 ```
 
 You get information about the taxon related to taxonomy, the referance name, vernacular names as well as distribution information.
@@ -58,7 +59,7 @@ You get information about the taxon related to taxonomy, the referance name, ver
 `rt_taxa_search()` let's you search a taxon with different criteria:
 
 ```{r rt_taxa_search}
-rtaxref::rt_taxa_search(sciname = "Helianthus annuus")
+rt_taxa_search(sciname = "Helianthus annuus")
 ```
 
 You a full list of functions included in `rtaxref` by going to the [`rtaxref` website](https://rekyt.github.io/rtaxref).
