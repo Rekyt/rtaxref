@@ -1,2 +1,1 @@
-library("vcr")
-vcr_configure(dir = "../fixtures/vcr_cassettes")
+vcr::vcr_configure(dir = "../fixtures/vcr_cassettes")
