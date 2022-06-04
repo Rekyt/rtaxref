@@ -73,34 +73,7 @@ The number of lines returned per page (maximum = 2000)</p></dd>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">rt_interactions_find_type</span><span class="op">(</span>interaction_id <span class="op">=</span> <span class="st">"GALLES"</span><span class="op">)</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> New names:</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `_links.taxon.href` -&gt; `._links.taxon.href`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `_links.taxonStage.href` -&gt; `._links.taxonStage.href`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `_links.self.href` -&gt; `._links.self.href`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `_links.target.href` -&gt; `._links.target.href`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `_links.specificity.href` -&gt; `._links.specificity.href`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `_links.targetStage.href` -&gt; `._links.targetStage.href`</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 2,000 × 36</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    taxonSex taxonStage taxon.id taxon.scientificName    taxon.fullNameHtml      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>353 Acalitus brevitarsus    &lt;i&gt;Acalitus brevitarsus…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>353 Acalitus brevitarsus    &lt;i&gt;Acalitus brevitarsus…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>353 Acalitus brevitarsus    &lt;i&gt;Acalitus brevitarsus…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>353 Acalitus brevitarsus    &lt;i&gt;Acalitus brevitarsus…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>353 Acalitus brevitarsus    &lt;i&gt;Acalitus brevitarsus…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>354 Acalitus calycophthirus &lt;i&gt;Acalitus calycophthi…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">638</span>051 Acalitus capparidis     &lt;i&gt;Acalitus capparidis&lt;…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">720</span>162 Acalitus granulatus     &lt;i&gt;Acalitus granulatus&lt;…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>358 Acalitus rudis          &lt;i&gt;Acalitus rudis&lt;/i&gt; (…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> <span style="color: #BB0000;">NA</span>       <span style="color: #BB0000;">NA</span>           <span style="text-decoration: underline;">221</span>358 Acalitus rudis          &lt;i&gt;Acalitus rudis&lt;/i&gt; (…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 1,990 more rows, and 31 more variables: taxon.referenceId &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   taxon.parentId &lt;int&gt;, taxon.referenceNameHtml &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   ._links.taxon.href &lt;chr&gt;, ._links.taxonStage.href &lt;chr&gt;, id &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   relationId &lt;chr&gt;, relationName &lt;chr&gt;, specificity &lt;chr&gt;, inherited &lt;lgl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   targetStage &lt;chr&gt;, target.id &lt;int&gt;, target.scientificName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   target.fullNameHtml &lt;chr&gt;, target.referenceId &lt;int&gt;, target.parentId &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   target.referenceNameHtml &lt;chr&gt;, source.id &lt;int&gt;, …</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu">rt_interactions_find_type</span><span class="op">(</span>interaction_id <span class="op">=</span> <span class="st">"GALLES"</span><span class="op">)</span></span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>

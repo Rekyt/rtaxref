@@ -57,33 +57,13 @@
     <h2>Arguments</h2>
     <dl><dt>id</dt>
 <dd><p><code>integer(1)</code><br>
-an integer giving the id of the taxon in TaxRef (also called
+an integer giving the id of the taxon in TAXREF (also called
 <code>cdNom</code>)</p></dd>
 </dl></div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">rt_taxa_parent</span><span class="op">(</span>id <span class="op">=</span> <span class="fl">443800</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 21 × 62</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        id referenceId parentId scientificName authority    fullName fullNameHtml</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> <span style="text-decoration: underline;">349</span>525      <span style="text-decoration: underline;">349</span>525       <span style="color: #BB0000;">NA</span> Biota          Endl.(D.Don) <span style="color: #949494;">"</span>Biota … Biota Endl.…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> <span style="text-decoration: underline;">183</span>716      <span style="text-decoration: underline;">183</span>716   <span style="text-decoration: underline;">349</span>525 Animalia       Linnaeus, 1… <span style="color: #949494;">"</span>Animal… Animalia Li…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="text-decoration: underline;">838</span>319      <span style="text-decoration: underline;">838</span>319   <span style="text-decoration: underline;">183</span>716 Eumetazoa      Bütschli, 1… <span style="color: #949494;">"</span>Eumeta… Eumetazoa B…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> <span style="text-decoration: underline;">838</span>320      <span style="text-decoration: underline;">838</span>320   <span style="text-decoration: underline;">838</span>319 Bilateria      Haeckel, 18… <span style="color: #949494;">"</span>Bilate… Bilateria H…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> <span style="text-decoration: underline;">838</span>322      <span style="text-decoration: underline;">838</span>322   <span style="text-decoration: underline;">838</span>320 Deuterostomia  Karl Grobbe… <span style="color: #949494;">"</span>Deuter… Deuterostom…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="text-decoration: underline;">185</span>694      <span style="text-decoration: underline;">185</span>694   <span style="text-decoration: underline;">838</span>322 Chordata       Haeckel, 18… <span style="color: #949494;">"</span>Chorda… Chordata Ha…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="text-decoration: underline;">838</span>103      <span style="text-decoration: underline;">838</span>103   <span style="text-decoration: underline;">185</span>694 Craniata       Janvier, 19… <span style="color: #949494;">"</span>Crania… Craniata Ja…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="text-decoration: underline;">185</span>695      <span style="text-decoration: underline;">185</span>695   <span style="text-decoration: underline;">838</span>103 Vertebrata     Linnaeus, 1… <span style="color: #949494;">"</span>Verteb… Vertebrata …</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="text-decoration: underline;">185</span>703      <span style="text-decoration: underline;">185</span>703   <span style="text-decoration: underline;">185</span>695 Gnathostomata  <span style="color: #BB0000;">NA</span>           <span style="color: #949494;">"</span>Gnatho… Gnathostoma…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> <span style="text-decoration: underline;">838</span>092      <span style="text-decoration: underline;">838</span>092   <span style="text-decoration: underline;">185</span>703 Euteleostomi   <span style="color: #BB0000;">NA</span>           <span style="color: #949494;">"</span>Eutele… Euteleostomi</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 11 more rows, and 55 more variables: rankId &lt;chr&gt;, rankName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   referenceName &lt;chr&gt;, referenceNameHtml &lt;chr&gt;, frenchVernacularName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   englishVernacularName &lt;chr&gt;, genusName &lt;chr&gt;, familyName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   orderName &lt;chr&gt;, className &lt;chr&gt;, phylumName &lt;chr&gt;, kingdomName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vernacularGenusName &lt;lgl&gt;, vernacularFamilyName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vernacularOrderName &lt;lgl&gt;, vernacularClassName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vernacularPhylumName &lt;chr&gt;, vernacularKingdomName &lt;chr&gt;, …</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu">rt_taxa_parent</span><span class="op">(</span>id <span class="op">=</span> <span class="fl">443800</span><span class="op">)</span></span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>

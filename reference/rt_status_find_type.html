@@ -73,27 +73,10 @@ The number of lines returned per page (maximum = 2000)</p></dd>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># Find all taxa concerned by Habitat Directive referenced in TaxRef</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
+<span class="r-in"><span class="co"># Find all taxa concerned by Habitat Directive referenced in TAXREF</span></span>
 <span class="r-in"><span class="fu">rt_status_find_type</span><span class="op">(</span><span class="st">"DH"</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 835 × 22</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>        id scientificName      fullNameHtml referenceId parentId referenceNameHt…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> <span style="text-decoration: underline;">717</span>038 Abies nebrodensis   &lt;i&gt;Abies ne…      <span style="text-decoration: underline;">717</span>038   <span style="text-decoration: underline;">188</span>665 &lt;i&gt;Abies nebrod…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> <span style="text-decoration: underline;">717</span>038 Abies nebrodensis   &lt;i&gt;Abies ne…      <span style="text-decoration: underline;">717</span>038   <span style="text-decoration: underline;">188</span>665 &lt;i&gt;Abies nebrod…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="text-decoration: underline;">347</span>916 Acipenser oxyrinch… &lt;i&gt;Acipense…      <span style="text-decoration: underline;">347</span>916   <span style="text-decoration: underline;">188</span>758 &lt;i&gt;Acipenser ox…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span>  <span style="text-decoration: underline;">66</span>775 Acipenser sturio    &lt;i&gt;Acipense…       <span style="text-decoration: underline;">66</span>775   <span style="text-decoration: underline;">188</span>758 &lt;i&gt;Acipenser st…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span>  <span style="text-decoration: underline;">66</span>775 Acipenser sturio    &lt;i&gt;Acipense…       <span style="text-decoration: underline;">66</span>775   <span style="text-decoration: underline;">188</span>758 &lt;i&gt;Acipenser st…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="text-decoration: underline;">610</span>608 Acis nicaeensis     &lt;i&gt;Acis nic…      <span style="text-decoration: underline;">610</span>608   <span style="text-decoration: underline;">606</span>844 &lt;i&gt;Acis nicaeen…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="text-decoration: underline;">610</span>608 Acis nicaeensis     &lt;i&gt;Acis nic…      <span style="text-decoration: underline;">610</span>608   <span style="text-decoration: underline;">606</span>844 &lt;i&gt;Acis nicaeen…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="text-decoration: underline;">130</span>784 Aconitum napellus … &lt;i&gt;Aconitum…      <span style="text-decoration: underline;">130</span>784    <span style="text-decoration: underline;">80</span>037 &lt;i&gt;Aconitum nap…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="text-decoration: underline;">130</span>784 Aconitum napellus … &lt;i&gt;Aconitum…      <span style="text-decoration: underline;">130</span>784    <span style="text-decoration: underline;">80</span>037 &lt;i&gt;Aconitum nap…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span>  <span style="text-decoration: underline;">81</span>197 Aldrovanda vesicul… &lt;i&gt;Aldrovan…       <span style="text-decoration: underline;">81</span>197   <span style="text-decoration: underline;">188</span>945 &lt;i&gt;Aldrovanda v…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 825 more rows, and 16 more variables: href &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   statusTypeName &lt;chr&gt;, statusTypeGroup &lt;chr&gt;, statusCode &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   statusName &lt;chr&gt;, statusRemarks &lt;chr&gt;, locationId &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   locationName &lt;chr&gt;, locationAdminLevel &lt;chr&gt;, sourceId &lt;int&gt;, source &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   requestedLocationId &lt;lgl&gt;, listedName &lt;lgl&gt;, statusType.href &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   location.href &lt;chr&gt;, bibliographicResource.href &lt;chr&gt;</span></span>
+<span class="r-in"><span class="op">}</span></span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>

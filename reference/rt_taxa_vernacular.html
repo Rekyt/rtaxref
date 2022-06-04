@@ -57,37 +57,17 @@
     <h2>Arguments</h2>
     <dl><dt>id</dt>
 <dd><p><code>integer(1)</code><br>
-an integer giving the id of the taxon in TaxRef (also called
+an integer giving the id of the taxon in TAXREF (also called
 <code>cdNom</code>)</p></dd>
 </dl></div>
     <div id="see-also">
     <h2>See also</h2>
-    <div class="dont-index"><p><code><a href="rt_languages.html">rt_languages()</a></code> for a list of languages referenced in TaxRef</p></div>
+    <div class="dont-index"><p><code><a href="rt_languages.html">rt_languages()</a></code> for a list of languages referenced in TAXREF</p></div>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">rt_taxa_vernacular</span><span class="op">(</span>id <span class="op">=</span> <span class="fl">443800</span><span class="op">)</span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> New names:</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `id` -&gt; `id...1`</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> <span style="color: #00BBBB;">•</span> `id` -&gt; `id...8`</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 10 × 19</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    id...1 scientificName      fullNameHtml referenceId parentId referenceNameHt…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>               <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> <span style="text-decoration: underline;">443</span>800 Bradypus tridactyl… &lt;i&gt;Bradypus…      <span style="text-decoration: underline;">443</span>800   <span style="text-decoration: underline;">443</span>585 &lt;i&gt;Bradypus tri…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 13 more variables: href &lt;chr&gt;, id...8 &lt;int&gt;, name &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   langageId &lt;chr&gt;, langageName &lt;chr&gt;, locationId &lt;chr&gt;, locationName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   sourceId &lt;int&gt;, source &lt;chr&gt;, self.href &lt;chr&gt;, langage.href &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   location.href &lt;chr&gt;, bibliographicResource.href &lt;chr&gt;</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu">rt_taxa_vernacular</span><span class="op">(</span>id <span class="op">=</span> <span class="fl">443800</span><span class="op">)</span></span>
 <span class="r-in"></span>
 </code></pre></div>
     </div>

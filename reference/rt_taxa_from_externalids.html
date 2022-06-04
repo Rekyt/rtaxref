@@ -67,24 +67,13 @@ database</p></dd>
     <div id="see-also">
     <h2>See also</h2>
     <div class="dont-index"><p><code><a href="rt_external_db.html">rt_external_db()</a></code> for the list of external databases linked to
-TaxRef; <code><a href="rt_taxa_externalids.html">rt_taxa_externalids()</a></code> to get the external ids associated with
-a taxon in TaxRef</p></div>
+TAXREF; <code><a href="rt_taxa_externalids.html">rt_taxa_externalids()</a></code> to get the external ids associated with
+a taxon in TAXREF</p></div>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">rt_taxa_from_externalids</span><span class="op">(</span><span class="st">"TROPICOS"</span>, <span class="fl">26600197</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 46</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>       id referenceId parentId scientificName     authority fullName fullNameHtml</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>              <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> <span style="text-decoration: underline;">107</span>003      <span style="text-decoration: underline;">107</span>003   <span style="text-decoration: underline;">194</span>337 Lycopodium clavat… L., 1753  Lycopod… &lt;i&gt;Lycopodi…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 39 more variables: rankId &lt;chr&gt;, rankName &lt;chr&gt;, referenceName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   referenceNameHtml &lt;chr&gt;, frenchVernacularName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   englishVernacularName &lt;chr&gt;, genusName &lt;chr&gt;, familyName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   orderName &lt;chr&gt;, className &lt;chr&gt;, phylumName &lt;lgl&gt;, kingdomName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vernacularGenusName &lt;lgl&gt;, vernacularFamilyName &lt;lgl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vernacularOrderName &lt;chr&gt;, vernacularClassName &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   vernacularPhylumName &lt;lgl&gt;, vernacularKingdomName &lt;chr&gt;, …</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="fu">rt_taxa_from_externalids</span><span class="op">(</span><span class="st">"TROPICOS"</span>, <span class="fl">26600197</span><span class="op">)</span></span>
 </code></pre></div>
     </div>
   </div>
