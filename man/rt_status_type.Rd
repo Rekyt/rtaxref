@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_status_type.R
 \name{rt_status_type}
 \alias{rt_status_type}
-\title{Retrieve Status Types Used in TaxRef}
+\title{Retrieve Status Types Used in TAXREF}
 \usage{
 rt_status_type(status_id = NULL)
 }
@@ -12,5 +12,5 @@ A character identifying the type of status}
 }
 \description{
 If the function is provided without arguments returns the entire list of
-status types used in TaxRef.
+status types used in TAXREF.
 }

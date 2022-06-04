@@ -21,7 +21,7 @@ The number of lines returned per page (maximum = 2000)}
 Retrieve the status of all Taxa according to a Status Type
 }
 \examples{
-# Find all taxa concerned by Habitat Directive referenced in TaxRef
+# Find all taxa concerned by Habitat Directive referenced in TAXREF
 rt_status_find_type("DH")
 
 }

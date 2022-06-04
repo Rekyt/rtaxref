@@ -2,17 +2,17 @@
 % Please edit documentation in R/rt_taxo_ranks.R
 \name{rt_taxo_ranks}
 \alias{rt_taxo_ranks}
-\title{Retrieve taxonomic ranks in TaxRef}
+\title{Retrieve taxonomic ranks in TAXREF}
 \usage{
 rt_taxo_ranks(taxo_id = NULL)
 }
 \arguments{
 \item{taxo_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
-the id of a taxonomic rank in TaxRef.}
+the id of a taxonomic rank in TAXREF.}
 }
 \description{
 If the function is used without arguments returns the entire list of
-taxonomic ranks used in TaxRef.
+taxonomic ranks used in TAXREF.
 }
 \examples{
 rt_taxo_ranks(taxo_id = "VAR")

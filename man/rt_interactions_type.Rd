@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_interactions_type.R
 \name{rt_interactions_type}
 \alias{rt_interactions_type}
-\title{Retrieve Interactions Types used in TaxRef}
+\title{Retrieve Interactions Types used in TAXREF}
 \usage{
 rt_interactions_type(interaction_id = NULL)
 }
@@ -11,7 +11,7 @@ rt_interactions_type(interaction_id = NULL)
 A character identifying the type of interactions}
 }
 \description{
-If used without argument returns the list of all interactions used in TaxRef.
+If used without argument returns the list of all interactions used in TAXREF
 }
 \examples{
 rt_interactions_type(interaction_id = "PREDATEUR")

@@ -5,7 +5,7 @@
 #' @examples
 #' rt_taxa_vernacular(id = 443800)
 #'
-#' @seealso [`rt_languages()`] for a list of languages referenced in TaxRef
+#' @seealso [`rt_languages()`] for a list of languages referenced in TAXREF
 #' @export
 rt_taxa_vernacular = function(id) {
 

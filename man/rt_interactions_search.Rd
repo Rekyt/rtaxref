@@ -14,14 +14,14 @@ rt_interactions_search(
 }
 \arguments{
 \item{id}{{\code{integer(1)}}\cr{}
-an integer giving the id of the taxon in TaxRef (also called
+an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 
 \item{interaction_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
 A character identifying the type of interactions}
 
 \item{opgroup_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
-the id of an operational group referenced in TaxRef}
+the id of an operational group referenced in TAXREF}
 
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}

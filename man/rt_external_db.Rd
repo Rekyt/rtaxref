@@ -2,17 +2,17 @@
 % Please edit documentation in R/rt_external_db.R
 \name{rt_external_db}
 \alias{rt_external_db}
-\title{Retrieve external DBs referenced in TaxRef}
+\title{Retrieve external DBs referenced in TAXREF}
 \usage{
 rt_external_db(db_id = NULL)
 }
 \arguments{
 \item{db_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
-The id of an external db referenced in TaxRef}
+The id of an external db referenced in TAXREF}
 }
 \description{
 If the function is used without arguments returns the list of external
-databases used in TaxRef.
+databases used in TAXREF.
 }
 \examples{
 rt_external_db(db_id = "worms")

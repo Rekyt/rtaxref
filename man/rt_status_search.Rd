@@ -17,7 +17,7 @@ rt_status_search(
 }
 \arguments{
 \item{id}{{\code{integer(1)}}\cr{}
-an integer giving the id of the taxon in TaxRef (also called
+an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 
 \item{opgroup_id}{{\code{integer(1)}}\cr{}

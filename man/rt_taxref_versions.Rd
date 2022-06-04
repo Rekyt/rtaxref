@@ -2,16 +2,16 @@
 % Please edit documentation in R/rt_taxref_versions.R
 \name{rt_taxref_versions}
 \alias{rt_taxref_versions}
-\title{Retrieve the list of existing TaxRef versions}
+\title{Retrieve the list of existing TAXREF versions}
 \usage{
 rt_taxref_versions(version_id = NULL)
 }
 \arguments{
 \item{version_id}{{\code{integer(1)}, default = \code{NULL}}\cr{}
-the id of a TaxRef version}
+the id of a TAXREF version}
 }
 \description{
-Retrieve the list of existing TaxRef versions
+Retrieve the list of existing TAXREF versions
 }
 \examples{
 rt_taxref_versions(version_id = 12)

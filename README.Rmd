@@ -23,7 +23,7 @@ devtools::load_all()
 [![R-CMD-check](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml)
   <!-- badges: end -->
 
-The goal of rtaxref is to provide an R client to TaxRef API,
+The goal of rtaxref is to provide an R client to TAXREF API,
 the French Taxonomical Reference and associated database on species.
 The API provides nomenclature, taxonomy, biogeographic repartition, statuses
 and interactions of species. See the API documentation
@@ -46,9 +46,9 @@ remotes::install_github("Rekyt/rtaxref")
 
 ## Usage
 
-`rtaxref` contains functions to retrieve data from TaxRef-Hub. The access data is released under the [Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 30) license](https://creativecommons.org/licenses/by-sa/3.0/). A suggestion of citation is included in `rtaxref` via `citation("rtaxref")`.
+`rtaxref` contains functions to retrieve data from TAXREF-Hub. The access data is released under the [Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 30) license](https://creativecommons.org/licenses/by-sa/3.0/). A suggestion of citation is included in `rtaxref` via `citation("rtaxref")`.
 
-To avoid collisions with other packages all `rtaxref` functions are prefixed with `rt_*()`, for example `rt_taxa_id()` lets you access to the information about a taxon using its unique id (also called `cdNom` in TaxRef):
+To avoid collisions with other packages all `rtaxref` functions are prefixed with `rt_*()`, for example `rt_taxa_id()` lets you access to the information about a taxon using its unique id (also called `cdNom` in TAXREF):
 
 ```{r rt_taxa_id}
 rtaxref::rt_taxa_id(id = 101027)

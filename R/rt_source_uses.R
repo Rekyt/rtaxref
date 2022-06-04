@@ -1,12 +1,12 @@
-#' Retrieve the list of source uses in TaxRef
+#' Retrieve the list of source uses in TAXREF
 #'
-#' TaxRef references many publications across its documentation. The different
+#' TAXREF references many publications across its documentation. The different
 #' sources are used for different reasons. This function returns the list of
 #' usages for a source when no arguments are provided, otherwise returns the
 #' specific type of use.
 #'
 #' @param usage_id {`numeric(1)`, default = `NULL`}\cr{}
-#'                 the id of a source use in TaxRef
+#'                 the id of a source use in TAXREF
 #'
 #' @examples
 #' rt_source_uses(usage_id = 276)

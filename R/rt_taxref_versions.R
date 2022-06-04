@@ -1,7 +1,7 @@
-#' Retrieve the list of existing TaxRef versions
+#' Retrieve the list of existing TAXREF versions
 #'
 #' @param version_id {`integer(1)`, default = `NULL`}\cr{}
-#'                   the id of a TaxRef version
+#'                   the id of a TAXREF version
 #'
 #' @examples
 #' rt_taxref_versions(version_id = 12)

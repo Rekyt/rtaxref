@@ -1,6 +1,6 @@
-#' Retrieve Interactions Types used in TaxRef
+#' Retrieve Interactions Types used in TAXREF
 #'
-#' If used without argument returns the list of all interactions used in TaxRef.
+#' If used without argument returns the list of all interactions used in TAXREF
 #'
 #' @param interaction_id {`character(1)`, default = `NULL`}\cr{}
 #'                  A character identifying the type of interactions

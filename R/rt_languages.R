@@ -1,14 +1,14 @@
-#' Retrieve the languages used in TaxRef
+#' Retrieve the languages used in TAXREF
 #'
-#' If used without argument returns the list of languages used in TaxRef
+#' If used without argument returns the list of languages used in TAXREF
 #' otherwise the specific
 #'
 #' @param languages_id {`character(1)`, default = `NULL`}\cr{}
 #'                    three-letter lowercase code that is the id of a language
-#'                    referenced in TaxRef
+#'                    referenced in TAXREF
 #'
 #' @examples
-#' # Retrieve the TaxRef definition in the Wayana Language
+#' # Retrieve the TAXREF definition in the Wayana Language
 #' rt_languages(languages_id = "way")
 #'
 #' @export

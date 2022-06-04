@@ -2,19 +2,19 @@
 % Please edit documentation in R/rt_sources_id.R
 \name{rt_sources_id}
 \alias{rt_sources_id}
-\title{Retrieve a taxon information using its id}
+\title{Retrieve a source of taxonomic information using its id}
 \usage{
 rt_sources_id(source_id, bibtex = FALSE)
 }
 \arguments{
 \item{source_id}{{\code{integer(1)}}\cr{}
-an integer giving the id of the source in TaxRef}
+an integer giving the id of the source in TAXREF}
 
 \item{bibtex}{{\code{logical(1)}, default = \code{FALSE}}\cr{}
 should citation be returned in BibTeX?}
 }
 \description{
-Retrieve a taxon information using its id
+Retrieve a source of taxonomic information using its id
 }
 \examples{
 rt_sources_id(source_id = 160688, bibtex = FALSE)

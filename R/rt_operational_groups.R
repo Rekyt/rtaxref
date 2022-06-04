@@ -1,11 +1,11 @@
-#' Retrieve operational groups used in TaxRef
+#' Retrieve operational groups used in TAXREF
 #'
 #' Operational Groups are names of groups either taxonomic or vernacular
-#' used across TaxRef in French. If used without argument returns the list of
-#' all operational groups used in TaxRef.
+#' used across TAXREF in French. If used without argument returns the list of
+#' all operational groups used in TAXREF.
 #'
 #' @param opgroup_id {`numeric(1)`, default = `NULL`}\cr{}
-#'                    the id of an operational group referenced in TaxRef
+#'                    the id of an operational group referenced in TAXREF
 #'
 #' @export
 #'

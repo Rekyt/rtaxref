@@ -2,10 +2,10 @@
 % Please edit documentation in R/rt_vernacular_groups.R
 \name{rt_vernacular_groups}
 \alias{rt_vernacular_groups}
-\title{Retrieve the list of vernacular groups in TaxRef}
+\title{Retrieve the list of vernacular groups in TAXREF}
 \usage{
 rt_vernacular_groups()
 }
 \description{
-Retrieve the list of vernacular groups in TaxRef
+Retrieve the list of vernacular groups in TAXREF
 }

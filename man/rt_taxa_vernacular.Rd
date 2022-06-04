@@ -8,7 +8,7 @@ rt_taxa_vernacular(id)
 }
 \arguments{
 \item{id}{{\code{integer(1)}}\cr{}
-an integer giving the id of the taxon in TaxRef (also called
+an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 }
 \description{
@@ -19,5 +19,5 @@ rt_taxa_vernacular(id = 443800)
 
 }
 \seealso{
-\code{\link[=rt_languages]{rt_languages()}} for a list of languages referenced in TaxRef
+\code{\link[=rt_languages]{rt_languages()}} for a list of languages referenced in TAXREF
 }

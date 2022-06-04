@@ -1,10 +1,10 @@
-#' Retrieve biogeographic statuses used in TaxRef
+#' Retrieve biogeographic statuses used in TAXREF
 #'
 #' If the function is used without arguments returns the list of biogeographic
-#' statuses used in TaxRef.
+#' statuses used in TAXREF
 #'
 #' @param biogeo_id {`character(1)`, default = `NULL`}\cr{}
-#'                  A biogeographic status id used in TaxRef
+#'                  A biogeographic status id used in TAXREF
 #'
 #' @examples
 #' rt_biogeo_status(biogeo_id = "P")

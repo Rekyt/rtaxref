@@ -76,7 +76,7 @@ parse_taxa = function(api_query, cut_names = TRUE) {
 
   } else if (http_error(api_query)) {
 
-    stop("TaxRef is down. Please try again later.", call. = FALSE)
+    stop("TAXREF is down. Please try again later.", call. = FALSE)
 
   }
 

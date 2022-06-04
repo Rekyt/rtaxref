@@ -23,6 +23,6 @@ rt_taxa_from_externalids("TROPICOS", 26600197)
 }
 \seealso{
 \code{\link[=rt_external_db]{rt_external_db()}} for the list of external databases linked to
-TaxRef; \code{\link[=rt_taxa_externalids]{rt_taxa_externalids()}} to get the external ids associated with
-a taxon in TaxRef
+TAXREF; \code{\link[=rt_taxa_externalids]{rt_taxa_externalids()}} to get the external ids associated with
+a taxon in TAXREF
 }

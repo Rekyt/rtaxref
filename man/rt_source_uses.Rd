@@ -2,16 +2,16 @@
 % Please edit documentation in R/rt_source_uses.R
 \name{rt_source_uses}
 \alias{rt_source_uses}
-\title{Retrieve the list of source uses in TaxRef}
+\title{Retrieve the list of source uses in TAXREF}
 \usage{
 rt_source_uses(usage_id = NULL)
 }
 \arguments{
 \item{usage_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
-the id of a source use in TaxRef}
+the id of a source use in TAXREF}
 }
 \description{
-TaxRef references many publications across its documentation. The different
+TAXREF references many publications across its documentation. The different
 sources are used for different reasons. This function returns the list of
 usages for a source when no arguments are provided, otherwise returns the
 specific type of use.

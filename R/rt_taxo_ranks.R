@@ -1,10 +1,10 @@
-#' Retrieve taxonomic ranks in TaxRef
+#' Retrieve taxonomic ranks in TAXREF
 #'
 #' If the function is used without arguments returns the entire list of
-#' taxonomic ranks used in TaxRef.
+#' taxonomic ranks used in TAXREF.
 #'
 #' @param taxo_id {`character(1)`, default = `NULL`}\cr{}
-#'                the id of a taxonomic rank in TaxRef.
+#'                the id of a taxonomic rank in TAXREF.
 #'
 #' @examples
 #' rt_taxo_ranks(taxo_id = "VAR")

@@ -1,10 +1,10 @@
-#' Retrieve external DBs referenced in TaxRef
+#' Retrieve external DBs referenced in TAXREF
 #'
 #' If the function is used without arguments returns the list of external
-#' databases used in TaxRef.
+#' databases used in TAXREF.
 #'
 #' @param db_id {`character(1)`, default = `NULL`}\cr{}
-#'              The id of an external db referenced in TaxRef
+#'              The id of an external db referenced in TAXREF
 #'
 #' @examples
 #' rt_external_db(db_id = "worms")

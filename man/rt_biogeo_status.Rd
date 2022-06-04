@@ -2,17 +2,17 @@
 % Please edit documentation in R/rt_biogeo_status.R
 \name{rt_biogeo_status}
 \alias{rt_biogeo_status}
-\title{Retrieve biogeographic statuses used in TaxRef}
+\title{Retrieve biogeographic statuses used in TAXREF}
 \usage{
 rt_biogeo_status(biogeo_id = NULL)
 }
 \arguments{
 \item{biogeo_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
-A biogeographic status id used in TaxRef}
+A biogeographic status id used in TAXREF}
 }
 \description{
 If the function is used without arguments returns the list of biogeographic
-statuses used in TaxRef.
+statuses used in TAXREF
 }
 \examples{
 rt_biogeo_status(biogeo_id = "P")

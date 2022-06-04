@@ -1,4 +1,4 @@
-#' Retrieve the list of vernacular groups in TaxRef
+#' Retrieve the list of vernacular groups in TAXREF
 #'
 #' @export
 rt_vernacular_groups = function() {

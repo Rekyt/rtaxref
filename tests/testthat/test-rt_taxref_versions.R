@@ -1,7 +1,7 @@
 context("test-rt_taxref_versions")
 
 vcr::use_cassette("rt_taxref_versions", {
-  test_that("Can retrieve TaxRef versions list", {
+  test_that("Can retrieve TAXREF versions list", {
     expect_silent(res <- rt_taxref_versions())
 
     expect_is(res, "data.frame")
@@ -10,7 +10,7 @@ vcr::use_cassette("rt_taxref_versions", {
                         "self.href"))
   })
 
-  test_that("Can retrieve specific TaxRef version", {
+  test_that("Can retrieve specific TAXREF version", {
     expect_silent(res <- rt_taxref_versions(version_id = 2))
 
     expect_is(res, "data.frame")

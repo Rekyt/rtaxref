@@ -1,10 +1,10 @@
-#' Retrieve habitats used in TaxRef
+#' Retrieve habitats used in TAXREF
 #'
 #' If the function is used without arguments returns the list of habitats used
-#' in TaxRef.
+#' in TAXREF.
 #'
 #' @param habitat_id {`integer(1)`, default = `NULL`}\cr{}
-#'                   The id of a habitat referenced in TaxRef
+#'                   The id of a habitat referenced in TAXREF
 #'
 #' @section Habitats:
 #'

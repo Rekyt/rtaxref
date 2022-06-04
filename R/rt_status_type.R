@@ -1,7 +1,7 @@
-#' Retrieve Status Types Used in TaxRef
+#' Retrieve Status Types Used in TAXREF
 #'
 #' If the function is provided without arguments returns the entire list of
-#' status types used in TaxRef.
+#' status types used in TAXREF.
 #' @param status_id {`character(1)`, default = `NULL`}\cr{}
 #'                  A character identifying the type of status
 #'

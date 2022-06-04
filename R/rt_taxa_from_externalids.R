@@ -11,8 +11,8 @@
 #' rt_taxa_from_externalids("TROPICOS", 26600197)
 
 #' @seealso [`rt_external_db()`] for the list of external databases linked to
-#' TaxRef; [`rt_taxa_externalids()`] to get the external ids associated with
-#' a taxon in TaxRef
+#' TAXREF; [`rt_taxa_externalids()`] to get the external ids associated with
+#' a taxon in TAXREF
 #'
 #' @export
 rt_taxa_from_externalids = function(external_db = NULL, external_id = NULL) {

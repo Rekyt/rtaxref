@@ -2,17 +2,17 @@
 % Please edit documentation in R/rt_taxa_taxrefhistory.R
 \name{rt_taxa_taxrefhistory}
 \alias{rt_taxa_taxrefhistory}
-\title{Retrieve history of a taxon through TaxRef versions}
+\title{Retrieve history of a taxon through TAXREF versions}
 \usage{
 rt_taxa_taxrefhistory(id)
 }
 \arguments{
 \item{id}{{\code{integer(1)}}\cr{}
-an integer giving the id of the taxon in TaxRef (also called
+an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 }
 \description{
-Retrieve history of a taxon through TaxRef versions
+Retrieve history of a taxon through TAXREF versions
 }
 \examples{
 rt_taxa_taxrefhistory(id = 443800)
