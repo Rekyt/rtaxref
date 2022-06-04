@@ -7,7 +7,7 @@
 #'                the id of a taxonomic rank in TAXREF.
 #'
 #' @examples
-#' rt_taxo_ranks(taxo_id = "VAR")
+#' \dontrun{rt_taxo_ranks(taxo_id = "VAR")}
 #'
 #' @export
 rt_taxo_ranks = function(taxo_id = NULL) {

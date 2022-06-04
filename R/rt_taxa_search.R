@@ -75,7 +75,7 @@
 #'             The number of lines returned per page (maximum = 5000)
 #'
 #' @examples
-#' rt_taxa_search(sciname = "Bradypus")
+#' \dontrun{rt_taxa_search(sciname = "Bradypus")}
 #'
 #' @export
 rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,

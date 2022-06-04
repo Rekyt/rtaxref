@@ -48,7 +48,7 @@ Search statuses based on a list of criteria
 }
 \examples{
 \dontrun{
-#' rt_status_search(id = 443800, detail = FALSE)
+rt_status_search(id = 443800, detail = FALSE)
 rt_status_search(id = 443800, detail = TRUE)
 }
 

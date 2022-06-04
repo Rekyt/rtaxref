@@ -6,7 +6,7 @@
 #' @inheritParams rt_status_opgroup
 #'
 #' @examples
-#' rt_interactions_find_type(interaction_id = "GALLES")
+#' \dontrun{rt_interactions_find_type(interaction_id = "GALLES")}
 #'
 #' @seealso the list of status types [`rt_interactions_type()`]
 #' @export

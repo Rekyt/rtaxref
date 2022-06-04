@@ -6,8 +6,10 @@
 #' @inheritParams rt_taxa_search
 #'
 #' @examples
+#' \dontrun{
 #' # Interactors with 'Ophrys apifera' (id = 110335)
 #' rt_interactions_search(id = 110335)
+#' }
 #'
 #' @export
 rt_interactions_search = function(id = NULL, interaction_id = NULL,

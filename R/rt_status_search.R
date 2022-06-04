@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' #' rt_status_search(id = 443800, detail = FALSE)
+#' rt_status_search(id = 443800, detail = FALSE)
 #' rt_status_search(id = 443800, detail = TRUE)
 #' }
 #'

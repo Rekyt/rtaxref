@@ -15,6 +15,6 @@ an integer giving the id of the taxon in TAXREF (also called
 Retrieve classification above the taxon
 }
 \examples{
-rt_taxa_parent(id = 443800)
+\dontrun{rt_taxa_parent(id = 443800)}
 
 }

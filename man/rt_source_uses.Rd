@@ -17,6 +17,6 @@ usages for a source when no arguments are provided, otherwise returns the
 specific type of use.
 }
 \examples{
-rt_source_uses(usage_id = 276)
+\dontrun{rt_source_uses(usage_id = 276)}
 
 }

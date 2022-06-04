@@ -5,8 +5,10 @@
 #'           `cdNom`)
 #'
 #' @examples
+#' \dontrun{
 #' rt_taxa_id(id = 443800)
 #' rt_taxa_id(id = 110335)
+#' }
 #' @export
 rt_taxa_id = function(id) {
 

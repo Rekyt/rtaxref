@@ -115,6 +115,6 @@ The number of lines returned per page (maximum = 5000)}
 Search for a taxon information
 }
 \examples{
-rt_taxa_search(sciname = "Bradypus")
+\dontrun{rt_taxa_search(sciname = "Bradypus")}
 
 }

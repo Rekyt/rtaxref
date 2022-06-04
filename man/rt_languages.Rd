@@ -16,7 +16,9 @@ If used without argument returns the list of languages used in TAXREF
 otherwise the specific
 }
 \examples{
+\dontrun{
 # Retrieve the TAXREF definition in the Wayana Language
 rt_languages(languages_id = "way")
+}
 
 }

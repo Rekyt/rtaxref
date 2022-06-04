@@ -15,6 +15,6 @@ If the function is used without arguments returns the list of external
 databases used in TAXREF.
 }
 \examples{
-rt_external_db(db_id = "worms")
+\dontrun{rt_external_db(db_id = "worms")}
 
 }

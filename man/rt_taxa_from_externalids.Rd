@@ -19,7 +19,7 @@ database}
 Retrieve Taxon using the ids from external databases
 }
 \examples{
-rt_taxa_from_externalids("TROPICOS", 26600197)
+\dontrun{rt_taxa_from_externalids("TROPICOS", 26600197)}
 }
 \seealso{
 \code{\link[=rt_external_db]{rt_external_db()}} for the list of external databases linked to

@@ -4,7 +4,7 @@
 #'                   the id of a TAXREF version
 #'
 #' @examples
-#' rt_taxref_versions(version_id = 12)
+#' \dontrun{rt_taxref_versions(version_id = 12)}
 #'
 #' @export
 rt_taxref_versions = function(version_id = NULL) {

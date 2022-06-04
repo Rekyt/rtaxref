@@ -9,7 +9,7 @@
 #'                 the id of a source use in TAXREF
 #'
 #' @examples
-#' rt_source_uses(usage_id = 276)
+#' \dontrun{rt_source_uses(usage_id = 276)}
 #'
 #' @export
 rt_source_uses = function(usage_id = NULL) {

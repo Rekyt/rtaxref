@@ -3,7 +3,7 @@
 #' @inheritParams rt_taxa_id
 #'
 #' @examples
-#' rt_taxa_interactions(id = 110335)
+#' \dontrun{rt_taxa_interactions(id = 110335)}
 #'
 #' @export
 rt_taxa_interactions = function(id) {

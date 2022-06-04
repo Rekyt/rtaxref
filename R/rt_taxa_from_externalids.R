@@ -8,8 +8,7 @@
 #'                    database
 #'
 #' @examples
-#' rt_taxa_from_externalids("TROPICOS", 26600197)
-
+#' \dontrun{rt_taxa_from_externalids("TROPICOS", 26600197)}
 #' @seealso [`rt_external_db()`] for the list of external databases linked to
 #' TAXREF; [`rt_taxa_externalids()`] to get the external ids associated with
 #' a taxon in TAXREF

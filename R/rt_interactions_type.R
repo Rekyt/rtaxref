@@ -6,7 +6,7 @@
 #'                  A character identifying the type of interactions
 #'
 #' @examples
-#' rt_interactions_type(interaction_id = "PREDATEUR")
+#' \dontrun{rt_interactions_type(interaction_id = "PREDATEUR")}
 #'
 #' @export
 rt_interactions_type = function(interaction_id = NULL) {

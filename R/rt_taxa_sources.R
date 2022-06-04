@@ -3,7 +3,7 @@
 #' @inheritParams rt_taxa_id
 #'
 #' @examples
-#' rt_taxa_sources(id = 443800)
+#' \dontrun{rt_taxa_sources(id = 443800)}
 #'
 #' @seealso [`rt_source_uses()`] for types of source use
 #' @export

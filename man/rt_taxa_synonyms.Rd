@@ -15,6 +15,6 @@ an integer giving the id of the taxon in TAXREF (also called
 Retrieve Synonyms associated with a Taxon
 }
 \examples{
-rt_taxa_synonyms(id = 107003)
+\dontrun{rt_taxa_synonyms(id = 107003)}
 
 }

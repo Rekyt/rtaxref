@@ -15,7 +15,7 @@ an integer giving the id of the taxon in TAXREF (also called
 Retrieve Sources Associated with a Taxon
 }
 \examples{
-rt_taxa_sources(id = 443800)
+\dontrun{rt_taxa_sources(id = 443800)}
 
 }
 \seealso{

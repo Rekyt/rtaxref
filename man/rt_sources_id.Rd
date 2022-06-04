@@ -17,7 +17,9 @@ should citation be returned in BibTeX?}
 Retrieve a source of taxonomic information using its id
 }
 \examples{
+\dontrun{
 rt_sources_id(source_id = 160688, bibtex = FALSE)
 rt_sources_id(source_id = 160688, bibtex = TRUE)
+}
 
 }

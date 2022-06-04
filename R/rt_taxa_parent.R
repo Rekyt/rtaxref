@@ -3,7 +3,7 @@
 #' @inheritParams rt_taxa_id
 #'
 #' @examples
-#' rt_taxa_parent(id = 443800)
+#' \dontrun{rt_taxa_parent(id = 443800)}
 #'
 #' @export
 rt_taxa_parent = function(id) {

@@ -8,8 +8,10 @@
 #'                    referenced in TAXREF
 #'
 #' @examples
+#' \dontrun{
 #' # Retrieve the TAXREF definition in the Wayana Language
 #' rt_languages(languages_id = "way")
+#' }
 #'
 #' @export
 rt_languages = function(languages_id = NULL) {

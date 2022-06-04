@@ -14,6 +14,6 @@ A character identifying the type of interactions}
 If used without argument returns the list of all interactions used in TAXREF
 }
 \examples{
-rt_interactions_type(interaction_id = "PREDATEUR")
+\dontrun{rt_interactions_type(interaction_id = "PREDATEUR")}
 
 }

@@ -8,7 +8,8 @@
 #' @inheritParams rt_taxa_id
 #'
 #' @examples
-#' rt_taxa_factsheet(4540)
+#' \dontrun{rt_taxa_factsheet(4540)}
+#'
 #' @export
 rt_taxa_factsheet = function(id) {
   api_query = rt_GET("taxa/", id, "/factsheet")

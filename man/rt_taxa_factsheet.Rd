@@ -19,5 +19,6 @@ describes the general ecology and some diagnosis of the submitted taxon.
 Beware, many taxa have no corresponding factsheet.
 }
 \examples{
-rt_taxa_factsheet(4540)
+\dontrun{rt_taxa_factsheet(4540)}
+
 }

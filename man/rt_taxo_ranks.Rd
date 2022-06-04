@@ -15,6 +15,6 @@ If the function is used without arguments returns the entire list of
 taxonomic ranks used in TAXREF.
 }
 \examples{
-rt_taxo_ranks(taxo_id = "VAR")
+\dontrun{rt_taxo_ranks(taxo_id = "VAR")}
 
 }

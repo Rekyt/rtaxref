@@ -29,6 +29,6 @@ in TAXREF.
 }
 
 \examples{
-rt_habitats(habitat_id = 8)
+\dontrun{rt_habitats(habitat_id = 8)}
 
 }

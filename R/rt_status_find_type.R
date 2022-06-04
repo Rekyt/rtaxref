@@ -6,8 +6,10 @@
 #' @inheritParams rt_status_opgroup
 #'
 #' @examples
+#' \dontrun{
 #' # Find all taxa concerned by Habitat Directive referenced in TAXREF
 #' rt_status_find_type("DH")
+#' }
 #'
 #' @seealso the list of status types [`rt_status_type()`]
 #'

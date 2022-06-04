@@ -15,6 +15,6 @@ If the function is used without arguments returns the list of biogeographic
 statuses used in TAXREF
 }
 \examples{
-rt_biogeo_status(biogeo_id = "P")
+\dontrun{rt_biogeo_status(biogeo_id = "P")}
 
 }

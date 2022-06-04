@@ -3,7 +3,7 @@
 #' @inheritParams rt_taxa_id
 #'
 #' @examples
-#' rt_taxa_vernacular(id = 443800)
+#' \dontrun{rt_taxa_vernacular(id = 443800)}
 #'
 #' @seealso [`rt_languages()`] for a list of languages referenced in TAXREF
 #' @export

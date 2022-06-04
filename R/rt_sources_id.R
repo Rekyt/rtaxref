@@ -6,8 +6,10 @@
 #'               should citation be returned in BibTeX?
 #'
 #' @examples
+#' \dontrun{
 #' rt_sources_id(source_id = 160688, bibtex = FALSE)
 #' rt_sources_id(source_id = 160688, bibtex = TRUE)
+#' }
 #'
 #' @export
 #' @importFrom httr content

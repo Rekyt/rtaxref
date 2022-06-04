@@ -7,7 +7,7 @@
 #'              The id of an external db referenced in TAXREF
 #'
 #' @examples
-#' rt_external_db(db_id = "worms")
+#' \dontrun{rt_external_db(db_id = "worms")}
 #'
 #' @export
 rt_external_db = function(db_id = NULL) {

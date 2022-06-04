@@ -14,6 +14,6 @@ the id of a TAXREF version}
 Retrieve the list of existing TAXREF versions
 }
 \examples{
-rt_taxref_versions(version_id = 12)
+\dontrun{rt_taxref_versions(version_id = 12)}
 
 }

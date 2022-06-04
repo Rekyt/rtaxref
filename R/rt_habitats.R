@@ -18,7 +18,7 @@
 #' * `8` = Continental (terrestrial and freshwater)
 #'
 #' @examples
-#' rt_habitats(habitat_id = 8)
+#' \dontrun{rt_habitats(habitat_id = 8)}
 #'
 #' @export
 rt_habitats = function(habitat_id = NULL) {
