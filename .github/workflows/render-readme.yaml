@@ -26,7 +26,7 @@ jobs:
       - name: Install remotes, pkgload, and rmarkdown
         run: |
           Rscript -e 'install.packages("remotes")'
-          Rscript -e 'remotes::install_cran(c("pkgload", "rmarkdown"))'
+          Rscript -e 'remotes::install_cran(c("pkgload", "rmarkdown", "httr"))'
           Rscript -e 'remotes::install_local(".", dependencies = TRUE)'
 
 
