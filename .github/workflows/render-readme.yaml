@@ -27,6 +27,7 @@ jobs:
         run: |
           Rscript -e 'install.packages("remotes")'
           Rscript -e 'remotes::install_cran(c("pkgload", "rmarkdown"))'
+          Rscript -e 'remotes::install_local(".")'
 
 
       - name: Render Rmarkdown files and Commit Results
