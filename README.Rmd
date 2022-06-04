@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   eval = TRUE
 )
 
-devtools::load_all()
+pkgload::load_all()
 ```
 # rtaxref – an R client to the French Taxonomical Reference
 

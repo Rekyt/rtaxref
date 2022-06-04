@@ -23,10 +23,11 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
-      - name: Install remotes and rmarkdown
+      - name: Install remotes, pkgload, and rmarkdown
         run: |
           Rscript -e 'install.packages("remotes")'
-          Rscript -e 'remotes::install_cran("rmarkdown")'
+          Rscript -e 'remotes::install_cran(c("pkgload", "rmarkdown"))'
+
 
       - name: Render Rmarkdown files and Commit Results
         run: |
