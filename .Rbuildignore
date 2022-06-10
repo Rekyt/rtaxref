@@ -8,3 +8,4 @@
 ^README\.Rmd$
 ^rtaxref\.Rproj$
 ^\.Rproj\.user$
+^CITATION\.cff$
