@@ -34,5 +34,5 @@ vcr::use_cassette("rt_operational_groups", {
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })
-}, record = "new_episodes")
+})
 

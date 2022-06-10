@@ -12,5 +12,5 @@ vcr::use_cassette("rt_vernacular_groups", {
     expect_equal(res$name[1], "Arachnides")
     expect_equal(res$level[1], "2")
   })
-}, record = "new_episodes")
+})
 

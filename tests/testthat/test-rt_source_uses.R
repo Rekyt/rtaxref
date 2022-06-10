@@ -28,4 +28,4 @@ vcr::use_cassette("rt_sources_use", {
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })
-}, record = "new_episodes")
+})

@@ -52,7 +52,7 @@ vcr::use_cassette("rt_GET", {
     expect_true(http_error(res))
   })
 
-}, record = "new_episodes")
+})
 
 
 test_that("check_required_arg() works", {

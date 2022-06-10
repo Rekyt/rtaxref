@@ -36,4 +36,4 @@ vcr::use_cassette("rt_taxa_parent", {
                  "The query is invalid. Please try another query.",
                  fixed = TRUE)
   })
-}, record = "new_episodes")
+})

@@ -165,4 +165,4 @@ vcr::use_cassette("rt_taxa_search", {
   test_that("Wrong query returns error", {
     skip("Investigate query")
   })
-}, record = "new_episodes")
+})

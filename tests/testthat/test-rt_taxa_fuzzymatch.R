@@ -16,4 +16,4 @@ vcr::use_cassette("rt_taxa_fuzzymatch", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
   })
-}, record = "new_episodes")
+})
