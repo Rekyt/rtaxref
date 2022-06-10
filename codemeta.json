@@ -1,11 +1,8 @@
 {
-  "@context": [
-    "https://doi.org/10.5063/schema/codemeta-2.0",
-    "http://schema.org"
-  ],
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "identifier": "rtaxref",
-  "description": "Provides an R client to the TaxRef API\n  <https://taxref.mnhn.fr/taxref-web/api/doc>, the French Taxonomical Reference\n  Database which indexes names of species with unique identifiers as well as\n  conservation statuses, biological interactions and taxonomic relationships.",
+  "description": "Provides an R client to the TaxRef API <https://taxref.mnhn.fr/taxref-web/api/doc>, the French Taxonomical Reference Database which indexes names of species with unique identifiers as well as conservation statuses, biological interactions and taxonomic relationships.",
   "name": "rtaxref: An R client for TaxRef the French Taxonomical Database",
   "codeRepository": "https://github.com/Rekyt/rtaxref",
   "issueTracker": "https://github.com/Rekyt/rtaxref/issues",
@@ -14,10 +11,9 @@
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
-    "version": "3.5.2",
     "url": "https://r-project.org"
   },
-  "runtimePlatform": "R version 3.5.2 (2018-12-20)",
+  "runtimePlatform": "R version 4.2.0 (2022-04-22 ucrt)",
   "author": [
     {
       "@type": "Person",
@@ -33,9 +29,6 @@
       "@id": "https://orcid.org/0000-0002-4094-1476"
     }
   ],
-  "contributor": {},
-  "copyrightHolder": {},
-  "funder": {},
   "maintainer": [
     {
       "@type": "Person",
@@ -81,10 +74,22 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=vcr"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "identifier": "rmarkdown",
+      "name": "rmarkdown",
+      "provider": {
+        "@id": "https://cran.r-project.org",
+        "@type": "Organization",
+        "name": "Comprehensive R Archive Network (CRAN)",
+        "url": "https://cran.r-project.org"
+      },
+      "sameAs": "https://CRAN.R-project.org/package=rmarkdown"
     }
   ],
-  "softwareRequirements": [
-    {
+  "softwareRequirements": {
+    "1": {
       "@type": "SoftwareApplication",
       "identifier": "httr",
       "name": "httr",
@@ -96,7 +101,7 @@
       },
       "sameAs": "https://CRAN.R-project.org/package=httr"
     },
-    {
+    "2": {
       "@type": "SoftwareApplication",
       "identifier": "tibble",
       "name": "tibble",
@@ -107,15 +112,10 @@
         "url": "https://cran.r-project.org"
       },
       "sameAs": "https://CRAN.R-project.org/package=tibble"
-    }
-  ],
-  "readme": "https://github.com/Rekyt/rtaxref/blob/master/README.md",
-  "fileSize": "168.807KB",
-  "contIntegration": [
-    "https://travis-ci.org/Rekyt/rtaxref",
-    "https://codecov.io/gh/Rekyt/rtaxref"
-  ],
-  "developmentStatus": "https://www.repostatus.org/#active",
+    },
+    "SystemRequirements": null
+  },
+  "fileSize": "973.219KB",
   "citation": [
     {
       "@type": "SoftwareSourceCode",
@@ -131,20 +131,25 @@
           "familyName": "Gruson"
         }
       ],
-      "name": "{rtaxref}: An {R} Client for {TaxRef} the French Taxonomical Reference {API}",
-      "url": "https://github.com/Rekyt/rtaxref"
+      "name": "{rtaxref}: An {R} Client for {TAXREF} the French Taxonomical Reference {API}",
+      "url": "https://github.com/Rekyt/rtaxref",
+      "description": "R package version 0.1.0"
     },
     {
       "@type": "CreativeWork",
-      "datePublished": "2019",
+      "datePublished": "2022",
       "author": [
         {
           "@type": "Organization",
-          "name": "TaxRef"
+          "name": "TAXTREF"
         }
       ],
       "url": "https://taxref.mnhn.fr/taxref-web/accueil",
       "description": "Data released under the Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) license"
     }
-  ]
+  ],
+  "readme": "https://github.com/Rekyt/rtaxref/blob/main/README.md",
+  "contIntegration": ["https://codecov.io/gh/Rekyt/rtaxref", "https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml"],
+  "developmentStatus": "https://www.repostatus.org/#active",
+  "keywords": ["api", "api-client", "api-wrapper", "biodiversity", "r", "r-package", "rstats", "taxonomy"]
 }
