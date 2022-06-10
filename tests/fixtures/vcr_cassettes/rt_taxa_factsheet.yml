@@ -1,0 +1,96 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/4540/factsheet
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Fri, 10 Jun 2022 18:00:37 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"text":"<p align=\"justify\"><strong>Taille/poids :</strong></p><p
+        align=\"justify\">Longueur totale : 15 à 17 cm. Poids : 28 à 32 g.</p><p align=\"justify\"><strong>Diagnose
+        :</strong></p><p align=\"justify\">Le Moineau soulcie est de tous les moineaux
+        français le plus grand. Il apparaît massif avec une large tête et un gros
+        bec couleur chair. Le dessus du corps brun chamois est marqué de rayures sombres.
+        La face ventrale est beaucoup plus claire. L’espèce se distingue des autres
+        moineaux par la présence d’une calotte rayée et d''un large sourcil clair.
+        Sous la gorge, les adultes possèdent une tache jaune plus ou moins visible.
+        En vol, lorsque cet oiseau déploie sa queue, on peut observer une large barre
+        terminale blanche.<br></p><p align=\"justify\"><strong>Détermination : </strong></p><p
+        align=\"justify\">Moyennement difficile.</p><p align=\"justify\"> </p><p align=\"justify\"><strong>Espèces
+        proches : </strong></p><p align=\"justify\">Des confusions sont possibles
+        avec le Moineau domestique <i>Passer domesticus</i> femelle et le Bruant proyer
+        <i>Emberiza calandra</i>. Le Moineau soulcie est la seule de ces espèces à
+        posséder un sourcil clair aussi marqué et une barre terminale blanche à la
+        queue.<br></p><p align=\"justify\"><strong>Période d’observation :</strong></p><p
+        align=\"justify\">Principalement sédentaire, l''espèce peut être observée
+        toute l''année. </p><p align=\"justify\"><strong>Biologie-éthologie : </strong></p><p
+        align=\"justify\">En période de reproduction, insectes (notamment orthoptères
+        et lépidoptères) et autres arthropodes constituent la base de l''alimentation.
+        Le reste de l''année l''espèce consomme également des graines et des baies.</p><p
+        align=\"justify\"><strong> Biogéographie et écologie :</strong></p><p align=\"justify\">Le
+        Moineau soulcie est distribué à travers le Paléarctique au niveau des 40°
+        de latitude, de l’Espagne à la Mongolie. L’espèce est susceptible d’occuper
+        plusieurs types d’habitats qui se caractérisent par l’association d’une architecture
+        traditionnelle et d’une agriculture semi intensive.</p>","taxon":{"id":4540,"scientificName":"Petronia
+        petronia","fullNameHtml":"<i>Petronia petronia</i> (Linnaeus, 1766)","referenceId":4540,"parentId":196012,"referenceNameHtml":"<i>Petronia
+        petronia</i> (Linnaeus, 1766)"},"langageId":"fra","langageName":"Français","author":"Compilé
+        par J. Comolet-Tirman à partir des Cahiers d’habitats.","institution":"UMS
+        2006 Patrimoine Naturel (AFB / CNRS / MNHN)","year":2017,"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/4540/factsheet"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/4540"},"langage":{"href":"https://taxref.mnhn.fr/api/langages/fra"}}}'
+  recorded_at: 2022-06-10 18:00:42 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/0/factsheet
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Fri, 10 Jun 2022 18:00:37 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      file: no
+      string: ''
+  recorded_at: 2022-06-10 18:00:42 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
