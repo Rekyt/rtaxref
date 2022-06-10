@@ -37,7 +37,7 @@ remotes::install_github("Rekyt/rtaxref")
 
 `rtaxref` contains functions to retrieve data from TAXREF-Hub. The
 access data is released under the [Creative Commons
-Attribution-ShareAlike 3.0 (CC BY-SA 30)
+Attribution-ShareAlike 3.0 (CC BY-SA 3.0)
 license](https://creativecommons.org/licenses/by-sa/3.0/). A suggestion
 of citation is included in `rtaxref` via `citation("rtaxref")`.
 
