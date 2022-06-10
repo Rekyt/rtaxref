@@ -54,6 +54,15 @@ vcr::use_cassette("rt_GET", {
 
 })
 
+vcr::use_cassette("parse_taxa", {
+  expect_silent(parse_taxa(rt_GET("biogeographicStatus/")))
+
+  expect_error(
+    parse_taxa(rt_GET("blabla")),
+    "TAXREF is down. Please try again later.", fixed = TRUE
+  )
+})
+
 
 test_that("check_required_arg() works", {
   a <- NULL
