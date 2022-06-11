@@ -88,12 +88,44 @@ test_that("check_arg_in_list() works", {
   expect_silent(check_arg_in_list(NULL, 1:3, with_null = TRUE))
 
   # Invalid inputs
-  expect_error(check_arg_in_list("d",  c("a", "b", "c"), with_null = FALSE))
-  expect_error(check_arg_in_list("",   c("a", "b", "c"), with_null = FALSE))
-  expect_error(check_arg_in_list(NULL, c("a", "b", "c"), with_null = FALSE))
-  expect_error(check_arg_in_list("d",  c("a", "b", "c"), with_null = TRUE))
-  expect_error(check_arg_in_list("",   c("a", "b", "c"), with_null = TRUE))
-  expect_error(check_arg_in_list(4,    1:3, with_null = FALSE))
-  expect_error(check_arg_in_list(NULL, 1:3, with_null = FALSE))
-  expect_error(check_arg_in_list(4,    1:3, with_null = TRUE))
+  expect_error(
+    check_arg_in_list("d",  c("a", "b", "c"), with_null = FALSE),
+    "'d' argument should be in 'a, b, c'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list("",   c("a", "b", "c"), with_null = FALSE),
+    "'' argument should be in 'a, b, c'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(NULL, c("a", "b", "c"), with_null = FALSE),
+    "'' argument should be in 'a, b, c'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list("d",  c("a", "b", "c"), with_null = TRUE),
+    "'d' argument should be in 'a, b, c' or NULL",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list("",   c("a", "b", "c"), with_null = TRUE),
+    "'' argument should be in 'a, b, c' or NULL",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(4,    1:3, with_null = FALSE),
+    "'4' argument should be in '1, 2, 3'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(NULL, 1:3, with_null = FALSE),
+    "'' argument should be in '1, 2, 3'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(4,    1:3, with_null = TRUE),
+    "'4' argument should be in '1, 2, 3' or NULL",
+    fixed = TRUE
+  )
 })

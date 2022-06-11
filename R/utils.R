@@ -66,7 +66,7 @@ check_arg_in_list = function(arg, list, with_null = TRUE) {
   ) {
     stop(
       "'", substitute(arg), "' argument should be in '",
-      paste(list, collapse = ", "), "'", ifelse(with_null, "or NULL", "")
+      paste(list, collapse = ", "), "'", ifelse(with_null, " or NULL", "")
     )
   }
 }
