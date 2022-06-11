@@ -15,6 +15,14 @@
 rt_interactions_search = function(id = NULL, interaction_id = NULL,
                                   opgroup_id = NULL, page = 1, size = 2000) {
 
+  stopifnot("'id' must be a numeric"             = is.numeric(id) | is.null(id))
+  stopifnot("'interaction_id' must be a character" =
+              is.character(interaction_id) | is.null(interaction_id))
+  stopifnot("'opgroup_id' must be a numeric"     = is.numeric(opgroup_id) |
+              is.null(opgroup_id))
+  stopifnot("'page' must be a numeric"           = is.numeric(page))
+  stopifnot("'size' must be a numeric"           = is.numeric(size))
+
   api_query = rt_GET("interactions/search/",
                      query = list(taxrefId           = id,
                                   interactionTypeId  = interaction_id,
