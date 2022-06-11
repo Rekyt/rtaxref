@@ -24,12 +24,29 @@ vcr::use_cassette("rt_interactions_opgroup", {
   })
 
   test_that("Wrong query returns error", {
+
     expect_error(rt_interactions_opgroup(666, size = 1),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
+    expect_error(
+      rt_interactions_opgroup(),
+      paste0("'opgroup_id' argument is needed to retrieve interactions",
+             " using operational group ID"),
+      fixed = TRUE
+    )
+
     expect_error(rt_interactions_opgroup("ASDF"),
-                 "The query is invalid. Please try another query.",
+                 "'opgroup_id' must be a numeric",
                  fixed = TRUE)
+
+    expect_error(rt_interactions_opgroup(1, page = "a"),
+                 "'page' must be a numeric",
+                 fixed = TRUE)
+
+    expect_error(rt_interactions_opgroup(1, size = "a"),
+                 "'size' must be a numeric",
+                 fixed = TRUE)
+
   })
 })
