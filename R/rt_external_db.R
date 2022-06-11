@@ -12,6 +12,10 @@
 #' @export
 rt_external_db = function(db_id = NULL) {
 
+  stopifnot(
+    "'db_id' must be NULL or a character" = is.null(db_id) | is.character(db_id)
+  )
+
   api_query = rt_GET("externalDb/", tolower(db_id))
 
   parse_taxa(api_query)

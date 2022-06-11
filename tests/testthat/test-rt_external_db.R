@@ -29,7 +29,7 @@ vcr::use_cassette("rt_external_db", {
                  fixed = TRUE)
 
     expect_error(rt_external_db(1),
-                 "The query returned no results. Please try another query",
+                 "'db_id' must be NULL or a character",
                  fixed = TRUE)
   })
 })
