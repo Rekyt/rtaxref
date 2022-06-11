@@ -76,3 +76,24 @@ test_that("check_required_arg() works", {
   expect_error(check_required_arg(b, "test"),
                regexp = "'b' argument is needed to test", fixed = TRUE)
 })
+
+test_that("check_arg_in_list() works", {
+
+  # Valid inputs
+  expect_silent(check_arg_in_list("a",  c("a", "b", "c"), with_null = FALSE))
+  expect_silent(check_arg_in_list("a",  c("a", "b", "c"), with_null = TRUE))
+  expect_silent(check_arg_in_list(NULL, c("a", "b", "c"), with_null = TRUE))
+  expect_silent(check_arg_in_list(1,    1:3, with_null = FALSE))
+  expect_silent(check_arg_in_list(1,    1:3, with_null = TRUE))
+  expect_silent(check_arg_in_list(NULL, 1:3, with_null = TRUE))
+
+  # Invalid inputs
+  expect_error(check_arg_in_list("d",  c("a", "b", "c"), with_null = FALSE))
+  expect_error(check_arg_in_list("",   c("a", "b", "c"), with_null = FALSE))
+  expect_error(check_arg_in_list(NULL, c("a", "b", "c"), with_null = FALSE))
+  expect_error(check_arg_in_list("d",  c("a", "b", "c"), with_null = TRUE))
+  expect_error(check_arg_in_list("",   c("a", "b", "c"), with_null = TRUE))
+  expect_error(check_arg_in_list(4,    1:3, with_null = FALSE))
+  expect_error(check_arg_in_list(NULL, 1:3, with_null = FALSE))
+  expect_error(check_arg_in_list(4,    1:3, with_null = TRUE))
+})
