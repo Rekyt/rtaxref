@@ -27,11 +27,12 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"taxa":[{"id":210879,"scientificName":null,"fullNameHtml":"<i>Brachylomia</i>
         Hampson, 1906","referenceId":210879,"parentId":782082,"referenceNameHtml":"<i>Brachylomia</i>
         Hampson, 1906","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/210879"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=1&size=1{&taxonomicRanks,territories,domain}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=1&size=1{&taxonomicRanks,territories,domain}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=2&size=1{&taxonomicRanks,territories,domain}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Bra&page=6979&size=1{&taxonomicRanks,territories,domain}","templated":true}},"page":{"size":1,"totalElements":6979,"totalPages":6979,"number":1}}'
-  recorded_at: 2019-03-26 17:03:04 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:23:37 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=1&size=200
@@ -60,6 +61,44 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=1&size=200{&taxonomicRanks,territories,domain}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=1&size=200{&taxonomicRanks,territories,domain}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=ASDF&page=0&size=200{&taxonomicRanks,territories,domain}","templated":true}},"page":{"size":0,"totalElements":0,"totalPages":0,"number":1}}'
-  recorded_at: 2019-03-26 17:03:04 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:23:37 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/taxa/autocomplete?term=Heli&territories=fr&territories=gf&page=1&size=2
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Sun, 12 Jun 2022 11:23:31 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"_embedded":{"taxa":[{"id":193148,"scientificName":"Heliophanus","fullNameHtml":"<i>Heliophanus</i>
+        C. L. Koch, 1833","referenceId":193148,"parentId":184381,"referenceNameHtml":"<i>Heliophanus</i>
+        C. L. Koch, 1833","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/193148"}}},{"id":233995,"scientificName":"Heliophanus
+        aeneus","fullNameHtml":"<i>Heliophanus aeneus</i> (Hahn, 1832)","referenceId":233995,"parentId":193148,"referenceNameHtml":"<i>Heliophanus
+        aeneus</i> (Hahn, 1832)","_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/233995"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Heli&territories=fr,gf&page=1&size=2{&taxonomicRanks,domain}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Heli&territories=fr,gf&page=1&size=2{&taxonomicRanks,domain}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Heli&territories=fr,gf&page=2&size=2{&taxonomicRanks,domain}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/taxa/autocomplete?term=Heli&territories=fr,gf&page=1048&size=2{&taxonomicRanks,domain}","templated":true}},"page":{"size":2,"totalElements":2095,"totalPages":1048,"number":1}}'
+  recorded_at: 2022-06-12 11:23:37 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0

@@ -2,12 +2,21 @@ context("test-rt_taxa_autocomplete")
 
 vcr::use_cassette("rt_taxa_autocomplete", {
   test_that("Can retrieve a taxa using a term", {
+    # Single term
     expect_silent(res <- rt_taxa_autocomplete(term = "Bra", size = 1))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 7))
     expect_named(res, c("id", "scientificName", "fullNameHtml", "referenceId",
                         "parentId", "referenceNameHtml", "self.href"))
+
+    # Multiple territories
+    expect_silent(
+      res <- rt_taxa_autocomplete("Heli", territories = c("fr", "gf"), size = 2)
+    )
+
+    expect_is(res, "data.frame")
+    expect_equal(dim(res), c(2, 7))
   })
 
   test_that("Wrong query returns error", {
