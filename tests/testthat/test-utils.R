@@ -55,12 +55,19 @@ vcr::use_cassette("rt_GET", {
 })
 
 vcr::use_cassette("parse_taxa", {
-  expect_silent(parse_taxa(rt_GET("biogeographicStatus/")))
+  test_that("parse_taxa works", {
+    expect_silent(parse_taxa(rt_GET("biogeographicStatus/")))
 
-  expect_error(
-    parse_taxa(rt_GET("blabla")),
-    "TAXREF is down. Please try again later.", fixed = TRUE
-  )
+    expect_error(
+      parse_taxa(rt_GET("blabla")),
+      "TAXREF is down. Please try again later.", fixed = TRUE
+    )
+
+    expect_error(
+      parse_taxa(rt_GET("blabla2")),
+      "The query is invalid. Please try another query.", fixed = TRUE
+    )
+  })
 })
 
 
