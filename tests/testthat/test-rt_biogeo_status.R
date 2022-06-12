@@ -20,12 +20,22 @@ vcr::use_cassette("rt_biogeo_status", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_biogeo_status("ASDF"),
-                 "The query returned no results. Please try another query",
-                 fixed = TRUE)
+    expect_error(
+      rt_biogeo_status("G"),
+      "The query returned no results. Please try another query",
+      fixed = TRUE
+    )
 
-    expect_error(rt_biogeo_status(1),
-                 "The query returned no results. Please try another query",
-                 fixed = TRUE)
+    expect_error(
+      rt_biogeo_status("ASDF"),
+      "'biogeo_id' must be NULL or a single character",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_biogeo_status(1),
+      "'biogeo_id' must be NULL or a single character",
+      fixed = TRUE
+    )
   })
 })

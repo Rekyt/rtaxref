@@ -23,6 +23,8 @@
 #' @export
 rt_habitats = function(habitat_id = NULL) {
 
+  check_arg_in_list(habitat_id, 1:8, TRUE)
+
   api_query = rt_GET("habitats/", habitat_id)
 
   parse_taxa(api_query)

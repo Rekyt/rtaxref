@@ -55,12 +55,19 @@ vcr::use_cassette("rt_GET", {
 })
 
 vcr::use_cassette("parse_taxa", {
-  expect_silent(parse_taxa(rt_GET("biogeographicStatus/")))
+  test_that("parse_taxa works", {
+    expect_silent(parse_taxa(rt_GET("biogeographicStatus/")))
 
-  expect_error(
-    parse_taxa(rt_GET("blabla")),
-    "TAXREF is down. Please try again later.", fixed = TRUE
-  )
+    expect_error(
+      parse_taxa(rt_GET("blabla")),
+      "TAXREF is down. Please try again later.", fixed = TRUE
+    )
+
+    expect_error(
+      parse_taxa(rt_GET("blabla2")),
+      "The query is invalid. Please try another query.", fixed = TRUE
+    )
+  })
 })
 
 
@@ -75,4 +82,57 @@ test_that("check_required_arg() works", {
 
   expect_error(check_required_arg(b, "test"),
                regexp = "'b' argument is needed to test", fixed = TRUE)
+})
+
+test_that("check_arg_in_list() works", {
+
+  # Valid inputs
+  expect_silent(check_arg_in_list("a",  c("a", "b", "c"), with_null = FALSE))
+  expect_silent(check_arg_in_list("a",  c("a", "b", "c"), with_null = TRUE))
+  expect_silent(check_arg_in_list(NULL, c("a", "b", "c"), with_null = TRUE))
+  expect_silent(check_arg_in_list(1,    1:3, with_null = FALSE))
+  expect_silent(check_arg_in_list(1,    1:3, with_null = TRUE))
+  expect_silent(check_arg_in_list(NULL, 1:3, with_null = TRUE))
+
+  # Invalid inputs
+  expect_error(
+    check_arg_in_list("d",  c("a", "b", "c"), with_null = FALSE),
+    "'d' argument should be in 'a, b, c'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list("",   c("a", "b", "c"), with_null = FALSE),
+    "'' argument should be in 'a, b, c'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(NULL, c("a", "b", "c"), with_null = FALSE),
+    "'' argument should be in 'a, b, c'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list("d",  c("a", "b", "c"), with_null = TRUE),
+    "'d' argument should be in 'a, b, c' or NULL",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list("",   c("a", "b", "c"), with_null = TRUE),
+    "'' argument should be in 'a, b, c' or NULL",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(4,    1:3, with_null = FALSE),
+    "'4' argument should be in '1, 2, 3'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(NULL, 1:3, with_null = FALSE),
+    "'' argument should be in '1, 2, 3'",
+    fixed = TRUE
+  )
+  expect_error(
+    check_arg_in_list(4,    1:3, with_null = TRUE),
+    "'4' argument should be in '1, 2, 3' or NULL",
+    fixed = TRUE
+  )
 })

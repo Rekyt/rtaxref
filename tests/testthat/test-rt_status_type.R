@@ -19,12 +19,12 @@ vcr::use_cassette("rt_status_type", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_status_type(9),
+    expect_error(rt_status_type("A"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_status_type("A"),
-                 "The query returned no results. Please try another query",
+    expect_error(rt_status_type(9),
+                 "'status_id' must be character or NULL",
                  fixed = TRUE)
   })
 })

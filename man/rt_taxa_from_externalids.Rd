@@ -7,11 +7,11 @@
 rt_taxa_from_externalids(external_db = NULL, external_id = NULL)
 }
 \arguments{
-\item{external_db}{{\code{character(1)}}\cr{}
+\item{external_db}{{\code{character(1)}, \strong{required}}\cr{}
 The name of an external database see \code{\link[=rt_external_db]{rt_external_db()}}
 for the list of external database names}
 
-\item{external_id}{{\code{character(1)}}\cr{}
+\item{external_id}{{\code{character(1)}, \strong{required}}\cr{}
 The identifier of the taxon in the specified external
 database}
 }

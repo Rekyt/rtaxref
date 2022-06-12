@@ -27,8 +27,24 @@ vcr::use_cassette("rt_interactions_find_type", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
+
+    expect_error(
+      rt_interactions_find_type(),
+      paste0("'interaction_id' argument is needed to retrieve all interactions",
+             " using with a given interaction ID"),
+      fixed = TRUE
+    )
+
     expect_error(rt_interactions_find_type(0.123456, size = 5),
-                 "The query returned no results. Please try another query",
+                 "'interaction_id' must be a character",
+                 fixed = TRUE)
+
+    expect_error(rt_interactions_find_type("A", page = "a"),
+                 "'page' must be a numeric",
+                 fixed = TRUE)
+
+    expect_error(rt_interactions_find_type("A", size = "a"),
+                 "'size' must be a numeric",
                  fixed = TRUE)
   })
 })

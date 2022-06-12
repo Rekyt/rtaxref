@@ -33,8 +33,14 @@ vcr::use_cassette("rt_taxa_taxrefhistory", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxa_taxrefhistory("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_taxa_taxrefhistory("A"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_taxrefhistory(), fixed = TRUE,
+      paste0("'id' argument is needed to retrieve TAXREF history of a taxon ",
+             "using its id")
+    )
   })
 })

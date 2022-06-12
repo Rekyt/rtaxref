@@ -17,6 +17,16 @@ rt_taxa_autocomplete = function(term = NULL, territories = NULL, rank = NULL,
 
   check_required_arg(term, "autocomplete taxon search")
 
+  stopifnot("'term' must be a character" = is.character(term))
+  stopifnot("'territories' must be a character or NULL" =
+              is.character(territories) | is.null(territories))
+  stopifnot("'rank' must be a character or NULL" =
+              is.character(rank) | is.null(rank))
+  stopifnot("'domain' must be a character or NULL" =
+              is.character(domain) | is.null(domain))
+  stopifnot("'page' must be a numeric"       = is.numeric(page))
+  stopifnot("'size' must be a numeric"       = is.numeric(size))
+
   api_query = rt_GET("taxa/autocomplete",
                      query = list(term        = term,
                                   territories = territories,

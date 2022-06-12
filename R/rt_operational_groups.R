@@ -13,6 +13,11 @@
 #' \dontrun{rt_operational_groups(opgroup_id = 143)}
 rt_operational_groups = function(opgroup_id = NULL) {
 
+  stopifnot(
+    "'opgroup_id' must be a numeric or NULL" =
+      is.numeric(opgroup_id) | is.null(opgroup_id)
+  )
+
   api_query = rt_GET("operationalGroups/", opgroup_id)
 
   parse_taxa(api_query)

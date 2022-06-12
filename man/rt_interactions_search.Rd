@@ -13,7 +13,7 @@ rt_interactions_search(
 )
 }
 \arguments{
-\item{id}{{\code{integer(1)}}\cr{}
+\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 

@@ -30,7 +30,13 @@ vcr::use_cassette("rt_sources_id", {
                  fixed = TRUE)
 
     expect_error(rt_sources_id("azerty"),
-                 "The query is invalid. Please try another query.",
+                 "'source_id' must be a numeric",
+                 fixed = TRUE)
+
+    expect_error(rt_sources_id(1, bibtex = 3), "'bibtex' must be a logical",
+                 fixed = TRUE)
+
+    expect_error(rt_sources_id(1, bibtex = "a"), "'bibtex' must be a logical",
                  fixed = TRUE)
   })
 })

@@ -27,6 +27,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"langages":[{"id":"aqr","name":"Arhâ","iso6393":"aqr","wikidataUri":"http://www.wikidata.org/entity/Q4790085","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aqr"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"arw","name":"Arawak
         [= Lokono]","iso6393":"arw","wikidataUri":"http://www.wikidata.org/entity/Q2655664","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/arw"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"aut","name":"Australe","iso6393":"aut","wikidataUri":"http://www.wikidata.org/entity/Q2669261","locationName":"Polynésie
         française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aut"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"axx","name":"Xârâgurè
@@ -98,8 +99,8 @@ http_interactions:
         métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oci","name":"Gascon","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q35735","locationName":"France
         métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oci","name":"Auvergnat","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q35359","locationName":"France
         métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/"}}}'
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langages/arw
@@ -128,9 +129,10 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"id":"arw","name":"Arawak [= Lokono]","iso6393":"arw","wikidataUri":"http://www.wikidata.org/entity/Q2655664","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/arw"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}}'
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langages/asdf
@@ -159,9 +161,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langages/9
@@ -190,9 +193,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langagesarw
@@ -224,6 +228,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -235,8 +240,8 @@ http_interactions:
         HTTP 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
         <u></u></p><p><b>description</b> <u>La ressource demandée n''''est pas disponible.</u></p><HR
         size="1" noshade="noshade"><h3>Apache Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langagesasdf
@@ -268,6 +273,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -279,8 +285,8 @@ http_interactions:
         HTTP 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
         <u></u></p><p><b>description</b> <u>La ressource demandée n''''est pas disponible.</u></p><HR
         size="1" noshade="noshade"><h3>Apache Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langages9
@@ -312,6 +318,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -323,8 +330,8 @@ http_interactions:
         HTTP 404 - </h1><HR size="1" noshade="noshade"><p><b>type</b> Rapport d''''état</p><p><b>message</b>
         <u></u></p><p><b>description</b> <u>La ressource demandée n''''est pas disponible.</u></p><HR
         size="1" noshade="noshade"><h3>Apache Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/langages/
@@ -353,6 +360,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"langages":[{"id":"aqr","name":"Arhâ","iso6393":"aqr","wikidataUri":"http://www.wikidata.org/entity/Q4790085","locationName":"Nouvelle-Calédonie","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aqr"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER988"}}},{"id":"arw","name":"Arawak
         [= Lokono]","iso6393":"arw","wikidataUri":"http://www.wikidata.org/entity/Q2655664","locationName":"Guyane","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/arw"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"}}},{"id":"aut","name":"Australe","iso6393":"aut","wikidataUri":"http://www.wikidata.org/entity/Q2669261","locationName":"Polynésie
         française","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/aut"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER987"}}},{"id":"axx","name":"Xârâgurè
@@ -424,5 +432,38 @@ http_interactions:
         métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oci","name":"Gascon","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q35735","locationName":"France
         métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}},{"id":"oci","name":"Auvergnat","iso6393":"oci","wikidataUri":"http://www.wikidata.org/entity/Q35359","locationName":"France
         métropolitaine","_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/oci"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/langages/"}}}'
-  recorded_at: 2019-04-10 13:23:50 GMT
-  recorded_with: vcr/0.2.6.9100, webmockr/0.3.4
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/langages/asd
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 404
+      category: Client error
+      reason: Not Found
+      message: 'Client error: (404) Not Found'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-length: '0'
+      content-type: text/plain
+      date: Sun, 12 Jun 2022 07:09:30 GMT
+      server: Apache
+    body:
+      encoding: UTF-8
+      file: no
+      string: ''
+  recorded_at: 2022-06-12 07:09:35 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0

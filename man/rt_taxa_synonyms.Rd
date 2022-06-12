@@ -4,10 +4,10 @@
 \alias{rt_taxa_synonyms}
 \title{Retrieve Synonyms associated with a Taxon}
 \usage{
-rt_taxa_synonyms(id)
+rt_taxa_synonyms(id = NULL)
 }
 \arguments{
-\item{id}{{\code{integer(1)}}\cr{}
+\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 }

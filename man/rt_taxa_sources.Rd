@@ -4,10 +4,10 @@
 \alias{rt_taxa_sources}
 \title{Retrieve Sources Associated with a Taxon}
 \usage{
-rt_taxa_sources(id)
+rt_taxa_sources(id = NULL)
 }
 \arguments{
-\item{id}{{\code{integer(1)}}\cr{}
+\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 }

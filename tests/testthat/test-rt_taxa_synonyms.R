@@ -29,8 +29,13 @@ vcr::use_cassette("rt_taxa_synonyms", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxa_synonyms("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_taxa_synonyms("A"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_synonyms(), fixed = TRUE,
+      "'id' argument is needed to retrieve synonyms of a taxon using its id"
+    )
   })
 })

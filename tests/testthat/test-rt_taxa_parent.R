@@ -32,8 +32,14 @@ vcr::use_cassette("rt_taxa_parent", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxa_parent("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_taxa_parent("blabla"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_parent(),
+      "'id' argument is needed to retrieve parent of a taxon using its id",
+      fixed = TRUE
+    )
   })
 })

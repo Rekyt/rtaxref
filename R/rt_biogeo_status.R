@@ -12,6 +12,12 @@
 #' @export
 rt_biogeo_status = function(biogeo_id = NULL) {
 
+  stopifnot(
+    "'biogeo_id' must be NULL or a single character" =
+      (is.character(biogeo_id) & isTRUE(nchar(biogeo_id) == 1)) |
+      is.null(biogeo_id)
+  )
+
   api_query = rt_GET("biogeographicStatus/", toupper(biogeo_id))
 
   parse_taxa(api_query)

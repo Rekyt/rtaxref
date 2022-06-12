@@ -14,6 +14,11 @@
 #' @export
 rt_source_uses = function(usage_id = NULL) {
 
+  stopifnot(
+    "'usage_id' must be a numeric or NULL" =
+      is.numeric(usage_id) | is.null(usage_id)
+  )
+
   api_query = rt_GET("sourceUses/", usage_id)
 
   parse_taxa(api_query)

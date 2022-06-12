@@ -23,12 +23,17 @@ vcr::use_cassette("rt_taxa_id", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_taxa_id("blabla"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
-
     expect_error(rt_taxa_id(1234567),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(
+      rt_taxa_id("blabla"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_id(),
+      "'id' argument is needed to retrieve a specific taxon id", fixed = TRUE
+    )
   })
 })

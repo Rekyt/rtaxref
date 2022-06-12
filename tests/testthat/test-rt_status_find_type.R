@@ -21,6 +21,24 @@ vcr::use_cassette("rt_status_find_type", {
     expect_error(rt_status_find_type("azerty"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(
+      rt_status_find_type(3),
+      "'status_id' must be a character",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_status_find_type("a", page = "a"),
+      "'page' must be a numeric",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_status_find_type("a", size = "a"),
+      "'size' must be a numeric",
+      fixed = TRUE
+    )
   })
 })
 

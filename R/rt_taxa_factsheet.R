@@ -11,7 +11,12 @@
 #' \dontrun{rt_taxa_factsheet(4540)}
 #'
 #' @export
-rt_taxa_factsheet = function(id) {
+rt_taxa_factsheet = function(id = NULL) {
+
+  check_required_arg(id, "retrieve the factsheet of a taxon using its id")
+
+  stopifnot("'id' must be a numeric" = is.numeric(id))
+
   api_query = rt_GET("taxa/", id, "/factsheet")
 
   parse_taxa(api_query)

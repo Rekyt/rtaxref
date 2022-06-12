@@ -19,8 +19,14 @@ vcr::use_cassette("rt_taxa_vernacular", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxa_vernacular("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_taxa_vernacular("A"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_vernacular(), fixed = TRUE,
+      paste0("'id' argument is needed to retrieve vernacular names of a ",
+             "taxon using its id")
+    )
   })
 })

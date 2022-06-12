@@ -19,6 +19,10 @@ rt_status_opgroup = function(opgroup_id, page = 1, size = 2000) {
 
   check_required_arg(opgroup_id, "retrieve statuses of an operational group")
 
+  stopifnot("'opgroup_id' must be a numeric" = is.numeric(opgroup_id))
+  stopifnot("'page' must be a numeric"       = is.numeric(page))
+  stopifnot("'size' must be a numeric"       = is.numeric(size))
+
   api_query = rt_GET("status/findByOperationalGroup/", opgroup_id,
                      query = list(page = page,
                                   size = size))

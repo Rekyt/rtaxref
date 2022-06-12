@@ -25,7 +25,7 @@ vcr::use_cassette("rt_sources_use", {
                  fixed = TRUE)
 
     expect_error(rt_source_uses("ASDF"),
-                 "The query is invalid. Please try another query.",
+                 "'usage_id' must be a numeric or NULL",
                  fixed = TRUE)
   })
 })

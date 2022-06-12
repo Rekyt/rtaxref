@@ -4,10 +4,10 @@
 \alias{rt_taxa_externalids}
 \title{Retrieve IDs of the taxon in external databases}
 \usage{
-rt_taxa_externalids(id)
+rt_taxa_externalids(id = NULL)
 }
 \arguments{
-\item{id}{{\code{integer(1)}}\cr{}
+\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 }

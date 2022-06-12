@@ -15,6 +15,10 @@ vcr::use_cassette("rt_sources_find_term", {
     expect_error(rt_sources_find_term("azerty"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(rt_sources_find_term(1),
+                 "'term' should be a character",
+                 fixed = TRUE)
   })
 })
 

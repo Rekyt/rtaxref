@@ -9,6 +9,9 @@
 #' @export
 rt_taxref_versions = function(version_id = NULL) {
 
+  stopifnot("'version_id' must be numeric or NULL" =
+              is.numeric(version_id) | is.null(version_id))
+
   api_query = rt_GET("taxrefVersions/", version_id)
 
   parse_taxa(api_query)

@@ -19,12 +19,16 @@ vcr::use_cassette("rt_habitats", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_habitats(9),
-                 "The query returned no results. Please try another query",
-                 fixed = TRUE)
+    expect_error(
+      rt_habitats(9),
+      "'habitat_id' argument should be in '1, 2, 3, 4, 5, 6, 7, 8' or NULL",
+      fixed = TRUE
+    )
 
-    expect_error(rt_habitats("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_habitats("A"),
+      "'habitat_id' argument should be in '1, 2, 3, 4, 5, 6, 7, 8' or NULL",
+      fixed = TRUE
+    )
   })
 })

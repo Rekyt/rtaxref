@@ -4,7 +4,7 @@
 \alias{rt_interactions_opgroup}
 \title{Retrieve the interactions of all Taxa in an Operational Group}
 \usage{
-rt_interactions_opgroup(opgroup_id, page = 1, size = 2000)
+rt_interactions_opgroup(opgroup_id = NULL, page = 1, size = 2000)
 }
 \arguments{
 \item{opgroup_id}{{\code{integer(1)}}\cr{}

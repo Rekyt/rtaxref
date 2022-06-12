@@ -163,6 +163,49 @@ vcr::use_cassette("rt_taxa_search", {
   })
 
   test_that("Wrong query returns error", {
-    skip("Investigate query")
+    expect_error(
+      rt_taxa_search(1), "'sciname' must be a character or NULL", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(fr_name = 1), "'fr_name' must be a character or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(en_name = 1), "'en_name' must be a character or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(rank = 1), "'rank' must be a character or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(territories = 1),
+      "'territories' must be a character or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(domain = 1), "'domain' must be a character or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(habitats = "a"), "'habitats' must be a numeric or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(vernacular = 1), "'vernacular' must be a character or NULL",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(version = 1), "'version' must be a character or NULL",
+      fixed = TRUE
+    )
   })
 })

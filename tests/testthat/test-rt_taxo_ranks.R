@@ -26,7 +26,7 @@ vcr::use_cassette("rt_taxo_ranks", {
                  fixed = TRUE)
 
     expect_error(rt_taxo_ranks(9),
-                 "The query returned no results. Please try another query",
+                 "'taxo_id' must be character or NULL",
                  fixed = TRUE)
   })
 })

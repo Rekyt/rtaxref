@@ -59,6 +59,18 @@ check_required_arg = function(arg, stop_message) {
   }
 }
 
+check_arg_in_list = function(arg, list, with_null = TRUE) {
+  if (
+    ((isFALSE(arg %in% list) | is.null(arg)) & isFALSE(with_null)) |
+    (isTRUE(with_null) & !is.null(arg) & isFALSE(arg %in% list))
+  ) {
+    stop(
+      "'", substitute(arg), "' argument should be in '",
+      paste(list, collapse = ", "), "'", ifelse(with_null, " or NULL", ""),
+      call. = FALSE
+    )
+  }
+}
 
 #' @importFrom httr content http_error http_status status_code
 parse_taxa = function(api_query, cut_names = TRUE) {
