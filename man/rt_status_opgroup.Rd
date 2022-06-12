@@ -7,14 +7,14 @@
 rt_status_opgroup(opgroup_id, page = 1, size = 2000)
 }
 \arguments{
-\item{opgroup_id}{{\code{integer(1)}, \strong{required}}\cr{}
+\item{opgroup_id}{{\code{integer(1)} [\strong{required}]}\cr{}
 identifier of the operational group (see the list of
 operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}})}
 
-\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+\item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
+\item{size}{{\code{integer(1)} [default = \code{2000}]}\cr{}
 The number of lines returned per page (maximum = 2000)}
 }
 \description{

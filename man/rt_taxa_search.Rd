@@ -20,20 +20,20 @@ rt_taxa_search(
 )
 }
 \arguments{
-\item{id}{{\verb{integer(1+)}}\cr{}
+\item{id}{{\code{NULL} or \verb{integer(1+)}}\cr{}
 One or more integer giving the id(s) of taxa in TAXREF
 (also called \code{cdNom})}
 
-\item{sciname}{{\verb{character(1+)}}\cr{}
+\item{sciname}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One or more scientific name of searched taxa}
 
-\item{fr_name}{{\verb{character(1+)}}\cr{}
+\item{fr_name}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One or more common name(s) in French of searched taxa}
 
-\item{en_name}{{\verb{character(1+)}}\cr{}
+\item{en_name}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One or more common name(s) in English of searched taxa}
 
-\item{rank}{{\verb{character(1+)}}\cr{}
+\item{rank}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
 of all ranks available):
 \itemize{
@@ -59,7 +59,7 @@ of all ranks available):
 \item \code{AB}= Abberatio
 }}
 
-\item{territories}{{\verb{character(1+)}}\cr{}
+\item{territories}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
@@ -80,14 +80,14 @@ One or more territories where species is present:
 \item \code{"cli"} = Clipperton Island
 }}
 
-\item{domain}{{\code{character(1)}}\cr{}
+\item{domain}{{\code{NULL} or \code{character(1)}}\cr{}
 The domain where the species is found:
 \itemize{
 \item \code{"marin"} = Marine
 \item \code{"continental"} = Continental
 }}
 
-\item{habitats}{{\verb{integer(1+)}}\cr{}
+\item{habitats}{{\code{NULL} or \verb{integer(1+)}}\cr{}
 One or more habitats where the species is found (see \code{\link[=rt_habitats]{rt_habitats()}} for a
 list of all habitats):
 \itemize{
@@ -101,19 +101,19 @@ list of all habitats):
 \item \code{8} = Continental (terrestrial and freshwater)
 }}
 
-\item{vernacular}{{\verb{character(1+)}}\cr{}
-Name of a vernacular group (see the list using
-\code{\link[=rt_vernacular_groups]{rt_vernacular_groups()}})}
+\item{vernacular}{{\code{NULL} or \verb{character(1+)}}\cr{}
+Name of a vernacular group
+(see the list using \code{\link[=rt_vernacular_groups]{rt_vernacular_groups()}})}
 
-\item{version}{{\verb{NULL or character(1)}}\cr{}
+\item{version}{{\code{NULL} or \code{character(1)}}\cr{}
 A string indicating which version of TAXREF should be queried.
 Should be of the form \code{"2.0"} up to \code{"15.0"}. You can check
-the available TAXREF versions with \code{rt_taxref_versions()}.}
+the available TAXREF versions with \code{\link[=rt_taxref_versions]{rt_taxref_versions()}}.}
 
-\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+\item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{5000}}\cr{}
+\item{size}{{\code{integer(1)} [default = \code{5000}]}\cr{}
 The number of lines returned per page (maximum = 5000)}
 }
 \description{

@@ -1,7 +1,7 @@
 #' Search Interactions based on a list of criteria
 #'
 #' @inheritParams rt_interactions_type
-#' @inheritParams rt_status_opgroup
+#' @inheritParams rt_operational_groups
 #' @inheritParams rt_taxa_search
 #'
 #' @examples
@@ -9,6 +9,9 @@
 #' # Interactors with 'Ophrys apifera' (id = 110335)
 #' rt_interactions_search(id = 110335)
 #' }
+#'
+#' @seealso the list of interaction type [rt_interactions_type()] and
+#'          the list of operational groups [rt_operational_groups()]
 #'
 #' @export
 rt_interactions_search = function(id = NULL, interaction_id = NULL,

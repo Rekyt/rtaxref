@@ -4,7 +4,7 @@
 #' used across TAXREF in French. If used without argument returns the list of
 #' all operational groups used in TAXREF.
 #'
-#' @param opgroup_id {`numeric(1)`, default = `NULL`}\cr{}
+#' @param opgroup_id {`NULL` or `numeric(1)` \[default = `NULL`\]}\cr{}
 #'                    the id of an operational group referenced in TAXREF
 #'
 #' @export

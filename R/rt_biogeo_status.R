@@ -3,7 +3,7 @@
 #' If the function is used without arguments returns the list of biogeographic
 #' statuses used in TAXREF
 #'
-#' @param biogeo_id {`character(1)`, default = `NULL`}\cr{}
+#' @param biogeo_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                  A biogeographic status id used in TAXREF
 #'
 #' @examples

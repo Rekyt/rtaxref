@@ -7,7 +7,7 @@
 rt_external_db(db_id = NULL)
 }
 \arguments{
-\item{db_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{db_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 The id of an external db referenced in TAXREF}
 }
 \description{

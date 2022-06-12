@@ -17,7 +17,7 @@ rt_taxa_autocomplete(
 \item{term}{{\code{character(1)}, \strong{required}}\cr{}
 the beginning of the scientific name of the searched taxa}
 
-\item{territories}{{\verb{character(1+)}}\cr{}
+\item{territories}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
@@ -38,7 +38,7 @@ One or more territories where species is present:
 \item \code{"cli"} = Clipperton Island
 }}
 
-\item{rank}{{\verb{character(1+)}}\cr{}
+\item{rank}{{\code{NULL} or \verb{character(1+)}}\cr{}
 One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
 of all ranks available):
 \itemize{
@@ -64,14 +64,14 @@ of all ranks available):
 \item \code{AB}= Abberatio
 }}
 
-\item{domain}{{\code{character(1)}}\cr{}
+\item{domain}{{\code{NULL} or \code{character(1)}}\cr{}
 The domain where the species is found:
 \itemize{
 \item \code{"marin"} = Marine
 \item \code{"continental"} = Continental
 }}
 
-\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+\item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
 \item{size}{{\code{integer(1)}; default = \code{200}}\cr{}

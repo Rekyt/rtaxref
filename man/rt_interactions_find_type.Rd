@@ -7,14 +7,14 @@
 rt_interactions_find_type(interaction_id = NULL, page = 1, size = 2000)
 }
 \arguments{
-\item{interaction_id}{{\code{character(1)}, \strong{required}}\cr{}
+\item{interaction_id}{{\code{character(1)} [\strong{required}]}\cr{}
 The identifier of status (see \code{\link[=rt_interactions_type]{rt_interactions_type()}} for
 the list of status types)}
 
-\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+\item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
+\item{size}{{\code{integer(1)} [default = \code{2000}]}\cr{}
 The number of lines returned per page (maximum = 2000)}
 }
 \description{
