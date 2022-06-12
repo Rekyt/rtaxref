@@ -27,6 +27,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"interactions":[{"taxon":{"id":239523,"scientificName":null,"fullNameHtml":"<i>Apis
         mellifera</i> Linnaeus, 1758","referenceId":239523,"parentId":null,"referenceNameHtml":"<i>Apis
         mellifera</i> Linnaeus, 1758"},"relationId":"POLLINISATEUR","relationName":"est
@@ -36,8 +37,8 @@ http_interactions:
         ITSAP, MAAF, SNHF, Astredhor, Vaal&#39;hor, INRA, CNPAIM, Gnis &amp; SBF.
         2017. <em>Liste des plantes attractives pour les abeilles. Plantes nectarif&egrave;res
         et pollinif&egrave;res &agrave; semer et &agrave; planter</em>. 24 pp.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=1&size=1{&interactionTypeId,operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=1&size=1{&interactionTypeId,operationalGroupId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=2&size=1{&interactionTypeId,operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&page=366&size=1{&interactionTypeId,operationalGroupId}","templated":true}},"page":{"size":1,"totalElements":366,"totalPages":366,"number":1}}'
-  recorded_at: 2019-03-26 13:04:14 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1
@@ -66,6 +67,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"interactions":[{"taxon":{"id":833018,"scientificName":null,"fullNameHtml":"<i>Varroa
         destructor</i> Anderson & Trueman, 2000","referenceId":833018,"parentId":null,"referenceNameHtml":"<i>Varroa
         destructor</i> Anderson & Trueman, 2000"},"relationId":"PARASITE","relationName":"est
@@ -77,8 +79,8 @@ http_interactions:
         <em>Apis mellifera </em>L. and <em>Varroa destructor </em>mite populations
         in France. <em>Applied and environmental microbiology</em>, <em>70</em>(12):
         7185-7191.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1{&operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1{&operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PARASITE&page=1&size=1{&operationalGroupId}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
-  recorded_at: 2019-03-26 13:04:14 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=239523&interactionTypeId=PREDATEUR&page=1&size=1
@@ -107,6 +109,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"interactions":[{"taxon":{"id":433589,"scientificName":null,"fullNameHtml":"<i>Vespa
         velutina</i> Lepeletier, 1836","referenceId":433589,"parentId":null,"referenceNameHtml":"<i>Vespa
         velutina</i> Lepeletier, 1836"},"relationId":"PREDATEUR","relationName":"est
@@ -116,8 +119,8 @@ http_interactions:
         D.P. 1994. Ecology, behaviour and management of social wasp, Vespa velutina
         smith (Hymenoptera: Vespidae), attacking honeybee colonies. <i>Korean Journal
         of Apiculture</i>, 9(1): 5‑10.","url":null,"doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=1&size=1{&operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=1&size=1{&operationalGroupId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=2&size=1{&operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=239523&interactionTypeId=PREDATEUR&page=2&size=1{&operationalGroupId}","templated":true}},"page":{"size":1,"totalElements":2,"totalPages":2,"number":1}}'
-  recorded_at: 2019-03-26 13:04:14 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/interactions/search/?operationalGroupId=706&page=1&size=1
@@ -146,6 +149,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"interactions":[{"taxon":{"id":159424,"scientificName":null,"fullNameHtml":"<i>Bacidia
         egenula</i> (Nyl.) Arnold, 1870","referenceId":660247,"parentId":null,"referenceNameHtml":"<i>Bacidina
         egenula</i> (Nyl.) Vězda, 1990"},"relationId":"ASSOCIE","relationName":"est
@@ -154,8 +158,8 @@ http_interactions:
         L., 1753"},"source":{"id":68904,"fullCitation":"Aptroot, A., Van De Vijver,
         B., Lebouvier, M. &amp; Ertz, D. 2011. Lichens of Ile Amsterdam and Ile Saint
         Paul (TAAF, southern Indian Ocean). <em>Nova Hedwigia</em>, 92(3-4): 343-367.","url":"http://dx.doi.org/10.1127/0029-5035/2011/0092-0343","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/0"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=1&size=1{&taxrefId,interactionTypeId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=1&size=1{&taxrefId,interactionTypeId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=2&size=1{&taxrefId,interactionTypeId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?operationalGroupId=706&page=24&size=1{&taxrefId,interactionTypeId}","templated":true}},"page":{"size":1,"totalElements":24,"totalPages":24,"number":1}}'
-  recorded_at: 2019-03-26 13:04:14 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=1&page=1&size=1
@@ -184,9 +188,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-03-26 13:04:14 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=ASDF&page=1&size=1
@@ -219,6 +224,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -231,5 +237,83 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 13:04:14 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api/interactions/search/?taxrefId=52419&taxrefId=52420&page=1&size=5
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Sun, 12 Jun 2022 11:06:40 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"_embedded":{"interactions":[{"id":204,"taxon":{"id":52419,"scientificName":"Abia
+        candens","fullNameHtml":"<i>Abia candens</i> Konow, 1887","referenceId":52419,"parentId":188663,"referenceNameHtml":"<i>Abia
+        candens</i> Konow, 1887"},"taxonSex":null,"taxonStage":null,"relationId":"NUTRIMENT","relationName":"acquiert
+        des nutriments par (y compris herbivorie)","specificity":null,"inherited":false,"target":{"id":125295,"scientificName":"Succisa
+        pratensis","fullNameHtml":"<i>Succisa pratensis</i> Moench, 1794","referenceId":125295,"parentId":198090,"referenceNameHtml":"<i>Succisa
+        pratensis</i> Moench, 1794"},"targetStage":null,"source":{"id":121441,"shortCitation":null,"year":null,"fullCitation":"Savina,
+        H. & Liston, A. D. 2009. European <i>Abia </i>species feeding on Dipsacaceae,
+        with description of the larva of <i>A. fulgens</i> Zaddach, 1863 (Hymenoptera,
+        Symphyta, Cimbicidae). <i>Bulletin de la société entomologique de France</i>,
+        114(3): 265-276.","url":"https://inpn.mnhn.fr/docs-web/docs/download/121441","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/204"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/52419"},"target":{"href":"https://taxref.mnhn.fr/api/taxa/125295"}}},{"id":273,"taxon":{"id":52419,"scientificName":"Abia
+        candens","fullNameHtml":"<i>Abia candens</i> Konow, 1887","referenceId":52419,"parentId":188663,"referenceNameHtml":"<i>Abia
+        candens</i> Konow, 1887"},"taxonSex":null,"taxonStage":null,"relationId":"NUTRIMENT","relationName":"acquiert
+        des nutriments par (y compris herbivorie)","specificity":null,"inherited":false,"target":{"id":193734,"scientificName":"Knautia","fullNameHtml":"<i>Knautia</i>
+        L., 1753","referenceId":193734,"parentId":187420,"referenceNameHtml":"<i>Knautia</i>
+        L., 1753"},"targetStage":null,"source":{"id":121442,"shortCitation":null,"year":null,"fullCitation":"Savina,
+        H. & Chevin, H. 2012. Contribution à l''inventaire des Hyménoptères Symphytes
+        du département de l''Ariège et complément sur les plantes-hôtes des espèces
+        du genre <i>Abia </i>inféodées aux Dipsacaceae. <i>Bulletin de la société
+        entomologique de France</i>, 117(1): 53-70.","url":"https://inpn.mnhn.fr/docs-web/docs/download/121442","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/273"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/52419"},"target":{"href":"https://taxref.mnhn.fr/api/taxa/193734"}}},{"id":202,"taxon":{"id":52419,"scientificName":"Abia
+        candens","fullNameHtml":"<i>Abia candens</i> Konow, 1887","referenceId":52419,"parentId":188663,"referenceNameHtml":"<i>Abia
+        candens</i> Konow, 1887"},"taxonSex":null,"taxonStage":null,"relationId":"NUTRIMENT","relationName":"acquiert
+        des nutriments par (y compris herbivorie)","specificity":null,"inherited":false,"target":{"id":104517,"scientificName":"Knautia
+        arvernensis","fullNameHtml":"<i>Knautia arvernensis</i> (Briq.) Szabó, 1934","referenceId":104517,"parentId":193734,"referenceNameHtml":"<i>Knautia
+        arvernensis</i> (Briq.) Szabó, 1934"},"targetStage":null,"source":{"id":121441,"shortCitation":null,"year":null,"fullCitation":"Savina,
+        H. & Liston, A. D. 2009. European <i>Abia </i>species feeding on Dipsacaceae,
+        with description of the larva of <i>A. fulgens</i> Zaddach, 1863 (Hymenoptera,
+        Symphyta, Cimbicidae). <i>Bulletin de la société entomologique de France</i>,
+        114(3): 265-276.","url":"https://inpn.mnhn.fr/docs-web/docs/download/121441","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/202"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/52419"},"target":{"href":"https://taxref.mnhn.fr/api/taxa/104517"}}},{"id":203,"taxon":{"id":52419,"scientificName":"Abia
+        candens","fullNameHtml":"<i>Abia candens</i> Konow, 1887","referenceId":52419,"parentId":188663,"referenceNameHtml":"<i>Abia
+        candens</i> Konow, 1887"},"taxonSex":null,"taxonStage":null,"relationId":"NUTRIMENT","relationName":"acquiert
+        des nutriments par (y compris herbivorie)","specificity":null,"inherited":false,"target":{"id":104545,"scientificName":"Knautia
+        maxima","fullNameHtml":"<i>Knautia maxima</i> (Opiz) J.Ortmann, 1842","referenceId":104528,"parentId":null,"referenceNameHtml":"<i>Knautia
+        dipsacifolia</i> Kreutzer, 1840"},"targetStage":null,"source":{"id":121441,"shortCitation":null,"year":null,"fullCitation":"Savina,
+        H. & Liston, A. D. 2009. European <i>Abia </i>species feeding on Dipsacaceae,
+        with description of the larva of <i>A. fulgens</i> Zaddach, 1863 (Hymenoptera,
+        Symphyta, Cimbicidae). <i>Bulletin de la société entomologique de France</i>,
+        114(3): 265-276.","url":"https://inpn.mnhn.fr/docs-web/docs/download/121441","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/203"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/52419"},"target":{"href":"https://taxref.mnhn.fr/api/taxa/104545"}}},{"id":205,"taxon":{"id":52420,"scientificName":"Abia
+        sericea","fullNameHtml":"<i>Abia sericea</i> (Linnaeus, 1767)","referenceId":52420,"parentId":188663,"referenceNameHtml":"<i>Abia
+        sericea</i> (Linnaeus, 1767)"},"taxonSex":null,"taxonStage":null,"relationId":"NUTRIMENT","relationName":"acquiert
+        des nutriments par (y compris herbivorie)","specificity":null,"inherited":false,"target":{"id":104516,"scientificName":"Knautia
+        arvensis","fullNameHtml":"<i>Knautia arvensis</i> (L.) Coult., 1828","referenceId":104516,"parentId":193734,"referenceNameHtml":"<i>Knautia
+        arvensis</i> (L.) Coult., 1828"},"targetStage":null,"source":{"id":121441,"shortCitation":null,"year":null,"fullCitation":"Savina,
+        H. & Liston, A. D. 2009. European <i>Abia </i>species feeding on Dipsacaceae,
+        with description of the larva of <i>A. fulgens</i> Zaddach, 1863 (Hymenoptera,
+        Symphyta, Cimbicidae). <i>Bulletin de la société entomologique de France</i>,
+        114(3): 265-276.","url":"https://inpn.mnhn.fr/docs-web/docs/download/121441","doi":null,"doiUri":null,"zooBankId":null,"zooBankUri":null,"abstract":null},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/205"},"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/52420"},"target":{"href":"https://taxref.mnhn.fr/api/taxa/104516"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=52419,52420&page=1&size=5{&interactionTypeId,operationalGroupId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=52419,52420&page=1&size=5{&interactionTypeId,operationalGroupId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=52419,52420&page=2&size=5{&interactionTypeId,operationalGroupId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/interactions/search?taxrefId=52419,52420&page=3&size=5{&interactionTypeId,operationalGroupId}","templated":true}},"page":{"size":5,"totalElements":11,"totalPages":3,"number":1}}'
+  recorded_at: 2022-06-12 11:06:47 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
