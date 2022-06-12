@@ -2,6 +2,8 @@ context("test-rt_status_search")
 
 vcr::use_cassette("rt_status_search", {
   test_that("Can retrieve status using the id of a species", {
+
+    # Single id
     expect_silent(res <- rt_status_search(id = 443800, detail = FALSE))
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 33))
@@ -34,6 +36,12 @@ vcr::use_cassette("rt_status_search", {
                         "statusType.href", "location.href",
                         "bibliographicResource.href", "statusValue.href"))
     expect_equal(res$id[1], 443800)
+
+    # Multiple ids
+    expect_silent(res <- rt_status_search(c(443800, 59)))
+
+    expect_is(res, "data.frame")
+    expect_equal(dim(res), c(2, 33))
   })
 
   test_that("Can retrieve status using the id of a location", {

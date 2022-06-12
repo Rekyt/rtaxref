@@ -27,11 +27,12 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":443800,"scientificName":null,"fullNameHtml":"<i>Bradypus
         tridactylus</i> Linnaeus, 1758","referenceId":443800,"parentId":null,"referenceNameHtml":"<i>Bradypus
         tridactylus</i> Linnaeus, 1758"},"requestedLocationId":null,"worldRedList":"LC","europeanRedList":null,"nationalRedList":"LC","localRedList":null,"bonnConvention":null,"bernConvention":null,"barcelonaConvention":null,"osparConvention":null,"hffDirective":null,"birdDirective":null,"nationalProtection":null,"regionalProtection":null,"departementalProtection":"GUYM2","overseaProtection":null,"nationalActionPlan":null,"completedNationalActionPlan":null,"determinanteZnieff":null,"scapNationale":null,"scapRegionale":null,"sensibilite":null,"biogeoStatus":"S","reglementation":null,"noIntroductionReglementation":null,"invasiveReglementation":null,"prioriteActionPubliqueNationale":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/443800"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/columns?taxrefId=443800&page=1&size=2000{&operationalGroupId,locationId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/columns?taxrefId=443800&page=1&size=2000{&operationalGroupId,locationId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/columns?taxrefId=443800&page=1&size=2000{&operationalGroupId,locationId,latitude,longitude}","templated":true}},"page":{"size":1,"totalElements":1,"totalPages":1,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/lines?taxrefId=443800&page=1&size=2000
@@ -60,6 +61,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":443800,"scientificName":"Bradypus
         tridactylus","fullNameHtml":"<i>Bradypus tridactylus</i> Linnaeus, 1758","referenceId":443800,"parentId":443585,"referenceNameHtml":"<i>Bradypus
         tridactylus</i> Linnaeus, 1758"},"statusTypeName":"Liste rouge mondiale","statusTypeGroup":"Liste
@@ -76,18 +78,18 @@ http_interactions:
         de protection des mammifères représentés dans le département de la Guyane
         : Article 2","statusRemarks":null,"locationId":"INSEED973","locationName":"Guyane","locationAdminLevel":"Département","sourceId":621,"source":"Arrêté
         interministériel du 15 mai 1986 fixant sur tout ou partie du territoire national
-        des mesures de protection des mammifères représentés dans le département
-        de la Guyane (JORF 25 juin 1986, p. 7882 ; modifié par les arrêtés du 20
-        janvier 1987 (JORF du 11/04/87), du 29 juillet 2005 (JORF du 08/11/2005) et
-        du 24 juillet 2006 (JORF du 14/09/2006))","requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/PD"},"location":{"href":"https://taxref.mnhn.fr/api/locations/INSEED973"},"bibliographicResource":{"href":"https://taxref.mnhn.fr/api/sources/621"}}},{"taxon":{"id":443800,"scientificName":"Bradypus
+        des mesures de protection des mammifères représentés dans le département de
+        la Guyane (JORF 25 juin 1986, p. 7882 ; modifié par les arrêtés du 20 janvier
+        1987 (JORF du 11/04/87), du 29 juillet 2005 (JORF du 08/11/2005) et du 24
+        juillet 2006 (JORF du 14/09/2006))","requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/PD"},"location":{"href":"https://taxref.mnhn.fr/api/locations/INSEED973"},"bibliographicResource":{"href":"https://taxref.mnhn.fr/api/sources/621"}}},{"taxon":{"id":443800,"scientificName":"Bradypus
         tridactylus","fullNameHtml":"<i>Bradypus tridactylus</i> Linnaeus, 1758","referenceId":443800,"parentId":443585,"referenceNameHtml":"<i>Bradypus
         tridactylus</i> Linnaeus, 1758"},"statusTypeName":"Statut biogéographique
         territorial (TAXREF)","statusTypeGroup":"Statut biogéographique","statusCode":"S","statusName":"Subendémique","statusRemarks":null,"locationId":"TER973","locationName":"Guyane","locationAdminLevel":"Territoire","sourceId":160321,"source":"UICN
         France, MNHN, GEPOG, Kwata, Biotope, Hydreco & OSL. 2017. <em>La Liste rouge
         des espèces menacées en France - Chapitre Faune de Guyane française. </em>Paris,
         France. 35 pp.","requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/443800"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/TAXREF_STATUT_BIOGEO"},"statusValue":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/S"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TER973"},"bibliographicResource":{"href":"https://taxref.mnhn.fr/api/sources/160321"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/lines?taxrefId=443800&page=1&size=2000{&statusTypeId,operationalGroupId,locationId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/lines?taxrefId=443800&page=1&size=2000{&statusTypeId,operationalGroupId,locationId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/lines?taxrefId=443800&page=1&size=2000{&statusTypeId,operationalGroupId,locationId,latitude,longitude}","templated":true}},"page":{"size":4,"totalElements":4,"totalPages":1,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?locationId=INSEEC34172&page=1&size=1
@@ -116,11 +118,12 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":59,"scientificName":null,"fullNameHtml":"<i>Euproctus
         montanus</i> (Savi, 1838)","referenceId":59,"parentId":null,"referenceNameHtml":"<i>Euproctus
         montanus</i> (Savi, 1838)"},"requestedLocationId":"INSEEC34172","worldRedList":"LC","europeanRedList":"LC","nationalRedList":"LC","localRedList":null,"bonnConvention":null,"bernConvention":"IBE2","barcelonaConvention":null,"osparConvention":null,"hffDirective":"CDH4","birdDirective":null,"nationalProtection":"NAR2","regionalProtection":null,"departementalProtection":null,"overseaProtection":null,"nationalActionPlan":null,"completedNationalActionPlan":null,"determinanteZnieff":null,"scapNationale":null,"scapRegionale":null,"sensibilite":null,"biogeoStatus":"E","reglementation":null,"noIntroductionReglementation":null,"invasiveReglementation":null,"prioriteActionPubliqueNationale":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/59"},"location":{"href":"https://taxref.mnhn.fr/api/locations/INSEEC34172"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/columns?locationId=INSEEC34172&page=1&size=1{&taxrefId,operationalGroupId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/columns?locationId=INSEEC34172&page=1&size=1{&taxrefId,operationalGroupId,latitude,longitude}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/status/search/columns?locationId=INSEEC34172&page=2&size=1{&taxrefId,operationalGroupId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/columns?locationId=INSEEC34172&page=141034&size=1{&taxrefId,operationalGroupId,latitude,longitude}","templated":true}},"page":{"size":1,"totalElements":141034,"totalPages":141034,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/lines?locationId=INSEEC34172&page=1&size=1
@@ -149,6 +152,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":162468,"scientificName":"+ Laburnocytisus
         adami","fullNameHtml":"<i>+ Laburnocytisus adami</i> (Poit.) C.K.Schneid.,
         1907","referenceId":162468,"parentId":199015,"referenceNameHtml":"<i>+ Laburnocytisus
@@ -156,8 +160,8 @@ http_interactions:
         territorial (TAXREF)","statusTypeGroup":"Statut biogéographique","statusCode":"M","statusName":"Introduit
         non établi (dont cultivé / domestique)","statusRemarks":null,"locationId":"TERFXFR","locationName":"France
         métropolitaine","locationAdminLevel":"Territoire","sourceId":null,"source":null,"requestedLocationId":"INSEEC34172","listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/162468"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/TAXREF_STATUT_BIOGEO"},"statusValue":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/M"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/lines?locationId=INSEEC34172&page=1&size=1{&taxrefId,statusTypeId,operationalGroupId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/lines?locationId=INSEEC34172&page=1&size=1{&taxrefId,statusTypeId,operationalGroupId,latitude,longitude}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/status/search/lines?locationId=INSEEC34172&page=2&size=1{&taxrefId,statusTypeId,operationalGroupId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/lines?locationId=INSEEC34172&page=175884&size=1{&taxrefId,statusTypeId,operationalGroupId,latitude,longitude}","templated":true}},"page":{"size":1,"totalElements":175884,"totalPages":175884,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?operationalGroupId=706&page=1&size=1
@@ -186,11 +190,12 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":4703,"scientificName":null,"fullNameHtml":"<i>Stereocaulon
         evolutum</i> Graewe, 1865","referenceId":4703,"parentId":null,"referenceNameHtml":"<i>Stereocaulon
         evolutum</i> Graewe, 1865"},"requestedLocationId":null,"worldRedList":null,"europeanRedList":null,"nationalRedList":null,"localRedList":null,"bonnConvention":null,"bernConvention":null,"barcelonaConvention":null,"osparConvention":null,"hffDirective":null,"birdDirective":null,"nationalProtection":null,"regionalProtection":null,"departementalProtection":null,"overseaProtection":null,"nationalActionPlan":null,"completedNationalActionPlan":null,"determinanteZnieff":null,"scapNationale":null,"scapRegionale":null,"sensibilite":null,"biogeoStatus":"P","reglementation":null,"noIntroductionReglementation":null,"invasiveReglementation":null,"prioriteActionPubliqueNationale":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/4703"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/columns?operationalGroupId=706&page=1&size=1{&taxrefId,locationId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/columns?operationalGroupId=706&page=1&size=1{&taxrefId,locationId,latitude,longitude}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/status/search/columns?operationalGroupId=706&page=2&size=1{&taxrefId,locationId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/columns?operationalGroupId=706&page=3957&size=1{&taxrefId,locationId,latitude,longitude}","templated":true}},"page":{"size":1,"totalElements":3957,"totalPages":3957,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/lines?operationalGroupId=706&page=1&size=1
@@ -219,14 +224,15 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":660455,"scientificName":"Abrothallus
         acetabuli","fullNameHtml":"<i>Abrothallus acetabuli</i> Diederich, 1990","referenceId":660455,"parentId":188675,"referenceNameHtml":"<i>Abrothallus
-        acetabuli</i> Diederich, 1990"},"statusTypeName":"Statut biogéographique
-        territorial (TAXREF)","statusTypeGroup":"Statut biogéographique","statusCode":"P","statusName":"Présent
+        acetabuli</i> Diederich, 1990"},"statusTypeName":"Statut biogéographique territorial
+        (TAXREF)","statusTypeGroup":"Statut biogéographique","statusCode":"P","statusName":"Présent
         (indigène ou indéterminé)","statusRemarks":null,"locationId":"TERFXFR","locationName":"France
         métropolitaine","locationAdminLevel":"Territoire","sourceId":null,"source":null,"requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/660455"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/TAXREF_STATUT_BIOGEO"},"statusValue":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/P"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/lines?operationalGroupId=706&page=1&size=1{&taxrefId,statusTypeId,locationId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/lines?operationalGroupId=706&page=1&size=1{&taxrefId,statusTypeId,locationId,latitude,longitude}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/status/search/lines?operationalGroupId=706&page=2&size=1{&taxrefId,statusTypeId,locationId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/lines?operationalGroupId=706&page=4984&size=1{&taxrefId,statusTypeId,locationId,latitude,longitude}","templated":true}},"page":{"size":1,"totalElements":4984,"totalPages":4984,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?latitude=-45.5496&longitude=-0.7814&page=1&size=1
@@ -255,11 +261,12 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":56,"scientificName":null,"fullNameHtml":"<i>Euproctus
         asper</i> (Dugès, 1852)","referenceId":444427,"parentId":null,"referenceNameHtml":"<i>Calotriton
         asper</i> (Al. Dugès, 1852)"},"requestedLocationId":null,"worldRedList":null,"europeanRedList":null,"nationalRedList":null,"localRedList":null,"bonnConvention":null,"bernConvention":null,"barcelonaConvention":null,"osparConvention":null,"hffDirective":null,"birdDirective":null,"nationalProtection":null,"regionalProtection":null,"departementalProtection":null,"overseaProtection":null,"nationalActionPlan":null,"completedNationalActionPlan":null,"determinanteZnieff":"true","scapNationale":null,"scapRegionale":null,"sensibilite":null,"biogeoStatus":null,"reglementation":null,"noIntroductionReglementation":null,"invasiveReglementation":null,"prioriteActionPubliqueNationale":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/56"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/columns?latitude=-45.5496&longitude=-0.7814&page=1&size=1{&taxrefId,operationalGroupId,locationId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/columns?latitude=-45.5496&longitude=-0.7814&page=1&size=1{&taxrefId,operationalGroupId,locationId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/status/search/columns?latitude=-45.5496&longitude=-0.7814&page=2&size=1{&taxrefId,operationalGroupId,locationId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/columns?latitude=-45.5496&longitude=-0.7814&page=210120&size=1{&taxrefId,operationalGroupId,locationId}","templated":true}},"page":{"size":1,"totalElements":210120,"totalPages":210120,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/lines?latitude=-45.5496&longitude=-0.7814&page=1&size=1
@@ -288,6 +295,7 @@ http_interactions:
       transfer-encoding: chunked
     body:
       encoding: UTF-8
+      file: ~
       string: '{"_embedded":{"status":[{"taxon":{"id":162468,"scientificName":"+ Laburnocytisus
         adami","fullNameHtml":"<i>+ Laburnocytisus adami</i> (Poit.) C.K.Schneid.,
         1907","referenceId":162468,"parentId":199015,"referenceNameHtml":"<i>+ Laburnocytisus
@@ -295,8 +303,8 @@ http_interactions:
         territorial (TAXREF)","statusTypeGroup":"Statut biogéographique","statusCode":"M","statusName":"Introduit
         non établi (dont cultivé / domestique)","statusRemarks":null,"locationId":"TERFXFR","locationName":"France
         métropolitaine","locationAdminLevel":"Territoire","sourceId":null,"source":null,"requestedLocationId":null,"listedName":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/162468"},"statusType":{"href":"https://taxref.mnhn.fr/api/status/types/TAXREF_STATUT_BIOGEO"},"statusValue":{"href":"https://taxref.mnhn.fr/api/biogeographicStatus/M"},"location":{"href":"https://taxref.mnhn.fr/api/locations/TERFXFR"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/lines?latitude=-45.5496&longitude=-0.7814&page=1&size=1{&taxrefId,statusTypeId,operationalGroupId,locationId}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/lines?latitude=-45.5496&longitude=-0.7814&page=1&size=1{&taxrefId,statusTypeId,operationalGroupId,locationId}","templated":true},"next":{"href":"https://taxref.mnhn.fr/api/status/search/lines?latitude=-45.5496&longitude=-0.7814&page=2&size=1{&taxrefId,statusTypeId,operationalGroupId,locationId}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/lines?latitude=-45.5496&longitude=-0.7814&page=770800&size=1{&taxrefId,statusTypeId,operationalGroupId,locationId}","templated":true}},"page":{"size":1,"totalElements":770800,"totalPages":770800,"number":1}}'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?taxrefId=1234567&page=1&size=1
@@ -325,9 +333,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?taxrefId=azerty&page=1&size=2000
@@ -360,6 +369,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -372,8 +382,8 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?locationId=123&page=1&size=1
@@ -402,9 +412,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?locationId=INSEE&page=1&size=1
@@ -433,9 +444,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?operationalGroupId=123&page=1&size=1
@@ -464,9 +476,10 @@ http_interactions:
       server: Apache
     body:
       encoding: UTF-8
+      file: ~
       string: ''
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?operationalGroupId=INSEE&page=1&size=1
@@ -499,6 +512,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -511,8 +525,8 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?longitude=azerty&page=1&size=2000
@@ -545,6 +559,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -557,8 +572,8 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?latitude=azerty&page=1&size=2000
@@ -591,6 +606,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -603,8 +619,8 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
 - request:
     method: get
     uri: https://taxref.mnhn.fr/api//status/search/columns?latitude=azerty&longitude=azerty&page=1&size=2000
@@ -637,6 +653,7 @@ http_interactions:
       vary: Accept-Encoding
     body:
       encoding: UTF-8
+      file: ~
       string: '<html><head><title>Apache Tomcat/7.0.53 - Rapport d''''erreur</title><style><!--H1
         {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;}
         H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;}
@@ -649,5 +666,42 @@ http_interactions:
         <u></u></p><p><b>description</b> <u>La requête envoyée par le client était
         syntaxiquement incorrecte.</u></p><HR size="1" noshade="noshade"><h3>Apache
         Tomcat/7.0.53</h3></body></html>'
-  recorded_at: 2019-03-26 16:32:09 GMT
-  recorded_with: vcr/0.2.6, webmockr/0.3.4
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
+- request:
+    method: get
+    uri: https://taxref.mnhn.fr/api//status/search/columns?taxrefId=443800&taxrefId=59&page=1&size=2000
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      user-agent: http://github.com/Rekyt/rtaxref R package rtaxref/0.1.0
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      access-control-allow-credentials: 'true'
+      access-control-allow-headers: origin, content-type, accept, x-requested-with,
+        destination
+      access-control-allow-methods:
+      - GET, HEAD, OPTIONS, POST, PUT
+      - PUT, GET, POST, DELETE, OPTIONS
+      access-control-allow-origin: '*'
+      content-type: application/hal+json; version=1;charset=UTF-8
+      date: Sun, 12 Jun 2022 11:13:18 GMT
+      server: Apache
+      transfer-encoding: chunked
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"_embedded":{"status":[{"taxon":{"id":59,"scientificName":null,"fullNameHtml":"<i>Euproctus
+        montanus</i> (Savi, 1838)","referenceId":59,"parentId":null,"referenceNameHtml":"<i>Euproctus
+        montanus</i> (Savi, 1838)"},"requestedLocationId":null,"worldRedList":"LC","europeanRedList":"LC","nationalRedList":"LC","localRedList":"NT,VU","bonnConvention":null,"bernConvention":"IBE2","barcelonaConvention":null,"osparConvention":null,"hffDirective":"CDH4","birdDirective":null,"nationalProtection":"FRAR2","regionalProtection":null,"departementalProtection":null,"overseaProtection":null,"nationalActionPlan":null,"completedNationalActionPlan":null,"determinanteZnieff":"true","scapNationale":null,"scapRegionale":null,"sensibilite":null,"biogeoStatus":"A,E","reglementation":null,"noIntroductionReglementation":"REUEAJ","invasiveReglementation":null,"prioriteActionPubliqueNationale":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/59"}}},{"taxon":{"id":443800,"scientificName":null,"fullNameHtml":"<i>Bradypus
+        tridactylus</i> Linnaeus, 1758","referenceId":443800,"parentId":null,"referenceNameHtml":"<i>Bradypus
+        tridactylus</i> Linnaeus, 1758"},"requestedLocationId":null,"worldRedList":"LC","europeanRedList":null,"nationalRedList":"LC","localRedList":null,"bonnConvention":null,"bernConvention":null,"barcelonaConvention":null,"osparConvention":null,"hffDirective":null,"birdDirective":null,"nationalProtection":null,"regionalProtection":null,"departementalProtection":"GUYM2","overseaProtection":null,"nationalActionPlan":null,"completedNationalActionPlan":null,"determinanteZnieff":null,"scapNationale":null,"scapRegionale":null,"sensibilite":null,"biogeoStatus":"A,S","reglementation":null,"noIntroductionReglementation":null,"invasiveReglementation":null,"prioriteActionPubliqueNationale":null,"_links":{"taxon":{"href":"https://taxref.mnhn.fr/api/taxa/443800"}}}]},"_links":{"self":{"href":"https://taxref.mnhn.fr/api/status/search/columns?taxrefId=443800,59&page=1&size=2000{&operationalGroupId,locationId,latitude,longitude}","templated":true},"first":{"href":"https://taxref.mnhn.fr/api/status/search/columns?taxrefId=443800,59&page=1&size=2000{&operationalGroupId,locationId,latitude,longitude}","templated":true},"last":{"href":"https://taxref.mnhn.fr/api/status/search/columns?taxrefId=443800,59&page=1&size=2000{&operationalGroupId,locationId,latitude,longitude}","templated":true}},"page":{"size":2,"totalElements":2,"totalPages":1,"number":1}}'
+  recorded_at: 2022-06-12 11:13:29 GMT
+  recorded_with: vcr/1.0.2.93, webmockr/0.8.0
