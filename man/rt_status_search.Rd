@@ -20,7 +20,7 @@ rt_status_search(
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 
-\item{opgroup_id}{{\code{integer(1)}}\cr{}
+\item{opgroup_id}{{\code{integer(1)}, \strong{required}}\cr{}
 identifier of the operational group (see the list of
 operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}})}
 

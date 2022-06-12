@@ -7,7 +7,7 @@
 rt_sources_id(source_id, bibtex = FALSE)
 }
 \arguments{
-\item{source_id}{{\code{integer(1)}}\cr{}
+\item{source_id}{{\code{integer(1)}, \strong{required}}\cr{}
 an integer giving the id of the source in TAXREF}
 
 \item{bibtex}{{\code{logical(1)}, default = \code{FALSE}}\cr{}

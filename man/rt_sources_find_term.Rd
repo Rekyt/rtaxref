@@ -7,7 +7,7 @@
 rt_sources_find_term(term = NULL)
 }
 \arguments{
-\item{term}{{\code{character(1)}}\cr{}
+\item{term}{{\code{character(1)}, \strong{required}}\cr{}
 A term contained in the source}
 }
 \description{

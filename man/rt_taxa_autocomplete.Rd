@@ -14,7 +14,7 @@ rt_taxa_autocomplete(
 )
 }
 \arguments{
-\item{term}{{\code{character(1)} \strong{required}}\cr{}
+\item{term}{{\code{character(1)}, \strong{required}}\cr{}
 the beginning of the scientific name of the searched taxa}
 
 \item{territories}{{\verb{character(1+)}}\cr{}

@@ -1,6 +1,6 @@
 #' Retrieve the status of all Taxa in an Operational Group
 #'
-#' @param opgroup_id {`integer(1)`}\cr{}
+#' @param opgroup_id {`integer(1)`, **required**}\cr{}
 #'                   identifier of the operational group (see the list of
 #'                   operational groups [`rt_operational_groups()`])
 #' @param size {`integer(1)`; default = `2000`}\cr{}

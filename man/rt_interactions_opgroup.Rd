@@ -7,7 +7,7 @@
 rt_interactions_opgroup(opgroup_id = NULL, page = 1, size = 2000)
 }
 \arguments{
-\item{opgroup_id}{{\code{integer(1)}}\cr{}
+\item{opgroup_id}{{\code{integer(1)}, \strong{required}}\cr{}
 identifier of the operational group (see the list of
 operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}})}
 
