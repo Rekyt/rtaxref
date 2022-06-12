@@ -13,21 +13,22 @@ rt_interactions_search(
 )
 }
 \arguments{
-\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
-an integer giving the id of the taxon in TAXREF (also called
-\code{cdNom})}
+\item{id}{{\verb{integer(1+)}}\cr{}
+One or more integer giving the id(s) of taxa in TAXREF
+(also called \code{cdNom})}
 
 \item{interaction_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
 A character identifying the type of interactions}
 
-\item{opgroup_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
-the id of an operational group referenced in TAXREF}
+\item{opgroup_id}{{\code{integer(1)}, \strong{required}}\cr{}
+identifier of the operational group (see the list of
+operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}})}
 
 \item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{5000}}\cr{}
-The number of lines returned per page (maximum = 5000)}
+\item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
+The number of lines returned per page (maximum = 2000)}
 }
 \description{
 Search Interactions based on a list of criteria

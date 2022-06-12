@@ -1,8 +1,7 @@
 #' Search Interactions based on a list of criteria
 #'
-#' @inheritParams rt_taxa_status
 #' @inheritParams rt_interactions_type
-#' @inheritParams rt_operational_groups
+#' @inheritParams rt_status_opgroup
 #' @inheritParams rt_taxa_search
 #'
 #' @examples
