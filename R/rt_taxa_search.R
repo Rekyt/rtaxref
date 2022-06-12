@@ -1,5 +1,8 @@
 #' Search for a taxon information
 #'
+#' @param id          {`integer(1+)`}\cr{}
+#'                    One or more integer giving the id(s) of taxa in TAXREF
+#'                    (also called `cdNom`)
 #' @param sciname     {`character(1+)`}\cr{}
 #'                    One or more scientific name of searched taxa
 #' @param fr_name     {`character(1+)`}\cr{}
@@ -78,11 +81,13 @@
 #' \dontrun{rt_taxa_search(sciname = "Bradypus")}
 #'
 #' @export
-rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
-                          rank = NULL, territories = NULL, domain = NULL,
-                          habitats = NULL, vernacular = NULL, version = NULL,
-                          page = 1, size = 5000) {
+rt_taxa_search = function(
+    id = NULL, sciname = NULL, fr_name = NULL, en_name = NULL, rank = NULL,
+    territories = NULL, domain = NULL, habitats = NULL, vernacular = NULL,
+    version = NULL, page = 1, size = 5000
+) {
 
+  stopifnot("'id' must be numeric or NULL" = is.numeric(id) | is.null(id))
   stopifnot("'sciname' must be a character or NULL" =
               is.character(sciname) | is.null(sciname))
   stopifnot("'fr_name' must be a character or NULL" =
@@ -107,6 +112,7 @@ rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
   api_query = rt_GET(
     "taxa/search",
     query = list(
+      taxrefIds              = id,
       scientificNames        = sciname,
       frenchVernacularNames  = fr_name,
       englishVernacularNames = en_name,

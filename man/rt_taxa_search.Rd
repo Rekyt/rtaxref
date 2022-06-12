@@ -5,6 +5,7 @@
 \title{Search for a taxon information}
 \usage{
 rt_taxa_search(
+  id = NULL,
   sciname = NULL,
   fr_name = NULL,
   en_name = NULL,
@@ -19,6 +20,10 @@ rt_taxa_search(
 )
 }
 \arguments{
+\item{id}{{\verb{integer(1+)}}\cr{}
+One or more integer giving the id(s) of taxa in TAXREF
+(also called \code{cdNom})}
+
 \item{sciname}{{\verb{character(1+)}}\cr{}
 One or more scientific name of searched taxa}
 

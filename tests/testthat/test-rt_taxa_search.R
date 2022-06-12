@@ -1,9 +1,29 @@
 context("test-rt_taxa_search")
 
 vcr::use_cassette("rt_taxa_search", {
-  test_that("Can retrieve a taxon matching its name", {
+
+  test_that("Matching scientific ids", {
     # Single Name
-    expect_silent(res  <- rt_taxa_search("Bradypus tridactylus"))
+    expect_silent(res <- rt_taxa_search(4540))
+
+    expect_is(res, "data.frame")
+    expect_equal(dim(res), c(1, 62))
+    expect_equal(res$id, 4540)
+    expect_equal(res$scientificName, "Petronia petronia")
+
+    # Multiple Names
+    expect_silent(res <- rt_taxa_search(c(4540, 443800)))
+
+    expect_is(res, "data.frame")
+    expect_equal(dim(res), c(2, 62))
+    expect_equal(res$id, c(4540, 443800))
+    expect_equal(res$scientificName,
+                 c("Petronia petronia", "Bradypus tridactylus"))
+  })
+
+  test_that("Can retrieve a taxon matching its scientific name", {
+    # Single Name
+    expect_silent(res  <- rt_taxa_search(sciname = "Bradypus tridactylus"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 62))
@@ -11,8 +31,8 @@ vcr::use_cassette("rt_taxa_search", {
     expect_equal(res$scientificName, "Bradypus tridactylus")
 
     # Multiple Name
-    expect_silent(res <- rt_taxa_search(c("Bradypus tridactylus",
-                                          "Bradypus didactylus")))
+    expect_silent(res <- rt_taxa_search(sciname = c("Bradypus tridactylus",
+                                                    "Bradypus didactylus")))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(2, 62))
@@ -49,14 +69,16 @@ vcr::use_cassette("rt_taxa_search", {
 
   test_that("Matching rank", {
     # Single Ranks
-    expect_silent(res <- rt_taxa_search("Bradypus", rank = "GN"))
+    expect_silent(res <- rt_taxa_search(sciname = "Bradypus", rank = "GN"))
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 61))
     expect_equal(res$id, 443585)
     expect_equal(res$scientificName, "Bradypus")
 
-    expect_silent(res2 <- rt_taxa_search("Parus major", rank = "SSES"))
+    expect_silent(
+      res2 <- rt_taxa_search(sciname = "Parus major", rank = "SSES")
+    )
 
     expect_is(res2, "data.frame")
     expect_equal(dim(res2), c(2, 53))
@@ -75,7 +97,9 @@ vcr::use_cassette("rt_taxa_search", {
 
   test_that("Matching territories", {
     # Single Territory
-    expect_silent(res <- rt_taxa_search("Bradypus", territories = c("fr")))
+    expect_silent(
+      res <- rt_taxa_search(sciname = "Bradypus", territories = c("fr"))
+    )
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 62))
@@ -83,7 +107,9 @@ vcr::use_cassette("rt_taxa_search", {
     expect_equal(res$scientificName, "Stygarctus bradypus")
     expect_equal(res$fr, "P")
 
-    expect_silent(res2 <- rt_taxa_search("Bradypus", territories = c("gf")))
+    expect_silent(
+      res2 <- rt_taxa_search(sciname = "Bradypus", territories = c("gf"))
+    )
 
     expect_is(res2, "data.frame")
     expect_equal(dim(res2), c(3, 62))
@@ -91,7 +117,7 @@ vcr::use_cassette("rt_taxa_search", {
     expect_equal(res2$gf, c("P", "P", "S"))
 
     # Multiple territories
-    expect_silent(res3 <- rt_taxa_search("Bradypus",
+    expect_silent(res3 <- rt_taxa_search(sciname = "Bradypus",
                                          territories = c("reu", "pf")))
 
     expect_is(res3, "data.frame")
@@ -133,8 +159,9 @@ vcr::use_cassette("rt_taxa_search", {
     expect_equal(res2$habitat, "2")
 
     # Multiple Habitats
-    expect_silent(res <- rt_taxa_search("saxatilis", habitats = c(2, 4),
-                                        size = 4))
+    expect_silent(
+      res <- rt_taxa_search(sciname = "saxatilis", habitats = c(2, 4), size = 4)
+    )
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(4, 61))
@@ -152,8 +179,10 @@ vcr::use_cassette("rt_taxa_search", {
     expect_equal(res$vernacularGroup1, "Tardigrades")
 
     # Multiple Vernacular Groups
-    expect_silent(res <- rt_taxa_search(
-      "saxatilis", vernacular = c("Arthropodes", "Entognathes")))
+    expect_silent(
+      res <- rt_taxa_search(sciname = "saxatilis",
+                            vernacular = c("Arthropodes", "Entognathes"))
+    )
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(1, 62))
@@ -164,7 +193,12 @@ vcr::use_cassette("rt_taxa_search", {
 
   test_that("Wrong query returns error", {
     expect_error(
-      rt_taxa_search(1), "'sciname' must be a character or NULL", fixed = TRUE
+      rt_taxa_search("a"), "'id' must be numeric or NULL", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_search(sciname = 1), "'sciname' must be a character or NULL",
+      fixed = TRUE
     )
 
     expect_error(
