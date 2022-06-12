@@ -150,12 +150,12 @@ vcr::use_cassette("rt_status_search", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
     expect_error(rt_status_search(id = "azerty"),
-                 "The query is invalid. Please try another query.",
+                 "'id' must be a numeric or NULL",
                  fixed = TRUE)
 
     # Search by location
     expect_error(rt_status_search(location_id = 123, size = 1),
-                 "The query returned no results. Please try another query",
+                 "'location_id' must be a character or NULL",
                  fixed = TRUE)
     expect_error(rt_status_search(location_id = "INSEE", size = 1),
                  "The query returned no results. Please try another query",
@@ -166,19 +166,25 @@ vcr::use_cassette("rt_status_search", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
     expect_error(rt_status_search(opgroup_id = "INSEE", size = 1),
-                 "The query is invalid. Please try another query.",
+                 "'opgroup_id' must be a numeric or NULL",
                  fixed = TRUE)
 
     # Search by coordinates
     expect_error(rt_status_search(longitude = "azerty"),
-                 "The query is invalid. Please try another query.",
+                 "'longitude' must be a numeric or NULL",
                  fixed = TRUE)
     expect_error(rt_status_search(latitude = "azerty"),
-                 "The query is invalid. Please try another query.",
+                 "'latitude' must be a numeric or NULL",
                  fixed = TRUE)
     expect_error(rt_status_search(longitude = "azerty", latitude = "azerty"),
-                 "The query is invalid. Please try another query.",
+                 "'longitude' must be a numeric or NULL",
                  fixed = TRUE)
+
+    # Wrong page and size
+    expect_error(rt_status_search(opgroup_id = 123, page = "a"),
+                 "'page' must be a numeric", fixed = TRUE)
+    expect_error(rt_status_search(opgroup_id = 123, size = "a"),
+                 "'size' must be a numeric", fixed = TRUE)
   })
 })
 

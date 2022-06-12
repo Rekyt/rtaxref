@@ -22,8 +22,17 @@ vcr::use_cassette("rt_status_opgroup", {
                  fixed = TRUE)
 
     expect_error(rt_status_opgroup("azerty"),
-                 "The query is invalid. Please try another query.",
+                 "'opgroup_id' must be a numeric",
                  fixed = TRUE)
+
+    expect_error(rt_status_opgroup(123456, page = "a"),
+                 "'page' must be a numeric",
+                 fixed = TRUE)
+
+    expect_error(rt_status_opgroup(123456, size = "a"),
+                 "'size' must be a numeric",
+                 fixed = TRUE)
+
   })
 })
 

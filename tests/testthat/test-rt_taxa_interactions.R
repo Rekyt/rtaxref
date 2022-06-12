@@ -23,12 +23,19 @@ vcr::use_cassette("rt_taxa_interactions", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_taxa_interactions("blabla"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
-
     expect_error(rt_taxa_interactions(1234567),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(
+      rt_taxa_interactions("blabla"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_interactions(),
+      paste0("'id' argument is needed to retrieve interactions of a taxon ",
+             "using its id"),
+      fixed = TRUE
+    )
   })
 })

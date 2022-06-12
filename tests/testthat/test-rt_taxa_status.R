@@ -42,8 +42,18 @@ vcr::use_cassette("rt_taxa_status", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
-    expect_error(rt_taxa_status("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_taxa_status("A"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_status(1, detail = "a"), "'detail' must be a logical",
+      fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_status(), fixed = TRUE,
+      "'id' argument is needed to retrieve status of a taxon using its id"
+    )
   })
 })

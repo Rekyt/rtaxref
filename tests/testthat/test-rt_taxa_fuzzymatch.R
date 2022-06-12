@@ -15,5 +15,14 @@ vcr::use_cassette("rt_taxa_fuzzymatch", {
     expect_error(rt_taxa_fuzzymatch("azerty"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(
+      rt_taxa_fuzzymatch(),
+      "'sciname' argument is needed to fuzzymatch taxon search", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_fuzzymatch(1), "'sciname' must be a character", fixed = TRUE
+    )
   })
 })

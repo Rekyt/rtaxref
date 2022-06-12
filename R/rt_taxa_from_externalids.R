@@ -1,9 +1,9 @@
 #' Retrieve Taxon using the ids from external databases
 #'
-#' @param external_db {`character(1)`}\cr{}
+#' @param external_db {`character(1)`, **required**}\cr{}
 #'                    The name of an external database see [`rt_external_db()`]
 #'                    for the list of external database names
-#' @param external_id {`character(1)`}\cr{}
+#' @param external_id {`character(1)`, **required**}\cr{}
 #'                    The identifier of the taxon in the specified external
 #'                    database
 #'
@@ -18,6 +18,9 @@ rt_taxa_from_externalids = function(external_db = NULL, external_id = NULL) {
 
   check_required_arg(external_db, "retrieve taxon using external IDs")
   check_required_arg(external_id, "retrieve taxon using external IDs")
+
+  stopifnot("'external_db' must be a character" = is.character(external_db))
+  stopifnot("'external_id' must be a numeric"   = is.numeric(external_id))
 
   api_query = rt_GET("taxa/findByExternalId",
                      query = list(externalDbId = tolower(external_db),

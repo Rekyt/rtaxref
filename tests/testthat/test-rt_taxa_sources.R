@@ -6,10 +6,13 @@ vcr::use_cassette("rt_taxa_sources", {
 
     expect_is(res, "data.frame")
     expect_equal(dim(res), c(6, 15))
-    expect_named(res, c("id", "scientificName", "fullNameHtml", "referenceId",
-                        "parentId", "referenceNameHtml", "href", "sourceId",
-                        "source", "page", "pageUrl", "sourceUse", "self.href",
-                        "bibliographicResource.href", "sourceUse.href"))
+    expect_named(
+      res,
+      c("id", "scientificName", "fullNameHtml", "referenceId", "parentId",
+        "referenceNameHtml", "href", "sourceId", "source", "page", "pageUrl",
+        "sourceUse", "self.href", "bibliographicResource.href",
+        "sourceUse.href")
+    )
     expect_equal(res$id[1], 770669)
   })
 
@@ -18,8 +21,13 @@ vcr::use_cassette("rt_taxa_sources", {
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
+    expect_error(
+      rt_taxa_sources(), fixed = TRUE,
+      "'id' argument is needed to retrieve sources of a taxon using its id"
+    )
+
     expect_error(rt_taxa_sources("A"),
-                 "The query is invalid. Please try another query.",
+                 "'id' must be a numeric",
                  fixed = TRUE)
   })
 })

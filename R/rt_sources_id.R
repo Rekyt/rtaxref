@@ -17,6 +17,9 @@ rt_sources_id = function(source_id, bibtex = FALSE) {
 
   check_required_arg(source_id, "retrieve a specific source using its id")
 
+  stopifnot("'source_id' must be a numeric" = is.numeric(source_id))
+  stopifnot("'bibtex' must be a logical"    = is.logical(bibtex))
+
   bib = ""
 
   if (bibtex) bib = "/transform/application/x-bibtex"

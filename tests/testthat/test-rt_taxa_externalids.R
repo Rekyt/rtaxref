@@ -17,9 +17,15 @@ vcr::use_cassette("rt_taxa_externalids", {
     expect_error(rt_taxa_externalids(123456789),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+    expect_error(
+      rt_taxa_externalids(),
+      paste0("'id' argument is needed to retrieve the external IDs of a taxon ",
+             "using its id"),
+      fixed = TRUE
+    )
 
-    expect_error(rt_taxa_externalids("A"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
+    expect_error(
+      rt_taxa_externalids("A"), "'id' must be a numeric", fixed = TRUE
+    )
   })
 })

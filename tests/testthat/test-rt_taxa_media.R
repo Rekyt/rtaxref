@@ -15,12 +15,18 @@ vcr::use_cassette("rt_taxa_media", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_taxa_media("blabla"),
-                 "The query is invalid. Please try another query.",
-                 fixed = TRUE)
-
     expect_error(rt_taxa_media(1234567),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(
+      rt_taxa_media("blabla"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_media(),
+      "'id' argument is needed to retrieve media of a taxon using its id",
+      fixed = TRUE
+    )
   })
 })

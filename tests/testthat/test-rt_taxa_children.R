@@ -33,7 +33,7 @@ vcr::use_cassette("rt_taxa_children", {
                  fixed = TRUE)
 
     expect_error(rt_taxa_children("A"),
-                 "The query is invalid. Please try another query.",
+                 "'id' must be a numeric",
                  fixed = TRUE)
   })
 })

@@ -16,6 +16,8 @@ rt_sources_match = function(citation = NULL) {
 
   check_required_arg(citation, "retrieve a source from its citation")
 
+  stopifnot("'citation' must be a character" = is.character(citation))
+
   api_query = rt_GET("sources/matchByCitation",
                      query = list(citation = citation))
 

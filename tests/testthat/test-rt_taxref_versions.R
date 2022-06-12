@@ -26,7 +26,7 @@ vcr::use_cassette("rt_taxref_versions", {
                  fixed = TRUE)
 
     expect_error(rt_taxref_versions("ASDF"),
-                 "The query is invalid. Please try another query.",
+                 "'version_id' must be numeric or NULL",
                  fixed = TRUE)
   })
 })

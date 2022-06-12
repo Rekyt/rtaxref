@@ -83,6 +83,27 @@ rt_taxa_search = function(sciname = NULL, fr_name = NULL, en_name = NULL,
                           habitats = NULL, vernacular = NULL, version = NULL,
                           page = 1, size = 5000) {
 
+  stopifnot("'sciname' must be a character or NULL" =
+              is.character(sciname) | is.null(sciname))
+  stopifnot("'fr_name' must be a character or NULL" =
+              is.character(fr_name) | is.null(fr_name))
+  stopifnot("'en_name' must be a character or NULL" =
+              is.character(en_name) | is.null(en_name))
+  stopifnot("'rank' must be a character or NULL" =
+              is.character(rank) | is.null(rank))
+  stopifnot("'territories' must be a character or NULL" =
+              is.character(territories) | is.null(territories))
+  stopifnot("'domain' must be a character or NULL" =
+              is.character(domain) | is.null(domain))
+  stopifnot("'habitats' must be a numeric or NULL" =
+              is.numeric(habitats) | is.null(habitats))
+  stopifnot("'vernacular' must be a character or NULL" =
+              is.character(vernacular) | is.null(vernacular))
+  stopifnot("'version' must be a character or NULL" =
+              is.character(version) | is.null(version))
+  stopifnot("'page' must be a numeric"       = is.numeric(page))
+  stopifnot("'size' must be a numeric"       = is.numeric(size))
+
   api_query = rt_GET(
     "taxa/search",
     query = list(

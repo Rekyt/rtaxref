@@ -20,6 +20,18 @@ rt_status_search = function(id = NULL, opgroup_id = NULL, location_id = NULL,
                             latitude = NULL, longitude = NULL, page = 1,
                             size = 2000, detail = FALSE) {
 
+  stopifnot("'id' must be a numeric or NULL" = is.numeric(id) | is.null(id))
+  stopifnot("'opgroup_id' must be a numeric or NULL" =
+              is.numeric(opgroup_id) | is.null(opgroup_id))
+  stopifnot("'location_id' must be a character or NULL" =
+              is.character(location_id) | is.null(location_id))
+  stopifnot("'longitude' must be a numeric or NULL" =
+              is.numeric(longitude) | is.null(longitude))
+  stopifnot("'latitude' must be a numeric or NULL" =
+              is.numeric(latitude) | is.null(latitude))
+  stopifnot("'page' must be a numeric" = is.numeric(page))
+  stopifnot("'size' must be a numeric" = is.numeric(size))
+
   status_type = "columns"
 
   if (detail) status_type = "lines"

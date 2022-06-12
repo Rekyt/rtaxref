@@ -8,6 +8,9 @@
 #' @export
 rt_status_type = function(status_id = NULL) {
 
+  stopifnot("'status_id' must be character or NULL" =
+              is.character(status_id) | is.null(status_id))
+
   status_id = gsub("^EXPNA$", "exPNA", toupper(status_id))
 
   api_query = rt_GET("status/types/", status_id)

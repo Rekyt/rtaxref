@@ -18,6 +18,10 @@ rt_status_find_type = function(status_id = NULL, page = 1, size = 2000) {
 
   check_required_arg(status_id, "retrieve all taxa with given status")
 
+  stopifnot("'status_id' must be a character" = is.character(status_id))
+  stopifnot("'page' must be a numeric"        = is.numeric(page))
+  stopifnot("'size' must be a numeric"        = is.numeric(size))
+
   api_query = rt_GET("status/findByType/", status_id,
                      query = list(page = page,
                                   size = size))

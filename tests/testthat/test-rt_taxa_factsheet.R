@@ -17,5 +17,16 @@ vcr::use_cassette("rt_taxa_factsheet", {
       rt_taxa_factsheet(0),
       "The query returned no results. Please try another query", fixed = TRUE
     )
+
+    expect_error(
+      rt_taxa_factsheet("a"), "'id' must be a numeric", fixed = TRUE
+    )
+
+    expect_error(
+      rt_taxa_factsheet(),
+      paste0("'id' argument is needed to retrieve the factsheet of a taxon ",
+             "using its id"),
+      fixed = TRUE
+    )
   })
 })

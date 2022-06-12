@@ -35,8 +35,25 @@ vcr::use_cassette("rt_taxa_from_externalids", {
     expect_error(rt_taxa_from_externalids("worms", 45),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    # Missing arguments
+    expect_error(
+      rt_taxa_from_externalids(),
+      "'external_db' argument is needed to retrieve taxon using external IDs",
+      fixed = TRUE
+    )
+    expect_error(
+      rt_taxa_from_externalids("a"),
+      "'external_id' argument is needed to retrieve taxon using external IDs",
+      fixed = TRUE
+    )
+
+    # Wrong argument type
+    expect_error(rt_taxa_from_externalids(1, "A"),
+                 "'external_db' must be a character",
+                 fixed = TRUE)
     expect_error(rt_taxa_from_externalids("worms", "A"),
-                 "The query returned no results. Please try another query",
+                 "'external_id' must be a numeric",
                  fixed = TRUE)
   })
 })

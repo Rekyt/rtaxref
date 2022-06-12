@@ -19,6 +19,10 @@ vcr::use_cassette("rt_sources_match", {
     expect_error(rt_sources_match("azerty"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
+
+    expect_error(rt_sources_match(3),
+                 "'citation' must be a character",
+                 fixed = TRUE)
   })
 })
 

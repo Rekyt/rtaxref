@@ -4,10 +4,10 @@
 \alias{rt_taxa_status}
 \title{Retrieve Taxon Conservation Status}
 \usage{
-rt_taxa_status(id, detail = FALSE)
+rt_taxa_status(id = NULL, detail = FALSE)
 }
 \arguments{
-\item{id}{{\code{integer(1)}}\cr{}
+\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 

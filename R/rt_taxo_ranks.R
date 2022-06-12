@@ -12,6 +12,9 @@
 #' @export
 rt_taxo_ranks = function(taxo_id = NULL) {
 
+  stopifnot("'taxo_id' must be character or NULL" =
+              is.character(taxo_id) | is.null(taxo_id))
+
   taxo_id = gsub("^DUMM$", "Dumm", toupper(taxo_id))
 
   api_query = rt_GET("taxonomicRanks/", taxo_id)

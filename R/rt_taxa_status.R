@@ -11,9 +11,12 @@
 #' rt_taxa_status(id = 443800, detail = TRUE)
 #' }
 #' @export
-rt_taxa_status = function(id, detail = FALSE) {
+rt_taxa_status = function(id = NULL, detail = FALSE) {
 
   check_required_arg(id, "retrieve status of a taxon using its id")
+
+  stopifnot("'id' must be a numeric"     = is.numeric(id))
+  stopifnot("'detail' must be a logical" = is.logical(detail))
 
   status_type = "columns"
 

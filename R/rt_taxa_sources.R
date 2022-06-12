@@ -7,9 +7,11 @@
 #'
 #' @seealso [`rt_source_uses()`] for types of source use
 #' @export
-rt_taxa_sources = function(id) {
+rt_taxa_sources = function(id = NULL) {
 
-  check_required_arg(id, "retrieve media of a taxon using its id")
+  check_required_arg(id, "retrieve sources of a taxon using its id")
+
+  stopifnot("'id' must be a numeric" = is.numeric(id))
 
   api_query = rt_GET("taxa/", id, "/sources")
 
