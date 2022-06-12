@@ -54,6 +54,7 @@
 
     <div id="ref-usage">
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">rt_taxa_search</span><span class="op">(</span>
+  id <span class="op">=</span> <span class="cn">NULL</span>,
   sciname <span class="op">=</span> <span class="cn">NULL</span>,
   fr_name <span class="op">=</span> <span class="cn">NULL</span>,
   en_name <span class="op">=</span> <span class="cn">NULL</span>,
@@ -70,7 +71,11 @@
 
     <div id="arguments">
     <h2>Arguments</h2>
-    <dl><dt>sciname</dt>
+    <dl><dt>id</dt>
+<dd><p><code>integer(1+)</code><br>
+One or more integer giving the id(s) of taxa in TAXREF
+(also called <code>cdNom</code>)</p></dd>
+<dt>sciname</dt>
 <dd><p><code>character(1+)</code><br>
 One or more scientific name of searched taxa</p></dd>
 <dt>fr_name</dt>
