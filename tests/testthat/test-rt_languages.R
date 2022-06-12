@@ -21,12 +21,16 @@ vcr::use_cassette("rt_languages", {
   })
 
   test_that("Wrong query returns error", {
-    expect_error(rt_languages("ASDF"),
+    expect_error(rt_languages("ASD"),
                  "The query returned no results. Please try another query",
                  fixed = TRUE)
 
+    expect_error(rt_languages("ASDF"),
+                 "'languages_id' must be a three-letters character or NULL",
+                 fixed = TRUE)
+
     expect_error(rt_languages(9),
-                 "The query returned no results. Please try another query",
+                 "'languages_id' must be a three-letters character or NULL",
                  fixed = TRUE)
   })
 })

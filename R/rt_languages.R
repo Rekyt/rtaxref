@@ -16,6 +16,12 @@
 #' @export
 rt_languages = function(languages_id = NULL) {
 
+  stopifnot(
+    "'languages_id' must be a three-letters character or NULL" =
+      (is.character(languages_id) & isTRUE(nchar(languages_id) == 3)) |
+      is.null(languages_id)
+  )
+
   api_query = rt_GET("langages/", tolower(languages_id))
 
   parse_taxa(api_query)
