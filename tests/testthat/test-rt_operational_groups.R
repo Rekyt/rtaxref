@@ -31,7 +31,7 @@ vcr::use_cassette("rt_operational_groups", {
                  fixed = TRUE)
 
     expect_error(rt_operational_groups("ASDF"),
-                 "The query is invalid. Please try another query.",
+                 "'opgroup_id' must be a numeric or NULL",
                  fixed = TRUE)
   })
 })
