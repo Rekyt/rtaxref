@@ -1,9 +1,9 @@
 #' Retrieve Taxon using the ids from external databases
 #'
-#' @param external_db {`character(1)`, **required**}\cr{}
+#' @param external_db {`character(1)` \[**required**\]}\cr{}
 #'                    The name of an external database see [`rt_external_db()`]
 #'                    for the list of external database names
-#' @param external_id {`character(1)`, **required**}\cr{}
+#' @param external_id {`character(1)` \[**required**\]}\cr{}
 #'                    The identifier of the taxon in the specified external
 #'                    database
 #'

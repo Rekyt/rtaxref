@@ -26,8 +26,8 @@ the id of an operational group referenced in TAXREF}
 \item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)} [default = \code{5000}]}\cr{}
-The number of lines returned per page (maximum = 5000)}
+\item{size}{{\code{integer(1)} [default = \code{2000}]}\cr{}
+The number of lines returned per page (maximum = 2000)}
 }
 \description{
 Search Interactions based on a list of criteria

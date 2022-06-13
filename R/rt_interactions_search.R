@@ -1,8 +1,12 @@
 #' Search Interactions based on a list of criteria
 #'
+#'
+#' @param size {`integer(1)` \[default = `2000`\]}\cr{}
+#'             The number of lines returned per page (maximum = 2000)
+#'
 #' @inheritParams rt_interactions_type
-#' @inheritParams rt_operational_groups
 #' @inheritParams rt_taxa_search
+#' @inheritParams rt_operational_groups
 #'
 #' @examples
 #' \dontrun{
