@@ -2,7 +2,7 @@
 #'
 #' If the function is provided without arguments returns the entire list of
 #' status types used in TAXREF.
-#' @param status_id {`character(1)`, default = `NULL`}\cr{}
+#' @param status_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                  A character identifying the type of status
 #'
 #' @export

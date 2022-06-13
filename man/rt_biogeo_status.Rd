@@ -7,7 +7,7 @@
 rt_biogeo_status(biogeo_id = NULL)
 }
 \arguments{
-\item{biogeo_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{biogeo_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 A biogeographic status id used in TAXREF}
 }
 \description{

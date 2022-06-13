@@ -2,7 +2,7 @@
 % Please edit documentation in R/rt_taxa_autocomplete.R
 \name{rt_taxa_autocomplete}
 \alias{rt_taxa_autocomplete}
-\title{Retrieve Synonyms associated with a Taxon}
+\title{Retrieve Taxon ID from partially matching its Name}
 \usage{
 rt_taxa_autocomplete(
   term = NULL,
@@ -14,10 +14,10 @@ rt_taxa_autocomplete(
 )
 }
 \arguments{
-\item{term}{{\code{character(1)}, \strong{required}}\cr{}
+\item{term}{{\code{character(1)} [\strong{required}]}\cr{}
 the beginning of the scientific name of the searched taxa}
 
-\item{territories}{{\verb{character(1+)}}\cr{}
+\item{territories}{{\code{NULL} or \verb{character(1+)} [default = \code{NULL}]}\cr{}
 One or more territories where species is present:
 \itemize{
 \item \code{"fr"} = Mainland France
@@ -38,7 +38,7 @@ One or more territories where species is present:
 \item \code{"cli"} = Clipperton Island
 }}
 
-\item{rank}{{\verb{character(1+)}}\cr{}
+\item{rank}{{\code{NULL} or \verb{character(1+)} [default = \code{NULL}]}\cr{}
 One of more rank of the searched taxa (see \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}} for the list
 of all ranks available):
 \itemize{
@@ -64,25 +64,28 @@ of all ranks available):
 \item \code{AB}= Abberatio
 }}
 
-\item{domain}{{\code{character(1)}}\cr{}
+\item{domain}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 The domain where the species is found:
 \itemize{
 \item \code{"marin"} = Marine
 \item \code{"continental"} = Continental
 }}
 
-\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+\item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{200}}\cr{}
+\item{size}{{\code{integer(1)} [default = \code{200}]}\cr{}
 The number of lines returned per page (maximum = 200)}
 }
 \description{
-Retrieve Synonyms associated with a Taxon
+Retrieve Taxon ID from partially matching its Name
 }
 \examples{
 \dontrun{
 rt_taxa_autocomplete(term = "Bradypus")
 }
 
+}
+\seealso{
+the list of taxonomic ranks avaible through \code{\link[=rt_taxo_ranks]{rt_taxo_ranks()}}
 }

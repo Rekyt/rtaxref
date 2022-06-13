@@ -1,6 +1,6 @@
 #' Retrieve a taxon information using its id
 #'
-#' @param id {`integer(1)`, **required**}\cr{}
+#' @param id {`integer(1)` \[**required**\]}\cr{}
 #'           an integer giving the id of the taxon in TAXREF (also called
 #'           `cdNom`)
 #'

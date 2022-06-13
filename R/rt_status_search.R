@@ -1,11 +1,11 @@
 #' Search statuses based on a list of criteria
 #'
 #' @inheritParams rt_taxa_status
-#' @param location_id {`character(1)`}\cr{}
+#' @param location_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                    a string identifying a location
-#' @param latitude    {`numeric(1)`}\cr{}
+#' @param latitude    {`NULL` or `numeric(1)` \[default = `NULL`\]}\cr{}
 #'                    a latitude value
-#' @param longitude   {`numeric(1)`}\cr{}
+#' @param longitude   {`NULL` or `numeric(1)` \[default = `NULL`\]}\cr{}
 #'                    a longitude value
 #' @inheritParams rt_status_opgroup
 #'
@@ -14,6 +14,8 @@
 #' rt_status_search(id = 443800, detail = FALSE)
 #' rt_status_search(id = 443800, detail = TRUE)
 #' }
+#'
+#' @seealso list of operational groups [rt_operational_groups()]
 #'
 #' @export
 rt_status_search = function(id = NULL, opgroup_id = NULL, location_id = NULL,

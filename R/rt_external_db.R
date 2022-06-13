@@ -3,7 +3,7 @@
 #' If the function is used without arguments returns the list of external
 #' databases used in TAXREF.
 #'
-#' @param db_id {`character(1)`, default = `NULL`}\cr{}
+#' @param db_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'              The id of an external db referenced in TAXREF
 #'
 #' @examples

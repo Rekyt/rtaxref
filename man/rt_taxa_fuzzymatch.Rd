@@ -7,7 +7,7 @@
 rt_taxa_fuzzymatch(sciname = NULL)
 }
 \arguments{
-\item{sciname}{{\code{character(1)}, \strong{required}}\cr{}
+\item{sciname}{{\code{character(1)} [\strong{required}]}\cr{}
 a string giving the scientific name of the taxon with or
 without the author name}
 }

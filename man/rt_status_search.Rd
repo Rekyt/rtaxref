@@ -16,30 +16,30 @@ rt_status_search(
 )
 }
 \arguments{
-\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
+\item{id}{{\code{integer(1)} [\strong{required}]}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 
-\item{opgroup_id}{{\code{integer(1)}, \strong{required}}\cr{}
+\item{opgroup_id}{{\code{integer(1)} [\strong{required}]}\cr{}
 identifier of the operational group (see the list of
 operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}})}
 
-\item{location_id}{{\code{character(1)}}\cr{}
+\item{location_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 a string identifying a location}
 
-\item{latitude}{{\code{numeric(1)}}\cr{}
+\item{latitude}{{\code{NULL} or \code{numeric(1)} [default = \code{NULL}]}\cr{}
 a latitude value}
 
-\item{longitude}{{\code{numeric(1)}}\cr{}
+\item{longitude}{{\code{NULL} or \code{numeric(1)} [default = \code{NULL}]}\cr{}
 a longitude value}
 
-\item{page}{{\code{integer(1)}; default = \code{1}}\cr{}
+\item{page}{{\code{integer(1)} [default = \code{1}]}\cr{}
 The page number returned}
 
-\item{size}{{\code{integer(1)}; default = \code{2000}}\cr{}
+\item{size}{{\code{integer(1)} [default = \code{2000}]}\cr{}
 The number of lines returned per page (maximum = 2000)}
 
-\item{detail}{{\code{logical(1)} default = \code{FALSE}}\cr{}
+\item{detail}{{\code{logical(1)} [default = \code{FALSE}]}\cr{}
 Should the table be a long table detailing all the statuses or
 a compact table?}
 }
@@ -52,4 +52,7 @@ rt_status_search(id = 443800, detail = FALSE)
 rt_status_search(id = 443800, detail = TRUE)
 }
 
+}
+\seealso{
+list of operational groups \code{\link[=rt_operational_groups]{rt_operational_groups()}}
 }

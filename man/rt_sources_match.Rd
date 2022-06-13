@@ -7,8 +7,8 @@
 rt_sources_match(citation = NULL)
 }
 \arguments{
-\item{citation}{{\code{character(1)}, \strong{required}}\cr{}
-A (partial) citation}
+\item{citation}{{\code{character(1)} [\strong{required}]}\cr{}
+A string that could partially match the citation}
 }
 \description{
 Search a source from a citation by fuzzy matching

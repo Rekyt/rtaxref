@@ -3,7 +3,7 @@
 #' If the function is used without arguments returns the entire list of
 #' taxonomic ranks used in TAXREF.
 #'
-#' @param taxo_id {`character(1)`, default = `NULL`}\cr{}
+#' @param taxo_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                the id of a taxonomic rank in TAXREF.
 #'
 #' @examples

@@ -7,7 +7,7 @@
 rt_interactions_type(interaction_id = NULL)
 }
 \arguments{
-\item{interaction_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{interaction_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 A character identifying the type of interactions}
 }
 \description{

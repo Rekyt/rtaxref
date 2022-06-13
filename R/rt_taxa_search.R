@@ -1,16 +1,16 @@
 #' Search for a taxon information
 #'
-#' @param id          {`integer(1+)`}\cr{}
+#' @param id          {`NULL` or `integer(1+)` \[default = `NULL`\]}\cr{}
 #'                    One or more integer giving the id(s) of taxa in TAXREF
 #'                    (also called `cdNom`)
-#' @param sciname     {`character(1+)`}\cr{}
+#' @param sciname     {`NULL` or `character(1+)` \[default = `NULL`\]}\cr{}
 #'                    One or more scientific name of searched taxa
-#' @param fr_name     {`character(1+)`}\cr{}
+#' @param fr_name     {`NULL` or `character(1+)` \[default = `NULL`\]}\cr{}
 #'                    One or more common name(s) in French of searched taxa
-#' @param en_name     {`character(1+)`}\cr{}
+#' @param en_name     {`NULL` or `character(1+)` \[default = `NULL`\]}\cr{}
 #'                    One or more common name(s) in English of searched taxa
-#' @param rank        {`character(1+)`}\cr{}
-#' One of more rank of the searched taxa (see [`rt_taxo_ranks()`] for the list
+#' @param rank        {`NULL` or `character(1+)` \[default = `NULL`\]}\cr{}
+#' One of more rank of the searched taxa (see [rt_taxo_ranks()] for the list
 #' of all ranks available):
 #' * `Dumm`= Domain
 #' * `KD`= Kingdom
@@ -32,7 +32,7 @@
 #' * `RACE`= Race
 #' * `CAR`= Cultivar
 #' * `AB`= Abberatio
-#' @param territories {`character(1+)`}\cr{}
+#' @param territories {`NULL` or `character(1+)` \[default = `NULL`\]}\cr{}
 #' One or more territories where species is present:
 #' * `"fr"` = Mainland France
 #' * `"gf"` = French Guiana
@@ -50,12 +50,12 @@
 #' * `"wf"` = Wallis and Futuna
 #' * `"pf"` = French Polynesia
 #' * `"cli"` = Clipperton Island
-#' @param domain      {`character(1)`}\cr{}
+#' @param domain      {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #' The domain where the species is found:
 #' * `"marin"` = Marine
 #' * `"continental"` = Continental
-#' @param habitats    {`integer(1+)`}\cr{}
-#' One or more habitats where the species is found (see [`rt_habitats()`] for a
+#' @param habitats    {`NULL` or `integer(1+)` \[default = `NULL`\]}\cr{}
+#' One or more habitats where the species is found (see [rt_habitats()] for a
 #' list of all habitats):
 #' * `1` = Marine
 #' * `2` = Freshwater
@@ -65,20 +65,26 @@
 #' * `6` = Brackish water
 #' * `7` = Continental (terrestrial and/or freshwater)
 #' * `8` = Continental (terrestrial and freshwater)
-#' @param vernacular  {`character(1+)`}\cr{}
-#'                    Name of a vernacular group (see the list using
-#'                    [`rt_vernacular_groups()`])
-#' @param version {`NULL or character(1)`}\cr{}
+#' @param vernacular  {`NULL` or `character(1+)` \[default = `NULL`\]}\cr{}
+#'                    Name of a vernacular group
+#'                    (see the list using [rt_vernacular_groups()])
+#' @param version {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                A string indicating which version of TAXREF should be queried.
 #'                Should be of the form `"2.0"` up to `"15.0"`. You can check
-#'                the available TAXREF versions with `rt_taxref_versions()`.
-#' @param page {`integer(1)`; default = `1`}\cr{}
+#'                the available TAXREF versions with [rt_taxref_versions()].
+#'                If `NULL` uses the latest version of TAXREF available.
+#' @param page {`integer(1)` \[default = `1`\]}\cr{}
 #'             The page number returned
-#' @param size {`integer(1)`; default = `5000`}\cr{}
+#' @param size {`integer(1)` \[default = `5000`\]}\cr{}
 #'             The number of lines returned per page (maximum = 5000)
 #'
 #' @examples
 #' \dontrun{rt_taxa_search(sciname = "Bradypus")}
+#'
+#' @seealso the list of available taxonomic ranks [rt_taxo_ranks()],
+#'   the list of available habitats [rt_habitats()],
+#'   the list of vernacular groups [rt_taxref_versions()],
+#'   and the list of TAXREF versions [rt_taxref_versions()].
 #'
 #' @export
 rt_taxa_search = function(

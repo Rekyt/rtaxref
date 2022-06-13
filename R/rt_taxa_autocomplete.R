@@ -1,8 +1,8 @@
-#' Retrieve Synonyms associated with a Taxon
+#' Retrieve Taxon ID from partially matching its Name
 #'
-#' @param term {`character(1)`, **required**}\cr{}
+#' @param term {`character(1)` \[**required**\]}\cr{}
 #'             the beginning of the scientific name of the searched taxa
-#' @param size {`integer(1)`; default = `200`}\cr{}
+#' @param size {`integer(1)` \[default = `200`]}\cr{}
 #'             The number of lines returned per page (maximum = 200)
 #' @inheritParams rt_taxa_search
 #'
@@ -10,6 +10,8 @@
 #' \dontrun{
 #' rt_taxa_autocomplete(term = "Bradypus")
 #' }
+#'
+#' @seealso the list of taxonomic ranks avaible through [rt_taxo_ranks()]
 #'
 #' @export
 rt_taxa_autocomplete = function(term = NULL, territories = NULL, rank = NULL,

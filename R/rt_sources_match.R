@@ -1,7 +1,7 @@
 #' Search a source from a citation by fuzzy matching
 #'
-#' @param citation {`character(1)`, **required**}\cr{}
-#'                 A (partial) citation
+#' @param citation {`character(1)` \[**required**\]}\cr{}
+#'                 A string that could partially match the citation
 #'
 #' @examples
 #' \dontrun{

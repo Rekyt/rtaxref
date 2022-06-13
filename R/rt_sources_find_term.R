@@ -1,6 +1,6 @@
 #' Search a source from a term
 #'
-#' @param term {`character(1)`, **required**}\cr{}
+#' @param term {`character(1)` \[**required**\]}\cr{}
 #'             A term contained in the source
 #'
 #' @examples

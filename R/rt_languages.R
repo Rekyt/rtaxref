@@ -3,7 +3,7 @@
 #' If used without argument returns the list of languages used in TAXREF
 #' otherwise the specific
 #'
-#' @param languages_id {`character(1)`, default = `NULL`}\cr{}
+#' @param languages_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                    three-letter lowercase code that is the id of a language
 #'                    referenced in TAXREF
 #'

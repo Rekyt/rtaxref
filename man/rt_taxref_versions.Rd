@@ -7,7 +7,7 @@
 rt_taxref_versions(version_id = NULL)
 }
 \arguments{
-\item{version_id}{{\code{integer(1)}, default = \code{NULL}}\cr{}
+\item{version_id}{{\code{NULL} or \code{integer(1)} [default = \code{NULL}]}\cr{}
 the id of a TAXREF version}
 }
 \description{

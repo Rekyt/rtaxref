@@ -7,7 +7,7 @@
 rt_operational_groups(opgroup_id = NULL)
 }
 \arguments{
-\item{opgroup_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
+\item{opgroup_id}{{\code{NULL} or \code{numeric(1)} [default = \code{NULL}]}\cr{}
 the id of an operational group referenced in TAXREF}
 }
 \description{

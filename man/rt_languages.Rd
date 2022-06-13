@@ -7,7 +7,7 @@
 rt_languages(languages_id = NULL)
 }
 \arguments{
-\item{languages_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{languages_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 three-letter lowercase code that is the id of a language
 referenced in TAXREF}
 }

@@ -1,5 +1,7 @@
 #' Retrieve the list of vernacular groups in TAXREF
 #'
+#' This function takes no argument.
+#'
 #' @export
 rt_vernacular_groups = function() {
 

@@ -2,7 +2,7 @@
 #'
 #' If used without argument returns the list of all interactions used in TAXREF
 #'
-#' @param interaction_id {`character(1)`, default = `NULL`}\cr{}
+#' @param interaction_id {`NULL` or `character(1)` \[default = `NULL`\]}\cr{}
 #'                  A character identifying the type of interactions
 #'
 #' @examples

@@ -1,7 +1,7 @@
 #' Retrieve Taxon Conservation Status
 #'
 #' @inheritParams rt_taxa_id
-#' @param detail {`logical(1)` default = `FALSE`}\cr{}
+#' @param detail {`logical(1)` \[default = `FALSE`\]}\cr{}
 #'               Should the table be a long table detailing all the statuses or
 #'               a compact table?
 #'
