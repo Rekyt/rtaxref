@@ -72,20 +72,20 @@
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>id</dt>
-<dd><p><code>integer(1+)</code><br>
+<dd><p><code>NULL</code> or <code>integer(1+)</code> [default = <code>NULL</code>]<br>
 One or more integer giving the id(s) of taxa in TAXREF
 (also called <code>cdNom</code>)</p></dd>
 <dt>sciname</dt>
-<dd><p><code>character(1+)</code><br>
+<dd><p><code>NULL</code> or <code>character(1+)</code> [default = <code>NULL</code>]<br>
 One or more scientific name of searched taxa</p></dd>
 <dt>fr_name</dt>
-<dd><p><code>character(1+)</code><br>
+<dd><p><code>NULL</code> or <code>character(1+)</code> [default = <code>NULL</code>]<br>
 One or more common name(s) in French of searched taxa</p></dd>
 <dt>en_name</dt>
-<dd><p><code>character(1+)</code><br>
+<dd><p><code>NULL</code> or <code>character(1+)</code> [default = <code>NULL</code>]<br>
 One or more common name(s) in English of searched taxa</p></dd>
 <dt>rank</dt>
-<dd><p><code>character(1+)</code><br>
+<dd><p><code>NULL</code> or <code>character(1+)</code> [default = <code>NULL</code>]<br>
 One of more rank of the searched taxa (see <code><a href="rt_taxo_ranks.html">rt_taxo_ranks()</a></code> for the list
 of all ranks available):</p><ul><li><p><code>Dumm</code>= Domain</p></li>
 <li><p><code>KD</code>= Kingdom</p></li>
@@ -109,7 +109,7 @@ of all ranks available):</p><ul><li><p><code>Dumm</code>= Domain</p></li>
 <li><p><code>AB</code>= Abberatio</p></li>
 </ul></dd>
 <dt>territories</dt>
-<dd><p><code>character(1+)</code><br>
+<dd><p><code>NULL</code> or <code>character(1+)</code> [default = <code>NULL</code>]<br>
 One or more territories where species is present:</p><ul><li><p><code>"fr"</code> = Mainland France</p></li>
 <li><p><code>"gf"</code> = French Guiana</p></li>
 <li><p><code>"gua"</code> = Guadeloupe</p></li>
@@ -128,12 +128,12 @@ One or more territories where species is present:</p><ul><li><p><code>"fr"</code
 <li><p><code>"cli"</code> = Clipperton Island</p></li>
 </ul></dd>
 <dt>domain</dt>
-<dd><p><code>character(1)</code><br>
+<dd><p><code>NULL</code> or <code>character(1)</code> [default = <code>NULL</code>]<br>
 The domain where the species is found:</p><ul><li><p><code>"marin"</code> = Marine</p></li>
 <li><p><code>"continental"</code> = Continental</p></li>
 </ul></dd>
 <dt>habitats</dt>
-<dd><p><code>integer(1+)</code><br>
+<dd><p><code>NULL</code> or <code>integer(1+)</code> [default = <code>NULL</code>]<br>
 One or more habitats where the species is found (see <code><a href="rt_habitats.html">rt_habitats()</a></code> for a
 list of all habitats):</p><ul><li><p><code>1</code> = Marine</p></li>
 <li><p><code>2</code> = Freshwater</p></li>
@@ -145,21 +145,29 @@ list of all habitats):</p><ul><li><p><code>1</code> = Marine</p></li>
 <li><p><code>8</code> = Continental (terrestrial and freshwater)</p></li>
 </ul></dd>
 <dt>vernacular</dt>
-<dd><p><code>character(1+)</code><br>
-Name of a vernacular group (see the list using
-<code><a href="rt_vernacular_groups.html">rt_vernacular_groups()</a></code>)</p></dd>
+<dd><p><code>NULL</code> or <code>character(1+)</code> [default = <code>NULL</code>]<br>
+Name of a vernacular group
+(see the list using <code><a href="rt_vernacular_groups.html">rt_vernacular_groups()</a></code>)</p></dd>
 <dt>version</dt>
-<dd><p><code>NULL or character(1)</code><br>
+<dd><p><code>NULL</code> or <code>character(1)</code> [default = <code>NULL</code>]<br>
 A string indicating which version of TAXREF should be queried.
 Should be of the form <code>"2.0"</code> up to <code>"15.0"</code>. You can check
-the available TAXREF versions with <code><a href="rt_taxref_versions.html">rt_taxref_versions()</a></code>.</p></dd>
+the available TAXREF versions with <code><a href="rt_taxref_versions.html">rt_taxref_versions()</a></code>.
+If <code>NULL</code> uses the latest version of TAXREF available.</p></dd>
 <dt>page</dt>
-<dd><p><code>integer(1)</code>; default = <code>1</code><br>
+<dd><p><code>integer(1)</code> [default = <code>1</code>]<br>
 The page number returned</p></dd>
 <dt>size</dt>
-<dd><p><code>integer(1)</code>; default = <code>5000</code><br>
+<dd><p><code>integer(1)</code> [default = <code>5000</code>]<br>
 The number of lines returned per page (maximum = 5000)</p></dd>
 </dl></div>
+    <div id="see-also">
+    <h2>See also</h2>
+    <div class="dont-index"><p>the list of available taxonomic ranks <code><a href="rt_taxo_ranks.html">rt_taxo_ranks()</a></code>,
+the list of available habitats <code><a href="rt_habitats.html">rt_habitats()</a></code>,
+the list of vernacular groups <code><a href="rt_taxref_versions.html">rt_taxref_versions()</a></code>,
+and the list of TAXREF versions <code><a href="rt_taxref_versions.html">rt_taxref_versions()</a></code>.</p></div>
+    </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>

@@ -65,23 +65,27 @@
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>id</dt>
-<dd><p><code>integer(1+)</code><br>
+<dd><p><code>NULL</code> or <code>integer(1+)</code> [default = <code>NULL</code>]<br>
 One or more integer giving the id(s) of taxa in TAXREF
 (also called <code>cdNom</code>)</p></dd>
 <dt>interaction_id</dt>
-<dd><p><code>character(1)</code>, default = <code>NULL</code><br>
+<dd><p><code>NULL</code> or <code>character(1)</code> [default = <code>NULL</code>]<br>
 A character identifying the type of interactions</p></dd>
 <dt>opgroup_id</dt>
-<dd><p><code>integer(1)</code>, <strong>required</strong><br>
-identifier of the operational group (see the list of
-operational groups <code><a href="rt_operational_groups.html">rt_operational_groups()</a></code>)</p></dd>
+<dd><p><code>NULL</code> or <code>numeric(1)</code> [default = <code>NULL</code>]<br>
+the id of an operational group referenced in TAXREF</p></dd>
 <dt>page</dt>
-<dd><p><code>integer(1)</code>; default = <code>1</code><br>
+<dd><p><code>integer(1)</code> [default = <code>1</code>]<br>
 The page number returned</p></dd>
 <dt>size</dt>
-<dd><p><code>integer(1)</code>; default = <code>2000</code><br>
-The number of lines returned per page (maximum = 2000)</p></dd>
+<dd><p><code>integer(1)</code> [default = <code>5000</code>]<br>
+The number of lines returned per page (maximum = 5000)</p></dd>
 </dl></div>
+    <div id="see-also">
+    <h2>See also</h2>
+    <div class="dont-index"><p>the list of interaction type <code><a href="rt_interactions_type.html">rt_interactions_type()</a></code> and
+the list of operational groups <code><a href="rt_operational_groups.html">rt_operational_groups()</a></code></p></div>
+    </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>

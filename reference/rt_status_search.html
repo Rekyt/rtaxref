@@ -68,33 +68,37 @@
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>id</dt>
-<dd><p><code>integer(1)</code>, <strong>required</strong><br>
+<dd><p><code>integer(1)</code> [<strong>required</strong>]<br>
 an integer giving the id of the taxon in TAXREF (also called
 <code>cdNom</code>)</p></dd>
 <dt>opgroup_id</dt>
-<dd><p><code>integer(1)</code>, <strong>required</strong><br>
+<dd><p><code>integer(1)</code> [<strong>required</strong>]<br>
 identifier of the operational group (see the list of
 operational groups <code><a href="rt_operational_groups.html">rt_operational_groups()</a></code>)</p></dd>
 <dt>location_id</dt>
-<dd><p><code>character(1)</code><br>
+<dd><p><code>NULL</code> or <code>character(1)</code> [default = <code>NULL</code>]<br>
 a string identifying a location</p></dd>
 <dt>latitude</dt>
-<dd><p><code>numeric(1)</code><br>
+<dd><p><code>NULL</code> or <code>numeric(1)</code> [default = <code>NULL</code>]<br>
 a latitude value</p></dd>
 <dt>longitude</dt>
-<dd><p><code>numeric(1)</code><br>
+<dd><p><code>NULL</code> or <code>numeric(1)</code> [default = <code>NULL</code>]<br>
 a longitude value</p></dd>
 <dt>page</dt>
-<dd><p><code>integer(1)</code>; default = <code>1</code><br>
+<dd><p><code>integer(1)</code> [default = <code>1</code>]<br>
 The page number returned</p></dd>
 <dt>size</dt>
-<dd><p><code>integer(1)</code>; default = <code>2000</code><br>
+<dd><p><code>integer(1)</code> [default = <code>2000</code>]<br>
 The number of lines returned per page (maximum = 2000)</p></dd>
 <dt>detail</dt>
-<dd><p><code>logical(1)</code> default = <code>FALSE</code><br>
+<dd><p><code>logical(1)</code> [default = <code>FALSE</code>]<br>
 Should the table be a long table detailing all the statuses or
 a compact table?</p></dd>
 </dl></div>
+    <div id="see-also">
+    <h2>See also</h2>
+    <div class="dont-index"><p>list of operational groups <code><a href="rt_operational_groups.html">rt_operational_groups()</a></code></p></div>
+    </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
