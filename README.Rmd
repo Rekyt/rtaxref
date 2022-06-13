@@ -42,9 +42,16 @@ suggestion, or idea.
 remotes::install_github("Rekyt/rtaxref")
 ```
 
-## Usage
+
+## Citation
 
 `rtaxref` contains functions to retrieve data from TAXREF-Hub. The access data is released under the [Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0) license](https://creativecommons.org/licenses/by-sa/3.0/). A suggestion of citation is included in `rtaxref` via `citation("rtaxref")`.
+
+```{r citation}
+citation("rtaxref")
+```
+
+## Usage
 
 To avoid collisions with other packages all `rtaxref` functions are prefixed with `rt_*()`, for example `rt_taxa_id()` lets you access to the information about a taxon using its unique id (also called `cdNom` in TAXREF):
 

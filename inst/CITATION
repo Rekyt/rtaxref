@@ -5,7 +5,7 @@ bibentry(bibtype = "Manual",
          title = "{rtaxref}: An {R} Client for {TAXREF} the French Taxonomical Reference {API}",
          author = c(person("Matthias", "Grenié"),
                     person("Hugo", "Gruson")),
-         year = year,
+         year = format(Sys.Date(), "%Y"),
          note = note,
          header = "To cite this package in publications, please use:",
          url = "https://github.com/Rekyt/rtaxref")

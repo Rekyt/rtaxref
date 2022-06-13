@@ -33,13 +33,35 @@ version of `rtaxref` from GitHub with:
 remotes::install_github("Rekyt/rtaxref")
 ```
 
-## Usage
+## Citation
 
 `rtaxref` contains functions to retrieve data from TAXREF-Hub. The
 access data is released under the [Creative Commons
 Attribution-ShareAlike 3.0 (CC BY-SA 3.0)
 license](https://creativecommons.org/licenses/by-sa/3.0/). A suggestion
 of citation is included in `rtaxref` via `citation("rtaxref")`.
+
+``` r
+citation("rtaxref")
+#> 
+#> To cite this package in publications, please use:
+#> 
+#>   Grenié M, Gruson H (2022). _rtaxref: An R Client for TAXREF the
+#>   French Taxonomical Reference API_. R package version 0.1.0,
+#>   <https://github.com/Rekyt/rtaxref>.
+#> 
+#> Please also cite the data provider:
+#> 
+#>   TAXTREF (2022). Data released under the Creative Commons
+#>   Attribution-ShareAlike 3.0 (CC BY-SA 3.0) license,
+#>   <https://taxref.mnhn.fr/taxref-web/accueil>.
+#> 
+#> To see these entries in BibTeX format, use 'print(<citation>,
+#> bibtex=TRUE)', 'toBibtex(.)', or set
+#> 'options(citation.bibtex.max=999)'.
+```
+
+## Usage
 
 To avoid collisions with other packages all `rtaxref` functions are
 prefixed with `rt_*()`, for example `rt_taxa_id()` lets you access to
