@@ -32,6 +32,7 @@ preferred-citation:
   - family-names: Gruson
     given-names: Hugo
     orcid: https://orcid.org/0000-0002-4094-1476
+  year: '2022'
   notes: R package version 0.1.0
   url: https://github.com/Rekyt/rtaxref
 repository-code: https://github.com/Rekyt/rtaxref
@@ -105,6 +106,7 @@ references:
     email: sckott@protonmail.com
     orcid: https://orcid.org/0000-0003-1444-9135
   year: '2022'
+  url: https://CRAN.R-project.org/package=vcr
 - type: software
   title: rmarkdown
   abstract: 'rmarkdown: Dynamic Documents for R'
