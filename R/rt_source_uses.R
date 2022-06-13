@@ -5,7 +5,7 @@
 #' usages for a source when no arguments are provided, otherwise returns the
 #' specific type of use.
 #'
-#' @param usage_id {`numeric(1)`, default = `NULL`}\cr{}
+#' @param usage_id {`NULL` or `numeric(1)` \[default = `NULL`\]}\cr{}
 #'                 the id of a source use in TAXREF
 #'
 #' @examples

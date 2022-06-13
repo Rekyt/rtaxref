@@ -1,6 +1,6 @@
 #' Retrieve the list of existing TAXREF versions
 #'
-#' @param version_id {`integer(1)`, default = `NULL`}\cr{}
+#' @param version_id {`NULL` or `integer(1)` \[default = `NULL`\]}\cr{}
 #'                   the id of a TAXREF version
 #'
 #' @examples

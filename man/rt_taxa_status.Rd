@@ -7,11 +7,11 @@
 rt_taxa_status(id = NULL, detail = FALSE)
 }
 \arguments{
-\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
+\item{id}{{\code{integer(1)} [\strong{required}]}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 
-\item{detail}{{\code{logical(1)} default = \code{FALSE}}\cr{}
+\item{detail}{{\code{logical(1)} [default = \code{FALSE}]}\cr{}
 Should the table be a long table detailing all the statuses or
 a compact table?}
 }

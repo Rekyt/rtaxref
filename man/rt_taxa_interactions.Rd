@@ -7,7 +7,7 @@
 rt_taxa_interactions(id = NULL)
 }
 \arguments{
-\item{id}{{\code{integer(1)}, \strong{required}}\cr{}
+\item{id}{{\code{integer(1)} [\strong{required}]}\cr{}
 an integer giving the id of the taxon in TAXREF (also called
 \code{cdNom})}
 }

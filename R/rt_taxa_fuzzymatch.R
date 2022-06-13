@@ -1,6 +1,6 @@
 #' Find taxa by fuzzy matching their scientific Name
 #'
-#' @param sciname {`character(1)`, **required**}\cr{}
+#' @param sciname {`character(1)` \[**required**\]}\cr{}
 #'                a string giving the scientific name of the taxon with or
 #'                without the author name
 #'
@@ -11,8 +11,7 @@ rt_taxa_fuzzymatch = function(sciname = NULL) {
 
   stopifnot("'sciname' must be a character" = is.character(sciname))
 
-  api_query = rt_GET("taxa/fuzzyMatch",
-                     query = list(term = sciname))
+  api_query = rt_GET("taxa/fuzzyMatch", query = list(term = sciname))
 
   parse_taxa(api_query)
 }

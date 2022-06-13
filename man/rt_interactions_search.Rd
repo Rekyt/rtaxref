@@ -13,7 +13,7 @@ rt_interactions_search(
 )
 }
 \arguments{
-\item{id}{{\code{NULL} or \verb{integer(1+)}}\cr{}
+\item{id}{{\code{NULL} or \verb{integer(1+)} [default = \code{NULL}]}\cr{}
 One or more integer giving the id(s) of taxa in TAXREF
 (also called \code{cdNom})}
 

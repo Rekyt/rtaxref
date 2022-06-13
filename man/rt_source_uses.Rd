@@ -7,7 +7,7 @@
 rt_source_uses(usage_id = NULL)
 }
 \arguments{
-\item{usage_id}{{\code{numeric(1)}, default = \code{NULL}}\cr{}
+\item{usage_id}{{\code{NULL} or \code{numeric(1)} [default = \code{NULL}]}\cr{}
 the id of a source use in TAXREF}
 }
 \description{

@@ -7,7 +7,7 @@
 rt_status_type(status_id = NULL)
 }
 \arguments{
-\item{status_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{status_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 A character identifying the type of status}
 }
 \description{

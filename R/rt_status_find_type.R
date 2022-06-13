@@ -1,6 +1,6 @@
 #' Retrieve the status of all Taxa according to a Status Type
 #'
-#' @param status_id {`character(1)`, **required**}\cr{}
+#' @param status_id {`character(1)` \[**required**\]}\cr{}
 #'                  The identifier of status (see [`rt_status_type()`] for the
 #'                  list of status types)
 #' @inheritParams rt_status_opgroup

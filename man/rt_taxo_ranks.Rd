@@ -7,7 +7,7 @@
 rt_taxo_ranks(taxo_id = NULL)
 }
 \arguments{
-\item{taxo_id}{{\code{character(1)}, default = \code{NULL}}\cr{}
+\item{taxo_id}{{\code{NULL} or \code{character(1)} [default = \code{NULL}]}\cr{}
 the id of a taxonomic rank in TAXREF.}
 }
 \description{
