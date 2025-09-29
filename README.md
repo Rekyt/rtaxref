@@ -12,6 +12,26 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![R-CMD-check](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
+🛑 **Important September 2025 Update: the Natural History Museum of
+Paris has been hacked, and as such many of their data sources went
+offline. They are working on restoring their databases, but for now
+`rtaxref` won’t work.** 🛑  
+You can still access the TaxREF data in two ways: - through the
+[temporary data download
+portal](https://www.patrinat.fr/fr/page-temporaire-de-telechargement-des-referentiels-de-donnees-lies-linpn-7353)
+where you can download the offline version of TaxREF, to our knowledge,
+no R package exist help navigate these data. - You can also access the
+[`taxize::gna_verifier()`
+function](https://docs.ropensci.org/taxize/reference/gna_verifier.html)
+which allows to query the [Global Names Verifier
+database](https://verifier.globalnames.org/) which indexes many
+taxonomic sources. By specifying the argument `data_sources = 210`, you
+can access the TaxREF version [indexed by Global Names
+Verifier](https://verifier.globalnames.org/data_sources/210). This way
+you can access the taxonomic names referenced in TaxREF.
+
+**End of Update**
+
 The goal of rtaxref is to provide an R client to TAXREF API, the French
 Taxonomical Reference and associated database on species. The API
 provides nomenclature, taxonomy, biogeographic repartition, statuses and
@@ -43,16 +63,15 @@ of citation is included in `rtaxref` via `citation("rtaxref")`.
 
 ``` r
 citation("rtaxref")
-#> 
 #> To cite this package in publications, please use:
 #> 
-#>   Grenié M, Gruson H (2022). _rtaxref: An R Client for TAXREF the
+#>   Grenié M, Gruson H (2025). _rtaxref: An R Client for TAXREF the
 #>   French Taxonomical Reference API_. R package version 0.1.0,
 #>   <https://github.com/Rekyt/rtaxref>.
 #> 
 #> Please also cite the data provider:
 #> 
-#>   TAXTREF (2022). Data released under the Creative Commons
+#>   TAXTREF (2025). Data released under the Creative Commons
 #>   Attribution-ShareAlike 3.0 (CC BY-SA 3.0) license,
 #>   <https://taxref.mnhn.fr/taxref-web/accueil>.
 #> 
@@ -127,13 +146,13 @@ you agree to abide by its terms.
 Other packages lets you work with taxonomical information from relevant
 databases:
 
--   [`taxize`](https://github.com/ropensci/taxize) let’s you work with
-    many databases as well as clean a list of taxon names,
--   [`ritis`](https://github.com/ropensci/ritis) a client for another
-    taxonomic database,
--   [`taxa`](https://github.com/ropensci/taxa) a package that proposes a
-    reference class for taxonomic information (maybe used by `rtaxref`
-    in the future),
--   [CRAN taxonomy Task View](https://github.com/ropensci/taxonomy)
-    references many related packages that are used to work with
-    taxonomic information.
+- [`taxize`](https://github.com/ropensci/taxize) let’s you work with
+  many databases as well as clean a list of taxon names,
+- [`ritis`](https://github.com/ropensci/ritis) a client for another
+  taxonomic database,
+- [`taxa`](https://github.com/ropensci/taxa) a package that proposes a
+  reference class for taxonomic information (maybe used by `rtaxref` in
+  the future),
+- [CRAN taxonomy Task View](https://github.com/ropensci/taxonomy)
+  references many related packages that are used to work with taxonomic
+  information.
