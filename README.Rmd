@@ -20,7 +20,8 @@ knitr::opts_chunk$set(
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![codecov](https://codecov.io/gh/Rekyt/rtaxref/branch/master/graph/badge.svg)](https://codecov.io/gh/Rekyt/rtaxref)
 [![R-CMD-check](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Rekyt/rtaxref/actions/workflows/R-CMD-check.yaml)
-  <!-- badges: end -->
+[![Codecov test coverage](https://codecov.io/gh/Rekyt/rtaxref/graph/badge.svg)](https://app.codecov.io/gh/Rekyt/rtaxref)
+<!-- badges: end -->
 
 🛑 **Important September 2025 Update: the Natural History Museum of Paris has been hacked, and as such many of their data sources went offline. They are working on restoring their databases, but for now `rtaxref` won't work.** 🛑  
 You can still access the TaxREF data in two ways:
